@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<ListaCancBolletta xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaCancBolletta.xsd" versione="1.0">
+	<CancBolletta progressivo="0">
+		<IdServizio>100103</IdServizio>
+		<CodBolletta>RSUB1</CodBolletta>
+		<CodBolletta>RSUB2</CodBolletta>
+		<CodBolletta>RSUB3</CodBolletta>
+	</CancBolletta>
+	<CancBolletta progressivo="0">
+		<IdServizio>100104</IdServizio>
+		<CodBolletta>a1</CodBolletta>
+		<CodBolletta>a2</CodBolletta>
+		<CodBolletta>a3</CodBolletta>
+	</CancBolletta>
+	<CancBolletta progressivo="0">
+		<IdServizio>100105</IdServizio>
+		<CodBolletta>b1</CodBolletta>
+		<CodBolletta>b2</CodBolletta>
+		<CodBolletta>b3</CodBolletta>
+	</CancBolletta>
+</ListaCancBolletta>

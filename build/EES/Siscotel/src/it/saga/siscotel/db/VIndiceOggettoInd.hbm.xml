@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    
+    <class name="it.saga.siscotel.db.VIndiceOggettoInd"
+           table="v_indice_oggetto_ind" schema="esicra" mutable="false">
+        <composite-id name="cid" class="it.saga.siscotel.db.VIndiceOggettoIndId">
+            <key-property name="aotPkid" type="big_decimal" >
+                    <column name="aot_pkid" precision="22" scale="0" />
+                </key-property>
+            <key-property name="indPkid" type="big_decimal">
+                    <column name="ind_pkid" length="22" scale="0"/>
+            </key-property>
+        </composite-id>
+        <property name="codiceEcografico" type="string">
+            <column name="codice_ecografico" length="70"/>
+        </property>
+        <property name="codAot" type="string">
+            <column name="cod_aot" length="20"/>
+        </property>
+        <property name="codCatasto" type="string">
+            <column name="cod_catasto" length="20"/>
+        </property>
+        <property name="aotDtmod" type="timestamp">
+            <column name="aot_dtmod" length="8"/>
+        </property>
+        <property name="aotCodIstat" type="string">
+            <column name="aot_cod_istat" length="20"/>
+        </property>
+        <property name="areaIndirizzo" type="string">
+            <column name="area_indirizzo" length="80"/>
+        </property>
+        <property name="numeroCivico" type="integer">
+            <column name="numero_civico"/>
+        </property>
+        <property name="letteraCivico" type="string">
+            <column name="lettera_civico" length="5"/>
+        </property>
+        <property name="coloreCivico" type="string">
+            <column name="colore_civico" length="10"/>
+        </property>
+        <property name="corteCivico" type="string">
+            <column name="corte_civico" length="9"/>
+        </property>
+        <property name="scalaCivico" type="string">
+            <column name="scala_civico" length="9"/>
+        </property>
+        <property name="internoCivico" type="string">
+            <column name="interno_civico" length="9"/>
+        </property>
+        <property name="pianoCivico" type="string">
+            <column name="piano_civico" length="9"/>
+        </property>
+        <property name="edificioCivico" type="string">
+            <column name="edificio_civico" length="9"/>
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4"/>
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4"/>
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

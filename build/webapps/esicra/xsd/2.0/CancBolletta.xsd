@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified">
+	<xs:element name="CancBolletta" type="esicra_import:CancBollettaType"/>
+	<xs:complexType name="CancBollettaType">
+		<xs:sequence>
+			<xs:element name="IdServizio" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>         </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="CodBolletta" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Codice univoco</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PagamentoPraType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:int"/>
+			<xs:element name="CodTipoPagamento" type="xs:string" minOccurs="0"/>
+			<xs:element name="CodEnteTipoPagamento" type="xs:int"/>
+			<xs:element name="DesTipoPagamento" type="xs:string"/>
+			<xs:element name="CausalePagamento" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataPagamento" type="xs:date"/>
+			<xs:element name="DataRegistrazione" type="xs:date" minOccurs="0"/>
+			<xs:element name="ImportoPagato" type="xs:decimal"/>
+			<xs:element name="ImportoDaPagare" type="xs:decimal"/>
+			<xs:element name="ImportoTotale" type="xs:decimal"/>
+			<xs:element name="IdCanale" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesCanale" type="xs:string" minOccurs="0"/>
+			<xs:element name="Distinta" type="xs:string" minOccurs="0"/>
+			<xs:element name="Autorizzazione" type="xs:string" minOccurs="0"/>
+			<xs:element name="NumRata" type="xs:int" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Pagamento" type="pra:PagamentoPraType"/>
+</xs:schema>

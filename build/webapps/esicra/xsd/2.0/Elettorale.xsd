@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="ElettoraleType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Sesso" type="xs:int"/>
+			<xs:element name="NumListaGen" type="xs:int"/>
+			<xs:element name="NumListaSez" type="xs:int"/>
+			<xs:element name="NumSez" type="xs:int"/>
+			<xs:element name="Sede" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indirizzo del Seggio</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumFascicolo" type="xs:int"/>
+			<xs:element name="NumTessera" type="xs:int"/>
+			<xs:element name="FlagScrutatore" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1=Abilitato al ruolo; 0=no</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FlagPresidente" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1=Abilitato al ruolo; 0=no</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AnnoIscrizione" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Elettorale" type="esicra_import:ElettoraleType"/>
+</xs:schema>

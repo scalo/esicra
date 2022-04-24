@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaPatente" table="ana_patente" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="numPatente" type="string">
+            <column name="num_patente" length="20" />
+        </property>
+        <property name="categoria" type="string">
+            <column name="categoria" length="2" />
+        </property>
+        <property name="dtRilascio" type="date">
+            <column name="dt_rilascio" length="4" />
+        </property>
+        <property name="dtScadenza" type="date">
+            <column name="dt_scadenza" length="4" />
+        </property>
+        <property name="desEnteRilascio" type="string">
+            <column name="des_ente_rilascio" length="80" />
+        </property>
+        <property name="punti" type="integer">
+            <column name="punti" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

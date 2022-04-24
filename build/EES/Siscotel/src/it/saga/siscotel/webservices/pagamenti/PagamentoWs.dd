@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<isd:service xmlns:isd="http://xml.apache.org/xml-soap/deployment"
+             id="it.saga.siscotel.webservices.pagamenti.PagamentoWs">
+  <isd:provider type="java" methods="registraPagamento cercaPagamento" scope="Request">
+    <isd:java class="it.saga.siscotel.webservices.pagamenti.PagamentoWs"/>
+  </isd:provider>
+  <isd:faultListener class="org.apache.soap.server.DOMFaultListener"/>
+  <isd:mappings defaultRegistryClass="it.saga.egov.esicra.soap.WrapperSoapMappingRegistry">
+    <isd:map encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns:x="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.xsd"
+             qname="x:it_saga_siscotel_beans_base_PagamentoBean" javaType="it.saga.siscotel.beans.base.PagamentoBean"
+             java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+             xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+  </isd:mappings>
+</isd:service>

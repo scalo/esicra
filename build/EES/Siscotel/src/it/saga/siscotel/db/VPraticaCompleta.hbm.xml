@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.VPraticaCompleta" table="v_pratica_completa" mutable="false" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0"/>
+        </property>
+        <property name="codPraticaBo" type="string">
+            <column name="cod_pratica_bo" length="20"/>
+        </property>
+        <property name="oggetto" type="string">
+            <column name="oggetto" length="200"/>
+        </property>
+        <property name="dtPratica" type="date">
+            <column name="dt_pratica" length="4"/>
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16"/>
+        </property>
+        <property name="tipoNotifica" type="string">
+            <column name="tipo_notifica" length="20"/>
+        </property>
+        <property name="codTipoConsegna" type="string">
+            <column name="cod_tipo_consegna" length="20"/>
+        </property>
+        <property name="desTipoConsegna" type="string">
+            <column name="des_tipo_consegna" length="80"/>
+        </property>
+        <property name="codModalitaAllegati" type="string">
+            <column name="cod_modalita_allegati" length="20"/>
+        </property>
+        <property name="desModalitaAllegati" type="string">
+            <column name="des_modalita_allegati" length="80"/>
+        </property>
+        <property name="idCanale" type="integer">
+            <column name="id_canale"/>
+        </property>
+        <property name="desCanale" type="string">
+            <column name="des_canale" length="80"/>
+        </property>
+        <property name="docXml" type="string">
+            <column name="doc_xml"/>
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0"/>
+        </property>
+        <property name="pkidDett" type="big_decimal">
+            <column name="pkid_dett" precision="22" scale="0"/>
+        </property>
+        <property name="fkidTesta" type="big_decimal">
+            <column name="fkid_testa" precision="22" scale="0"/>
+        </property>
+        <property name="dtStato" type="timestamp">
+            <column name="dt_stato" length="8"/>
+        </property>
+        <property name="idResponsabile" type="integer">
+            <column name="id_responsabile"/>
+        </property>
+        <property name="desResponsabile" type="string">
+            <column name="des_responsabile" length="80"/>
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000"/>
+        </property>
+        <property name="idStatoPratica" type="integer">
+            <column name="id_stato_pratica"/>
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0"/>
+        </property>
+        <property name="desStatoPratica" type="string">
+            <column name="des_stato_pratica" length="80"/>
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8"/>
+        </property>
+        <property name="desBreve" type="string">
+            <column name="des_breve" length="20"/>
+        </property>
+        <property name="raggruppamento" type="string">
+            <column name="raggruppamento" length="20"/>
+        </property>
+        <property name="tipoExport" type="integer">
+            <column name="tipo_export"/>
+        </property>
+        <property name="siglaExport" type="string">
+            <column name="sigla_export" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>

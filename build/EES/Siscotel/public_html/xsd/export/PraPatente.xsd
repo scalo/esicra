@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraPatente">
+		<xs:sequence>
+			<xs:element name="CategoriaPatente">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumeroPatente">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataRilascio" type="xs:date" minOccurs="0"/>
+			<xs:element name="DataScadenza" type="xs:date" minOccurs="0"/>
+			<xs:element name="DesEnteRilascio" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

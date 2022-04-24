@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaComDatiSubentro xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaComDatiSubentro.xsd" versione="1.0">
+	<ComDatiSubentro progressivo="1">
+		<CodDenuncia>COD5663</CodDenuncia>
+		<DenSubentro>Denuncia Subentro</DenSubentro>
+		<NumAutSubentro>num 8987/125</NumAutSubentro>
+		<DtAutSubentro>2004-11-13</DtAutSubentro>
+		<CodFiscSubentro>MNZMTT60D05A794H</CodFiscSubentro>
+		<CodCausaSub>codcausa1</CodCausaSub>
+		<DesCausaSub>Causa Subentro</DesCausaSub>
+	</ComDatiSubentro>
+	<ComDatiSubentro progressivo="2">
+		<CodDenuncia>COD5664</CodDenuncia>
+		<DenSubentro>Descrizione Denuncia</DenSubentro>
+		<NumAutSubentro>159753</NumAutSubentro>
+		<CodCausaSub>cod sub 2</CodCausaSub>
+		<DesCausaSub>des causa sub</DesCausaSub>
+	</ComDatiSubentro>
+</ListaComDatiSubentro>

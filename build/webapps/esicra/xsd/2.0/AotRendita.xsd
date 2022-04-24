@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="AotRenditaType">
+		<xs:sequence>
+			<xs:element name="CodAot">
+				<xs:annotation>
+					<xs:documentation>Codice Identificativo Comunale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Rendita" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Anche Reddito Agrario</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RedditoDominicale" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Anche Reddito Agrario</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DataInizio" type="xs:date" minOccurs="0"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="AotRendita" type="esicra_import:AotRenditaType"/>
+</xs:schema>

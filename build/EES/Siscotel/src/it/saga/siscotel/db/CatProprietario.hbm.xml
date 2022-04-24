@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.CatProprietario" table="cat_proprietario" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="catAot" class="it.saga.siscotel.db.CatAot">
+            <column name="fkid_aot" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codTitolo" type="string">
+            <column name="cod_titolo" length="20" />
+        </property>
+        <property name="desTitolo" type="string">
+            <column name="des_titolo" length="80" />
+        </property>
+        <property name="proprieta" type="double">
+            <column name="proprieta" precision="8" scale="0" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="80" />
+        </property>
+        <property name="tipoPartita" type="string">
+            <column name="tipo_partita" length="1" />
+        </property>
+        <property name="partita" type="string">
+            <column name="partita" length="10" />
+        </property>
+        <property name="attoIni" type="string">
+            <column name="atto_ini" length="1000" />
+        </property>
+        <property name="attoFin" type="string">
+            <column name="atto_fin" length="1000" />
+        </property>
+        <property name="idTitolarita" type="string">
+            <column name="id_titolarita" length="20" />
+        </property>
+        <property name="mutazioneIni" type="string">
+            <column name="mutazione_ini" length="20" />
+        </property>
+        <property name="mutazioneFin" type="string">
+            <column name="mutazione_fin" length="20" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="E:\POLIS\Analisi\eSICRA\XML\xsl_stile\out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="TriConDisdettaType">
+		<xs:sequence>
+			<xs:element name="CodConcessione">
+				<xs:annotation>
+					<xs:documentation>Univoco nell'Ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Cognome" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Nome" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DtNascita" type="xs:date" minOccurs="0"/>
+			<xs:element name="LocalitaNascita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Recapito" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DtDenuncia" type="xs:date"/>
+			<xs:element name="CodDenuncia" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdPratica" type="xs:int" minOccurs="0"/>
+			<xs:element name="IdServizio" type="xs:int"/>
+			<xs:element name="DtIniConc" type="xs:date" minOccurs="0"/>
+			<xs:element name="DtFinConc" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TriConDisdetta" type="esicra_import:TriConDisdettaType"/>
+</xs:schema>

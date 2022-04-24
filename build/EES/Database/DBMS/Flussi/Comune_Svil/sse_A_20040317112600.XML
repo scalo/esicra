@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSdiServizio xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSdiServizio.xsd" versione="1.0">
+	<SdiServizio progressivo="1">
+		<CodFruitore>PNLMRC98H8763HJZ</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>DSM0001</CodServizio>
+		<DesServizio>Mensa Scolastica</DesServizio>
+		<CodRichiestaBo>BO 0001</CodRichiestaBo>
+		<IdServizio>100141</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa mensa scolastica</DesTariffa>
+		<Importo>150,00</Importo>
+		<CodEsenzione>COD ESE 1</CodEsenzione>
+		<DesEsenzione>Famiglia Numerosa</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="2">
+		<CodFruitore>BCCNNA70M41A794K</CodFruitore>
+		<CodServizio>ASS0001</CodServizio>
+		<DesServizio>Altri Servizi Scolastici</DesServizio>
+		<CodRichiestaBo/>
+		<IdServizio>100147</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<DesTariffa>TAR 2</DesTariffa>
+		<DataStato>2004-09-13</DataStato>		
+		<DataInizio>2004-02-01</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="3">
+		<CodFruitore>PNLGNN77H8763HJZ</CodFruitore>
+		<CodServizio>COD_002</CodServizio>
+		<DesServizio>Domanda Trasporto Scolastico</DesServizio>
+		<CodRichiestaBo>BO 0001</CodRichiestaBo>
+		<IdServizio>100142</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>Intera</CodTariffa>
+		<DesTariffa>Tariffa mensa scolastica</DesTariffa>
+		<Importo>1500,00</Importo>
+		<CodEsenzione>2</CodEsenzione>
+		<DesEsenzione>Stato Poverta'</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 2 </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="4">
+		<CodFruitore>BCCNNA70M41A794K</CodFruitore>
+		<CodServizio>COD_003</CodServizio>
+		<DesServizio>Iscrizione Scolastica e Pagamento</DesServizio>
+		<CodRichiestaBo>BO 0001</CodRichiestaBo>
+		<IdServizio>100144</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>Intera</CodTariffa>
+		<DesTariffa>Tariffa mensa scolastica</DesTariffa>
+		<Importo>1000,00</Importo>
+		<CodEsenzione>3</CodEsenzione>
+		<DesEsenzione>Stato Poverta'</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>
+		<Note>Chiesto da Bacca Anna</Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="5">
+		<CodFruitore>PNLMRC98H8763HJZ</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>IC1</CodServizio>
+		<DesServizio>Iscrizione Centro Ricreativo Teatro</DesServizio>
+		<CodRichiestaBo>BO 00C1</CodRichiestaBo>
+		<IdServizio>100145</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 8</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione</DesTariffa>
+		<Importo>150,00</Importo>
+		<CodEsenzione>COD ESE 1</CodEsenzione>
+		<DesEsenzione>Famiglia Numerosa</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>
+		<Note>Chiesto da Pinoli Gianni 1</Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="6">
+		<CodFruitore>PNLMRC98H8763HJZ</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>IC2</CodServizio>
+		<DesServizio>Iscrizione Centro Ricreativo Pittura</DesServizio>
+		<CodRichiestaBo>BO 00C2</CodRichiestaBo>
+		<IdServizio>100145</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione 2</DesTariffa>
+		<Importo>60,00</Importo>
+		<CodEsenzione>COD ESE 1</CodEsenzione>
+		<DesEsenzione>Famiglia Numerosa</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="7">
+		<CodFruitore>01137069875</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>PUB01</CodServizio>
+		<DesServizio>Richiesta Insegna Pubblicitaria</DesServizio>
+		<CodRichiestaBo>INS 00C2</CodRichiestaBo>
+		<IdServizio>100159</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione 2</DesTariffa>
+		<Importo>60,00</Importo>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-10-13</DataInizio>
+	</SdiServizio>	
+	<SdiServizio progressivo="8">
+		<CodFruitore>01137069875</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>PUB02</CodServizio>
+		<DesServizio>Richiesta Insegna Pubblicitaria</DesServizio>
+		<CodRichiestaBo>INS 00C5</CodRichiestaBo>
+		<IdServizio>100159</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione 2</DesTariffa>
+		<Importo>130,00</Importo>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-10-13</DataInizio>
+	</SdiServizio>	
+	<SdiServizio progressivo="9">
+		<CodFruitore>01137069875</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>SPE01</CodServizio>
+		<DesServizio>Spettacoli Viaggianti</DesServizio>
+		<CodRichiestaBo>BO 00C2</CodRichiestaBo>
+		<IdServizio>100166</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione 2</DesTariffa>
+		<Importo>200,00</Importo>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-11-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="10">
+		<CodFruitore>01137069875</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>SPE02</CodServizio>
+		<DesServizio>Spettacoli Viaggianti</DesServizio>
+		<CodRichiestaBo>BO 00C2</CodRichiestaBo>
+		<IdServizio>100166</IdServizio>
+		<DataRichiesta>2004-08-13</DataRichiesta>		
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Iscrizione 2</DesTariffa>
+		<Importo>300,00</Importo>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<DataStato>2004-09-13</DataStato>		
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-11-13</DataInizio>
+	</SdiServizio>
+</ListaSdiServizio>

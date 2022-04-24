@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:complexType name="RecapitoType">
+		<xs:sequence>
+			<xs:element name="Indirizzo" type="esicra_pra:IndirizzoType" minOccurs="0"/>
+			<xs:element name="Presso" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Telefono" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Recapito" type="esicra_pra:RecapitoType"/>
+</xs:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraComuneType">
+		<xs:sequence>
+			<xs:element name="CodIstatComune" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesComune" type="xs:string"/>
+			<xs:element name="DesProvincia" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

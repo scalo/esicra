@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:complexType name="DatiPassoCarrabile">
+		<xs:sequence>
+			<xs:element name="Ubicazione" type="pra:IndirizzoType"/>
+			<xs:element name="Accesso_A_Raso" type="xs:string"/>
+			<xs:element name="DataAccesso_A_Raso" type="xs:date"/>
+			<xs:element name="Larghezza" type="xs:string"/>
+			<xs:element name="Profondita" type="xs:string"/>
+			<xs:element name="CodTipoAccesso" type="xs:string"/>
+			<xs:element name="DesTipoAccesso" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

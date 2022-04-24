@@ -1,0 +1,1275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hibernate Mappings - Table Info</TITLE>
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../assets/doc-style.css" TITLE="Style">
+
+</HEAD>
+
+<BODY>
+
+<H3>Table: ana_soggetto_ele</H3>
+<H4>Schema: esicra</H4>
+
+<A NAME="column_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="9" CLASS="MainTableHeading">
+				Column Summary
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="14%">
+				Name
+			</TH>
+			<TH WIDTH="14%">
+				SqlType
+			</TH>
+			<TH WIDTH="14%">
+				Length
+			</TH>
+			<TH WIDTH="14%">
+				Precision
+			</TH>
+			<TH WIDTH="14%">
+				Scale
+			</TH>
+			<TH WIDTH="14%">
+				Nullable
+			</TH>
+			<TH WIDTH="14%">
+				Unique
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_soggetto'>
+					cod_soggetto
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_codice_fiscale'>
+					codice_fiscale
+				</A>
+			</TD>
+			<TD>
+				varchar(16)
+			</TD>
+			<TD ALIGN="RIGHT">
+				16
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cognome'>
+					cognome
+				</A>
+			</TD>
+			<TD>
+				varchar(36)
+			</TD>
+			<TD ALIGN="RIGHT">
+				36
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_nome'>
+					nome
+				</A>
+			</TD>
+			<TD>
+				varchar(36)
+			</TD>
+			<TD ALIGN="RIGHT">
+				36
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_altri_nomi'>
+					altri_nomi
+				</A>
+			</TD>
+			<TD>
+				varchar(36)
+			</TD>
+			<TD ALIGN="RIGHT">
+				36
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_nascita'>
+					dt_nascita
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_precisione_dt_nascita'>
+					precisione_dt_nascita
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_sesso'>
+					sesso
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_note'>
+					note
+				</A>
+			</TD>
+			<TD>
+				varchar(1000)
+			</TD>
+			<TD ALIGN="RIGHT">
+				1000
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_comune_nascita'>
+					fkid_comune_nascita
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_comune_nascita'>
+					des_comune_nascita
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_provincia_nascita'>
+					des_provincia_nascita
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_stato_nascita'>
+					fkid_stato_nascita
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_stato_nascita'>
+					des_stato_nascita
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_localita_nascita'>
+					fkid_localita_nascita
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_localita_nascita'>
+					des_localita_nascita
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_stato_civ'>
+					des_stato_civ
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_coniuge'>
+					coniuge
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				7
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_ini'>
+					dt_ini
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_fin'>
+					dt_fin
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_mod'>
+					dt_mod
+				</A>
+			</TD>
+			<TD>
+				timestamp
+			</TD>
+			<TD ALIGN="RIGHT">
+				8
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+
+<A NAME="primary_key"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Primary Key
+			</TH>
+		</TR>
+    </THEAD>
+	<TBODY>
+		<TR>
+			<TD WIDTH="50%">
+				ana_soggetto_ele_pkey
+			</TD>
+			<TD WIDTH="50%">
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="foreign_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="3" CLASS="MainTableHeading">
+				Foreign Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="33%">
+				Name
+			</TH>
+			<TH WIDTH="33%">
+				Referenced Table
+			</TH>
+			<TH WIDTH="33%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				ter_comune01
+			</TD>
+			<TD>
+				<A HREF='ter_comune.html' TARGET="generalFrame">
+					ter_comune
+				</A>
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_comune_nascita'>
+					fkid_comune_nascita<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				ana_soggetto27
+			</TD>
+			<TD>
+				<A HREF='ana_soggetto.html' TARGET="generalFrame">
+					ana_soggetto
+				</A>
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				ter_stato08
+			</TD>
+			<TD>
+				<A HREF='ter_stato.html' TARGET="generalFrame">
+					ter_stato
+				</A>
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_stato_nascita'>
+					fkid_stato_nascita<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="unique_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Unique Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				ana_soggetto_ele_pkey
+			</TD>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="indexes"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Indexes
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				idx_ana_soggetto_ele
+			</TD>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				idx_cod_fiscale_ele
+			</TD>
+			<TD>
+				<A HREF='#column_detail_codice_fiscale'>
+					codice_fiscale<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				kcod_soggetto_ele
+			</TD>
+			<TD>
+				<A HREF='#column_detail_cod_soggetto'>
+					cod_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				idx_ele_sel
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+<A NAME="column_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH CLASS="MainTableHeading">
+    			Column Detail
+    		</TH>
+		</TR>
+	</THEAD>
+</TABLE>
+
+<A NAME='column_detail_pkid'></A>
+<H3>pkid</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>false</LI>
+	<LI><B>Unique: </B>true</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_soggetto'></A>
+<H3>fkid_soggetto</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_soggetto'></A>
+<H3>cod_soggetto</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_codice_fiscale'></A>
+<H3>codice_fiscale</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(16)</LI>
+	<LI><B>Length: </B>16</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cognome'></A>
+<H3>cognome</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(36)</LI>
+	<LI><B>Length: </B>36</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_nome'></A>
+<H3>nome</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(36)</LI>
+	<LI><B>Length: </B>36</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_altri_nomi'></A>
+<H3>altri_nomi</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(36)</LI>
+	<LI><B>Length: </B>36</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_nascita'></A>
+<H3>dt_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_precisione_dt_nascita'></A>
+<H3>precisione_dt_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_sesso'></A>
+<H3>sesso</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_note'></A>
+<H3>note</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(1000)</LI>
+	<LI><B>Length: </B>1000</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_comune_nascita'></A>
+<H3>fkid_comune_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_comune_nascita'></A>
+<H3>des_comune_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_provincia_nascita'></A>
+<H3>des_provincia_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_stato_nascita'></A>
+<H3>fkid_stato_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_stato_nascita'></A>
+<H3>des_stato_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_localita_nascita'></A>
+<H3>fkid_localita_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_localita_nascita'></A>
+<H3>des_localita_nascita</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_stato_civ'></A>
+<H3>des_stato_civ</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_coniuge'></A>
+<H3>coniuge</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_ente'></A>
+<H3>id_ente</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>7</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_ini'></A>
+<H3>dt_ini</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_fin'></A>
+<H3>dt_fin</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_mod'></A>
+<H3>dt_mod</H3>
+
+<UL>
+	<LI><B>Type: </B>timestamp</LI>
+	<LI><B>Length: </B>8</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+
+
+</BODY>
+
+</HTML>

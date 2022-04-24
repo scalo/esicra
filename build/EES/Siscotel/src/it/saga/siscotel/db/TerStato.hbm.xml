@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerStato" table="ter_stato" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codStato" type="string">
+            <column name="cod_stato" length="20" />
+        </property>
+        <property name="codIstat" type="integer">
+            <column name="cod_istat" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="codCatasto" type="string">
+            <column name="cod_catasto" length="4" />
+        </property>
+        <property name="sigla" type="string">
+            <column name="sigla" length="3" />
+        </property>
+        <property name="codLeva" type="integer">
+            <column name="cod_leva" />
+        </property>
+        <property name="flCee" type="integer">
+            <column name="fl_cee" />
+        </property>
+        <property name="codIstatCittadinanza" type="integer">
+            <column name="cod_istat_cittadinanza" />
+        </property>
+        <property name="desCittadinanzaGen" type="string">
+            <column name="des_cittadinanza_gen" length="80" />
+        </property>
+        <property name="desCittadinanzaMas" type="string">
+            <column name="des_cittadinanza_mas" length="80" />
+        </property>
+        <property name="desCittadinanzaFem" type="string">
+            <column name="des_cittadinanza_fem" length="80" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <set name="terLocalitas" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerLocalita" />
+        </set>
+        <set name="anaIscriziones" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIscrizione" />
+        </set>
+        <set name="anaStudios" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStudio" />
+        </set>
+        <set name="anaStcivs" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+        <set name="anaSoggettos" inverse="true">
+            <key>
+                <column name="fkid_stato_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggetto" />
+        </set>
+        <set name="anaIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="anaCancellaziones" inverse="true">
+            <key>
+                <column name="fkid_stato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCancellazione" />
+        </set>
+        <set name="anaSoggettoEles" inverse="true">
+            <key>
+                <column name="fkid_stato_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoEle" />
+        </set>
+    </class>
+</hibernate-mapping>

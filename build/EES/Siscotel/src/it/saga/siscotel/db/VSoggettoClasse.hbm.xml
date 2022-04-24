@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VSoggettoClasse" table="v_soggetto_classe" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.VSoggettoClasseId">
+            <key-property name="fkidClasse" type="big_decimal">
+                <column name="fkid_classe" precision="22" scale="0" />
+            </key-property>
+            <key-property name="annoScolastico" type="string">
+                <column name="anno_scolastico" length="10" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

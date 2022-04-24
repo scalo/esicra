@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Parameters" table="parameters" schema="information_schema">
+        <composite-id name="id" class="it.saga.siscotel.db.ParametersId">
+            <key-property name="specificCatalog" type="java.lang.Object">
+                <column name="specific_catalog" />
+            </key-property>
+            <key-property name="specificSchema" type="java.lang.Object">
+                <column name="specific_schema" />
+            </key-property>
+            <key-property name="specificName" type="java.lang.Object">
+                <column name="specific_name" />
+            </key-property>
+            <key-property name="ordinalPosition" type="java.lang.Object">
+                <column name="ordinal_position" />
+            </key-property>
+            <key-property name="parameterMode" type="java.lang.Object">
+                <column name="parameter_mode" />
+            </key-property>
+            <key-property name="isResult" type="java.lang.Object">
+                <column name="is_result" />
+            </key-property>
+            <key-property name="asLocator" type="java.lang.Object">
+                <column name="as_locator" />
+            </key-property>
+            <key-property name="parameterName" type="java.lang.Object">
+                <column name="parameter_name" />
+            </key-property>
+            <key-property name="dataType" type="java.lang.Object">
+                <column name="data_type" />
+            </key-property>
+            <key-property name="characterMaximumLength" type="java.lang.Object">
+                <column name="character_maximum_length" />
+            </key-property>
+            <key-property name="characterOctetLength" type="java.lang.Object">
+                <column name="character_octet_length" />
+            </key-property>
+            <key-property name="characterSetCatalog" type="java.lang.Object">
+                <column name="character_set_catalog" />
+            </key-property>
+            <key-property name="characterSetSchema" type="java.lang.Object">
+                <column name="character_set_schema" />
+            </key-property>
+            <key-property name="characterSetName" type="java.lang.Object">
+                <column name="character_set_name" />
+            </key-property>
+            <key-property name="collationCatalog" type="java.lang.Object">
+                <column name="collation_catalog" />
+            </key-property>
+            <key-property name="collationSchema" type="java.lang.Object">
+                <column name="collation_schema" />
+            </key-property>
+            <key-property name="collationName" type="java.lang.Object">
+                <column name="collation_name" />
+            </key-property>
+            <key-property name="numericPrecision" type="java.lang.Object">
+                <column name="numeric_precision" />
+            </key-property>
+            <key-property name="numericPrecisionRadix" type="java.lang.Object">
+                <column name="numeric_precision_radix" />
+            </key-property>
+            <key-property name="numericScale" type="java.lang.Object">
+                <column name="numeric_scale" />
+            </key-property>
+            <key-property name="datetimePrecision" type="java.lang.Object">
+                <column name="datetime_precision" />
+            </key-property>
+            <key-property name="intervalType" type="java.lang.Object">
+                <column name="interval_type" />
+            </key-property>
+            <key-property name="intervalPrecision" type="java.lang.Object">
+                <column name="interval_precision" />
+            </key-property>
+            <key-property name="udtCatalog" type="java.lang.Object">
+                <column name="udt_catalog" />
+            </key-property>
+            <key-property name="udtSchema" type="java.lang.Object">
+                <column name="udt_schema" />
+            </key-property>
+            <key-property name="udtName" type="java.lang.Object">
+                <column name="udt_name" />
+            </key-property>
+            <key-property name="scopeCatalog" type="java.lang.Object">
+                <column name="scope_catalog" />
+            </key-property>
+            <key-property name="scopeSchema" type="java.lang.Object">
+                <column name="scope_schema" />
+            </key-property>
+            <key-property name="scopeName" type="java.lang.Object">
+                <column name="scope_name" />
+            </key-property>
+            <key-property name="maximumCardinality" type="java.lang.Object">
+                <column name="maximum_cardinality" />
+            </key-property>
+            <key-property name="dtdIdentifier" type="java.lang.Object">
+                <column name="dtd_identifier" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

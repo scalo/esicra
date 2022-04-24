@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.SerProvenienza" table="ser_provenienza" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codProvenienza" type="string">
+            <column name="cod_provenienza" length="20" />
+        </property>
+        <property name="desProvenienza" type="string">
+            <column name="des_provenienza" length="80" />
+        </property>
+        <set name="otProvenienzas" inverse="false">
+            <key>
+                <column name="fkid_provenienza" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.OtProvenienza" />
+        </set>
+        <set name="anaSoggettoProvs" inverse="false">
+            <key>
+                <column name="fkid_provenienza" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoProv" />
+        </set>
+    </class>
+</hibernate-mapping>

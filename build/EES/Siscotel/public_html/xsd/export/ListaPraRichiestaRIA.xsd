@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PraRichiestaRIA.xsd"/>
+	<xs:element name="ListaPraRichiestaRIA">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="PraRichiestaRIA" type="pra:PraRichiestaRIA"/>
+			</xs:sequence>
+			<xs:attribute name="versione">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

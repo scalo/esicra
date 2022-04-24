@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="PermessoSoggiorno.xsd"/>
+	<xs:include schemaLocation="StatoCivile.xsd"/>
+	<xs:element name="RichCittad">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DesStatoCivile">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesCittadinananza">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CognomePadre" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="NomePadre" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CognomeMadre" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="NomeMadre" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesTitoloStudio" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesUniversitaStudio" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CodIstatStatoStudio" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesStatoStudio" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesProfessione" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PermessoSoggiorno" type="esicra_pra:PermessoSoggiornoType"/>
+				<xs:element name="DesGiuSentenza" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesGiuAzione" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DesGiuSentenzaEU" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="80"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ListaDataIngresso">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="DataIngresso" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ListaDataUscita">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="DataUscita" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ListaIndirizzoItalia">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="IndirizzoItalia" type="esicra_pra:IndirizzoType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ListaIndirizzoEstero">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="IndirizzoEstero" type="esicra_pra:IndirizzoType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ListaCompFamCitt">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="CompFamCitt" type="esicra_pra:SoggettoType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatoCivile" type="esicra_pra:StatoCivileType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

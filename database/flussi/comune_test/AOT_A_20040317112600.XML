@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAot xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAot.xsd" versione="1.0">
+<Aot progressivo = "1">
+	<CodAot>codaot_1</CodAot>
+	<CodEcografico>cod_eco_1</CodEcografico>
+	<CodCatasto>cod_cata_1</CodCatasto>
+	<CodIstat>6039</CodIstat>
+</Aot>
+<Aot progressivo = "1">
+	<CodAot>codaot_2</CodAot>
+	<CodIstat>6039</CodIstat>
+</Aot>
+<Aot progressivo = "3">
+	<CodAot>codaot_3</CodAot>
+	<CodEcografico>cod_eco_3</CodEcografico>
+	<CodIstat>6039</CodIstat>
+</Aot>
+<Aot progressivo = "4">
+	<CodAot>codaot_4</CodAot>
+	<CodEcografico>cod_eco_4</CodEcografico>
+	<CodCatasto>cod_cata_4</CodCatasto>
+	<CodIstat>6039</CodIstat>
+</Aot>
+</ListaAot>

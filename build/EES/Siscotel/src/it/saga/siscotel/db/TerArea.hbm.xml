@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.TerArea" table="ter_area" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codArea" type="string">
+            <column name="cod_area" length="20" />
+        </property>
+        <property name="codIstatArea" type="integer">
+            <column name="cod_istat_area" />
+        </property>
+        <property name="specie" type="string">
+            <column name="specie" length="20" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="ordinamento" type="string">
+            <column name="ordinamento" length="100" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="sdiCentros" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SdiCentro" />
+        </set>
+        <set name="iciInsediamentos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.IciInsediamento" />
+        </set>
+        <set name="anaIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="scuClasses" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuClasse" />
+        </set>
+        <set name="catIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatIndirizzo" />
+        </set>
+        <set name="polInfraziones" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+        <set name="terAccessos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerAccesso" />
+        </set>
+        <set name="triConcessiones" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TriConcessione" />
+        </set>
+        <set name="ediUbicaziones" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiUbicazione" />
+        </set>
+        <set name="scuIstitutos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuIstituto" />
+        </set>
+        <set name="rsuInsediamentos" inverse="true">
+            <key>
+                <column name="fkid_area" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsediamento" />
+        </set>
+    </class>
+</hibernate-mapping>

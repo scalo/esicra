@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="EdiPrgType">
+		<xs:sequence>
+			<xs:element name="CodPrg" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesPrg">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Anno" type="xs:integer"/>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataInizio" type="xs:date" minOccurs="0"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EdiPrg" type="esicra_import:EdiPrgType"/>
+</xs:schema>

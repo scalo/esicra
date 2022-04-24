@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.SerExport" table="ser_export" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" />
+        </property>
+        <property name="nomeFile" type="string">
+            <column name="nome_file" length="80" />
+        </property>
+        <property name="esportati" type="integer">
+            <column name="esportati" />
+        </property>
+        <property name="tempo" type="string">
+            <column name="tempo" length="20" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

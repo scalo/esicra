@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+
+<!--  connessione diretta jdbc -->
+
+<property name="connection.driver_class">org.postgresql.Driver</property>
+<property name="connection.url">jdbc:postgresql://localhost:5432/esicra_19_svil</property>
+<property name="connection.username">esicra</property>
+<property name="connection.password">egov2003</property>
+
+<!--
+<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@rsportal3:1521:esicram</property>
+<property name="connection.username">esicra_19_svil</property>
+<property name="connection.password">esicra_19_svil</property>
+-->
+
+<property name="show_sql">false</property>
+
+<!--
+<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+-->
+
+<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+</session-factory>
+
+</hibernate-configuration>

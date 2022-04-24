@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.16
+Created-By: build ant
+Built-By: ant
+
+Name: esicra
+Specification-Title: Esicra Siscotel
+Specification-Version: ${version}
+Specification-Vendor: Saga Spa
+Implementation-Title: Esicra Siscotel
+Implementation-Version: ${version}  (April 24 2022)
+Implementation-Vendor: Saga Spa
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaCittadinanza xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaCittadinanza.xsd" versione="1.0">
+<Cittadinanza progressivo = "1">
+<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+<CodCittadinanza>100</CodCittadinanza>
+<DesCittadinanza>ITALIANA</DesCittadinanza>
+</Cittadinanza>
+<Cittadinanza progressivo = "2">
+<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+<CodCittadinanza>100</CodCittadinanza>
+<DesCittadinanza>ITALIANA</DesCittadinanza>
+</Cittadinanza>
+<Cittadinanza progressivo = "3">
+<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+<CodCittadinanza>216</CodCittadinanza>
+<DesCittadinanza>TEDESCA</DesCittadinanza>
+</Cittadinanza>
+</ListaCittadinanza>

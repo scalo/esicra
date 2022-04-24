@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.VOggettoProvenienza" table="v_oggetto_provenienza" schema="esicra"  mutable="false">
+        <composite-id name="cid" class="it.saga.siscotel.db.VOggettoProvenienzaId">
+            <key-property name="id" type="big_decimal">
+                <column name="ogg_pkid" precision="22" scale="0"  />
+            </key-property>
+            <key-property name="cod" type="string">
+                <column name="cod_provenienza" length="20" />
+            </key-property>
+        </composite-id>
+            <property name="oggPkid" type="big_decimal" insert="false" update="false">
+                <column name="ogg_pkid" precision="22" scale="0" />
+            </property>
+            <property name="codAot" type="string">
+                <column name="cod_aot" length="20" />
+            </property>
+            <property name="codEcografico" type="string">
+                <column name="cod_ecografico" length="70" />
+            </property>
+            <property name="codIstatComune" type="string">
+                <column name="cod_istat_comune" length="20" />
+            </property>
+            <property name="oggDtMod" type="timestamp">
+                <column name="ogg_dt_mod" length="8" />
+            </property>
+            <property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </property>
+            <property name="provDtmod" type="timestamp">
+                <column name="prov_dtmod" length="8" />
+            </property>
+            <property name="codProvenienza" type="string" insert="false" update="false">
+                <column name="cod_provenienza" length="20" />
+            </property>
+            <property name="desProvenienza" type="string">
+                <column name="des_provenienza" length="80" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

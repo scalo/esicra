@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VIndiceSoggetto" table="v_indice_soggetto" schema="esicra" mutable="false">
+        <id name="pkid" type="big_decimal" >
+                <column name="pkid" precision="22" scale="0" />
+                <generator class="assigned" />
+        </id>
+            <property name="codiceSoggetto" type="string">
+                <column name="codice_soggetto" length="20" />
+            </property>
+            <property name="natura" type="integer">
+                <column name="natura" />
+            </property>
+            <property name="codiceFiscale" type="string">
+                <column name="codice_fiscale" length="16" />
+            </property>
+            <property name="partitaIva" type="string">
+                <column name="partita_iva" length="11" />
+            </property>
+            <property name="cognome" type="string">
+                <column name="cognome" length="36" />
+            </property>
+            <property name="nome" type="string">
+                <column name="nome" length="36" />
+            </property>
+            <property name="denominazione" type="string">
+                <column name="denominazione" length="100" />
+            </property>
+            <property name="sesso" type="integer">
+                <column name="sesso" />
+            </property>
+            <property name="dataNascita" type="date">
+                <column name="data_nascita" length="4" />
+            </property>
+            <property name="comuneNascita" type="string">
+                <column name="comune_nascita" length="80" />
+            </property>
+            <property name="provinciaNascita" type="string">
+                <column name="provincia_nascita" length="80" />
+            </property>
+            <property name="statoNascita" type="string">
+                <column name="stato_nascita" length="80" />
+            </property>
+            <property name="localitaNascita" type="string">
+                <column name="localita_nascita" length="80" />
+            </property>
+            <property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </property>
+            <property name="codProvenienza" type="string">
+                <column name="cod_provenienza" length="20" />
+            </property>
+    </class>
+</hibernate-mapping>

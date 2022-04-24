@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBollettaRata xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBollettaRata.xsd" versione="1.0">
+<PagBollettaRata progressivo ="1">
+	<CodBolletta>RSUB1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="2">
+	<CodBolletta>RSUB1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="3">
+	<CodBolletta>RSUB1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="4">
+	<CodBolletta>RSUB2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>330,63</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="5">
+	<CodBolletta>RSUB2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>231,44</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="6">
+	<CodBolletta>RSUB2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>99,19</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="7">
+	<CodBolletta>RSUB3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>412,30</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="8">
+	<CodBolletta>RSUB3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>288,61</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="9">
+	<CodBolletta>RSUB3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>123,69</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="10">
+	<CodBolletta>RSUB4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>389,68</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="11">
+	<CodBolletta>RSUB4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>272,78</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="12">
+	<CodBolletta>RSUB4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>116,90</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="13">
+	<CodBolletta>RSUB5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>544,31</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="14">
+	<CodBolletta>RSUB5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>381,02</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="15">
+	<CodBolletta>RSUB5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>163,29</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="16">
+	<CodBolletta>RSUB6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>335,15</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="17">
+	<CodBolletta>RSUB6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>234,61</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="18">
+	<CodBolletta>RSUB6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>100,54</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="19">
+	<CodBolletta>RSUB7</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>234,61</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="20">
+	<CodBolletta>RSUB7</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>100,54</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="21">
+	<CodBolletta>RSUVR1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="22">
+	<CodBolletta>RSUVR1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="23">
+	<CodBolletta>RSUVR1</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="24">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>330,63</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="25">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>231,44</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="26">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>99,19</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="27">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>412,30</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="28">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>288,61</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="29">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>123,69</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="30">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>389,68</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="31">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>272,78</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="32">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>116,90</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="33">
+	<CodBolletta>RSUB8</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>340,75</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="34">
+	<CodBolletta>RSUB9</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>340,75</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="35">
+	<CodBolletta>RSUB9</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>170,38</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="36">
+	<CodBolletta>RSUB9</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>170,37</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="37">
+	<CodBolletta>RSUB10</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>170,38</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="38">
+	<CodBolletta>RSUB10</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>170,37</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="39">
+	<CodBolletta>RSUB11</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>340,75</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="40">
+	<CodBolletta>RSUB12</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>340,75</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="41">
+	<CodBolletta>RSUB12</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>170,38</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="42">
+	<CodBolletta>RSUB12</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>170,37</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="43">
+	<CodBolletta>RSUB13</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>170,38</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="44">
+	<CodBolletta>RSUB13</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>170,37</ImportoRata>
+	<IdServizio>100103</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="45">
+	<CodBolletta>RSUVR5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="46">
+	<CodBolletta>RSUVR5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="47">
+	<CodBolletta>RSUVR5</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="48">
+	<CodBolletta>RSUVR6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="49">
+	<CodBolletta>RSUVR6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="50">
+	<CodBolletta>RSUVR6</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="51">
+	<CodBolletta>RSUVR7</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="52">
+	<CodBolletta>RSUVR7</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="53">
+	<CodBolletta>RSUVR7</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="54">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>0</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>59,96</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="55">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-01-31</DtScadenzaRata>
+	<ImportoRata>41,97</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="56">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<CodServizio>RSU</CodServizio>
+	<NumRata>2</NumRata>
+	<DtScadenzaRata>2004-03-31</DtScadenzaRata>
+	<ImportoRata>17,99</ImportoRata>
+	<IdServizio>100276</IdServizio>
+</PagBollettaRata>
+</PagListaBollettaRata>

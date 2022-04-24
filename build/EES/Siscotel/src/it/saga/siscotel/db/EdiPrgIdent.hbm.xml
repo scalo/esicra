@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.EdiPrgIdent" table="edi_prg_ident" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="ediIdentificativo" class="it.saga.siscotel.db.EdiIdentificativo">
+            <column name="fkid_ident" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="catPrg" class="it.saga.siscotel.db.CatPrg">
+            <column name="fkid_prg" precision="22" scale="0" />
+        </many-to-one>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

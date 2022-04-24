@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="it.saga.siscotel.db.PraPraticaPag" table="pra_pratica_pag" schema="esicra">
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+        <column name="pkid" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+        </generator>
+        </id>
+        <many-to-one name="praPraticaTesta" class="it.saga.siscotel.db.PraPraticaTesta">
+            <column name="fkid_testa" precision="22" scale="0" />
+        </many-to-one>
+        <property name="dtPagamento" type="date">
+            <column name="dt_pagamento" length="4" />
+        </property>
+        <property name="dtRegistrazione" type="date">
+            <column name="dt_registrazione" length="4" />
+        </property>
+        <property name="dtScadenza" type="date">
+            <column name="dt_scadenza" length="4" />
+        </property>
+        <property name="codTipoPagamento" type="string">
+            <column name="cod_tipo_pagamento" length="20" />
+        </property>
+        <property name="codEnteTipoPagamento" type="string">
+            <column name="cod_ente_tipo_pagamento" length="20" />
+        </property>
+        <property name="importoPagato" type="big_decimal">
+            <column name="importo_pagato" precision="15" />
+        </property>
+        <property name="importoDaPagare" type="big_decimal">
+            <column name="importo_da_pagare" precision="15" />
+        </property>
+        <property name="importoTotale" type="big_decimal">
+            <column name="importo_totale" precision="15" />
+        </property>
+        <property name="numRata" type="integer">
+            <column name="num_rata" />
+        </property>
+        <property name="anno" type="integer">
+            <column name="anno" />
+        </property>
+        <property name="flgRichiestoPagamento" type="integer">
+            <column name="flg_richiesto_pagamento" />
+        </property>
+        <property name="numeroOrdine" type="string">
+            <column name="numero_ordine" length="80" />
+        </property>
+        <property name="autorizzazione" type="string">
+            <column name="autorizzazione" length="60" />
+        </property>
+        <property name="distinta" type="string">
+            <column name="distinta" length="60" />
+        </property>
+        <property name="dtDistinta" type="date">
+            <column name="dt_distinta" length="4" />
+        </property>
+        <property name="idCanale" type="integer">
+            <column name="id_canale" />
+        </property>
+        <property name="desCanale" type="string">
+            <column name="des_canale" length="80" />
+        </property>
+        <property name="causale" type="string">
+            <column name="causale" length="80" />
+        </property>
+        <property name="desTipoPagamento" type="string">
+            <column name="des_tipo_pagamento" length="80" />
+        </property>
+        <property name="codBolletta" type="string">
+            <column name="cod_bolletta" length="100" />
+        </property>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" />
+        </property>
+        <property name="desServizio" type="string">
+            <column name="des_servizio" length="80" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

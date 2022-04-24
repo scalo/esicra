@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pagamento.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="SoggettoGiuridico.xsd"/>
+	<xs:include schemaLocation="SchedaSoggetto.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="DatiPermesso.xsd"/>
+	<xs:include schemaLocation="AttivitaCommerciale.xsd"/>
+	<xs:element name="PraCosap" type="pra:PraCosapType"/>
+	<xs:complexType name="PraCosapType">
+		<xs:sequence>
+			<xs:element name="Richiedente" type="pra:SchedaSoggettoType"/>
+			<xs:element name="SoggettoFruitoreFisico" type="pra:SchedaSoggettoType" minOccurs="0"/>
+			<xs:element name="SoggettoFruitoreGiuridico" type="pra:SoggettoGiuridicoType" minOccurs="0"/>
+			<xs:element name="AttivitaCommerciale" type="pra:AttivitaCommercialeType" minOccurs="0"/>
+			<xs:element name="CodTipoPermesso" type="xs:string" minOccurs="0"/>
+			<xs:element name="DesTipoPermesso" type="xs:string" minOccurs="0"/>
+			<xs:element name="CodTipoRichiesta" type="xs:string"/>
+			<xs:element name="DesTipoRichiesta" type="xs:string"/>
+			<xs:element name="DataInizio" type="xs:date"/>
+			<xs:element name="DataFine" type="xs:date"/>
+			<xs:element name="AreaOccupata" type="pra:SuoloCosapType" minOccurs="0"/>
+			<xs:element name="DatiPermesso" type="pra:DatiPermesso"/>
+			<xs:element name="ListaDurataTemporaneaPratica" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DurataTemporaneaPratica">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="OraInizio"/>
+									<xs:element name="OraFine"/>
+									<xs:element name="Giorno"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="CodStato" minOccurs="0"/>
+			<xs:element name="DesStato"/>
+			<xs:element name="DataStato" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SuoloCosapType">
+		<xs:sequence>
+			<xs:element name="Immobile" type="pra:IndirizzoType"/>
+			<xs:element name="Lunghezza" type="xs:string"/>
+			<xs:element name="Larghezza" type="xs:string"/>
+			<xs:element name="Totale" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

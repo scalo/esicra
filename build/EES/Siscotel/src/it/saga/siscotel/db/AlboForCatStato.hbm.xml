@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AlboForCatStato" table="albo_for_cat_stato" schema="esicra">
+        <id name="pkalbofornitori" type="big_decimal">
+            <column name="pkalbofornitori"/>
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <many-to-one name="categorie" class="it.saga.siscotel.db.Categorie">
+            <column name="fkcategorie" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="fornitori" class="it.saga.siscotel.db.Fornitori">
+            <column name="fkfornitore" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="albo" class="it.saga.siscotel.db.Albo">
+            <column name="fkalbo" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="statofornitore" class="it.saga.siscotel.db.Statofornitore">
+            <column name="fkstato" precision="22" scale="0" />
+        </many-to-one>
+        <property name="dataultimostato" type="timestamp">
+            <column name="dataultimostato" length="8" />
+        </property>
+        <property name="notestato" type="string">
+            <column name="notestato" length="1000" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

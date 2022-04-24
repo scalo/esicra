@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<ListaSchedaFamiglia xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import 
+ListaSchedaFamiglia.xsd" versione="1.0">
+	<SchedaFamigliaFronte progressivo="1">
+		<CodFamiglia>FAM1</CodFamiglia>
+		<TipoAna>1</TipoAna>
+		<TipoScheda>1</TipoScheda>
+		<NumScheda>0</NumScheda>
+		<CodIntestatario>RSSMRA70C20A794O</CodIntestatario>
+		<CognomeIntestatario>ROSSI</CognomeIntestatario>
+		<NomeIntestatario>MARIO</NomeIntestatario>
+		<SpecieConvivenza/>
+		<DesConvivenza/>
+		<DataInizio>1992-01-01</DataInizio>
+	</SchedaFamigliaFronte>
+	<SchedaFamigliaFronte progressivo="2">
+		<CodFamiglia>FAM2</CodFamiglia>
+		<TipoAna>1</TipoAna>
+		<TipoScheda>1</TipoScheda>
+		<NumScheda>0</NumScheda>
+		<CodIntestatario>MNZMTT60D05A794H</CodIntestatario>
+		<CognomeIntestatario>MANZONI</CognomeIntestatario>
+		<NomeIntestatario>MATTEO</NomeIntestatario>
+		<SpecieConvivenza/>
+		<DesConvivenza/>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaFronte>
+	<SchedaFamigliaFronte progressivo="3">
+		<CodFamiglia>CONV1</CodFamiglia>
+		<TipoAna>1</TipoAna>
+		<TipoScheda>2</TipoScheda>
+		<NumScheda>125</NumScheda>
+		<CodIntestatario>ZNLFDR49H57Z114T</CodIntestatario>
+		<CognomeIntestatario>ZANOLINI</CognomeIntestatario>
+		<NomeIntestatario>FEDERICA</NomeIntestatario>
+		<SpecieConvivenza>CONVIVENZA DI PROVA</SpecieConvivenza>
+		<DesConvivenza>Descrizione convivenza</DesConvivenza>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaFronte>
+	<SchedaFamigliaFronte progressivo="4">
+		<CodFamiglia>AIRE1</CodFamiglia>
+		<TipoAna>2</TipoAna>
+		<TipoScheda>1</TipoScheda>
+		<NumScheda>951</NumScheda>
+		<CodIntestatario>MTTLHR61C21Z112U</CodIntestatario>
+		<CognomeIntestatario>MATTHAEUS</CognomeIntestatario>
+		<NomeIntestatario>LOTHAR</NomeIntestatario>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaFronte>
+</ListaSchedaFamiglia>

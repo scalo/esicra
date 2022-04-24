@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Esinextid" table="esinextid" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomeTabella" type="string">
+            <column name="nome_tabella" not-null="true" />
+        </property>
+        <property name="incremento" type="integer">
+            <column name="incremento" precision="7" scale="0" not-null="true" />
+        </property>
+        <property name="nextId" type="big_decimal">
+            <column name="next_id" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dtUltimoPopolamento" type="timestamp">
+            <column name="dt_ultimo_popolamento" length="8" />
+        </property>
+        <property name="dtIns" type="timestamp">
+            <column name="dt_ins" length="8" not-null="true" />
+        </property>
+        <property name="fkidUtenteIns" type="big_decimal">
+            <column name="fkid_utente_ins" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="fkidProcIns" type="big_decimal">
+            <column name="fkid_proc_ins" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <property name="fkidUtenteMod" type="big_decimal">
+            <column name="fkid_utente_mod" precision="22" scale="0" />
+        </property>
+        <property name="fkidProcMod" type="big_decimal">
+            <column name="fkid_proc_mod" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

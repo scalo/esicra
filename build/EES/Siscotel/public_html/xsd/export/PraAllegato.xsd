@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraAllegatoType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="IdServizio" type="xs:integer"/>
+			<xs:element name="CodAllegato" type="xs:string"/>
+			<xs:element name="DesTipoAllegato" type="xs:string"/>
+			<xs:element name="NomeAllegato" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraAllegato">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="pra:PraAllegatoType">
+					<xs:attribute name="versione" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

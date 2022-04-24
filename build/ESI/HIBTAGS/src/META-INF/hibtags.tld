@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>hib</short-name>
+    <uri>http://hibernate.org/taglib</uri>
+    <description>
+      Tag library for Hibernate functionality
+    </description>
+
+    <validator>
+      <validator-class>
+        com.lokitech.hibtags.HibernateTLV
+      </validator-class>
+      <init-param>
+        <param-name>expressionAttributes</param-name>
+        <param-value>
+          delete:target
+          filter:firstResult
+          filter:items
+          filter:maxResults
+          find:firstResult
+          find:maxResults
+          load:value
+          load:classname
+          param:value
+          refresh:target
+          saveOrUpdate:target
+          save:identifier
+          save:target
+          update:identifier
+          update:target
+        </param-value>
+        <description>
+          Whitespace-separated list of colon-separated token pairs
+          describing tag:attribute combinations that accept expressions.
+          The validator uses this information to determine which
+          attributes need their syntax validated.
+        </description>
+      </init-param>
+    </validator>
+
+    <tag>
+        <name>session</name>
+        <tag-class>com.lokitech.hibtags.SessionTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>var</name>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>find</name>
+        <tag-class>com.lokitech.hibtags.FindTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+        </attribute>
+        <attribute>
+            <name>firstResult</name>
+        </attribute>
+        <attribute>
+            <name>maxResults</name>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>saveOrUpdate</name>
+        <tag-class>com.lokitech.hibtags.SaveOrUpdateTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>target</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>refresh</name>
+        <tag-class>com.lokitech.hibtags.RefreshTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>target</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>update</name>
+        <tag-class>com.lokitech.hibtags.UpdateTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>target</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>identifier</name>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>save</name>
+        <tag-class>com.lokitech.hibtags.SaveTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>target</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>identifier</name>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>delete</name>
+        <tag-class>com.lokitech.hibtags.DeleteTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>target</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>filter</name>
+        <tag-class>com.lokitech.hibtags.FilterTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+        </attribute>
+        <attribute>
+            <name>items</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>firstResult</name>
+        </attribute>
+        <attribute>
+            <name>maxResults</name>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>load</name>
+        <tag-class>com.lokitech.hibtags.LoadTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+        </attribute>
+        <attribute>
+            <name>classname</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>value</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>sessionFactory</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>param</name>
+        <tag-class>com.lokitech.hibtags.ParamTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>value</name>
+        </attribute>
+    </tag>
+
+
+</taglib>

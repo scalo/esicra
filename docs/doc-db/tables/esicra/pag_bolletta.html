@@ -1,0 +1,1623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hibernate Mappings - Table Info</TITLE>
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../assets/doc-style.css" TITLE="Style">
+
+</HEAD>
+
+<BODY>
+
+<H3>Table: pag_bolletta</H3>
+<H4>Schema: esicra</H4>
+
+<A NAME="column_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="9" CLASS="MainTableHeading">
+				Column Summary
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="14%">
+				Name
+			</TH>
+			<TH WIDTH="14%">
+				SqlType
+			</TH>
+			<TH WIDTH="14%">
+				Length
+			</TH>
+			<TH WIDTH="14%">
+				Precision
+			</TH>
+			<TH WIDTH="14%">
+				Scale
+			</TH>
+			<TH WIDTH="14%">
+				Nullable
+			</TH>
+			<TH WIDTH="14%">
+				Unique
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_servizio'>
+					cod_servizio
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_servizio'>
+					id_servizio
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_intestatario'>
+					des_intestatario
+				</A>
+			</TD>
+			<TD>
+				varchar(200)
+			</TD>
+			<TD ALIGN="RIGHT">
+				200
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_codice_fiscale'>
+					codice_fiscale
+				</A>
+			</TD>
+			<TD>
+				varchar(16)
+			</TD>
+			<TD ALIGN="RIGHT">
+				16
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_indirizzo'>
+					indirizzo
+				</A>
+			</TD>
+			<TD>
+				varchar(200)
+			</TD>
+			<TD ALIGN="RIGHT">
+				200
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_recapito'>
+					recapito
+				</A>
+			</TD>
+			<TD>
+				varchar(200)
+			</TD>
+			<TD ALIGN="RIGHT">
+				200
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_bolletta'>
+					cod_bolletta
+				</A>
+			</TD>
+			<TD>
+				varchar(100)
+			</TD>
+			<TD ALIGN="RIGHT">
+				100
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_anno'>
+					anno
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_num_bolletta'>
+					num_bolletta
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_num_rate'>
+					num_rate
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_bolletta'>
+					dt_bolletta
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_oggetto'>
+					oggetto
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_spese_spedizione'>
+					spese_spedizione
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_esente_iva'>
+					tot_esente_iva
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_imponibile_iva'>
+					tot_imponibile_iva
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_iva'>
+					tot_iva
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_arr_prec'>
+					arr_prec
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_arr_att'>
+					arr_att
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_importo_bolletta_prec'>
+					importo_bolletta_prec
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_bolletta'>
+					tot_bolletta
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_pagato'>
+					tot_pagato
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_accertato'>
+					tot_accertato
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_tot_sanzioni'>
+					tot_sanzioni
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				15
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_non_pagare'>
+					flg_non_pagare
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_mot_non_pagare'>
+					mot_non_pagare
+				</A>
+			</TD>
+			<TD>
+				varchar(100)
+			</TD>
+			<TD ALIGN="RIGHT">
+				100
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_pagata'>
+					flg_pagata
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_accertamento'>
+					flg_accertamento
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_bonifica'>
+					flg_bonifica
+				</A>
+			</TD>
+			<TD>
+				int4
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_note'>
+					note
+				</A>
+			</TD>
+			<TD>
+				varchar(1000)
+			</TD>
+			<TD ALIGN="RIGHT">
+				1000
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				7
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_mod'>
+					dt_mod
+				</A>
+			</TD>
+			<TD>
+				timestamp
+			</TD>
+			<TD ALIGN="RIGHT">
+				8
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+
+<A NAME="primary_key"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Primary Key
+			</TH>
+		</TR>
+    </THEAD>
+	<TBODY>
+		<TR>
+			<TD WIDTH="50%">
+				pag_bolletta_pkey
+			</TD>
+			<TD WIDTH="50%">
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="foreign_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="3" CLASS="MainTableHeading">
+				Foreign Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="33%">
+				Name
+			</TH>
+			<TH WIDTH="33%">
+				Referenced Table
+			</TH>
+			<TH WIDTH="33%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				ana_soggetto20
+			</TD>
+			<TD>
+				<A HREF='ana_soggetto.html' TARGET="generalFrame">
+					ana_soggetto
+				</A>
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="unique_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Unique Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				pag_bolletta_pkey
+			</TD>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="indexes"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Indexes
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				idx_bol_ser
+			</TD>
+			<TD>
+				<A HREF='#column_detail_id_servizio'>
+					id_servizio<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				idx_bol_cod
+			</TD>
+			<TD>
+				<A HREF='#column_detail_cod_bolletta'>
+					cod_bolletta<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				idx_bol_sogg
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				idx_pag_bolletta
+			</TD>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+<A NAME="column_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH CLASS="MainTableHeading">
+    			Column Detail
+    		</TH>
+		</TR>
+	</THEAD>
+</TABLE>
+
+<A NAME='column_detail_pkid'></A>
+<H3>pkid</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>false</LI>
+	<LI><B>Unique: </B>true</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_soggetto'></A>
+<H3>fkid_soggetto</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_servizio'></A>
+<H3>cod_servizio</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_servizio'></A>
+<H3>id_servizio</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_intestatario'></A>
+<H3>des_intestatario</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(200)</LI>
+	<LI><B>Length: </B>200</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_codice_fiscale'></A>
+<H3>codice_fiscale</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(16)</LI>
+	<LI><B>Length: </B>16</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_indirizzo'></A>
+<H3>indirizzo</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(200)</LI>
+	<LI><B>Length: </B>200</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_recapito'></A>
+<H3>recapito</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(200)</LI>
+	<LI><B>Length: </B>200</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_bolletta'></A>
+<H3>cod_bolletta</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(100)</LI>
+	<LI><B>Length: </B>100</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_anno'></A>
+<H3>anno</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_num_bolletta'></A>
+<H3>num_bolletta</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_num_rate'></A>
+<H3>num_rate</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_bolletta'></A>
+<H3>dt_bolletta</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_oggetto'></A>
+<H3>oggetto</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_spese_spedizione'></A>
+<H3>spese_spedizione</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_esente_iva'></A>
+<H3>tot_esente_iva</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_imponibile_iva'></A>
+<H3>tot_imponibile_iva</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_iva'></A>
+<H3>tot_iva</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_arr_prec'></A>
+<H3>arr_prec</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_arr_att'></A>
+<H3>arr_att</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_importo_bolletta_prec'></A>
+<H3>importo_bolletta_prec</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_bolletta'></A>
+<H3>tot_bolletta</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_pagato'></A>
+<H3>tot_pagato</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_accertato'></A>
+<H3>tot_accertato</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_tot_sanzioni'></A>
+<H3>tot_sanzioni</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>15</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_non_pagare'></A>
+<H3>flg_non_pagare</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_mot_non_pagare'></A>
+<H3>mot_non_pagare</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(100)</LI>
+	<LI><B>Length: </B>100</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_pagata'></A>
+<H3>flg_pagata</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_accertamento'></A>
+<H3>flg_accertamento</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_bonifica'></A>
+<H3>flg_bonifica</H3>
+
+<UL>
+	<LI><B>Type: </B>int4</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_note'></A>
+<H3>note</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(1000)</LI>
+	<LI><B>Length: </B>1000</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_ente'></A>
+<H3>id_ente</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>7</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_mod'></A>
+<H3>dt_mod</H3>
+
+<UL>
+	<LI><B>Type: </B>timestamp</LI>
+	<LI><B>Length: </B>8</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+
+
+</BODY>
+
+</HTML>

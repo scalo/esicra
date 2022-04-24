@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerSezEle" table="ter_sez_ele" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="numSezione" type="integer">
+            <column name="num_sezione" />
+        </property>
+        <property name="denominazione" type="string">
+            <column name="denominazione" length="38" />
+        </property>
+        <property name="tipoSezione" type="integer">
+            <column name="tipo_sezione" />
+        </property>
+        <property name="desVia" type="string">
+            <column name="des_via" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="4" />
+        </property>
+        <property name="circParlamentoeuropeo" type="string">
+            <column name="circ_parlamentoeuropeo" length="80" />
+        </property>
+        <property name="collegioParlamentoeuropeo" type="string">
+            <column name="collegio_parlamentoeuropeo" length="80" />
+        </property>
+        <property name="circSenato" type="string">
+            <column name="circ_senato" length="80" />
+        </property>
+        <property name="collegioSenato" type="string">
+            <column name="collegio_senato" length="80" />
+        </property>
+        <property name="circCamera" type="string">
+            <column name="circ_camera" length="80" />
+        </property>
+        <property name="collegioCamera" type="string">
+            <column name="collegio_camera" length="80" />
+        </property>
+        <property name="circRegionali" type="string">
+            <column name="circ_regionali" length="80" />
+        </property>
+        <property name="collegioRegionali" type="string">
+            <column name="collegio_regionali" length="80" />
+        </property>
+        <property name="circProvinciali" type="string">
+            <column name="circ_provinciali" length="80" />
+        </property>
+        <property name="collegioProvinciali" type="string">
+            <column name="collegio_provinciali" length="80" />
+        </property>
+        <property name="circCircoscrizione" type="string">
+            <column name="circ_circoscrizione" length="80" />
+        </property>
+        <property name="collegioCircoscrizionali" type="string">
+            <column name="collegio_circoscrizionali" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="anaEles" inverse="true">
+            <key>
+                <column name="fkid_sez_ele" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaEle" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraticaBolType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="DataPratica" type="xs:date"/>
+			<xs:element name="Oggetto" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdServizio" type="xs:int"/>
+			<xs:element name="IdEnteDestinatario" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraticaBol" type="esicra_pra:PraticaBolType"/>
+</xs:schema>

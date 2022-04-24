@@ -1,0 +1,262 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+
+<project name="SiscotelCR" default="all" basedir=".">
+  
+  <property environment="env"/>
+  
+  <!-- VERSION Properties -->
+  <property name="versione" value="1.1.1"/>
+  <property name="tag_build" value="SISCOTEL_01_01_01_RF" />
+  <property name="tag_siscotel" value="EES_SISCOTEL_01_01_01_RF" />
+  <property name="tag_hibtags" value="HIBTAGS_01_01_RF" />
+  <property name="tag_database" value="EES_DB_01_07_01_BRANCH" />
+  <property name="tag_siscotel_beans" value="ESFSiscotelBeans_00_02" />
+  
+  <!-- set output directories -->
+  <property name="compile.outdir" value="classes"/>
+  <property name="javadoc.outdir" value="javadoc"/>
+  <property name="deploy.outdir" value="deploy"/>
+  <property name="build.outdir" value="build"/>
+
+  <!-- set CVS  properties -->
+  <property name="cvs.host" value="srvrssi"/>
+  <property name="cvsuser" value="ant"/>
+  <property name="cvspassword" value="ant"/>
+  <property name="cvsroot" value=":pserver:${cvsuser}:${cvspassword}@${cvs.host}:/home/cvsroot"/>
+  
+  <!--Set the classpath-->
+  <path id="lib.class.path">
+  	
+    <fileset dir="${env.JAVA_HOME}/jre">
+        <include name="**/*.jar"/>
+    </fileset>
+  	z
+  	<fileset dir="jstl-libs">
+        <include name="**/*.jar"/>
+    </fileset>
+  	
+    <fileset dir="common-libs">
+        <include name="**/*.jar"/>
+    </fileset>
+    
+    <fileset dir="shared-libs">
+        <include name="**/*.jar"/>
+    </fileset>
+     
+  </path>
+  
+  <target name="init">
+    <tstamp/>
+    <echo message="VERSIONE ANT : ${ant.version}"/>
+    <echo message="USER NAME : ${user.name}"/>
+  </target>
+  
+  <target name="compile" depends="init,clean">
+  
+    <mkdir dir="${build.outdir}/EES/Siscotel/classes"/>
+    <mkdir dir="${build.outdir}/ESI/HIBTAGS/classes"/>
+    <mkdir dir="${build.outdir}/ESF/Siscotel_Beans/classes"/>
+    
+    <!-- HIBTAGS -->
+    <echo message="compile Hibtags"/>
+    <javac srcdir="${build.outdir}/ESI/HIBTAGS/src"
+           destdir="${build.outdir}/ESI/HIBTAGS/classes"
+           source="1.3"
+           >
+      <classpath refid="lib.class.path"/>
+      <include name="**/*.java"/>
+    </javac>
+    <!-- SISCOTEL BASE -->
+    <echo message="compile Siscotel"/>
+    <javac srcdir="${build.outdir}/EES/Siscotel/src"
+      destdir="${build.outdir}/EES/Siscotel/classes"
+      source="1.3"
+      >
+      <classpath refid="lib.class.path"/>
+      <include name="**/*.java"/>
+      <exclude name="it/saga/egov/esicra/coordinator/TestRun.java"/>  
+    </javac>
+    <!-- non java files -->
+    <copy todir="${build.outdir}/EES/Siscotel/classes">
+    <fileset dir="${build.outdir}/EES/Siscotel/src">
+      <include name="**/*.properties"/>
+      <include name="**/*.xml"/>
+      <exclude name="**/*.java"/>
+    </fileset>
+    </copy>
+    <!-- BEANS -->
+    <echo message="compile Beans"/>
+    <javac srcdir="${build.outdir}/ESF/Siscotel_Beans/src"
+           destdir="${build.outdir}/ESF/Siscotel_Beans/classes"
+           source="1.3"
+           >
+      <classpath refid="lib.class.path"/>
+      <include name="**/*.java"/>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <mkdir dir="${deploy.outdir}"/>
+    
+    <jar jarfile="${deploy.outdir}/${tag_hibtags}.jar"
+         basedir="${build.outdir}/ESI/HIBTAGS/classes">
+      <include name="**"/>
+    </jar>
+    
+    <jar jarfile="${deploy.outdir}/${tag_siscotel}.jar"
+         basedir="${build.outdir}/EES/Siscotel/classes">
+      <include name="**"/>
+    </jar>
+    
+    <jar jarfile="${deploy.outdir}/${tag_siscotel_beans}.jar"
+         basedir="${build.outdir}/ESF/Siscotel_Beans/classes">
+      <include name="**"/>
+    </jar>
+    
+  </target>
+  
+  
+  <target name="war" depends="jar">
+    <property name="build.webapps" value="${build.outdir}/webapps/esicra"/>
+    <mkdir dir="${build.webapps}"/>
+    
+    <copy todir="${build.outdir}/webapps/esicra">
+      <fileset dir="${build.outdir}/EES/Siscotel/public_html">
+        <include name="**"/>
+        <exclude name="**/CVS/**"/>
+      </fileset>
+    </copy>
+    
+    <copy file="${deploy.outdir}/${tag_siscotel}.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>
+    <copy file="${deploy.outdir}/${tag_siscotel_beans}.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>   
+    <copy file="${deploy.outdir}/${tag_hibtags}.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>
+    
+    <!-- apache standard tag library , jstl 1.0 e  taglibs-string -->
+    
+    <copy file="jstl-libs/jstl.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>
+    <copy file="jstl-libs/standard.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>
+    <copy file="jstl-libs/taglibs-string.jar"
+          todir="${build.webapps}/WEB-INF/lib"/>
+          
+    <copy  todir="${build.webapps}/WEB-INF/classes">
+      <fileset dir="${build.outdir}/EES/Siscotel/src">
+        <include name="*.xml"/>
+      </fileset>
+    </copy>
+    
+    <manifest file="${build.outdir}/MANIFEST.MF">
+    
+    <attribute name="Built-By" value="ant"/>
+    <attribute name="Created-By" value="build ant"/>
+    <section name="esicra">
+      <attribute name="Specification-Title" value="Esicra Siscotel"/>
+      <attribute name="Specification-Version" value="${version}"/>
+      <attribute name="Specification-Vendor" value="Saga Spa"/>
+      <attribute name="Implementation-Title" value="Esicra Siscotel "/>
+      <attribute name="Implementation-Version" value="${version}  (${TODAY})"/> 
+      <attribute name="Implementation-Vendor" value="Saga Spa"/>
+    </section>
+    </manifest>
+  
+    <jar jarfile="${deploy.outdir}/${tag_build}.war"
+         basedir="${build.webapps}"
+         manifest="${build.outdir}/MANIFEST.MF" 
+     />      
+     
+  </target>
+ 
+  <target name="clean">
+    <!--Delete output directories-->
+    <delete dir="${javadoc.outdir}"/>
+    <delete dir="${deploy.outdir}"/>
+    <delete dir="${build.outdir}/ESI/HIBTAGS/classes"/>
+    <delete dir="${build.outdir}/EES/Siscotel/classes"/>
+    <delete dir="${build.outdir}/ESF/Siscotel_Beans/classes"/>
+  </target>
+
+  <target name="checkout" depends="clean" >
+    <delete dir="${build.outdir}"/>
+    <mkdir dir="${build.outdir}"/>
+    <cvs command="export -r ${tag_hibtags}"
+         cvsRoot="${cvsroot}"
+         package="ESI/HIBTAGS"
+         dest="${build.outdir}"/>
+    <cvs command="export -r ${tag_siscotel}"
+         cvsRoot="${cvsroot}"
+         package="EES/Siscotel"
+         dest="${build.outdir}"/>
+    <cvs command="export -r ${tag_siscotel_beans}"
+         cvsRoot="${cvsroot}"
+         package="ESF/Siscotel_Beans"
+         dest="${build.outdir}"/>
+    <cvs command="export -r ${tag_database}"
+         cvsRoot="${cvsroot}"
+         package="EES/Database"
+         dest="${build.outdir}"/>
+  </target>
+   
+  <target name="javadocWs">
+    <mkdir dir="${javadoc.outdir}/ws"/>
+    <javadoc 
+             destdir="${javadoc.outdir}/ws"
+             author="true"
+             version="true"
+             use="false"
+             access="public"
+             windowtitle="WebServices Siscotel CR">
+
+      <fileset dir="${build.outdir}/EES/Siscotel/src" defaultexcludes="yes">
+        <include name="it/saga/siscotel/esicra/anagrafeestesa/**.java"/>
+        <exclude name="it/saga/**/*Int.java" />
+        <exclude name="it/saga/**/*Test.java" />
+      </fileset>
+
+      <header><![CDATA[<h1>Siscotel CR</h1>]]></header>
+      <footer><![CDATA[<i>Siscotel CR</i>]]></footer>
+      
+    </javadoc>
+  </target>
+  
+  
+  <!-- controllare target -->
+  <target name="javadocStubs">
+    <delete dir="${javadoc.outdir}/stubs" />
+    <mkdir dir="${javadoc.outdir}/stubs"/>
+    <javadoc 
+             destdir="${javadoc.outdir}/stubs"
+             author="true"
+             version="true"
+             use="false"
+             access="public"
+             windowtitle="WebServices Siscotel CR">
+
+      <fileset dir="${build.outdir}/EES/Siscotel/src" defaultexcludes="yes">
+         <include name="it/saga/siscotel/esicra/anagrafeestesa/webservice/stubs/**.java"/>       
+      </fileset>
+      
+      <header><![CDATA[<h1>Siscotel CR</h1>]]></header>
+      <footer><![CDATA[<i>Siscotel CR</i>]]></footer>
+      
+    </javadoc>
+    <mkdir dir="${javadoc.outdir}/wsdl"/>
+    <copy todir="${javadoc.outdir}/wsdl" flatten="yes">
+    <fileset dir="${build.outdir}/EES/Siscotel/src">
+      <include name="**/EesAnagrafeEstesaWs*.wsdl"/>
+    </fileset>
+    </copy>
+  </target>
+ 
+   
+  <target name="rebuild" depends="clean,checkout,compile,jar,war"/>
+  
+  <target name="check-commit" depends="clean,checkout,compile" />
+  
+  <target name="all" depends="war"/>
+
+</project>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified">
+	<xs:include schemaLocation="Comune.xsd"/>
+	<xs:include schemaLocation="Localita.xsd"/>
+	<xs:element name="Soggetto">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="esicra_import:SoggettoType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="SoggettoType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Provenienza" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>0= Anagrafe; 1= Altro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodNatura" type="xs:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>0= Fisica (default);               1= Giuridica;</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodiceFiscale" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="preserve"/>
+						<xs:minLength value="11"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FlagCFCalcolato" type="xs:string" minOccurs="0"/>
+			<xs:element name="Cognome">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Nome">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AltriNomi" type="xs:string" minOccurs="0"/>
+			<xs:element name="Sesso" type="xs:int" minOccurs="0"/>
+			<xs:element name="DataNascita" type="xs:date" minOccurs="0"/>
+			<xs:element name="PrecisioneDtNascita" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>0=completa,              1=solo anno,  2=anno+mese </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FlagStato" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesTitolo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sig. Dott. Ing.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartitaIva" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Denominazione" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodRappresentante" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesRappresentante" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesTitoloRapp" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodFiscaleRapp" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CognomeRapp" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NomeRapp" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DtNascitaRapp" type="xs:date" minOccurs="0"/>
+			<xs:element name="LocalitaNascitaRapp" type="xs:string" minOccurs="0"/>
+			<xs:element name="RecapitoRapp" type="xs:string" minOccurs="0"/>
+			<xs:choice>
+				<xs:element name="ComuneNascita" type="esicra_import:ComuneType" minOccurs="0"/>
+				<xs:element name="LocalitaNascita" type="esicra_import:LocalitaType" minOccurs="0"/>
+			</xs:choice>
+			<xs:element name="DataInizio" type="xs:date" default="1975-01-01" minOccurs="0"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

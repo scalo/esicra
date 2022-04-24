@@ -1,0 +1,1761 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hibernate Mappings - Table Info</TITLE>
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../assets/doc-style.css" TITLE="Style">
+
+</HEAD>
+
+<BODY>
+
+<H3>Table: com_denuncia</H3>
+<H4>Schema: esicra</H4>
+
+<A NAME="column_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="9" CLASS="MainTableHeading">
+				Column Summary
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="14%">
+				Name
+			</TH>
+			<TH WIDTH="14%">
+				SqlType
+			</TH>
+			<TH WIDTH="14%">
+				Length
+			</TH>
+			<TH WIDTH="14%">
+				Precision
+			</TH>
+			<TH WIDTH="14%">
+				Scale
+			</TH>
+			<TH WIDTH="14%">
+				Nullable
+			</TH>
+			<TH WIDTH="14%">
+				Unique
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_pratica'>
+					id_pratica
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_denuncia_bo'>
+					cod_denuncia_bo
+				</A>
+			</TD>
+			<TD>
+				varchar(40)
+			</TD>
+			<TD ALIGN="RIGHT">
+				40
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_denuncia'>
+					cod_denuncia
+				</A>
+			</TD>
+			<TD>
+				varchar(40)
+			</TD>
+			<TD ALIGN="RIGHT">
+				40
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_denuncia'>
+					des_denuncia
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_tipo_denuncia'>
+					cod_tipo_denuncia
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_tipo_denuncia'>
+					des_tipo_denuncia
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_denuncia'>
+					dt_denuncia
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_cessazione'>
+					dt_cessazione
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_servizio'>
+					id_servizio
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				22
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_num_protocollo'>
+					num_protocollo
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_attivita'>
+					des_attivita
+				</A>
+			</TD>
+			<TD>
+				varchar(100)
+			</TD>
+			<TD ALIGN="RIGHT">
+				100
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_struttura'>
+					cod_struttura
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_struttura'>
+					des_struttura
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_den_subentro'>
+					den_subentro
+				</A>
+			</TD>
+			<TD>
+				varchar(100)
+			</TD>
+			<TD ALIGN="RIGHT">
+				100
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_num_aut_subentro'>
+					num_aut_subentro
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_aut_subentro'>
+					dt_aut_subentro
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cfisc_subentro'>
+					cfisc_subentro
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_causa_subentro'>
+					cod_causa_subentro
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_causa_subentro'>
+					des_causa_subentro
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_riduzione'>
+					flg_riduzione
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				38
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_altre_attivita'>
+					flg_altre_attivita
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				38
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_flg_trasferimento'>
+					flg_trasferimento
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				38
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_ini_sospensione'>
+					dt_ini_sospensione
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_fin_sospensione'>
+					dt_fin_sospensione
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_sup_ampliata'>
+					sup_ampliata
+				</A>
+			</TD>
+			<TD>
+				varchar(10)
+			</TD>
+			<TD ALIGN="RIGHT">
+				10
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_sup_ridotta'>
+					sup_ridotta
+				</A>
+			</TD>
+			<TD>
+				varchar(10)
+			</TD>
+			<TD ALIGN="RIGHT">
+				10
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_sup_complessiva'>
+					sup_complessiva
+				</A>
+			</TD>
+			<TD>
+				varchar(10)
+			</TD>
+			<TD ALIGN="RIGHT">
+				10
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_note'>
+					note
+				</A>
+			</TD>
+			<TD>
+				varchar(1000)
+			</TD>
+			<TD ALIGN="RIGHT">
+				1000
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_note_ente'>
+					note_ente
+				</A>
+			</TD>
+			<TD>
+				varchar(1000)
+			</TD>
+			<TD ALIGN="RIGHT">
+				1000
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_stato'>
+					id_stato
+				</A>
+			</TD>
+			<TD>
+				numeric
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				38
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_cod_stato'>
+					cod_stato
+				</A>
+			</TD>
+			<TD>
+				varchar(20)
+			</TD>
+			<TD ALIGN="RIGHT">
+				20
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_des_stato'>
+					des_stato
+				</A>
+			</TD>
+			<TD>
+				varchar(80)
+			</TD>
+			<TD ALIGN="RIGHT">
+				80
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_stato'>
+					dt_stato
+				</A>
+			</TD>
+			<TD>
+				date
+			</TD>
+			<TD ALIGN="RIGHT">
+				4
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente
+				</A>
+			</TD>
+			<TD>
+				N/D
+			</TD>
+			<TD ALIGN="RIGHT">
+				255
+			</TD>
+			<TD ALIGN="RIGHT">
+				7
+			</TD>
+			<TD ALIGN="RIGHT">
+				0
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<A HREF='#column_detail_dt_mod'>
+					dt_mod
+				</A>
+			</TD>
+			<TD>
+				timestamp
+			</TD>
+			<TD ALIGN="RIGHT">
+				8
+			</TD>
+			<TD ALIGN="RIGHT">
+				19
+			</TD>
+			<TD ALIGN="RIGHT">
+				2
+			</TD>
+			<TD ALIGN="CENTER">
+				true
+			</TD>
+			<TD ALIGN="CENTER">
+				false
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+
+<A NAME="primary_key"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Primary Key
+			</TH>
+		</TR>
+    </THEAD>
+	<TBODY>
+		<TR>
+			<TD WIDTH="50%">
+				com_denuncia_pkey
+			</TD>
+			<TD WIDTH="50%">
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="foreign_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="3" CLASS="MainTableHeading">
+				Foreign Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="33%">
+				Name
+			</TH>
+			<TH WIDTH="33%">
+				Referenced Table
+			</TH>
+			<TH WIDTH="33%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				com_den_ana_sog
+			</TD>
+			<TD>
+				<A HREF='ana_soggetto.html' TARGET="generalFrame">
+					ana_soggetto
+				</A>
+			</TD>
+			<TD>
+				<A HREF='#column_detail_fkid_soggetto'>
+					fkid_soggetto<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="unique_keys"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Unique Keys
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				com_denuncia_pkey
+			</TD>
+			<TD>
+				<A HREF='#column_detail_pkid'>
+					pkid<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<P>
+
+<A NAME="indexes"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH COLSPAN="2" CLASS="MainTableHeading">
+				Indexes
+			</TH>
+		</TR>
+		<TR>
+			<TH WIDTH="50%">
+				Name
+			</TH>
+			<TH WIDTH="50%">
+				Columns
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				idx_com_denuncia
+			</TD>
+			<TD>
+				<A HREF='#column_detail_id_ente'>
+					id_ente<BR>
+				</A>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<P>
+
+<A NAME="column_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+	<THEAD>
+		<TR>
+			<TH CLASS="MainTableHeading">
+    			Column Detail
+    		</TH>
+		</TR>
+	</THEAD>
+</TABLE>
+
+<A NAME='column_detail_pkid'></A>
+<H3>pkid</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>false</LI>
+	<LI><B>Unique: </B>true</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_fkid_soggetto'></A>
+<H3>fkid_soggetto</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_pratica'></A>
+<H3>id_pratica</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>false</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_denuncia_bo'></A>
+<H3>cod_denuncia_bo</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(40)</LI>
+	<LI><B>Length: </B>40</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_denuncia'></A>
+<H3>cod_denuncia</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(40)</LI>
+	<LI><B>Length: </B>40</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_denuncia'></A>
+<H3>des_denuncia</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_tipo_denuncia'></A>
+<H3>cod_tipo_denuncia</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_tipo_denuncia'></A>
+<H3>des_tipo_denuncia</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_denuncia'></A>
+<H3>dt_denuncia</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_cessazione'></A>
+<H3>dt_cessazione</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_servizio'></A>
+<H3>id_servizio</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>22</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>false</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_num_protocollo'></A>
+<H3>num_protocollo</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_attivita'></A>
+<H3>des_attivita</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(100)</LI>
+	<LI><B>Length: </B>100</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_struttura'></A>
+<H3>cod_struttura</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_struttura'></A>
+<H3>des_struttura</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_den_subentro'></A>
+<H3>den_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(100)</LI>
+	<LI><B>Length: </B>100</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_num_aut_subentro'></A>
+<H3>num_aut_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_aut_subentro'></A>
+<H3>dt_aut_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cfisc_subentro'></A>
+<H3>cfisc_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_causa_subentro'></A>
+<H3>cod_causa_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_causa_subentro'></A>
+<H3>des_causa_subentro</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_riduzione'></A>
+<H3>flg_riduzione</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>38</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_altre_attivita'></A>
+<H3>flg_altre_attivita</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>38</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_flg_trasferimento'></A>
+<H3>flg_trasferimento</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>38</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_ini_sospensione'></A>
+<H3>dt_ini_sospensione</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_fin_sospensione'></A>
+<H3>dt_fin_sospensione</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_sup_ampliata'></A>
+<H3>sup_ampliata</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(10)</LI>
+	<LI><B>Length: </B>10</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_sup_ridotta'></A>
+<H3>sup_ridotta</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(10)</LI>
+	<LI><B>Length: </B>10</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_sup_complessiva'></A>
+<H3>sup_complessiva</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(10)</LI>
+	<LI><B>Length: </B>10</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_note'></A>
+<H3>note</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(1000)</LI>
+	<LI><B>Length: </B>1000</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_note_ente'></A>
+<H3>note_ente</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(1000)</LI>
+	<LI><B>Length: </B>1000</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_stato'></A>
+<H3>id_stato</H3>
+
+<UL>
+	<LI><B>Type: </B>numeric</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>38</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_cod_stato'></A>
+<H3>cod_stato</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(20)</LI>
+	<LI><B>Length: </B>20</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_des_stato'></A>
+<H3>des_stato</H3>
+
+<UL>
+	<LI><B>Type: </B>varchar(80)</LI>
+	<LI><B>Length: </B>80</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_stato'></A>
+<H3>dt_stato</H3>
+
+<UL>
+	<LI><B>Type: </B>date</LI>
+	<LI><B>Length: </B>4</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_id_ente'></A>
+<H3>id_ente</H3>
+
+<UL>
+	<LI><B>Type: </B>N/D</LI>
+	<LI><B>Length: </B>255</LI>
+	<LI><B>Precision: </B>7</LI>
+	<LI><B>Scale: </B>0</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+<A NAME='column_detail_dt_mod'></A>
+<H3>dt_mod</H3>
+
+<UL>
+	<LI><B>Type: </B>timestamp</LI>
+	<LI><B>Length: </B>8</LI>
+	<LI><B>Precision: </B>19</LI>
+	<LI><B>Scale: </B>2</LI>
+	<LI><B>Nullable: </B>true</LI>
+	<LI><B>Unique: </B>false</LI>
+</UL>
+
+<P>
+
+
+
+<HR>
+
+
+</BODY>
+
+</HTML>

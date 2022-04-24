@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="PraSoggetto.xsd"/>
+	<xs:include schemaLocation="DenNascita.xsd"/>
+	<xs:element name="PraDenunciaNascita" type="esicra_pra:PraDenunciaNascitaType"/>
+	<xs:complexType name="DatiDichiarazioneNascitaType">
+		<xs:sequence>
+			<xs:element name="Numero"/>
+			<xs:element name="Data"/>
+			<xs:element name="NomeCentroNascita"/>
+			<xs:element name="ComuneCentroNascita" type="esicra_pra:ComuneType"/>
+			<xs:element name="CognomeDelegato"/>
+			<xs:element name="NomeDelegato"/>
+			<xs:element name="NumAltraDichiarazione"/>
+			<xs:element name="OrdineDiNascita"/>
+			<xs:element name="DatiNascita" type="esicra_pra:DatiNascitaType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DatiNascitaType">
+		<xs:sequence>
+			<xs:element name="NomeNato" type="xs:string"/>
+			<xs:element name="Madre" type="esicra_pra:SoggettoType"/>
+			<xs:element name="Padre" type="esicra_pra:SoggettoType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PraDenunciaNascitaType">
+		<xs:sequence>
+			<xs:element name="Dichiarante" type="esicra_pra:SoggettoType"/>
+			<xs:element name="CodDichiarazione"/>
+			<xs:element name="DesDichiarazione"/>
+			<xs:element name="TitolaritaDichiarante"/>
+			<xs:element name="ListaDatiDichiarazione">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DatiDichiarazioneNascita" type="esicra_pra:DatiDichiarazioneNascitaType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DataAppuntamento">
+				<xs:simpleType>
+					<xs:restriction base="xs:date">
+						<xs:enumeration value="2005-05-05"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OraAppuntamento">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="12:00"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pratica" type="esicra_pra:PraticaType"/>
+			<xs:element name="DesStato" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodStato" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

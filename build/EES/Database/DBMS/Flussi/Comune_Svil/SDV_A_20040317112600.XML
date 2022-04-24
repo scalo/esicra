@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSdiServizio xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSdiServizio.xsd" versione="String">
+	<SdiServizio progressivo="1">
+		<CodFruitore>PNLMRC98H8763HJZ</CodFruitore>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodServizio>ASV_1</CodServizio>
+		<DesServizio>Aut. Spettacolo Viaggiante</DesServizio>
+		<CodRichiestaBo>BO 0091</CodRichiestaBo>
+		<IdServizio>100166</IdServizio>
+		<CodTariffa>TAR 1</CodTariffa>
+		<DesTariffa>Tariffa Spett. Viaggiante</DesTariffa>
+		<Importo>234,50</Importo>
+		<CodEsenzione>COD ESE 1</CodEsenzione>
+		<DesEsenzione>Spett. Viaggiante</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>Chiesto da Pinoli Gianni 1 </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="2">
+		<CodFruitore>BCCNNA70M41A794K</CodFruitore>
+		<CodServizio>ASV_2</CodServizio>
+		<DesServizio>Giostre</DesServizio>
+		<CodRichiestaBo/>
+		<IdServizio>100166</IdServizio>
+		<DesTariffa>TAR 2</DesTariffa>
+		<DataInizio>2004-02-01</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="3">
+		<CodFruitore>PNLGNN77H8763HJZ</CodFruitore>
+		<CodServizio>ICP_1</CodServizio>
+		<DesServizio>Imposta Comunale Pubblicita</DesServizio>
+		<CodRichiestaBo>BO 0098</CodRichiestaBo>
+		<IdServizio>100159</IdServizio>
+		<CodTariffa>Intera</CodTariffa>
+		<DesTariffa>Tariffa Pubblicita</DesTariffa>
+		<Importo>1500,00</Importo>
+		<CodEsenzione>2</CodEsenzione>
+		<DesEsenzione>descrizione esenzione</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>Chiesto da Pinoli Gianni 2 </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="4">
+		<CodFruitore>BCCNNA70M41A794K</CodFruitore>
+		<CodServizio>ICP_2</CodServizio>
+		<DesServizio>Imposta Comunale Pubblicita</DesServizio>
+		<CodRichiestaBo>BO 0097</CodRichiestaBo>
+		<IdServizio>100159</IdServizio>
+		<CodTariffa>Intera</CodTariffa>
+		<DesTariffa>Tariffa Pubblicita</DesTariffa>
+		<Importo>1000,00</Importo>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>Chiesto da Bacca Anna </Note>
+		<DataInizio>2004-09-13</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="5">
+		<CodFruitore>PNLGNN77H8763HJZ</CodFruitore>
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<CodServizio>ASV_3</CodServizio>
+		<DesServizio>Aut. Spettacolo Viaggiante</DesServizio>
+		<CodRichiestaBo>BO 00789</CodRichiestaBo>
+		<IdServizio>100166</IdServizio>
+		<CodTariffa>TAR 56</CodTariffa>
+		<DesTariffa>Tariffa Spett. Viaggiante</DesTariffa>
+		<Importo>503,52</Importo>
+		<CodEsenzione>COD ESE 3</CodEsenzione>
+		<DesEsenzione>Spett. Viaggiante 3</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>fruitore Pinoli Gianni</Note>
+		<DataInizio>2005-02-10</DataInizio>
+	</SdiServizio>
+	<SdiServizio progressivo="5">
+		<CodFruitore>PNLGNN77H8763HJZ</CodFruitore>
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<CodServizio>ASV_6</CodServizio>
+		<DesServizio>Aut. Spettacolo Viaggiante</DesServizio>
+		<CodRichiestaBo>BO89</CodRichiestaBo>
+		<IdServizio>100165</IdServizio>
+		<CodTariffa>TAR 56</CodTariffa>
+		<DesTariffa>Tariffa Spett. Viaggiante</DesTariffa>
+		<Importo>35,52</Importo>
+		<CodEsenzione>COD ESE 54</CodEsenzione>
+		<DesEsenzione>Spett. Viaggiante 3</DesEsenzione>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>fruitore Pinoli Gianni</Note>
+		<DataInizio>2005-02-10</DataInizio>
+	</SdiServizio>
+</ListaSdiServizio>

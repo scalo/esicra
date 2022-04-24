@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PraticaBean.xsd"/>
+	<xs:include schemaLocation="SoggettoBean.xsd"/>
+	<xs:include schemaLocation="PagamentoBean.xsd"/>
+	<xs:include schemaLocation="SoggettoGiuridicoBean.xsd"/>
+	<xs:element name="PraCommercio" type="esicra_pra:PraComercioType">
+		<xs:annotation>
+			<xs:documentation>Richiesta</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="PraComercioType">
+		<xs:sequence>
+			<xs:element name="Pratica" type="esicra_pra:PraticaBeanType"/>
+			<xs:element name="SoggettoRichiedente">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:QName"/>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaSoggetto">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Soggetto">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string"/>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Indirizzo">
+							<xs:complexType/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaRichiesta">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Richiesta" type="xs:string"/>
+						<xs:element name="ListaEsercizio">
+							<xs:complexType>
+								<xs:sequence maxOccurs="unbounded">
+									<xs:element name="Esercizio" type="xs:string"/>
+									<xs:element name="Indirizzo">
+										<xs:complexType/>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

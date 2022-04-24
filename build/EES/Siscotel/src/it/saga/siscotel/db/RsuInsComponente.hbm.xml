@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.RsuInsComponente" table="rsu_ins_componente" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="rsuInsediamento" class="it.saga.siscotel.db.RsuInsediamento">
+            <column name="fkid_insediamento" />
+        </many-to-one>
+        <property name="anno" type="integer">
+            <column name="anno" />
+        </property>
+        <property name="dtRilevazione" type="date">
+            <column name="dt_rilevazione" length="4" />
+        </property>
+        <property name="flgNoResidente" type="integer">
+            <column name="flg_no_residente" />
+        </property>
+        <property name="totPersoneReali" type="integer">
+            <column name="tot_persone_reali" />
+        </property>
+        <property name="totPersoneCalc" type="integer">
+            <column name="tot_persone_calc" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

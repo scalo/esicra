@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.J2eeUsers" table="j2ee_users" schema="esicra">
+        <id name="userName" type="string">
+            <column name="user_name" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="userPass" type="string">
+            <column name="user_pass" length="30" />
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome" length="36" />
+        </property>
+        <property name="nome" type="string">
+            <column name="nome" length="36" />
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16" />
+        </property>
+        <property name="matricola" type="string">
+            <column name="matricola" length="20" />
+        </property>
+        <property name="dataNascita" type="date">
+            <column name="data_nascita" length="4" />
+        </property>
+        <property name="dtIns" type="timestamp">
+            <column name="dt_ins" length="8" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="serGruppoUtentes" inverse="true">
+            <key>
+                <column name="utente" length="30" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SerGruppoUtente" />
+        </set>
+    </class>
+</hibernate-mapping>

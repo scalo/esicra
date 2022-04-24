@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Comune.xsd"/>
+	<xs:complexType name="AttoBaseType">
+		<xs:sequence>
+			<xs:element name="Comune" type="esicra_import:ComuneType" minOccurs="0"/>
+			<xs:element name="Anno" type="xs:integer"/>
+			<xs:element name="Numero" type="xs:integer"/>
+			<xs:element name="Parte" type="xs:integer"/>
+			<xs:element name="Serie">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Volume">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Ufficio">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DivorzioType">
+		<xs:sequence>
+			<xs:element name="NumSentenza" type="xs:integer"/>
+			<xs:element name="DataSentenza" type="xs:date" default="1950-01-01"/>
+			<xs:element name="CodTribunale" type="xs:integer" minOccurs="0"/>
+			<xs:element name="DesTribunale">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AttoNascitaType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:annotation>
+					<xs:documentation>Codice Soggetto</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoAtto" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>1 = Nascita </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodCentroNascita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesCentroNascita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Registrazione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+			<xs:element name="Trascrizione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AttoMorteType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoAtto" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>2 = Morte</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Registrazione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+			<xs:element name="Trascrizione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Atto">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoAtto" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>3=Matrimonio;                 4=Divorzio; 5=Vedovanza</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DataRiferimento" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Data Evento Stato Civile a cui si riferisce l'atto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Registrazione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+			<xs:element name="Trascrizione" type="esicra_import:AttoBaseType" minOccurs="0"/>
+			<xs:element name="Divorzio" type="esicra_import:DivorzioType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Atto" type="esicra_import:Atto"/>
+	<xs:element name="Divorzio" type="esicra_import:DivorzioType"/>
+</xs:schema>

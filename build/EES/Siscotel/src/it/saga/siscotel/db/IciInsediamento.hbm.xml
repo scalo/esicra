@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.IciInsediamento" table="ici_insediamento" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terArea" class="it.saga.siscotel.db.TerArea">
+            <column name="fkid_area" precision="22" scale="0" />
+        </many-to-one>
+        <property name="fkidContribuente" type="big_decimal">
+            <column name="fkid_contribuente" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="fkidDenunciante" type="big_decimal">
+            <column name="fkid_denunciante" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="codDenuncia" type="string">
+            <column name="cod_denuncia" length="20" />
+        </property>
+        <property name="annoDenuncia" type="integer">
+            <column name="anno_denuncia" />
+        </property>
+        <property name="dtDenuncia" type="date">
+            <column name="dt_denuncia" length="4" />
+        </property>
+        <property name="progressivoDenuncia" type="string">
+            <column name="progressivo_denuncia" length="10" />
+        </property>
+        <property name="dtNasContribuente" type="date">
+            <column name="dt_nas_contribuente" length="4" />
+        </property>
+        <property name="luogoNasContribuente" type="string">
+            <column name="luogo_nas_contribuente" length="200" />
+        </property>
+        <property name="indContribuente" type="string">
+            <column name="ind_contribuente" length="200" />
+        </property>
+        <property name="indDenunciante" type="string">
+            <column name="ind_denunciante" length="200" />
+        </property>
+        <property name="noteDenuncia" type="string">
+            <column name="note_denuncia" length="1000" />
+        </property>
+        <property name="codImmobile" type="string">
+            <column name="cod_immobile" length="20" />
+        </property>
+        <property name="codEcografico" type="string">
+            <column name="cod_ecografico" length="70" />
+        </property>
+        <property name="caratteristiche" type="integer">
+            <column name="caratteristiche" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="colore" type="string">
+            <column name="colore" length="10" />
+        </property>
+        <property name="corte" type="string">
+            <column name="corte" length="9" />
+        </property>
+        <property name="scala" type="string">
+            <column name="scala" length="9" />
+        </property>
+        <property name="interno" type="string">
+            <column name="interno" length="9" />
+        </property>
+        <property name="piano" type="string">
+            <column name="piano" length="9" />
+        </property>
+        <property name="edificio" type="string">
+            <column name="edificio" length="9" />
+        </property>
+        <property name="codComune" type="string">
+            <column name="cod_comune" length="20" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="sezione" type="string">
+            <column name="sezione" length="3" />
+        </property>
+        <property name="foglio" type="string">
+            <column name="foglio" length="5" />
+        </property>
+        <property name="numero" type="string">
+            <column name="numero" length="5" />
+        </property>
+        <property name="sub" type="integer">
+            <column name="sub" />
+        </property>
+        <property name="protocollo" type="string">
+            <column name="protocollo" length="6" />
+        </property>
+        <property name="annoProtocollo" type="integer">
+            <column name="anno_protocollo" />
+        </property>
+        <property name="categoria" type="string">
+            <column name="categoria" length="3" />
+        </property>
+        <property name="classe" type="string">
+            <column name="classe" length="2" />
+        </property>
+        <property name="flgProvvisorio" type="integer">
+            <column name="flg_provvisorio" />
+        </property>
+        <property name="valore" type="big_decimal">
+            <column name="valore" precision="15" />
+        </property>
+        <property name="flgStorico" type="integer">
+            <column name="flg_storico" />
+        </property>
+        <property name="flgAbPrincipale" type="integer">
+            <column name="flg_ab_principale" />
+        </property>
+        <property name="alqRidotta" type="big_decimal">
+            <column name="alq_ridotta" precision="15" />
+        </property>
+        <property name="aliquota" type="big_decimal">
+            <column name="aliquota" precision="15" />
+        </property>
+        <property name="percPossesso" type="big_decimal">
+            <column name="perc_possesso" precision="6" />
+        </property>
+        <property name="mesiPossesso" type="integer">
+            <column name="mesi_possesso" />
+        </property>
+        <property name="mesiEsenzione" type="integer">
+            <column name="mesi_esenzione" />
+        </property>
+        <property name="impEsenzione" type="big_decimal">
+            <column name="imp_esenzione" precision="15" />
+        </property>
+        <property name="mesiRiduzione" type="integer">
+            <column name="mesi_riduzione" />
+        </property>
+        <property name="percRiduzione" type="big_decimal">
+            <column name="perc_riduzione" precision="15" />
+        </property>
+        <property name="mesiAlqRidotta" type="integer">
+            <column name="mesi_alq_ridotta" />
+        </property>
+        <property name="impDetrazione" type="big_decimal">
+            <column name="imp_detrazione" precision="15" />
+        </property>
+        <property name="noteInsediamento" type="string">
+            <column name="note_insediamento" length="1000" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="iciInsDetts" inverse="true">
+            <key>
+                <column name="fkid_insediamento" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.IciInsDett" />
+        </set>
+    </class>
+</hibernate-mapping>

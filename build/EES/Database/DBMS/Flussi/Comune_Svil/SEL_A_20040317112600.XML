@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSoggettoEle xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSoggettoEle.xsd" versione="1.0">
+<SoggettoEle progressivo = "1">
+<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+<Provenienza>3</Provenienza>
+<CodiceFiscale>PNLGNN77H8763HJZ</CodiceFiscale>
+<FlagCFCalcolato>0</FlagCFCalcolato>
+<Cognome>PINOLI</Cognome>
+<Nome>GIANNI</Nome>
+<AltriNomi></AltriNomi>
+<Sesso>1</Sesso>
+<DataNascita>1960-04-20</DataNascita>
+<PrecisioneDtNascita>0</PrecisioneDtNascita>
+<Coniuge></Coniuge>
+<DataInizio>1984-07-01</DataInizio>
+<FlagStato>0</FlagStato>
+<ComuneNascita>
+<CodComune>17029</CodComune>
+<DesComune>BRESCIA</DesComune>
+<Cap>25100</Cap>
+<DesProvincia>BS</DesProvincia>
+</ComuneNascita>
+</SoggettoEle>
+<SoggettoEle progressivo = "2">
+<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+<Provenienza>3</Provenienza>
+<CodiceFiscale>RSSNGL74L70B157J</CodiceFiscale>
+<FlagCFCalcolato>0</FlagCFCalcolato>
+<Cognome>ROSSI</Cognome>
+<Nome>ANGELA</Nome>
+<AltriNomi></AltriNomi>
+<Sesso>2</Sesso>
+<DataNascita>1959-11-25</DataNascita>
+<PrecisioneDtNascita>0</PrecisioneDtNascita>
+<Coniuge>IN FINETTI</Coniuge>
+<DataInizio>1959-11-25</DataInizio>
+<FlagStato>0</FlagStato>
+<ComuneNascita>
+<CodComune>19097</CodComune>
+<DesComune>SONCINO</DesComune>
+<Cap>26029</Cap>
+<DesProvincia>CR</DesProvincia>
+</ComuneNascita>
+</SoggettoEle>
+<SoggettoEle progressivo = "3">
+<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+<Provenienza>3</Provenienza>
+<CodiceFiscale>ZNLFDR49H57Z114T</CodiceFiscale>
+<FlagCFCalcolato>0</FlagCFCalcolato>
+<Cognome>ZANOLINI</Cognome>
+<Nome>FEDERICA</Nome>
+<AltriNomi></AltriNomi>
+<Sesso>2</Sesso>
+<DataNascita>1908-01-29</DataNascita>
+<PrecisioneDtNascita>0</PrecisioneDtNascita>
+<Coniuge>VED NOBILINI</Coniuge>
+<DataInizio>1908-01-29</DataInizio>
+<FlagStato>0</FlagStato>
+<LocalitaNascita>
+	<DesLocalita>BROUGHTY FERRY (GB)</DesLocalita>
+	<Cap>00000</Cap>
+	<CodStato>990</CodStato>
+	<DesStato>GRAN BRETAGNA</DesStato>
+</LocalitaNascita>
+</SoggettoEle>
+<SoggettoEle progressivo = "4">
+<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+<Provenienza>3</Provenienza>
+<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+<FlagCFCalcolato>0</FlagCFCalcolato>
+<Cognome>BACCA</Cognome>
+<Nome>ANNA</Nome>
+<AltriNomi>VINCENZA</AltriNomi>
+<Sesso>2</Sesso>
+<DataNascita>1917-10-25</DataNascita>
+<PrecisioneDtNascita>0</PrecisioneDtNascita>
+<Coniuge>CNG. PINOLI GIANNI</Coniuge>
+<DataInizio>1917-10-25</DataInizio>
+<FlagStato>0</FlagStato>
+<ComuneNascita>
+<CodComune>19097</CodComune>
+<DesComune>SONCINO</DesComune>
+<Cap>26029</Cap>
+<DesProvincia>CR</DesProvincia>
+</ComuneNascita>
+</SoggettoEle>
+</ListaSoggettoEle>

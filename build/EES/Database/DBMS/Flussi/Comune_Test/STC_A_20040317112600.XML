@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaStatoCivile xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+../import/xsd/2.0/ListaStatoCivile.xsd" versione="1.0">
+	<StatoCivile progressivo="1">
+		<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+		<CodStatoCivile>STATO1</CodStatoCivile>
+		<DesStatoCivile>coniugato</DesStatoCivile>
+		<DataStatoCivile>2000-09-22</DataStatoCivile>
+		<CognomeConiuge>Bacca</CognomeConiuge>
+		<NomeConiuge>Anna</NomeConiuge>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>2000-11-22</DataInizio>
+	</StatoCivile>
+	<StatoCivile progressivo="2">
+		<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+		<CodStatoCivile>STATO2</CodStatoCivile>
+		<DesStatoCivile>coniugata</DesStatoCivile>
+		<DataStatoCivile>2000-09-22</DataStatoCivile>
+		<CognomeConiuge>Rossi</CognomeConiuge>
+		<NomeConiuge>Gianni</NomeConiuge>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>2000-11-22</DataInizio>
+	</StatoCivile>
+	<StatoCivile progressivo="3">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<CodStatoCivile>STATO3</CodStatoCivile>
+		<DesStatoCivile>vedovo</DesStatoCivile>
+		<DataStatoCivile>2002-10-24</DataStatoCivile>
+		<CognomeConiuge>ULRICH</CognomeConiuge>
+		<NomeConiuge>INGRID</NomeConiuge>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>2002-10-24</DataInizio>
+	</StatoCivile>	
+	<StatoCivile progressivo="4">
+		<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+		<CodStatoCivile>STATO3</CodStatoCivile>
+		<DesStatoCivile>celibe</DesStatoCivile>
+		<DataStatoCivile></DataStatoCivile>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>1960-05-08</DataInizio>
+	</StatoCivile>
+	<StatoCivile progressivo="5">
+		<CodSoggetto>RSSMHL01R08A794M</CodSoggetto>
+		<CodStatoCivile>STATO3</CodStatoCivile>
+		<DesStatoCivile>celibe</DesStatoCivile>
+		<DataStatoCivile></DataStatoCivile>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>1998-09-14</DataInizio>
+	</StatoCivile>
+	<StatoCivile progressivo="6">
+		<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+		<CodStatoCivile>STATO3</CodStatoCivile>
+		<DesStatoCivile>celibe</DesStatoCivile>
+		<DataStatoCivile></DataStatoCivile>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Parma</DesProvincia>
+		</Comune>
+		<DataInizio>1960-06-17</DataInizio>
+	</StatoCivile>	
+	<StatoCivile progressivo="7">
+		<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+		<CodStatoCivile>STATO3</CodStatoCivile>
+		<DesStatoCivile>celibe</DesStatoCivile>
+		<DataStatoCivile></DataStatoCivile>
+		<Comune>
+			<CodComune>19097</CodComune>
+			<DesComune>Soncino</DesComune>
+			<Cap>26029</Cap>
+			<DesProvincia>Cremona</DesProvincia>
+		</Comune>
+		<DataInizio>1994-01-28</DataInizio>
+	</StatoCivile>
+</ListaStatoCivile>

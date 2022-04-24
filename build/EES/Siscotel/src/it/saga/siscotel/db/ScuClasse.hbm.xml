@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.ScuClasse" table="scu_classe" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="scuCorso" class="it.saga.siscotel.db.ScuCorso">
+            <column name="fkid_corso" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terArea" class="it.saga.siscotel.db.TerArea">
+            <column name="fkid_area" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codClasse" type="string">
+            <column name="cod_classe" length="20" />
+        </property>
+        <property name="desClasse" type="string">
+            <column name="des_classe" length="80" />
+        </property>
+        <property name="sezione" type="string">
+            <column name="sezione" length="10" />
+        </property>
+        <property name="tempo" type="string">
+            <column name="tempo" length="20" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="scuSoggettos" inverse="true">
+            <key>
+                <column name="fkid_classe" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuSoggetto" />
+        </set>
+    </class>
+</hibernate-mapping>

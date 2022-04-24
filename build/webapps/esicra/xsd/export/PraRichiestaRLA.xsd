@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pagamento.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="SoggettoGiuridico.xsd"/>
+	<xs:include schemaLocation="DatiRichiestaRLA.xsd"/>
+	<xs:element name="PraRichiestaRLA" type="pra:PraRichiestaRLAType"/>
+	<xs:complexType name="PraRichiestaRLAType">
+		<xs:sequence>
+			<xs:element name="SoggettoDichiarante" type="pra:SoggettoType"/>
+			<xs:element name="TitolaritaDichiarante" type="xs:string"/>
+			<xs:element name="CodRichiesta" type="xs:string"/>
+			<xs:element name="DesRichiesta" type="xs:string"/>
+			<xs:element name="DatiRichiestaRLA" type="pra:DatiRichiestaRLAType" minOccurs="0"/>
+			<xs:element name="DatiRLAPosseduta" type="pra:DatiRichiestaRLAType" minOccurs="0"/>
+			<xs:element name="ListaMerciTrasportate">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="MerceTrasportata" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="CodStato" minOccurs="0"/>
+			<xs:element name="DesStato"/>
+			<xs:element name="DataStato" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

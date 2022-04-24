@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBollettaDett xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBollettaDett.xsd" versione="1.0">
+<PagBollettaDett progressivo ="1">
+	<CodBolletta>RSUB1</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA G.COSTA 17</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>85,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="2">
+	<CodBolletta>RSUB1</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="3">
+	<CodBolletta>RSUB2</CodBolletta>
+	<DtIniServizio>2003-01-02</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>275,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>276,98</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>276,98</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="4">
+	<CodBolletta>RSUB2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>42,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>42,30</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>42,30</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="5">
+	<CodBolletta>RSUB2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>55,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>55,40</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>55,40</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="6">
+	<CodBolletta>RSUB2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>159,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>160,14</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>160,14</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="7">
+	<CodBolletta>RSUB2</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>534,82</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>534,82</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="8">
+	<CodBolletta>RSUB3</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA MILANO 38</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LOCALI RIFIUTI SPEC.(RID.100%)</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>3907,000</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9">
+	<CodBolletta>RSUB3</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA MILANO 38</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>1389,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="10">
+	<CodBolletta>RSUB3</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11">
+	<CodBolletta>RSUB4</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DE'MARCHESCHI 1</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LOCALI RIFIUTI SPEC.(RID.100%)</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>277,000</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="12">
+	<CodBolletta>RSUB4</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DE'MARCHESCHI 1</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ISTIT. DI RICOV.CRONICARI, OSP</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>1212,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="13">
+	<CodBolletta>RSUB4</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="14">
+	<CodBolletta>RSUB5</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA FIORANO 19</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>60,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>41,58</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>41,58</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="15">
+	<CodBolletta>RSUB5</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>41,58</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>41,58</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="16">
+	<CodBolletta>RSUB6</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA P.TINELLI 11</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="17">
+	<CodBolletta>RSUB6</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="18">
+	<CodBolletta>RSUB7</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA P.TINELLI 11</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="19">
+	<CodBolletta>RSUB7</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="20">
+	<CodBolletta>RSUVR1</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA G.COSTA 17</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>85,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="21">
+	<CodBolletta>RSUVR1</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="22">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<DtIniServizio>2003-01-02</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>275,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>276,98</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>276,98</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="23">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>42,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>42,30</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>42,30</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="24">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>55,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>55,40</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>55,40</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="25">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>159,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>160,14</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>160,14</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="26">
+	<CodBolletta>RSUVR2</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>534,82</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>534,82</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="27">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA MILANO 38</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LOCALI RIFIUTI SPEC.(RID.100%)</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>3907,000</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="28">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA MILANO 38</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LABORATORI ARTIG. E AUTOLAVAG</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>1389,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="28">
+	<CodBolletta>RSUVR3</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>1399,00</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="29">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DE'MARCHESCHI 1</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>LOCALI RIFIUTI SPEC.(RID.100%)</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>277,000</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="30">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DE'MARCHESCHI 1</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ISTIT. DI RICOV.CRONICARI, OSP</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>1212,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="31">
+	<CodBolletta>RSUVR4</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>1259,87</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="41">
+	<CodBolletta>RSUB11</CodBolletta>
+	<DtIniServizio>2000-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DELLE GRAZIE 75</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="42">
+	<CodBolletta>RSUB11</CodBolletta>
+	<DtIniServizio>2002-07-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA CASTELLO 12</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>248,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="43">
+	<CodBolletta>RSUB11</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>339,25</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>340,75</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="44">
+	<CodBolletta>RSUB12</CodBolletta>
+	<DtIniServizio>2000-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DELLE GRAZIE 76</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="45">
+	<CodBolletta>RSUB12</CodBolletta>
+	<DtIniServizio>2002-07-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA CASTELLO 12</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>248,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="46">
+	<CodBolletta>RSUB12</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>339,25</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>340,75</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="47">
+	<CodBolletta>RSUB13</CodBolletta>
+	<DtIniServizio>2000-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DELLE GRAZIE 77</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="48">
+	<CodBolletta>RSUB13</CodBolletta>
+	<DtIniServizio>2002-07-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA CASTELLO 12</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>248,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="49">
+	<CodBolletta>RSUB13</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>339,25</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>340,75</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="55">
+	<CodBolletta>RSUVR7</CodBolletta>
+	<DtIniServizio>1990-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA G.COSTA 17</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>85,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="56">
+	<CodBolletta>RSUVR7</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>58,91</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="57">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<DtIniServizio>2000-01-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA DELLE GRAZIE 77</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>269,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>186,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="58">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<DtIniServizio>2002-07-01</DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA CASTELLO 12</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Tipo di Ruolo</DesVoce>
+			<Valore>Principale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>ENTI PUBB.ASS. VARIE STAZ, PAL</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Mq. Tassati</DesVoce>
+			<Valore>248,000</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Totale Imponibile</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Tassa Dovuta</DesVoce>
+			<Valore>153,83</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="59">
+	<CodBolletta>RSUVR8</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Tassa Dovuta</DesVoce>
+			<Valore>339,25</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Spese di Spedizione</DesVoce>
+			<Valore>1,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Bolletta</DesVoce>
+			<Valore>340,75</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+</PagListaBollettaDett>      

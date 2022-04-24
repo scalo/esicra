@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PraVeicolo.xsd"/>
+	<xs:complexType name="VeicoloRLAType">
+		<xs:sequence>
+			<xs:element name="DatiVeicolo" type="pra:PraVeicoloType"/>
+			<xs:element name="Carrozzeria" type="xs:string"/>
+			<xs:element name="TipoVeicolo" type="xs:string"/>
+			<xs:element name="Portata" type="xs:string"/>
+			<xs:element name="PortataMassima" type="xs:string"/>
+			<xs:element name="PortataPotenziale" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="VeicoloRLA" type="pra:VeicoloRLAType"/>
+</xs:schema>

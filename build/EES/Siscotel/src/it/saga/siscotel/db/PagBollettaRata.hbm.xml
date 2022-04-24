@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PagBollettaRata" table="pag_bolletta_rata" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="pagBolletta" class="it.saga.siscotel.db.PagBolletta">
+            <column name="fkid_bolletta" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codServizio" type="string">
+            <column name="cod_servizio" length="20" />
+        </property>
+        <property name="numRata" type="integer">
+            <column name="num_rata" />
+        </property>
+        <property name="dtScadenzaRata" type="date">
+            <column name="dt_scadenza_rata" length="4" />
+        </property>
+        <property name="importoRata" type="big_decimal">
+            <column name="importo_rata" precision="15" />
+        </property>
+        <property name="importoPagato" type="big_decimal">
+            <column name="importo_pagato" precision="15" />
+        </property>
+        <property name="dtPagamento" type="date">
+            <column name="dt_pagamento" length="4" />
+        </property>
+        <property name="dtRegPagamento" type="date">
+            <column name="dt_reg_pagamento" length="4" />
+        </property>
+        <property name="distinta" type="string">
+            <column name="distinta" length="80" />
+        </property>
+        <property name="dtDistinta" type="date">
+            <column name="dt_distinta" length="4" />
+        </property>
+        <property name="idPratica" type="big_decimal">
+            <column name="id_pratica" precision="22" scale="0" />
+        </property>
+        <property name="desCanale" type="string">
+            <column name="des_canale" length="80" />
+        </property>
+        <property name="desPagamento" type="string">
+            <column name="des_pagamento" length="80" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="200" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

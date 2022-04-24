@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.CatPrg" table="cat_prg" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codPrg" type="string">
+            <column name="cod_prg" length="80" />
+        </property>
+        <property name="desPrg" type="string">
+            <column name="des_prg" length="80" />
+        </property>
+        <property name="anno" type="integer">
+            <column name="anno" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="ediPrgIdents" inverse="true">
+            <key>
+                <column name="fkid_prg" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiPrgIdent" />
+        </set>
+        <set name="catAotPrgs" inverse="true">
+            <key>
+                <column name="fkid_prg" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatAotPrg" />
+        </set>
+    </class>
+</hibernate-mapping>

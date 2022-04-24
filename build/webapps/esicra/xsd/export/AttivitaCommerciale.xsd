@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="DatiPermesso.xsd"/>
+	<xs:element name="AttivitaCommerciale" type="pra:AttivitaCommercialeType"/>
+	<xs:complexType name="AttivitaCommercialeType">
+		<xs:sequence>
+			<xs:element name="CodSettoriMerceologici" type="xs:string"/>
+			<xs:element name="DesSettoriMerceologici" type="xs:string"/>
+			<xs:element name="CodTipoCommercio" type="xs:string"/>
+			<xs:element name="DesTipoCommercio" type="xs:string"/>
+			<xs:element name="AutorizzazioneAttivita" type="pra:DatiPermesso" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

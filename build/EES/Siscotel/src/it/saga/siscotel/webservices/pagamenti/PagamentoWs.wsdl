@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="PagamentoWs"
+        targetNamespace="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.wsdl"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tns="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.wsdl"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:xsd1="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.xsd" >
+
+  <types>
+    <schema targetNamespace="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.xsd" xmlns:tns="http://it.saga.siscotel.webservices.pagamenti/PagamentoWs.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <complexType name="it_saga_siscotel_beans_base_PagamentoBean">
+        <all>
+          <element name="causalePagemento" type="xsd:string"/>
+          <element name="dataPagamento" type="xsd:dateTime"/>
+          <element name="idPratica" type="xsd:decimal"/>
+          <element name="importoDaPagare" type="xsd:decimal"/>
+          <element name="importoPagato" type="xsd:decimal"/>
+          <element name="numRata" type="xsd:int"/>
+          <element name="tipoPagamento" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="ArrayOfIt_saga_siscotel_beans_base_PagamentoBean">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns:it_saga_siscotel_beans_base_PagamentoBean[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </types>
+
+  <message name="cercaPagamentoOutput">
+    <part name="output" type="xsd1:ArrayOfIt_saga_siscotel_beans_base_PagamentoBean"/>
+  </message>
+  <message name="cercaPagamentoInput">
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:decimal"/>
+    <part name="param3" type="xsd:dateTime"/>
+    <part name="param4" type="xsd:dateTime"/>
+  </message>
+  <message name="registraPagamentoOutput">
+    <part name="output" type="xsd:boolean"/>
+  </message>
+  <message name="registraPagamentoInput">
+    <part name="param0" type="xsd:decimal"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd1:ArrayOfIt_saga_siscotel_beans_base_PagamentoBean"/>
+  </message>
+
+  <portType name="PagamentoWsPortType">
+    <operation name="cercaPagamento">
+      <input message="tns:cercaPagamentoInput"/>
+      <output message="tns:cercaPagamentoOutput"/>
+    </operation>
+    <operation name="registraPagamento">
+      <input message="tns:registraPagamentoInput"/>
+      <output message="tns:registraPagamentoOutput"/>
+    </operation>
+  </portType>
+
+  <binding name="PagamentoWsBinding" type="tns:PagamentoWsPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+    <operation name="cercaPagamento">
+      <soap:operation soapAction="it.saga.siscotel.webservices.pagamenti.PagamentoWs/cercaPagamento"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.pagamenti.PagamentoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.pagamenti.PagamentoWs"/>
+      </output>
+    </operation>
+    <operation name="registraPagamento">
+      <soap:operation soapAction="it.saga.siscotel.webservices.pagamenti.PagamentoWs/registraPagamento"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.pagamenti.PagamentoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.pagamenti.PagamentoWs"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="PagamentoWs">
+    <port name="PagamentoWsPort" binding="tns:PagamentoWsBinding">
+      <soap:address location="http://localhost:8080/esicra/servlet/soaprouter"/>
+    </port>
+  </service>
+
+
+</definitions>

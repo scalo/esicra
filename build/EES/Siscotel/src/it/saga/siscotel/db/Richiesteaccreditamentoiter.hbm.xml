@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Richiesteaccreditamentoiter" table="richiesteaccreditamentoiter" schema="esicra">
+        <id name="pkiter" type="big_decimal">
+            <column name="pkiter" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <many-to-one name="statoiter" class="it.saga.siscotel.db.Statoiter">
+            <column name="fkstatoiter" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="richiesteaccreditamento" class="it.saga.siscotel.db.Richiesteaccreditamento">
+            <column name="fkrichiesta" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="responsabile" type="string">
+            <column name="responsabile" length="100" />
+        </property>
+        <property name="notestato" type="string">
+            <column name="notestato" length="1000" />
+        </property>
+        <property name="dataultimostato" type="timestamp">
+            <column name="dataultimostato" length="8" not-null="true" />
+        </property>
+        <property name="idEnte" type="big_decimal">
+            <column name="id_ente" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

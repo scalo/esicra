@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<ListaSdiCentro xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSdiCentro.xsd" versione="1.0">
+	<SdiCentro progressivo="1">
+		<CodCentro>1</CodCentro>
+		<DesCentro>Centro Estivo Galli</DesCentro>
+		<TipoCentro>COL</TipoCentro>
+		<CodTipo>TIPO_004</CodTipo>
+		<DesTipo>Centro Estivo</DesTipo>
+		<DesArea>Via Cavour</DesArea>
+		<NumCiv>24</NumCiv>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+	<SdiCentro progressivo="2">
+		<CodCentro>2</CodCentro>
+		<DesCentro>Centro Estivo Bosco</DesCentro>
+		<TipoCentro>COL</TipoCentro>
+		<CodTipo>TIPO_001</CodTipo>
+		<DesTipo>Centro Estivo</DesTipo>
+		<CodArea/>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+	<SdiCentro progressivo="3">
+		<CodCentro>COD_002</CodCentro>
+		<DesCentro>Ist. Giuseppe Verdi</DesCentro>
+		<TipoCentro>RIC</TipoCentro>
+		<CodTipo>TIPO_002</CodTipo>
+		<DesTipo>Centro Ricreativo Musicale</DesTipo>
+		<DesArea>P.zza Risorgimento</DesArea>
+		<NumCiv>24</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Desenzano sul Garda</DesComune>
+		<DesProvincia>BS</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+	<SdiCentro progressivo="4">
+		<CodCentro>COD_003</CodCentro>
+		<DesCentro>Palestra Athena</DesCentro>
+		<TipoCentro>SPO</TipoCentro>
+		<CodTipo>TIPO_003</CodTipo>
+		<DesTipo>Centro Sportivo</DesTipo>
+		<DesArea>Via Mazzini</DesArea>
+		<NumCiv>35</NumCiv>
+		<LetCiv>b</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+	<SdiCentro progressivo="5">
+		<CodCentro>COD_005</CodCentro>
+		<DesCentro>Ist. Carla Fracci</DesCentro>
+		<TipoCentro>RIC</TipoCentro>
+		<CodTipo>TIPO_002</CodTipo>
+		<DesTipo>Centro Ricreativo Ballo</DesTipo>
+		<DesArea>Via Cavour</DesArea>
+		<NumCiv>24</NumCiv>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+	<SdiCentro progressivo="6">
+		<CodCentro>COD_006</CodCentro>
+		<DesCentro>Piscina Acquatica</DesCentro>
+		<TipoCentro>SPO</TipoCentro>
+		<CodTipo>TIPO_006</CodTipo>
+		<DesTipo>Centro Sportivo</DesTipo>
+		<DesArea>Viale Po</DesArea>
+		<NumCiv>5</NumCiv>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</SdiCentro>
+</ListaSdiCentro>

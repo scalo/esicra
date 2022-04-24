@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.EdiPratica" table="edi_pratica" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="codPratica" type="string">
+            <column name="cod_pratica" length="20" />
+        </property>
+        <property name="desPratica" type="string">
+            <column name="des_pratica" length="80" />
+        </property>
+        <property name="codTipoPratica" type="string">
+            <column name="cod_tipo_pratica" length="20" />
+        </property>
+        <property name="desTipoPratica" type="string">
+            <column name="des_tipo_pratica" length="80" />
+        </property>
+        <property name="codStato" type="string">
+            <column name="cod_stato" length="20" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="numPratica" type="string">
+            <column name="num_pratica" length="20" />
+        </property>
+        <property name="dtPratica" type="date">
+            <column name="dt_pratica" length="4" />
+        </property>
+        <property name="numProtocollo" type="string">
+            <column name="num_protocollo" length="20" />
+        </property>
+        <property name="dtProtocollo" type="date">
+            <column name="dt_protocollo" length="4" />
+        </property>
+        <property name="numProvvedimento" type="string">
+            <column name="num_provvedimento" length="20" />
+        </property>
+        <property name="dtProvvedimento" type="date">
+            <column name="dt_provvedimento" length="4" />
+        </property>
+        <property name="dtIniLavori" type="date">
+            <column name="dt_ini_lavori" length="4" />
+        </property>
+        <property name="dtFinLavori" type="date">
+            <column name="dt_fin_lavori" length="4" />
+        </property>
+        <property name="numRegistro" type="string">
+            <column name="num_registro" length="20" />
+        </property>
+        <property name="oggetto" type="string">
+            <column name="oggetto" length="1000" />
+        </property>
+        <property name="dtDecadimento" type="date">
+            <column name="dt_decadimento" length="4" />
+        </property>
+        <property name="desDecadimento" type="string">
+            <column name="des_decadimento" length="80" />
+        </property>
+        <property name="dtAgibilita" type="date">
+            <column name="dt_agibilita" length="4" />
+        </property>
+        <property name="numAgibilita" type="string">
+            <column name="num_agibilita" length="20" />
+        </property>
+        <property name="volume" type="string">
+            <column name="volume" length="10" />
+        </property>
+        <property name="superficie" type="string">
+            <column name="superficie" length="10" />
+        </property>
+        <property name="idPratica" type="big_decimal">
+            <column name="id_pratica" precision="22" scale="0" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <property name="fkidPratica" type="big_decimal">
+            <column name="fkid_pratica" precision="22" scale="0" />
+        </property>
+        <set name="ediSoggettos" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiSoggetto" />
+        </set>
+        <set name="ediInterventos" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiIntervento" />
+        </set>
+        <set name="ediIdentificativos" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiIdentificativo" />
+        </set>
+        <set name="ediPraticaDetts" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiPraticaDett" />
+        </set>
+        <set name="ediCollegatas" inverse="true">
+            <key>
+                <column name="fkid_pr_collegata" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiCollegata" />
+        </set>
+        <set name="ediAllegatos" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiAllegato" />
+        </set>
+        <set name="ediUbicaziones" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiUbicazione" />
+        </set>
+        <set name="ediCollegatas_1" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiCollegata" />
+        </set>
+        <set name="ediPagamentos" inverse="true">
+            <key>
+                <column name="fkid_pratica" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiPagamento" />
+        </set>
+    </class>
+</hibernate-mapping>

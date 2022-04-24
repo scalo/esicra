@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAtti xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAtti.xsd" versione="1.0">
+<Atto progressivo = "1">
+	<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+	<TipoAtto>3</TipoAtto>
+	<DataRiferimento>2000-09-22</DataRiferimento>
+	<Registrazione>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Pr</DesProvincia>
+		</Comune>
+		<Anno>2003</Anno>
+		<Numero>10</Numero>
+		<Parte>2</Parte>
+		<Serie>A</Serie>
+		<Volume></Volume>
+		<Ufficio></Ufficio>
+	</Registrazione>
+	<Trascrizione>
+		<Comune>
+			<CodComune>19097</CodComune>
+			<DesComune>Soncino</DesComune>
+			<Cap>26029</Cap>
+			<DesProvincia>Cr</DesProvincia>
+		</Comune>
+		<Anno>2004</Anno>
+		<Numero>1</Numero>
+		<Parte>1</Parte>
+		<Serie>A</Serie>
+		<Volume></Volume>
+		<Ufficio></Ufficio>
+	</Trascrizione>
+</Atto>
+<Atto progressivo = "2">
+	<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+	<TipoAtto>3</TipoAtto>
+	<DataRiferimento>2000-09-22</DataRiferimento>
+	<Registrazione>
+		<Comune>
+			<CodComune>34003</CodComune>
+			<DesComune>Bedonia</DesComune>
+			<Cap>43041</Cap>
+			<DesProvincia>Pr</DesProvincia>
+		</Comune>
+		<Anno>2003</Anno>
+		<Numero>10</Numero>
+		<Parte>2</Parte>
+		<Serie>A</Serie>
+		<Volume></Volume>
+		<Ufficio></Ufficio>
+	</Registrazione>
+	<Trascrizione>
+		<Comune>
+			<CodComune>19097</CodComune>
+			<DesComune>Soncino</DesComune>
+			<Cap>26029</Cap>
+			<DesProvincia>Cr</DesProvincia>
+		</Comune>
+		<Anno>2004</Anno>
+		<Numero>1</Numero>
+		<Parte>1</Parte>
+		<Serie>A</Serie>
+		<Volume></Volume>
+		<Ufficio></Ufficio>
+	</Trascrizione>
+</Atto>
+<Atto progressivo = "3">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<TipoAtto>5</TipoAtto>
+	<DataRiferimento>2002-10-24</DataRiferimento>
+	<Registrazione>
+		<Comune>
+			<CodComune>0</CodComune>
+			<DesComune></DesComune>
+			<Cap></Cap>
+			<DesProvincia></DesProvincia>
+		</Comune>
+		<Anno>1959</Anno>
+		<Numero>7</Numero>
+		<Parte>2</Parte>
+		<Serie>A</Serie>
+		<Volume></Volume>
+		<Ufficio></Ufficio>
+	</Registrazione>
+</Atto>
+<Atto progressivo = "4">
+<CodSoggetto>RSSMHL01R08A794M</CodSoggetto>
+<TipoAtto>3</TipoAtto>
+<DataRiferimento>1989-06-01</DataRiferimento>
+<Registrazione>
+	<Comune>
+	<CodComune>0</CodComune>
+	<DesComune></DesComune>
+	<Cap></Cap>
+	<DesProvincia></DesProvincia>
+	</Comune>
+	<Anno>1989</Anno>
+	<Numero>15</Numero>
+	<Parte>2</Parte>
+	<Serie>A</Serie>
+	<Volume></Volume>
+	<Ufficio></Ufficio>
+</Registrazione>
+<Divorzio>
+	<NumSentenza>0</NumSentenza>
+	<DataSentenza>2001-04-26</DataSentenza>
+	<DesTribunale>Tribunale div</DesTribunale>
+</Divorzio>
+</Atto>
+</ListaAtti> 

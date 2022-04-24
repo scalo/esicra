@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Praveicolo.xsd"/>
+	<xs:include schemaLocation="PraPatente.xsd"/>
+	<xs:complexType name="CambioResType">
+		<xs:sequence>
+			<xs:element name="SoggettoFruitore" type="esicra_pra:SoggettoType"/>
+			<xs:element name="SoggettoRichiedente" type="esicra_pra:SoggettoType" minOccurs="0"/>
+			<xs:element name="Pratica" type="esicra_pra:PraticaType"/>
+			<xs:element name="IndirizzodiDestinazione" type="esicra_pra:IndirizzoType"/>
+			<xs:element name="IndirizzodiProvenienza" type="esicra_pra:IndirizzoType"/>
+			<xs:element name="ListaFamiliareTrasferito" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="FamiliareTrasferito">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="esicra_pra:SoggettoType">
+										<xs:sequence>
+											<xs:element name="ListaPatente" minOccurs="0">
+												<xs:complexType>
+													<xs:sequence maxOccurs="unbounded">
+														<xs:element name="Patente" type="esicra_pra:PraPatente"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="ListaVeicolo" minOccurs="0">
+												<xs:complexType>
+													<xs:sequence maxOccurs="unbounded">
+														<xs:element name="Veicolo" type="esicra_pra:PraVeicoloType"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FamiliareRicevente" type="esicra_pra:SoggettoType" minOccurs="0"/>
+			<xs:element name="Stato" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraCambioRes" type="esicra_pra:CambioResType"/>
+</xs:schema>

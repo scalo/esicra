@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<ListaAotIndirizzo xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAotIndirizzo.xsd" versione="1.0">
+	<AotIndirizzo progressivo="1">
+		<CodAot>codaot_1</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Roma</DesArea>
+			<CivicoNum>15</CivicoNum>
+			<CivicoLet>A</CivicoLet>
+			<Colore>Bianco</Colore>
+			<Corte>Corte 1</Corte>
+			<Scala>Scala 2</Scala>
+			<Interno>Int 25</Interno>
+			<Piano>Piano 2</Piano>
+			<Edificio>Edi A</Edificio>
+		</AotIndirizzoDati>
+		<AotIndirizzoDati>
+			<DesArea>Via Roma</DesArea>
+			<CivicoNum>15</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="1">
+		<CodAot>codaot_2</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Piazza Duomo</DesArea>
+			<CivicoNum>1</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="3">
+		<CodAot>codaot_3</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Dante</DesArea>
+			<CivicoNum>10</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="4">
+		<CodAot>codaot_4</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Porta Milano</DesArea>
+			<CivicoNum>4</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+</ListaAotIndirizzo>

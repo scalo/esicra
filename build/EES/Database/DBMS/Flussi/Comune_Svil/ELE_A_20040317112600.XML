@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaElettorale xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaEettorale.xsd" versione="1.0">
+<Elettorale progressivo = "1">
+<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+<Sesso>1</Sesso>
+<NumListaGen>1459</NumListaGen>
+<NumListaSez>239</NumListaSez>
+<NumSez>3</NumSez>
+<Sede>VIA F.GALANTINO 38</Sede>
+<NumFascicolo>9510</NumFascicolo>
+<NumTessera>15042054</NumTessera>
+<FlagScrutatore>1</FlagScrutatore>
+<FlagPresidente>0</FlagPresidente>
+<AnnoIscrizione>2002</AnnoIscrizione>
+</Elettorale>
+<Elettorale progressivo = "2">
+<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+<Sesso>2</Sesso>
+<NumListaGen>2397</NumListaGen>
+<NumListaSez>371</NumListaSez>
+<NumSez>5</NumSez>
+<Sede>VIA A. BENZONI 8/B</Sede>
+<NumFascicolo>4241</NumFascicolo>
+<NumTessera>15039789</NumTessera>
+<FlagScrutatore>0</FlagScrutatore>
+<FlagPresidente>0</FlagPresidente>
+<AnnoIscrizione>1984</AnnoIscrizione>
+</Elettorale>
+<Elettorale progressivo = "3">
+<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+<Sesso>1</Sesso>
+<NumListaGen>1172</NumListaGen>
+<NumListaSez>174</NumListaSez>
+<NumSez>3</NumSez>
+<Sede>VIA F.GALANTINO 38</Sede>
+<NumFascicolo>2037</NumFascicolo>
+<NumTessera>15038002</NumTessera>
+<FlagScrutatore>0</FlagScrutatore>
+<FlagPresidente>0</FlagPresidente>
+<AnnoIscrizione>1986</AnnoIscrizione>
+</Elettorale>
+<Elettorale progressivo = "4">
+<CodSoggetto>VRDCRN52C70H558I</CodSoggetto>
+<Sesso>1</Sesso>
+<NumListaGen>3021</NumListaGen>
+<NumListaSez>494</NumListaSez>
+<NumSez>5</NumSez>
+<Sede>VIA A. BENZONI 8/B</Sede>
+<NumFascicolo>9687</NumFascicolo>
+<NumTessera>0</NumTessera>
+<FlagScrutatore>0</FlagScrutatore>
+<FlagPresidente>0</FlagPresidente>
+<AnnoIscrizione>2003</AnnoIscrizione>
+</Elettorale>
+</ListaElettorale>

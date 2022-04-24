@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<isd:service
+   id="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs"
+   xmlns:isd="http://xml.apache.org/xml-soap/deployment">
+   <isd:provider
+      type="java"
+      methods="cercaSoggettoFisicoIndiceCF cercaSoggettoFisicoIndiceId cercaSoggettoFisicoIndiceNome cercaSoggettoFisicoIndiceInd cercaSoggettoGiuridicoIndicePI cercaSoggettoGiuridicoIndiceId cercaSoggettoGiuridicoIndiceEnte cercaOggettoIndiceCE cercaOggettoIndiceIC cercaOggettoIndiceInd cercaSoggettoProvenienza cercaOggettoProvenienza"
+      scope="Request">
+      <isd:java class="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" static="false"/>
+   </isd:provider>
+   <isd:faultListener>org.apache.soap.server.DOMFaultListener</isd:faultListener>
+   <!-- defaultRegistryClass="it.saga.egov.esicra.soap.WrapperSoapMappingRegistry" -->
+   <isd:mappings defaultRegistryClass="it.saga.egov.esicra.soap.WrapperSoapMappingRegistry" >
+      <!--
+      <isd:map 
+        
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        xmlns:x="http://www.w3.org/2001/XMLSchema"
+        qname="x:int"
+        javaType="java.lang.Integer"
+        xml2JavaClassName="org.apache.soap.encoding.soapenc.IntObjectDeserializer"/>
+      -->
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_SoggettoProvenienzaBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.SoggettoProvenienzaBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoProvenienzaBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoProvenienzaBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+    <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.SoggettoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+    <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoGiuridicoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.SoggettoGiuridicoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+     <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.ProvenienzaBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+     <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_IdentificativiCatastaliBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.IdentificativiCatastaliBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/> 
+     <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_commercio_IscrizioneCCIABean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.commercio.IscrizioneCCIABean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/> 
+
+     <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_SchedaSoggettoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.SchedaSoggettoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_PermessoSoggiornoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.PermessoSoggiornoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>    
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_LocalitaBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.LocalitaBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_ComuneBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.ComuneBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>
+      <isd:map
+         encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:x="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         qname="x:it_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean"
+         javaType="it.saga.siscotel.srvfrontoffice.beans.base.IndirizzoBean"
+         java2XMLClassName="org.apache.soap.encoding.soapenc.BeanSerializer"
+         xml2JavaClassName="org.apache.soap.encoding.soapenc.BeanSerializer"/>    
+              
+   </isd:mappings>
+</isd:service>
+

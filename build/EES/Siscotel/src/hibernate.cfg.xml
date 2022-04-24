@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+
+<!--  connessione diretta jdbc 
+
+<property name="connection.driver_class">org.postgresql.Driver</property>
+<property name="connection.url">jdbc:postgresql://localhost:5432/siscotel</property>
+<property name="connection.username">esicra</property>
+<property name="connection.password">egov2003</property>
+
+-->
+
+<!-- connessione  datasource jdbc -->
+<property name="connection.datasource">java:comp/env/jdbc/NodoDS</property>
+
+
+<property name="show_sql">false</property>
+<property name="cache.use_query_cache">true</property>
+
+<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+<mapping resource="it/saga/siscotel/db/test/Cat.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaAtto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaAttoAnnota.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaCancellazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaCartaIdentita.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaCittadinanza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaEconomica.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaEle.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaFam.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaFamComponente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaFornitore.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaIndirizzo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaIscrizione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaPatente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaPensione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaPermessoSoggiorno.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaProfessione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaRappresentante.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaRelazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaScheda.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaSoggettoEle.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaSoggettoGiur.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaSoggettoProv.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaStciv.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AnaStudio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatAot.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatAotPrg.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatDati.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatIdentificativo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatIndirizzo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatPrg.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatProprietario.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/CatRendita.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComAllegato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComDenuncia.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComEsercizio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComMerceologico.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComRequisiti.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ComSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiAllegato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiCollegata.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiIdentificativo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiIntervento.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiPagamento.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiPratica.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiPraticaDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiPrgIdent.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/EdiUbicazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/Esiidente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/Esinextid.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/IciInsDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/IciInsediamento.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/J2eeUserRoles.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/J2eeUsers.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/J2eeUserServ.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/MaadEvent.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/MaadReport.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/OtIdentificativo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/OtIndice.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/OtIndirizzo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/OtProvenienza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PagBolletta.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PagBollettaDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PagBollettaIva.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PagBollettaRata.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PagPagamentoTipo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolArticolo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolFruitori.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolInfrazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolPermesso.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolTipoPermesso.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolTipoVeicolo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolVeicolo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolVeiPerm.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolVeiSogg.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PolZonaPermesso.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraAllegato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraIncompleta.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraPraticaDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraPraticaPag.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraPraticaTesta.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraRecapito.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraStato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/PraTipoAllegato.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/ProTipo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ProValore.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/RsuInsAgevolazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/RsuInsCalcolo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/RsuInsComponente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/RsuInsediamento.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/RsuPagAddizionale.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ScuClasse.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ScuCorso.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ScuIstituto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/ScuSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SdiCentro.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SdiGraduatoria.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SdiPosGraduatoria.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SdiServizio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SdiServizioDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerCoordinator.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerEsicraInfo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerExport.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerGruppo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerGruppoServizio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerGruppoUtente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerImport.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerIstruttoria.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerProvenienza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerServizio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/SerTransazione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerAccesso.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerArea.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerCentroNascita.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerCittadinanza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerComune.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerConsolato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerEnte.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerLocalita.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerProvincia.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerRegione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerSezEle.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerStato.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TerTribunale.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TriConcessione.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TriConDenuncia.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TriConDett.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/TriConDurata.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/VAnaSoggettoCorrente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VAnaSoggettoCorrenteRes.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VGiuridicoIndirizzoCorrente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndiceOggettoIde.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndiceOggettoInd.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndiceSogFisInd.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndiceSoggetto.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndiceSogGiurInd.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VIndirizzoCorrente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VMovimentazioni.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VOggettoProvenienza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VPraticaCompleta.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VPraticaEdiliziaSogg.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VScuCorsoClasseSog.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VSerServizio.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VSoggettoClasse.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VSoggettoIndirizzoCorrente.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/VSoggettoProvenienza.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/Albo.hbm.xml" /> 
+<mapping resource="it/saga/siscotel/db/AlboForCatStato.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Alboiter.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Categorie.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Categorieric.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Entealbo.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Fornitori.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Forniture.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Richiesteaccreditamento.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Richiesteaccreditamentoiter.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Statofornitore.hbm.xml" />
+<mapping resource="it/saga/siscotel/db/Statoiter.hbm.xml" />
+
+<class-cache class="it.saga.siscotel.db.AnaSoggetto" usage="nonstrict-read-write"/>
+<class-cache class="it.saga.siscotel.db.AnaIndirizzo" usage="nonstrict-read-write"/>
+<class-cache class="it.saga.siscotel.db.AnaSoggettoProv" usage="nonstrict-read-write"/>
+<class-cache class="it.saga.siscotel.db.TerComune" usage="read-only"/>
+<class-cache class="it.saga.siscotel.db.TerComune" usage="read-only"/>
+<class-cache class="it.saga.siscotel.db.SerProvenienza" usage="read-only"/>
+
+</session-factory>
+
+</hibernate-configuration>

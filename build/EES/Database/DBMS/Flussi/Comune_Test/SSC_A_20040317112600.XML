@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaScuSoggetto xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaScuSoggetto.xsd" versione="1.0">
+	<ScuSoggetto progressivo="1">
+		<CodSoggetto>RSSNDR00R08A794I</CodSoggetto>
+		<CodClasse>CL_001_001</CodClasse>
+		<AnnoScolastico>2004/2005</AnnoScolastico>
+		<DesVaccinazioni>Antipollio,AntiTifo</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<ListaInGraduatoria>
+			<InGraduatoria progressivo="1">
+				<CodGraduatoria>cod_001</CodGraduatoria>
+				<PosGraduatoria>2</PosGraduatoria>
+				<PunteggioGraduatoria>10</PunteggioGraduatoria>
+				<StatoInGraduatoria>In attesa</StatoInGraduatoria>
+				<Priorita>12</Priorita>
+			</InGraduatoria>
+			<InGraduatoria progressivo="2">
+				<CodGraduatoria>cod_002</CodGraduatoria>
+				<PosGraduatoria>1</PosGraduatoria>
+				<PunteggioGraduatoria>100</PunteggioGraduatoria>
+				<StatoInGraduatoria>In attesa</StatoInGraduatoria>
+				<Priorita>1</Priorita>
+			</InGraduatoria>
+		</ListaInGraduatoria>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+		<Note>Note Scolastiche</Note>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="2">
+		<CodSoggetto>RSSNGL90A01D150E</CodSoggetto>
+		<CodClasse>CL_001_003</CodClasse>
+		<AnnoScolastico>2004/2005</AnnoScolastico>
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<ListaInGraduatoria>
+			<InGraduatoria progressivo="1">
+				<CodGraduatoria>cod_001</CodGraduatoria>
+				<PosGraduatoria>2</PosGraduatoria>
+				<PunteggioGraduatoria>10</PunteggioGraduatoria>
+				<StatoInGraduatoria>In attesa</StatoInGraduatoria>
+				<Priorita>12</Priorita>
+			</InGraduatoria>
+		</ListaInGraduatoria>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+		<Note>Note Scolastiche</Note>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="3">
+		<CodSoggetto>RSSNGL90A01D150E</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="4">
+		<CodSoggetto>RSSNGL90A01D150E</CodSoggetto>
+		<CodClasse>CL_001_001</CodClasse>
+		<AnnoScolastico>2002/2003</AnnoScolastico>
+       	<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="5">
+		<CodSoggetto>GRGLPU91R19D150M</CodSoggetto>
+		<CodClasse>CL_001_001</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="6">
+		<CodSoggetto>GRGLPU91R19D150M</CodSoggetto>
+		<CodClasse>CL_001_001</CodClasse>
+		<AnnoScolastico>2002/2003</AnnoScolastico>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="7">
+		<CodSoggetto>MNTSNT91R59D150L</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>		
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="8">
+		<CodSoggetto>MNTSNT91R59D150L</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2002/2003</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="9">
+		<CodSoggetto>MSSJSC91L56D150W</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>		
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="10">
+		<CodSoggetto>MSSJSC91L56D150W</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2002/2003</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="11">
+		<CodSoggetto>MSCBNC93C45D150P</CodSoggetto>
+		<CodClasse>CL_001_003</CodClasse>
+		<AnnoScolastico>2004/2005</AnnoScolastico>		
+		<DesVaccinazioni>Antipollio</DesVaccinazioni>
+		<DesPediatra>Dott. Pedi Atria</DesPediatra>
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="12">
+		<CodSoggetto>MSCBNC93C45D150P</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="13">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_001_003</CodClasse>
+		<AnnoScolastico>2001/2002</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="14">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2002/2003</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="15">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_006_002</CodClasse>
+		<AnnoScolastico>2003/2004</AnnoScolastico>		
+		<CodFascia>F_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="16">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_006_001</CodClasse>
+		<AnnoScolastico>2004/2005</AnnoScolastico>		
+		<CodFascia>F_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="17">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_001_002</CodClasse>
+		<AnnoScolastico>2005/2006</AnnoScolastico>		
+		<CodFascia>F_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="18">
+		<CodSoggetto>MRORME93R17D150O</CodSoggetto>
+		<CodClasse>CL_005_001</CodClasse>
+		<AnnoScolastico>2005/2006</AnnoScolastico>		
+		<CodFascia>F_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="19">
+		<CodSoggetto>MSCBNC93C45D150P</CodSoggetto>
+		<CodClasse>CL_005_002</CodClasse>
+		<AnnoScolastico>2005/2006</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+	<ScuSoggetto progressivo="20">
+		<CodSoggetto>MSCBNC93C45D150P</CodSoggetto>
+		<CodClasse>CL_005_001</CodClasse>
+		<AnnoScolastico>2005/2006</AnnoScolastico>		
+		<CodFascia>cod_001</CodFascia>
+		<DesFascia>Fascia Scolastica A1</DesFascia>
+	</ScuSoggetto>
+</ListaScuSoggetto>

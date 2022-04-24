@@ -1,0 +1,24 @@
+SET search_path = :dbschema;
+
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (0, '0', ' ', 0);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (1, '1', 'PIEMONTE', 1);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (2, '2', 'VALLE D''AOSTA', 2);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (3, '3', 'LOMBARDIA', 3);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (4, '4', 'TRENTINO-ALTO ADIGE', 4);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (5, '5', 'VENETO', 5);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (6, '6', 'FRIULI-VENEZIA GIULIA', 6);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (7, '7', 'LIGURIA', 7);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (8, '8', 'EMILIA-ROMAGNA', 8);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (9, '9', 'TOSCANA', 9);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (10, '10', 'UMBRIA', 10);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (11, '11', 'MARCHE', 11);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (12, '12', 'LAZIO', 12);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (13, '13', 'ABRUZZI', 13);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (14, '14', 'MOLISE', 14);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (15, '15', 'CAMPANIA', 15);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (16, '16', 'PUGLIA', 16);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (17, '17', 'BASILICATA', 17);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (18, '18', 'CALABRIA', 18);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (19, '19', 'SICILIA', 19);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (20, '20', 'SARDEGNA', 20);
+INSERT INTO ter_regione (pkid, cod_regione, des_regione, cod_istat_regione) VALUES (99, '99', 'EX COMUNI ITALIANI', 99);

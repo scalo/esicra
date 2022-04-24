@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaEdiPratica xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaEdiPratica.xsd" versione="1.0">
+	<EdiPratica progressivo="1">
+		<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+		<IdServizio>100100</IdServizio>
+		<CodPratica>CODPR1</CodPratica>
+		<DesPratica>Nuova Costruzione</DesPratica>
+		<Tipo>2</Tipo>
+		<DesTipo>DIA</DesTipo>
+		<NumPratica>125-1</NumPratica>
+		<DataPratica>2004-01-10</DataPratica>
+		<DataInizioLavori>2004-01-10</DataInizioLavori>
+		<DataFineLavori>2004-01-10</DataFineLavori>
+		<IdPraticaFo>0</IdPraticaFo>
+		<NumProtocollo>pr. 159</NumProtocollo>
+		<NumRegistro>r.58</NumRegistro>
+		<NumProvvedimento>c 159</NumProvvedimento>
+		<Volume>100,5</Volume>
+		<Superficie>50,10</Superficie>
+		<DataDecadimento>2005-01-01</DataDecadimento>
+		<MotivoDecadimento>Desc. decadiemnto</MotivoDecadimento>
+		<DataAgibilita>2004-12-01</DataAgibilita>
+		<NumAgibilita>ab. 741</NumAgibilita>
+		<ListaSoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+				<CodTipo>cod 1</CodTipo>
+				<DesTipo>Progettista</DesTipo>
+				<CodTipoRuolo>Cod R1</CodTipoRuolo>
+				<DesTipoRuolo>Des R1</DesTipoRuolo>
+				<Note>annotazioni varie</Note>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 2</CodTipo>
+				<DesTipo>Progettista</DesTipo>
+				<CodTipoRuolo>Cod R2</CodTipoRuolo>
+				<DesTipoRuolo>Des R2</DesTipoRuolo>
+			</SoggettoPratica>
+		</ListaSoggettoPratica>
+		<ListaAot>
+			<Aot>
+				<CodAot>CODAOT_1</CodAot>
+				<CodEcografico>CODAOT_1</CodEcografico>
+				<CodCatasto>cd catasto</CodCatasto>
+				<CodIstat>19036</CodIstat>
+				<DataInizio>1967-08-13</DataInizio>
+			</Aot>
+			<Aot>
+				<CodAot>CODAOT</CodAot>
+				<CodIstat>19036</CodIstat>
+			</Aot>
+		</ListaAot>
+		<ListaAotIdentificativo>
+			<AotIdentificativo>
+				<AotIdentificativoDati>
+					<IdComune>19036</IdComune>
+					<TipoCatasto>F</TipoCatasto>
+					<Partita>123</Partita>
+					<Tipo>Tipo1</Tipo>
+					<Sezione>sez U</Sezione>
+					<Foglio>23</Foglio>
+					<Mappale>55</Mappale>
+					<Sub>2</Sub>
+					<Protocollo>9551</Protocollo>
+					<Anno>2003</Anno>
+				</AotIdentificativoDati>
+				<DesPianoRegolatore>Piano Rgolatore 25</DesPianoRegolatore>
+			</AotIdentificativo>
+			<AotIdentificativo>
+				<AotIdentificativoDati>
+					<IdComune>19036</IdComune>
+					<TipoCatasto>F</TipoCatasto>
+					<Protocollo>5789</Protocollo>
+					<Anno>2003</Anno>
+				</AotIdentificativoDati>
+				<DesPianoRegolatore></DesPianoRegolatore>
+			</AotIdentificativo>
+		</ListaAotIdentificativo>
+		<ListaAotIndirizzoDati>
+			<AotIndirizzoDati>
+				<DesArea>Via Roma</DesArea>
+				<CivicoNum>45</CivicoNum>
+				<CivicoLet>b</CivicoLet>
+				<Colore>Nero</Colore>
+				<Corte>cor 1</Corte>
+				<Scala>sc 1</Scala>
+				<Interno>int 1</Interno>
+			</AotIndirizzoDati>
+			<AotIndirizzoDati>
+				<DesArea>Via Roma</DesArea>
+				<CivicoNum>45</CivicoNum>
+			</AotIndirizzoDati>
+		</ListaAotIndirizzoDati>
+	</EdiPratica>
+	<EdiPratica progressivo="2">
+		<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+		<IdServizio>100100</IdServizio>
+		<CodPratica>cod PR2</CodPratica>
+		<Tipo>2</Tipo>
+		<DesTipo>DIA</DesTipo>
+		<NumPratica>34</NumPratica>
+		<DataPratica>2004-12-01</DataPratica>
+		<ListaSoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+				<CodTipo>cod 1</CodTipo>
+				<DesTipo>Committente</DesTipo>
+				<CodTipoRuolo>Cod R1</CodTipoRuolo>
+				<DesTipoRuolo>Des R1</DesTipoRuolo>
+				<Note>annotazioni varie</Note>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 2</CodTipo>
+				<DesTipo>Progettista</DesTipo>
+				<CodTipoRuolo>Cod R2</CodTipoRuolo>
+				<DesTipoRuolo>Des R2</DesTipoRuolo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>00056398214</CodSoggetto>
+				<CodTipo>cod 3</CodTipo>
+				<DesTipo>Impresa Esecutrice</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 3</CodTipo>
+				<DesTipo>Direttore Lavori</DesTipo>
+			</SoggettoPratica>
+		</ListaSoggettoPratica>
+		<ListaAotIndirizzoDati>
+			<AotIndirizzoDati>
+				<DesArea>Piazza Pace</DesArea>
+				<CivicoNum>2</CivicoNum>
+			</AotIndirizzoDati>
+		</ListaAotIndirizzoDati>
+	</EdiPratica>
+	<EdiPratica progressivo="3">
+		<CodSoggetto>00056398214</CodSoggetto>
+		<IdServizio>100100</IdServizio>
+		<CodPratica>cod PR3</CodPratica>
+		<Tipo>2</Tipo>
+		<DesTipo>DIA</DesTipo>
+		<NumPratica>35</NumPratica>
+		<DataPratica>2004-11-01</DataPratica>
+		<ListaSoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>00056398214</CodSoggetto>
+				<DesTipo>Impresa Esecutrice</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 2</CodTipo>
+				<DesTipo>Progettista</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+				<DesTipo>Progettista</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+				<DesTipo>Progettista</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>00056398214</CodSoggetto>
+				<DesTipo>Impresa Esecutrice</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 3</CodTipo>
+				<DesTipo>Direttore Lavori</DesTipo>
+			</SoggettoPratica>
+		</ListaSoggettoPratica>
+		<ListaAotIndirizzoDati>
+			<AotIndirizzoDati>
+				<DesArea>Piazza Grande</DesArea>
+				<CivicoNum>159</CivicoNum>
+			</AotIndirizzoDati>
+		</ListaAotIndirizzoDati>
+	</EdiPratica>
+	<EdiPratica progressivo="4">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<IdServizio>100100</IdServizio>
+		<CodPratica>cod PR3</CodPratica>
+		<Tipo>2</Tipo>
+		<DesTipo>DIA</DesTipo>
+		<NumPratica>35</NumPratica>
+		<DataPratica>2004-11-01</DataPratica>
+		<ListaSoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<DesTipo>Direttore Lavori</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+				<DesTipo>Progettista</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+				<DesTipo>Progettista</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<DesTipo>Impresa Esecutrice</DesTipo>
+			</SoggettoPratica>
+			<SoggettoPratica>
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<CodTipo>cod 3</CodTipo>
+				<DesTipo>Direttore Lavori</DesTipo>
+			</SoggettoPratica>
+		</ListaSoggettoPratica>
+		<ListaAotIndirizzoDati>
+			<AotIndirizzoDati>
+				<DesArea>Piazza Piccola</DesArea>
+			</AotIndirizzoDati>
+		</ListaAotIndirizzoDati>
+	</EdiPratica>
+</ListaEdiPratica>

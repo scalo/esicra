@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.RsuInsediamento" table="rsu_insediamento" schema="esicra">
+        <id name="pkid" type="integer">
+            <column name="pkid" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="terArea" class="it.saga.siscotel.db.TerArea">
+            <column name="fkid_area" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codInsediamento" type="string">
+            <column name="cod_insediamento" length="20" />
+        </property>
+        <property name="flgStato" type="integer">
+            <column name="flg_stato" />
+        </property>
+        <property name="superficie" type="double">
+            <column name="superficie" precision="8" scale="0" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="colore" type="string">
+            <column name="colore" length="9" />
+        </property>
+        <property name="corte" type="string">
+            <column name="corte" length="9" />
+        </property>
+        <property name="scala" type="string">
+            <column name="scala" length="9" />
+        </property>
+        <property name="interno" type="string">
+            <column name="interno" length="9" />
+        </property>
+        <property name="piano" type="string">
+            <column name="piano" length="9" />
+        </property>
+        <property name="edificio" type="string">
+            <column name="edificio" length="9" />
+        </property>
+        <property name="codEcografico" type="string">
+            <column name="cod_ecografico" length="70" />
+        </property>
+        <property name="dtDenuncia" type="date">
+            <column name="dt_denuncia" length="4" />
+        </property>
+        <property name="numRicevuta" type="string">
+            <column name="num_ricevuta" length="10" />
+        </property>
+        <property name="dtRicevuta" type="date">
+            <column name="dt_ricevuta" length="4" />
+        </property>
+        <property name="desTariffa" type="string">
+            <column name="des_tariffa" length="80" />
+        </property>
+        <property name="desTariffa1" type="string">
+            <column name="des_tariffa1" length="80" />
+        </property>
+        <property name="numAccertamento" type="integer">
+            <column name="num_accertamento" />
+        </property>
+        <property name="dtAccertamento" type="date">
+            <column name="dt_accertamento" length="4" />
+        </property>
+        <property name="desTipoDenuncia" type="string">
+            <column name="des_tipo_denuncia" length="80" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="rsuInsAgevolaziones" inverse="true">
+            <key>
+                <column name="fkid_insediamento" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsAgevolazione" />
+        </set>
+        <set name="rsuInsComponentes" inverse="true">
+            <key>
+                <column name="fkid_insediamento" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsComponente" />
+        </set>
+        <set name="rsuInsCalcolos" inverse="true">
+            <key>
+                <column name="fkid_insediamento" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsCalcolo" />
+        </set>
+    </class>
+</hibernate-mapping>

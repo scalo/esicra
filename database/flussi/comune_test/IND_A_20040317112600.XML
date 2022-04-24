@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaIndirizzo versione="1.0" xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaIndirizzo.xsd">
+	<Indirizzo progressivo="1">
+		<CodSoggetto>RSSMRA70C20A794O </CodSoggetto>
+		<Tipo>RES</Tipo>
+		<DesArea>Via Ugo Foscolo</DesArea>
+		<NumCiv>12</NumCiv>
+		<LetCiv>B</LetCiv>
+		<Corte>Co1</Corte>
+		<Scala>Sc1</Scala>
+		<Interno>Int1</Interno>
+		<Piano>P1</Piano>
+		<Edificio>E1</Edificio>
+		<Presso>suo Zia</Presso>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio>2000-09-21</DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo="2">
+		<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<DesArea>Via Lattea</DesArea>
+		<NumCiv>95</NumCiv>
+		<LetCiv/>
+		<Corte/>
+		<Scala/>
+		<Interno/>
+		<Piano/>
+		<Edificio/>
+		<Presso/>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio>2001-09-21</DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo="3">
+		<CodSoggetto>RSSNDR00R08A794I</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<DesArea>Via Lattea CORSO NIZZA</DesArea>
+		<NumCiv>95</NumCiv>
+		<LetCiv/>
+		<Corte/>
+		<Scala/>
+		<Interno/>
+		<Piano/>
+		<Edificio/>
+		<Presso/>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio>2001-09-21</DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="4">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>VIA LUNGA</DesArea>
+		<NumCiv>11</NumCiv>
+		<Localita>
+			<DesLocalita>SVIZZERA</DesLocalita>
+			<Cap></Cap>
+			<CodStato>0</CodStato>
+			<DesStato>SVIZZERA</DesStato>
+		</Localita>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="5">
+		<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>CORSO MAZZINI</DesArea>
+		<NumCiv>11</NumCiv>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="6">
+		<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>CORSO MAZZINI</DesArea>
+		<NumCiv>11</NumCiv>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="7">
+		<CodSoggetto>RSSMHL01R08A794M</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>CORSO MAZZINI</DesArea>
+		<NumCiv>11</NumCiv>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="8">
+		<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+		<Tipo>RES</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>VICOLO DEI PINI</DesArea>
+		<NumCiv>15</NumCiv>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="9">
+		<CodSoggetto>01137069875</CodSoggetto>
+		<Tipo>TRI</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>PIAZZA DEI CADUTI</DesArea>
+		<NumCiv>1</NumCiv>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo="10">
+		<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+		<Tipo>TRI</Tipo>
+		<DesArea>CORSO DEI TRIBUTI</DesArea>
+		<NumCiv>99</NumCiv>
+		<LetCiv>A</LetCiv>
+		<Corte/>
+		<Scala/>
+		<Interno/>
+		<Piano/>
+		<Edificio/>
+		<Presso/>
+		<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</Comune>
+		<DataInizio>2000-09-21</DataInizio>
+	</Indirizzo>
+	<Indirizzo progressivo ="11">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<Tipo>TRI</Tipo>
+		<CodArea>0</CodArea>
+		<DesArea>VIA LUNGA</DesArea>
+		<NumCiv></NumCiv>
+		<Localita>
+			<DesLocalita>SVIZZERA</DesLocalita>
+			<Cap></Cap>
+			<CodStato>0</CodStato>
+			<DesStato>SVIZZERA</DesStato>
+		</Localita>
+		<DataInizio></DataInizio>
+	</Indirizzo>
+</ListaIndirizzo>

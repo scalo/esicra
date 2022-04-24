@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaFornitore" table="ana_fornitore" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codFornitore" type="string">
+            <column name="cod_fornitore" length="20" />
+        </property>
+        <property name="codBanca" type="string">
+            <column name="cod_banca" length="20" />
+        </property>
+        <property name="desBanca" type="string">
+            <column name="des_banca" length="80" />
+        </property>
+        <property name="codTributoIrpef" type="string">
+            <column name="cod_tributo_irpef" length="20" />
+        </property>
+        <property name="codTributoIrpefReg" type="string">
+            <column name="cod_tributo_irpef_reg" length="20" />
+        </property>
+        <property name="codTributoIrpefProv" type="string">
+            <column name="cod_tributo_irpef_prov" length="20" />
+        </property>
+        <property name="codTributoIrpefCom" type="string">
+            <column name="cod_tributo_irpef_com" length="20" />
+        </property>
+        <property name="codTributoIrap" type="string">
+            <column name="cod_tributo_irap" length="20" />
+        </property>
+        <property name="abi" type="string">
+            <column name="abi" length="6" />
+        </property>
+        <property name="cab" type="string">
+            <column name="cab" length="6" />
+        </property>
+        <property name="contoCorrente" type="string">
+            <column name="conto_corrente" length="10" />
+        </property>
+        <property name="codAttivita" type="string">
+            <column name="cod_attivita" length="20" />
+        </property>
+        <property name="condizioniPagamento" type="string">
+            <column name="condizioni_pagamento" length="80" />
+        </property>
+        <property name="banca" type="string">
+            <column name="banca" length="80" />
+        </property>
+        <property name="telex" type="string">
+            <column name="telex" length="20" />
+        </property>
+        <property name="icin" type="string">
+            <column name="icin" length="38" />
+        </property>
+        <property name="ncin" type="string">
+            <column name="ncin" length="10" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

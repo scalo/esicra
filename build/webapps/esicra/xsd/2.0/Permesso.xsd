@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:include schemaLocation="Zona.xsd"/>
+	<xs:include schemaLocation="TipoPermesso.xsd"/>
+	<xs:include schemaLocation="Veicolo.xsd"/>
+	<xs:element name="Permesso" type="esicra_import:PermessoType">
+		<xs:annotation>
+			<xs:documentation>Permesso Polizia</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="PermessoType">
+		<xs:sequence>
+			<xs:element name="CodPermesso" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Codice identificativo del permesso</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodPermessoBo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero Permesso Emesso dal Back Office</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodSoggetto">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdServizio" type="xs:integer" minOccurs="0"/>
+			<xs:element name="CodTipo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesTipo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodZona" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesZona" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Zona o Percorso</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="400"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ListaVeicolo" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Veicolo" type="esicra_import:VeicoloType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Motivazione" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Stato">
+				<xs:annotation>
+					<xs:documentation>Stato del permesso</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdPratica" type="xs:int" minOccurs="0"/>
+			<xs:element name="DataRichiesta" type="xs:date"/>
+			<xs:element name="OraInizioValidita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OraFineValidita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataInizioValidita" type="xs:date"/>
+			<xs:element name="DataFineValidita" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

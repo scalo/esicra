@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:complexType name="IscrizioneREC">
+		<xs:sequence>
+			<xs:element name="SedeRECLegale" type="xs:string"/>
+			<xs:element name="NumeroRECLegale" type="xs:string"/>
+			<xs:element name="DataIscrizioneRECLegale" type="xs:date"/>
+			<xs:element name="Somministratore" type="pra:SoggettoType"/>
+			<xs:element name="SedeRECSomministratore" type="xs:string"/>
+			<xs:element name="NumeroRECSomministratore" type="xs:string"/>
+			<xs:element name="DataIscrizioneRECSomministratore" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

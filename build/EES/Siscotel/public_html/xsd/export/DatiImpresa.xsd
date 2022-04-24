@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:include schemaLocation="IscrizioneCCIA.xsd"/>
+	<xs:include schemaLocation="Contratto.xsd"/>
+	<xs:element name="DatiImpresa" type="pra:DatiImpresaType"/>
+	<xs:complexType name="DatiImpresaType">
+		<xs:sequence>
+			<xs:element name="DescrizioneImpresa" type="xs:string"/>
+			<xs:element name="PartitaIVA" type="xs:string"/>
+			<xs:element name="NumeroTelefono" type="xs:string"/>
+			<xs:element name="Indirizzo" type="pra:IndirizzoType"/>
+			<xs:element name="IscrizioneCCIA" type="pra:IscrizioneCCIAType"/>
+			<xs:element name="Contratto" type="pra:ContrattoType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

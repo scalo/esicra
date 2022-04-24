@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+    <class name="it.saga.siscotel.db.OtIndice" table="ot_indice" schema="esicra">
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+          <column name="PKID" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+          </generator>
+        </id>
+        <property name="codAot" type="string">
+            <column name="cod_aot" length="20" />
+        </property>
+        <property name="codEcografico" type="string">
+            <column name="cod_ecografico" length="70" />
+        </property>
+        <property name="codCatasto" type="string">
+            <column name="cod_catasto" length="20" />
+        </property>
+        <property name="codIstatComune" type="string">
+            <column name="cod_istat_comune" length="20" />
+        </property>
+        <property name="sezione" type="string">
+            <column name="sezione" length="5" />
+        </property>
+        <property name="foglio" type="string">
+            <column name="foglio" length="5" />
+        </property>
+        <property name="mappale" type="string">
+            <column name="mappale" length="20" />
+        </property>
+        <property name="sub" type="string">
+            <column name="sub" length="5" />
+        </property>
+        <property name="protAnno" type="integer">
+            <column name="prot_anno" />
+        </property>
+        <property name="protNum" type="string">
+            <column name="prot_num" length="20" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="otIdentificativos" inverse="true">
+            <key>
+                <column name="fkid_ot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.OtIdentificativo" />
+        </set>
+        <set name="otIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_ot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.OtIndirizzo" />
+        </set>
+        <set name="otProvenienzas" inverse="true">
+            <key>
+                <column name="fkid_ot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.OtProvenienza" />
+        </set>
+    </class>
+</hibernate-mapping>

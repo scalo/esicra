@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<TITLE>BC4J Query Form Usage</TITLE>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="bc4j.css">
+</HEAD>
+<BODY>
+<h1>JSP Forms for Business Components</h1>
+<p>The BC4J JSP wizards you used to generate this page help you create forms to 
+  browse, query, or edit rowset data through view objects usages that your BC4J 
+  JSP projects define. Each of these data access forms consists of one or more 
+  JSP pages built using JDeveloper-provided JSP component tags from the BC4J Data 
+  Tags custom tag library.</p>
+<p>These topics help you to understand and work with the BC4J JSP forms:</p>
+<ul>
+  <li><a href="#contents">Contents Organization</a></li>
+  <li><a href="#browseform">Browse Form Usage</a></li>
+  <li><a href="#editform">Edit Form Usage</a></li>
+  <li><a href="#queryform">Query Form Usage</a></li>
+</ul>
+<h2><a name="contents"></a>Contents Organization</h2>
+<p>The <strong>Content</strong> frame of <code>main.html</code> displays your 
+  BC4J JSP project's forms organized by:</p>
+<ul>
+  <li>View object usage which are specific to a view object instance. The default 
+    title may look like <code>DeptView1</code>, where the number indicates a specific 
+    usage of a view object since you may have more than one usage of the same 
+    view object.</li>
+  <li>View link usage which define a link between instances of master-detail related 
+    view objects. The default title may look like <code>FkDeptnoLink</code>, where 
+    <code>Fk</code> stands for the foreign-key, used to create the link.</li>
+</ul>
+<p>Whether or not you see both categories in <b>Contents</b> depends upon the 
+  selections you made in the BC4J JSP wizards and the data model that your Business 
+  Components project defines. For example, if your Business Components project 
+  did not define a master-detail link, you would not have been able to generate 
+  a view link usage and consequently, there would be no category for view links 
+  in <b>Contents</b>.</p>
+<p>Within the above categories, you will have links to one or more individual 
+  form types:</p>
+<ul>
+  <li><strong>Browse</strong> to navigate records in a predefined range specified 
+    by the view object</li>
+  <li><strong>Query</strong> to retrieve rows by creating a view criteria using 
+    specific attributes of the view object</li>
+  <li><strong>Edit</strong> to edit individual rows on the view object (this form 
+    is not visible in Contents since you must click Browse to view the edit form)</li>
+</ul>
+<h3>Try this:</h3>
+<p>Mouse over the <strong>Contents</strong> frame links. If your BC4J JSP project 
+  was created with the Jakarta Project's Struts framework, your browser will display 
+  a <code>.do</code> link instead of a <code>.jsp</code> link. In a Struts-based 
+  JSP project, actions define the page forward, rather than a page link.</p>
+<h2><a name="browseform"></a>Browse Form Usage</h2>
+<p>Use this form to navigate records in a predefined range specified by the view 
+  object usage. The browse form uses these JSP component tags from the BC4J Data 
+  Tags custom tag library to navigate the rowset:</p>
+<ul>
+  <li>DataScroller component to provide these navigation functions:</li>
+  <ul>
+    <li><strong>Previous</strong> to navigate to the previous rows in the range</li>
+    <li>Choose the current range and view available ranges selection using the 
+      <code>oracle.jbo.html.jsp.datatags.DataScroller</code> web bean</li>
+    <li><strong>Next</strong> to navigate to the next rows in the range</li>
+  </ul>
+  <li>DataTable component tag to display the attributes of the view object usage 
+    in the current range and to provide links to delete or edit individual rows 
+    (if you created a form to browse and edit)</li>
+</ul>
+<h3>Try this:</h3>
+<p>Mouse over the <strong>Previous</strong> link and view the link definition 
+  in your browser. The DataScroller component tag passes request parameters on 
+  the URL to the target JSP. In this case, BCJ4 JSP pages define themselves as 
+  the target by default. The request parameters are specific to BC4J and include:</p>
+<ul>
+  <li><code>jboEvent</code> with the action <code>previousSet</code> defined</li>
+  <li><code>jboEventVo</code> with the name of the view object usage the DataScroller 
+    defines</li>
+  <li><code>amId</code> with the name of the application module JSP page uses 
+    for the scope of the session</li>
+</ul>
+<p>The <code>jboEventVo</code> and the <code>amid</code> parameters are required 
+  by BC4J JSP pages to define a context for data access. Although your browser 
+  doesn't display a link for the DataScroller web bean, the web bean works the 
+  same way by passing <code>jboEvent</code> with the action <code>gotoSet</code>.</p>
+<p>To understand further how the DataScroller component tag functions, you may 
+  want to view the <code>DataScrollerComponent.jsp</code> definition file in JDeveloper 
+  and search for the <code>&lt;jbo:UrlEvent&gt;</code> tag available in the BC4J 
+  Data Tag library.</p>
+<h3>Try this if your form lets you edit individual rows:</h3>
+<p>If your form lets you delete and edit individual rows, mouse over the <strong>Edit</strong> 
+  link and view the link definition in your browser. In this case, the DataTable 
+  component tag passes the same request parameters on the URL to the target JSP 
+  as the DataScroller component tag, with the addition of the <code>jboRowKey</code> 
+  parameter set to the unique BC4J view object row identifier known as the rowkey. 
+  Unlike the DataScroller component, the DataTable component defines a target 
+  page that you can use to edit the row data (see <a href="#editform">Edit Form 
+  Usage</a>).</p>
+<p>To understand further how the DataTable component tag functions, you may want 
+  to view the <code>DataEditComponent.jsp</code> definition file in JDeveloper 
+  and search for the <code>&lt;jbo:Row&gt;</code>, <code>&lt;jbo:RowsetIterate&gt;</code>, 
+  and <code>&lt;jbo:AttributeIterate&gt;</code> tags available in the BC4J Data 
+  Tag library.</p>
+<h2><a name="editform"></a>Edit Form Usage</h2>
+<p>Use this form to edit individual rows on the view object usage. The edit form 
+  uses the DataEdit component tag from the BC4J Data Tags custom tag library to 
+  display the attributes of the row. The edit form identifies the specific row 
+  to edit from the jboRowKey request parameter passed to it by the calling browse 
+  form. The DataEdit component displays the attributes of the row using an input 
+  render appropriate for the data type displayed. </p>
+<p><strong>Note:</strong> In your BC4J project, you can predefine specific input 
+  renders to display in your JSP page for any given view object attribute. This 
+  feature, known as BC4J Control Hints, lets you define many aspects of the JSP 
+  page display, including labels and tooltips, in addition to choosing controls, 
+  such as the Date Picker, to render the data.</p>
+<p>To understand further how the DataEdit component tag functions, you may want 
+  to view the <code>DataEditComponent.jsp</code> definition file in JDeveloper 
+  and search for the <code>&lt;jbo:OnEvent&gt;</code> and <code>&lt;jbo:Row&gt;</code> 
+  tags available in the BC4J Data Tag library.</p>
+<p><strong>To submit the row data with your changes</strong>:</p>
+<ol>
+  <li>Enter values in the view attribute's input fields.</li>
+  <li>Click <strong>Update</strong> to specify a new view criteria that is automatically 
+    OR'ed to any preceding view criteria.</li>
+  <li>Click <strong>Search</strong> in the query form to display the results.</li>
+</ol>
+<p><strong>To reset the data before submitting the changes</strong>:</p>
+<ul>
+  <li>Click <strong>Reset</strong> in the edit form to reset the attribute values 
+    to their original values</li>
+</ul>
+<h2><a name="queryform"></a>Query Form Usage</h2>
+<p>Use this form to define a query to a data source represented by a view object 
+  usage. The query form displays text input fields, which correlate with the view 
+  object's attributes. The form has its action sent to a corresponding submit 
+  page. The submit page performs the following functions:</p>
+<ul>
+  <li>Processes the incoming HTML parameters</li>
+  <li>Sets the Where clause based on the parameter values</li>
+  <li>Executes a query and renders all the rows which correspond to the Where clause</li>
+</ul>
+<p><strong>To execute the query</strong>:</p>
+<ol>
+  <li>Enter values in the view criteria field for the attributes they want to 
+    match. The entered value must include the appropriate comparison symbol (&gt;, 
+    &lt;, =). All values in the same view criteria or AND'ed together.</li>
+  <li>Optionally, click <strong>Add Criteria</strong> 
+    to specify a new view criteria that is automatically OR'ed to any preceding 
+    view criteria.</li>
+  <li>Click <strong>Search</strong> in the query form to display the results.</li>
+</ol>
+  
+<p><strong>To clear the query before beginning a new one</strong>:</p>
+<ul>
+  <li>Click <strong>Clear All </strong> in the query form to reset the search criteria values.</li>
+</ul>
+</BODY>
+</html>
+

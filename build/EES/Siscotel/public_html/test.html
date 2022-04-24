@@ -1,0 +1,48 @@
+<!--
+    Pagina di test pe sviluppo
+-->
+<HTML>
+   <HEAD>
+      <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+      <TITLE> Start Page </TITLE>
+   </HEAD>
+   <script type="text/javascript" >
+      function redirigi(){
+        //alert("redirigi");
+        document.redirect.submit();
+      }
+   </script>
+   <BODY Onload="redirigi()">
+   
+      <H1> Start Page </H1>
+      <p>
+      <a href="http://127.0.0.1:8988/esicra/EesInvia?uri=http://127.0.0.1:8988/esicra/EesRicevi&id_ente=19097&completo=si" > Start EesSincronizza  Completo local OC4J </a>
+      <p>
+      <a href="http://127.0.0.1:8080/esicra/EesInvia?uri=http://127.0.0.1:8080/esicra/EesRicevi&id_ente=19097&completo=si" > Start EesSincronizza  Completo local Tomcat </a>
+      <p>
+      <a href="http://127.0.0.1:8080/esicra/EesInvia?uri=http://srvrs:8080/esicra/EesRicevi&id_ente=19097&completo=si" > Start EesSincronizza Completo remote Tomcat </a>
+      <p>
+      <a href="http://127.0.0.1:8988/esicra/EesInvia?uri=http://srvrs:8080/esicra/EesRicevi&id_ente=19097&completo=si" > Start EesSincronizza Completo Srvrs </a>
+      <p>
+      <a href="EesTimer.jsp">EesTimer.jsp</a>
+      <p>
+      <a href="EsicraConfServlet">EsicraConfServlet</a>
+      <hr>
+      <a href="http://127.0.0.1:8988/esicra/EesInvia?uri=http://127.0.0.1:8988/esicra/EesRicevi&id_ente=19097&completo=true" > Nuovo Coordinator OC4J Totale (local)</a>
+      <p>
+      <a href="http://127.0.0.1:8988/esicra/EesInvia?uri=http://127.0.0.1:8988/esicra/EesRicevi&id_ente=19097&completo=false" > Nuovo Coordinator OC4J Parziale  (local)</a>
+      <p>
+      <a href="http://127.0.0.1:8080/esicra/EesInvia?uri=http://127.0.0.1:8080/esicra/EesRicevi&id_ente=19097&completo=true" > Nuovo Coordinator Tomcat - Tomcat (local)</a>
+      <p>
+      <a href="http://127.0.0.1:8080/esicra/EesInvia?uri=http://srvrs:8080/esicra/EesRicevi&id_ente=19097&completo=true" > Nuovo Coordinator Tomcat - Tomcat </a>
+      <p>
+      <a href="http://127.0.0.1:8988/esicra/EesInvia?uri=http://srvrs:8080/esicra/EesRicevi&id_ente=19097&completo=true" > Nuovo Coordinator OC4J - Tomcat </a>
+      <hr>
+      <a href="test_datasource.jsp">test_datasource.jsp</a>
+
+      <!--
+      <form name="redirect" action="EesTimer.jsp">
+      </form>
+      -->
+   </BODY>
+</HTML>

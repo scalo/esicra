@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PolPermesso" table="pol_permesso" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="polZonaPermesso" class="it.saga.siscotel.db.PolZonaPermesso">
+            <column name="fkid_zona_permesso" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="polTipoPermesso" class="it.saga.siscotel.db.PolTipoPermesso">
+            <column name="fkid_tipo_permesso" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codPermesso" type="string">
+            <column name="cod_permesso" length="20" />
+        </property>
+        <property name="idServizio" type="integer">
+            <column name="id_servizio" />
+        </property>
+        <property name="desTipoPermesso" type="string">
+            <column name="des_tipo_permesso" length="80" />
+        </property>
+        <property name="desZona" type="string">
+            <column name="des_zona" length="400" />
+        </property>
+        <property name="oraInizio" type="string">
+            <column name="ora_inizio" length="8" />
+        </property>
+        <property name="oraFine" type="string">
+            <column name="ora_fine" length="8" />
+        </property>
+        <property name="dtRichiesta" type="date">
+            <column name="dt_richiesta" length="4" />
+        </property>
+        <property name="motivazione" type="string">
+            <column name="motivazione" length="200" />
+        </property>
+        <property name="motRicInd" type="string">
+            <column name="mot_ric_ind" length="200" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1024" />
+        </property>
+        <property name="idPratica" type="big_decimal">
+            <column name="id_pratica" precision="22" scale="0" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="polFruitoris" inverse="true">
+            <key>
+                <column name="fkid_permesso" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolFruitori" />
+        </set>
+        <set name="polVeiPerms" inverse="true">
+            <key>
+                <column name="fkid_permesso" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolVeiPerm" />
+        </set>
+    </class>
+</hibernate-mapping>

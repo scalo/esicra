@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSoggettoGiur xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSoggettoGiur.xsd" versione="1.0">
+	<SoggettoGiur progressivo ="1">
+		<CodSoggetto>01137069875</CodSoggetto>
+		<Provenienza>10</Provenienza>
+		<Denominazione>GELATERIA PRIMAVERA</Denominazione>
+		<PartitaIva>01137069875</PartitaIva>
+		<CodRappresentante>VRDCRN52C70H558I</CodRappresentante>
+		<DesTitoloRapp>Proprietaria</DesTitoloRapp>
+	</SoggettoGiur>
+	<SoggettoGiur progressivo ="2">
+		<CodSoggetto>01137069888</CodSoggetto>
+		<Provenienza>10</Provenienza>
+		<Denominazione>LA CASA DEL FIORE DI ROBERTO ROSSI &#38; C. SNC</Denominazione>
+		<DesRappresentante>ROBERTO ROSSI</DesRappresentante>
+		<DesTitoloRapp>Proprietario</DesTitoloRapp>
+		<CognomeRapp>Rossi</CognomeRapp>
+		<NomeRapp>Roberto Carlos</NomeRapp>
+		<DtNascitaRapp>1958-04-20</DtNascitaRapp>
+	  <LocalitaNascitaRapp>Desenzano (BS)</LocalitaNascitaRapp>
+	  <RecapitoRapp>Piazza Vittoria 24, Brescia</RecapitoRapp>
+	</SoggettoGiur>	
+</ListaSoggettoGiur>
+

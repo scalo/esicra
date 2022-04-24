@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Fornitori" table="fornitori" schema="esicra">
+        <id name="pkfornitore" type="big_decimal">
+            <column name="pkfornitore" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="codfornitore" type="string">
+            <column name="codfornitore" />
+        </property>
+        <property name="denominazione" type="string">
+            <column name="denominazione"/>
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome"/>
+        </property>
+        <property name="nome" type="string">
+            <column name="nome"/>
+        </property>
+        <property name="personarif" type="string">
+            <column name="personarif"/>
+        </property>
+        <property name="titolaritarif" type="string">
+            <column name="titolaritarif"/>
+        </property>
+        <property name="codfiscale" type="string">
+            <column name="codfiscale" />
+        </property>
+        <property name="partiva" type="string">
+            <column name="partiva" />
+        </property>
+        <property name="via" type="string">
+            <column name="via"/>
+        </property>
+        <property name="civico" type="string">
+            <column name="civico"/>
+        </property>
+        <property name="cap" type="string">
+            <column name="cap"/>
+        </property>
+        <property name="citta" type="string">
+            <column name="citta"/>
+        </property>
+        <property name="provincia" type="string">
+            <column name="provincia"/>
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono"/>
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="idEnte" type="big_decimal">
+            <column name="id_ente" not-null="true" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" />
+        </property>
+        <set name="alboForCatStatos" inverse="true" cascade="all">
+            <key>
+                <column name="fkfornitore"/>
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AlboForCatStato" />
+        </set>
+        <set name="richiesteaccreditamentos" inverse="true">
+            <key>
+                <column name="fkfornitore"/>
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Richiesteaccreditamento" />
+        </set>
+    </class>
+</hibernate-mapping>

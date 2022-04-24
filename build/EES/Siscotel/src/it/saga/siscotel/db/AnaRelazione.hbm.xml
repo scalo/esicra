@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaRelazione" table="ana_relazione" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codRelazione" type="string">
+            <column name="cod_relazione" length="20" />
+        </property>
+        <property name="sesso" type="integer">
+            <column name="sesso" />
+        </property>
+        <property name="desRelazione" type="string">
+            <column name="des_relazione" length="80" />
+        </property>
+        <property name="grado" type="string">
+            <column name="grado" length="15" />
+        </property>
+        <set name="anaFamComponentes" inverse="true">
+            <key>
+                <column name="fkid_relazione" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaFamComponente" />
+        </set>
+    </class>
+</hibernate-mapping>

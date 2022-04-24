@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.ProValore" table="pro_valore" schema="esicra">
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+        <column name="PKID" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+        </generator>
+        </id>
+        <many-to-one name="proTipo" class="it.saga.siscotel.db.ProTipo">
+            <column name="tipo" precision="22" scale="0" />
+        </many-to-one>
+        <property name="descrizione" type="string">
+            <column name="descrizione" length="80" />
+        </property>
+        <property name="ordinale" type="integer">
+            <column name="ordinale" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

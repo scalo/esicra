@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.ComDenuncia" table="com_denuncia" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="idPratica" type="big_decimal">
+            <column name="id_pratica" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="codDenunciaBo" type="string">
+            <column name="cod_denuncia_bo" length="40" />
+        </property>
+        <property name="codDenuncia" type="string">
+            <column name="cod_denuncia" length="40" />
+        </property>
+        <property name="desDenuncia" type="string">
+            <column name="des_denuncia" length="80" />
+        </property>
+        <property name="codTipoDenuncia" type="string">
+            <column name="cod_tipo_denuncia" length="20" />
+        </property>
+        <property name="desTipoDenuncia" type="string">
+            <column name="des_tipo_denuncia" length="80" />
+        </property>
+        <property name="dtDenuncia" type="date">
+            <column name="dt_denuncia" length="4" />
+        </property>
+        <property name="dtCessazione" type="date">
+            <column name="dt_cessazione" length="4" />
+        </property>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="numProtocollo" type="string">
+            <column name="num_protocollo" length="20" />
+        </property>
+        <property name="desAttivita" type="string">
+            <column name="des_attivita" length="100" />
+        </property>
+        <property name="codStruttura" type="string">
+            <column name="cod_struttura" length="20" />
+        </property>
+        <property name="desStruttura" type="string">
+            <column name="des_struttura" length="80" />
+        </property>
+        <property name="denSubentro" type="string">
+            <column name="den_subentro" length="100" />
+        </property>
+        <property name="numAutSubentro" type="string">
+            <column name="num_aut_subentro" length="20" />
+        </property>
+        <property name="dtAutSubentro" type="date">
+            <column name="dt_aut_subentro" length="4" />
+        </property>
+        <property name="cfiscSubentro" type="string">
+            <column name="cfisc_subentro" length="20" />
+        </property>
+        <property name="codCausaSubentro" type="string">
+            <column name="cod_causa_subentro" length="20" />
+        </property>
+        <property name="desCausaSubentro" type="string">
+            <column name="des_causa_subentro" length="80" />
+        </property>
+        <property name="flgRiduzione" type="big_decimal">
+            <column name="flg_riduzione" precision="38" scale="0" />
+        </property>
+        <property name="flgAltreAttivita" type="big_decimal">
+            <column name="flg_altre_attivita" precision="38" scale="0" />
+        </property>
+        <property name="flgTrasferimento" type="big_decimal">
+            <column name="flg_trasferimento" precision="38" scale="0" />
+        </property>
+        <property name="dtIniSospensione" type="date">
+            <column name="dt_ini_sospensione" length="4" />
+        </property>
+        <property name="dtFinSospensione" type="date">
+            <column name="dt_fin_sospensione" length="4" />
+        </property>
+        <property name="supAmpliata" type="string">
+            <column name="sup_ampliata" length="10" />
+        </property>
+        <property name="supRidotta" type="string">
+            <column name="sup_ridotta" length="10" />
+        </property>
+        <property name="supComplessiva" type="string">
+            <column name="sup_complessiva" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="noteEnte" type="string">
+            <column name="note_ente" length="1000" />
+        </property>
+        <property name="idStato" type="big_decimal">
+            <column name="id_stato" precision="38" scale="0" />
+        </property>
+        <property name="codStato" type="string">
+            <column name="cod_stato" length="20" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="dtStato" type="date">
+            <column name="dt_stato" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="comEsercizios" inverse="true">
+            <key>
+                <column name="fkid_denuncia" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComEsercizio" />
+        </set>
+        <set name="comAllegatos" inverse="true">
+            <key>
+                <column name="fkid_denuncia" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComAllegato" />
+        </set>
+        <set name="comSoggettos" inverse="true">
+            <key>
+                <column name="fkid_denuncia" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComSoggetto" />
+        </set>
+    </class>
+</hibernate-mapping>

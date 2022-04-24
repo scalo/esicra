@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaPatente xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaPatente.xsd" versione="1.0">
+<Patente progressivo = "1">
+<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+<NumPatente>CR5040397</NumPatente>
+<Categoria>B</Categoria>
+<DataRilascio>1999-07-10</DataRilascio>
+<DesEnteRilascio>Motorizzazione</DesEnteRilascio>
+</Patente>
+<Patente progressivo = "2">
+<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+<NumPatente>CR5026177</NumPatente>
+<Categoria>B</Categoria>
+<DataRilascio>1998-02-21</DataRilascio>
+<DesEnteRilascio>Motorizzazione</DesEnteRilascio>
+</Patente>
+<Patente progressivo = "3">
+<CodSoggetto>VRDCRN52C70H558I</CodSoggetto>
+<NumPatente>BG2605593</NumPatente>
+<Categoria>B</Categoria>
+<DataRilascio>1994-03-24</DataRilascio>
+<DesEnteRilascio>Prefettura</DesEnteRilascio>
+</Patente>
+</ListaPatente>

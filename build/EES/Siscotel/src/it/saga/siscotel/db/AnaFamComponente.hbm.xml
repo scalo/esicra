@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaFamComponente" table="ana_fam_componente" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaFam" class="it.saga.siscotel.db.AnaFam">
+            <column name="fkid_fam" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaRelazione" class="it.saga.siscotel.db.AnaRelazione">
+            <column name="fkid_relazione" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="desRelazione" type="string">
+            <column name="des_relazione" length="80" />
+        </property>
+        <property name="motivoIngresso" type="string">
+            <column name="motivo_ingresso" length="30" />
+        </property>
+        <property name="numOrdine" type="integer">
+            <column name="num_ordine" />
+        </property>
+        <property name="dtDefPraticaIng" type="date">
+            <column name="dt_def_pratica_ing" length="4" />
+        </property>
+        <property name="dtDecIngresso" type="date">
+            <column name="dt_dec_ingresso" length="4" />
+        </property>
+        <property name="motivoUscita" type="string">
+            <column name="motivo_uscita" length="30" />
+        </property>
+        <property name="dtDefPraticaUsc" type="date">
+            <column name="dt_def_pratica_usc" length="4" />
+        </property>
+        <property name="dtDecUscita" type="date">
+            <column name="dt_dec_uscita" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

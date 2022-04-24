@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaCartaIdentita xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaCartaIdentita.xsd" versione="1.0">
+<CartaIdentita progressivo = "1">
+<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+<DataEmissione>2001-10-01</DataEmissione>
+<NumCarta>AE9698682</NumCarta>
+<FlagResidente>1</FlagResidente>
+<FlagEspatrio>1</FlagEspatrio>
+<Stato>1</Stato>
+<DataScadenza>2006-09-30</DataScadenza>
+<DataFineValEspatrio>2006-09-30</DataFineValEspatrio>
+<Comune>
+<CodComune>17167</CodComune>
+<DesComune>RUDIANO</DesComune>
+<Cap>25030</Cap>
+<DesProvincia>BS</DesProvincia>
+</Comune>
+<FlagElettronica>0</FlagElettronica>
+</CartaIdentita>
+<CartaIdentita progressivo = "2">
+<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+<DataEmissione>2001-09-01</DataEmissione>
+<NumCarta>AG5281606</NumCarta>
+<FlagResidente>1</FlagResidente>
+<FlagEspatrio>0</FlagEspatrio>
+<Stato>1</Stato>
+<DataScadenza>2006-08-31</DataScadenza>
+<DataFineValEspatrio>2006-08-31</DataFineValEspatrio>
+<Comune>
+<CodComune>19035</CodComune>
+<DesComune>CREMA</DesComune>
+<Cap>26013</Cap>
+<DesProvincia>CR</DesProvincia>
+</Comune>
+<FlagElettronica>1</FlagElettronica>
+</CartaIdentita>
+<CartaIdentita progressivo = "3">
+<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+<DataEmissione>2000-12-28</DataEmissione>
+<NumCarta>AE9872122</NumCarta>
+<FlagResidente>1</FlagResidente>
+<FlagEspatrio>1</FlagEspatrio>
+<Stato>1</Stato>
+<DataScadenza>2005-12-27</DataScadenza>
+<DataFineValEspatrio>2005-12-27</DataFineValEspatrio>
+<Comune>
+<CodComune>19097</CodComune>
+<DesComune>SONCINO</DesComune>
+<Cap>26029</Cap>
+<DesProvincia>CR</DesProvincia>
+</Comune>
+<StatoCivile>DesStocivile</StatoCivile>
+<Statura>1,75</Statura>
+<Capelli>rossi</Capelli>
+<Occhi>verdi</Occhi>
+<SegniParticolari1>segni 1</SegniParticolari1>
+<SegniParticolari2>segni 2</SegniParticolari2>
+<SegniParticolari3>segni 2</SegniParticolari3>
+<FlagElettronica>0</FlagElettronica>
+</CartaIdentita>
+</ListaCartaIdentita>

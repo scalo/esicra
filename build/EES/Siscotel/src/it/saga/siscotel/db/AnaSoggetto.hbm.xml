@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.AnaSoggetto" table="ana_soggetto" schema="esicra" >
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+        <column name="PKID" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+        </generator>
+        </id>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune" >
+            <column name="fkid_comune_nascita" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terStato" class="it.saga.siscotel.db.TerStato">
+            <column name="fkid_stato_nascita" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terLocalita" class="it.saga.siscotel.db.TerLocalita">
+            <column name="fkid_localita_nascita" precision="22" scale="0" />
+        </many-to-one>
+        <property name="provenienza" type="integer">
+            <column name="provenienza" />
+        </property>
+        <property name="codSoggetto" type="string">
+            <column name="cod_soggetto" length="20" />
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16" />
+        </property>
+        <property name="flgCfCalcolato" type="integer">
+            <column name="flg_cf_calcolato" />
+        </property>
+        <property name="natura" type="integer">
+            <column name="natura" />
+        </property>
+        <property name="tipoNatura" type="integer">
+            <column name="tipo_natura" />
+        </property>
+        <property name="partitaIva" type="string">
+            <column name="partita_iva" length="11" />
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome" length="36" />
+        </property>
+        <property name="nome" type="string">
+            <column name="nome" length="36" />
+        </property>
+        <property name="altriNomi" type="string">
+            <column name="altri_nomi" length="36" />
+        </property>
+        <property name="denominazione" type="string">
+            <column name="denominazione" length="100" />
+        </property>
+        <property name="dtNascita" type="date">
+            <column name="dt_nascita" length="4" />
+        </property>
+        <property name="precisioneDtNascita" type="integer">
+            <column name="precisione_dt_nascita" />
+        </property>
+        <property name="sesso" type="integer">
+            <column name="sesso" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="desComuneNascita" type="string">
+            <column name="des_comune_nascita" length="80" />
+        </property>
+        <property name="desProvinciaNascita" type="string">
+            <column name="des_provincia_nascita" length="80" />
+        </property>
+        <property name="desStatoNascita" type="string">
+            <column name="des_stato_nascita" length="80" />
+        </property>
+        <property name="desLocalitaNascita" type="string">
+            <column name="des_localita_nascita" length="80" />
+        </property>
+        <property name="flgStato" type="integer">
+            <column name="flg_stato" />
+        </property>
+        <property name="fkidRappresentante" type="integer">
+            <column name="fkid_rappresentante" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="anaCartaIdentitas" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCartaIdentita" />
+        </set>
+        <set name="anaEconomicas" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaEconomica" />
+        </set>
+        <set name="sdiPosGraduatorias" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SdiPosGraduatoria" />
+        </set>
+        <set name="polInfraziones" >
+            <key>
+                <column name="fkid_proprietario" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+        <set name="anaPatentes" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaPatente" />
+        </set>
+        <set name="anaRappresentantes" >
+            <key>
+                <column name="fkid_rappresentante" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaRappresentante" />
+        </set>
+        <set name="anaSoggettoProvs" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoProv" />
+        </set>
+        <set name="anaStcivs" >
+            <key>
+                <column name="fkid_coniuge" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+        <set name="comSoggettos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComSoggetto" />
+        </set>
+        <set name="anaSchedas" >
+            <key>
+                <column name="fkid_madre" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaScheda" />
+        </set>
+        <set name="anaSoggettoEles" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoEle" />
+        </set>
+        <set name="catProprietarios" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatProprietario" />
+        </set>
+        <set name="anaIscriziones" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIscrizione" />
+        </set>
+        <set name="anaStudios" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStudio" />
+        </set>
+        <set name="comEsercizios" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComEsercizio" />
+        </set>
+        <set name="anaEles" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaEle" />
+        </set>
+        <set name="anaSchedas_1" >
+            <key>
+                <column name="fkid_padre" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaScheda" />
+        </set>
+        <set name="scuSoggettos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuSoggetto" />
+        </set>
+        <set name="polPermessos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolPermesso" />
+        </set>
+        <set name="anaCittadinanzas" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCittadinanza" />
+        </set>
+        <set name="polInfraziones_1" >
+            <key>
+                <column name="fkid_conducente" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+        <set name="polFruitoris" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolFruitori" />
+        </set>
+        <set name="anaFornitores" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaFornitore" />
+        </set>
+        <set name="anaFamComponentes" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaFamComponente" />
+        </set>
+        <set name="triConcessiones" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TriConcessione" />
+        </set>
+        <set name="triConDenuncias" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TriConDenuncia" />
+        </set>
+        <set name="comDenuncias" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComDenuncia" />
+        </set>
+        <set name="anaPensiones" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaPensione" />
+        </set>
+        <set name="anaIndirizzos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="rsuInsediamentos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsediamento" />
+        </set>
+        <set name="sdiServizios" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SdiServizio" />
+        </set>
+        <set name="anaStcivs_1" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+        <set name="anaAttos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAtto" />
+        </set>
+        <set name="anaSoggettoGiurs" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoGiur" />
+        </set>
+        <set name="polVeiSoggs" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolVeiSogg" />
+        </set>
+        <set name="anaCancellaziones" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCancellazione" />
+        </set>
+        <set name="ediSoggettos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiSoggetto" />
+        </set>
+        <set name="pagBollettas" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PagBolletta" />
+        </set>
+        <set name="anaRappresentantes_1" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaRappresentante" />
+        </set>
+        <set name="anaPermessoSoggiornos" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaPermessoSoggiorno" />
+        </set>
+        <set name="anaProfessiones" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaProfessione" />
+        </set>
+        <set name="anaSchedas_2" >
+            <key>
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaScheda" />
+        </set>
+    </class>
+    
+</hibernate-mapping>

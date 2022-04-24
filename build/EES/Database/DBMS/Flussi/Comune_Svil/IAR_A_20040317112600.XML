@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBollettaRata xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBollettaRata.xsd" versione="1.0">
+<PagBollettaRata progressivo ="1">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2003-03-19</DtScadenzaRata>
+	<ImportoRata>39,25</ImportoRata>
+	<ImportoPagato>39,25</ImportoPagato>
+	<DtPagamento>2003-01-15</DtPagamento>
+	<DtRegPagamento>2003-05-20</DtRegPagamento>
+	<DesDistinta>0</DesDistinta>
+	<IdServizio>100181</IdServizio>
+	<DesPagamento>TRAMITE C/C POSTALE</DesPagamento>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="2370">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-05-14</DtScadenzaRata>
+	<ImportoRata>367,03</ImportoRata>
+	<ImportoPagato>367,03</ImportoPagato>
+	<DtPagamento>2004-02-02</DtPagamento>
+	<DtRegPagamento>2004-02-02</DtRegPagamento>
+	<DesDistinta>1</DesDistinta>
+	<DtDistinta>2004-02-02</DtDistinta>
+	<IdServizio>100181</IdServizio>
+	<DesPagamento>TRAMITE C/C POSTALE</DesPagamento>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="141">
+	<CodBolletta>ICIA2004100000000030000000008</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-05-14</DtScadenzaRata>
+	<ImportoRata>125,37</ImportoRata>
+	<IdServizio>100181</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="142">
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-05-14</DtScadenzaRata>
+	<ImportoRata>34,83</ImportoRata>
+	<IdServizio>100181</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="2011">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2003-03-18</DtScadenzaRata>
+	<ImportoRata>824,78</ImportoRata>
+	<ImportoPagato>824,78</ImportoPagato>
+	<DtPagamento>2003-02-27</DtPagamento>
+	<DtRegPagamento>2003-05-26</DtRegPagamento>
+	<DesDistinta>0</DesDistinta>
+	<IdServizio>100181</IdServizio>
+	<DesPagamento>TRAMITE C/C POSTALE</DesPagamento>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="143">
+	<CodBolletta>ICIA2004100000000060000000016</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-05-14</DtScadenzaRata>
+	<ImportoRata>1971,59</ImportoRata>
+	<IdServizio>100181</IdServizio>
+</PagBollettaRata>
+<PagBollettaRata progressivo ="145">
+	<CodBolletta>ICIA2004100000000080000000019</CodBolletta>
+	<CodServizio>ICI</CodServizio>
+	<NumRata>1</NumRata>
+	<DtScadenzaRata>2004-05-14</DtScadenzaRata>
+	<ImportoRata>657,28</ImportoRata>
+	<IdServizio>100181</IdServizio>
+</PagBollettaRata>
+</PagListaBollettaRata>

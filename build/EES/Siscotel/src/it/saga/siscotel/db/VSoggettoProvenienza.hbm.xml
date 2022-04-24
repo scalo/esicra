@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VSoggettoProvenienza" table="v_soggetto_provenienza" schema="esicra" mutable="false">
+            <composite-id name="cid" class="it.saga.siscotel.db.VSoggettoProvenienzaId">
+                <key-property name="id" type="big_decimal" >
+                    <column name="sogg_pkid" precision="22" scale="0" />
+                </key-property>
+                <key-property name="cod" type="string">
+                    <column name="cod_provenienza" length="20" />
+                </key-property>
+            </composite-id>
+            <property name="soggPkid" type="big_decimal" insert="false" update="false">
+                <column name="sogg_pkid" precision="22" scale="0" />
+            </property>
+            <property name="codiceSoggetto" type="string">
+                <column name="codice_soggetto" length="20" />
+            </property>
+            <property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </property>
+            <property name="provDtmod" type="timestamp">
+                <column name="prov_dtmod" length="8" />
+            </property>
+            <property name="codProvenienza" type="string" insert="false" update="false">
+                <column name="cod_provenienza" length="20" />
+            </property>
+            <property name="desProvenienza" type="string">
+                <column name="des_provenienza" length="80" />
+            </property>
+    </class>
+</hibernate-mapping>

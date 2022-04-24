@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Schemata" table="schemata" schema="information_schema">
+        <composite-id name="id" class="it.saga.siscotel.db.SchemataId">
+            <key-property name="catalogName" type="java.lang.Object">
+                <column name="catalog_name" />
+            </key-property>
+            <key-property name="schemaName" type="java.lang.Object">
+                <column name="schema_name" />
+            </key-property>
+            <key-property name="schemaOwner" type="java.lang.Object">
+                <column name="schema_owner" />
+            </key-property>
+            <key-property name="defaultCharacterSetCatalog" type="java.lang.Object">
+                <column name="default_character_set_catalog" />
+            </key-property>
+            <key-property name="defaultCharacterSetSchema" type="java.lang.Object">
+                <column name="default_character_set_schema" />
+            </key-property>
+            <key-property name="defaultCharacterSetName" type="java.lang.Object">
+                <column name="default_character_set_name" />
+            </key-property>
+            <key-property name="sqlPath" type="java.lang.Object">
+                <column name="sql_path" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

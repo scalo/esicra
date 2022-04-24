@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="SchedaSoggetto.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="IscrizioneCCIA.xsd"/>
+	<xs:include schemaLocation="Comune.xsd"/>
+	<xs:complexType name="SoggettoGiuridicoType">
+		<xs:sequence>
+			<xs:element name="RagioneSociale">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartitaIva">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdEnte" type="xs:long"/>
+			<xs:element name="IndirizzoSede" type="pra:IndirizzoType" minOccurs="0"/>
+			<xs:element name="RappresentanteLegale" type="pra:SchedaSoggettoType" minOccurs="0"/>
+			<xs:element name="IscrizioneCCIA" type="pra:IscrizioneCCIAType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SoggettoGiuridico" type="pra:SoggettoGiuridicoType"/>
+</xs:schema>

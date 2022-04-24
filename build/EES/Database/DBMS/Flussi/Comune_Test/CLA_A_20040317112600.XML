@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<ListaScuClasse xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaScuClasse.xsd" versione="1.0">
+	<ScuClasse progressivo="1">
+		<CodClasse>CL_001_001 </CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="2">
+		<CodClasse>CL_001_002</CodClasse>
+		<DesClasse>Seconda</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="3">
+		<CodClasse>CL_001_003</CodClasse>
+		<DesClasse>Terza</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="4">
+		<CodClasse>CL_002_001 </CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="5">
+		<CodClasse>CL_002_002</CodClasse>
+		<DesClasse>Seconda</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="6">
+		<CodClasse>CL_002_003</CodClasse>
+		<DesClasse>Terza</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="7">
+		<CodClasse>CL_002_001</CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_002 </CodCorso>
+		<DesCorso>Corso Stranieri</DesCorso>
+		<CodIstituto>COD_001</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Prolungato</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="8">
+		<CodClasse>CL_002_002</CodClasse>
+		<DesClasse>Seconda</DesClasse>
+		<CodCorso>COR_004 </CodCorso>
+		<DesCorso>Elementare Sperim</DesCorso>
+		<CodIstituto>COD_002</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Prolungato</Tempo>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+	</ScuClasse>
+	<ScuClasse progressivo="9">
+		<CodClasse>CL_003_001</CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_004 </CodCorso>
+		<DesCorso>Elementare Sperim</DesCorso>
+		<CodIstituto>1</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="10">
+		<CodClasse>CL_003_002</CodClasse>
+		<DesClasse>Seconda</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>1</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="11">
+		<CodClasse>CL_004_001</CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>2</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="12">
+		<CodClasse>CL_005_001</CodClasse>
+		<DesClasse>Prima</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>3</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="13">
+		<CodClasse>CL_005_002</CodClasse>
+		<DesClasse>Seconda</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>3</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="14">
+		<CodClasse>CL_005_003</CodClasse>
+		<DesClasse>Terza</DesClasse>
+		<CodCorso>COR_001 </CodCorso>
+		<DesCorso>Elementare</DesCorso>
+		<CodIstituto>3</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="15">
+		<CodClasse>CL_006_001</CodClasse>
+		<DesClasse>Pulcini</DesClasse>
+		<CodCorso>COR_005 </CodCorso>
+		<DesCorso>Asilo</DesCorso>
+		<CodIstituto>4</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+	<ScuClasse progressivo="16">
+		<CodClasse>CL_006_002</CodClasse>
+		<DesClasse>Mediani</DesClasse>
+		<CodCorso>COR_005</CodCorso>
+		<DesCorso>Asilo</DesCorso>
+		<CodIstituto>4</CodIstituto>
+		<Sezione>A</Sezione>
+		<Tempo>Pieno</Tempo>
+	</ScuClasse>
+</ListaScuClasse>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Allegato.xsd"/>
+	<xs:include schemaLocation="Pagamento.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:complexType name="PraticaType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="IdEnteDestinatario" type="xs:long"/>
+			<xs:element name="DataPratica" type="xs:date" minOccurs="0"/>
+			<xs:element name="Oggetto" type="xs:string"/>
+			<xs:element name="IdServizio" type="xs:int"/>
+			<xs:element name="NoteUtente" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodPraticaBo" type="xs:string" minOccurs="0"/>
+			<xs:element name="TipoNotifica" type="xs:string" minOccurs="0"/>
+			<xs:element name="CodTipoConsegna" type="xs:string" minOccurs="0"/>
+			<xs:element name="DesTipoConsegna" type="xs:string" minOccurs="0"/>
+			<xs:element name="CodModalitaAllegato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DesModalitaAllegato" type="xs:string" minOccurs="0"/>
+			<xs:element name="Canale" type="xs:integer" minOccurs="0"/>
+			<xs:element name="Pagamenti" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Pagamento" type="esicra_pra:PagamentoPraType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Recapito" type="esicra_pra:RecapitoType" minOccurs="0"/>
+			<xs:element name="ListaAllegato" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Allegato" type="esicra_pra:AllegatoType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Pratica" type="esicra_pra:PraticaType"/>
+</xs:schema>

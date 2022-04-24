@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TriConDenuncia" table="tri_con_denuncia" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="triConcessione" class="it.saga.siscotel.db.TriConcessione">
+            <column name="fkid_concessione" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" />
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome" length="36" />
+        </property>
+        <property name="nome" type="string">
+            <column name="nome" length="36" />
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16" />
+        </property>
+        <property name="dtNascita" type="date">
+            <column name="dt_nascita" length="4" />
+        </property>
+        <property name="locNascita" type="string">
+            <column name="loc_nascita" length="200" />
+        </property>
+        <property name="recapito" type="string">
+            <column name="recapito" length="200" />
+        </property>
+        <property name="dtDenuncia" type="date">
+            <column name="dt_denuncia" length="4" />
+        </property>
+        <property name="dtIniCon" type="date">
+            <column name="dt_ini_con" length="4" />
+        </property>
+        <property name="dtFineCon" type="date">
+            <column name="dt_fine_con" length="4" />
+        </property>
+        <property name="codDenuncia" type="string">
+            <column name="cod_denuncia" length="20" />
+        </property>
+        <property name="idPratica" type="big_decimal">
+            <column name="id_pratica" precision="22" scale="0" />
+        </property>
+        <property name="codTipo" type="string">
+            <column name="cod_tipo" length="20" />
+        </property>
+        <property name="desTipo" type="string">
+            <column name="des_tipo" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

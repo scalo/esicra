@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaEle" table="ana_ele" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terAccesso" class="it.saga.siscotel.db.TerAccesso">
+            <column name="fkid_accesso" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terSezEle" class="it.saga.siscotel.db.TerSezEle">
+            <column name="fkid_sez_ele" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="sesso" type="integer">
+            <column name="sesso" />
+        </property>
+        <property name="numListaGen" type="integer">
+            <column name="num_lista_gen" />
+        </property>
+        <property name="numListaSez" type="integer">
+            <column name="num_lista_sez" />
+        </property>
+        <property name="numSez" type="integer">
+            <column name="num_sez" />
+        </property>
+        <property name="numFascicolo" type="integer">
+            <column name="num_fascicolo" />
+        </property>
+        <property name="numTessera" type="integer">
+            <column name="num_tessera" />
+        </property>
+        <property name="flgScrutatore" type="integer">
+            <column name="flg_scrutatore" />
+        </property>
+        <property name="flgPresidente" type="integer">
+            <column name="flg_presidente" />
+        </property>
+        <property name="annoIscr" type="integer">
+            <column name="anno_iscr" />
+        </property>
+        <property name="indSedeEle" type="string">
+            <column name="ind_sede_ele" length="200" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

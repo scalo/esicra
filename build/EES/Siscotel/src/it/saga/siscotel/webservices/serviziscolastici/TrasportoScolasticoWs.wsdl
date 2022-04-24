@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="TrasportoScolasticoWs"
+        targetNamespace="http://it.saga.siscotel.webservices.serviziscolastici/TrasportoScolasticoWs.wsdl"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tns="http://it.saga.siscotel.webservices.serviziscolastici/TrasportoScolasticoWs.wsdl"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:xsd1="http://it.saga.siscotel.webservices.serviziscolastici/TrasportoScolasticoWs.xsd" >
+
+  <types>
+    <schema targetNamespace="http://it.saga.siscotel.webservices.serviziscolastici/TrasportoScolasticoWs.xsd" xmlns:tns="http://it.saga.siscotel.webservices.serviziscolastici/TrasportoScolasticoWs.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_PraIscrizioneTrasportoBean">
+        <all>
+          <element name="datiPratica" type="tns:it_saga_siscotel_beans_base_DatiPraticaBean"/>
+          <element name="datiScuola" type="tns:it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean"/>
+          <element name="listaAgevolazioni" type="tns:ArrayOfString"/>
+          <element name="listaEsenzioni" type="tns:ArrayOfString"/>
+          <element name="percorso" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiPraticaBean">
+        <all>
+          <element name="pratica" type="tns:it_saga_siscotel_beans_base_PraticaBean"/>
+          <element name="soggettoFruitore" type="tns:it_saga_siscotel_beans_base_DatiSoggettoBean"/>
+          <element name="soggettoRichiedente" type="tns:it_saga_siscotel_beans_base_DatiSoggettoBean"/>
+          <element name="titolaritaRichiedente" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_PraticaBean">
+        <all>
+          <element name="dataPratica" type="xsd:dateTime"/>
+          <element name="idEnteDestinatario" type="xsd:decimal"/>
+          <element name="idPratica" type="xsd:decimal"/>
+          <element name="idServizio" type="xsd:decimal"/>
+          <element name="nomeUtente" type="xsd:string"/>
+          <element name="oggetto" type="xsd:string"/>
+          <element name="recapito" type="tns:it_saga_siscotel_beans_base_RecapitoBean"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_RecapitoBean">
+        <all>
+          <element name="email" type="xsd:string"/>
+          <element name="fax" type="xsd:string"/>
+          <element name="indirizzo" type="tns:it_saga_siscotel_beans_base_DatiIndirizzoBean"/>
+          <element name="presso" type="xsd:string"/>
+          <element name="telefono" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiIndirizzoBean">
+        <all>
+          <element name="cap" type="xsd:string"/>
+          <element name="comune" type="xsd:string"/>
+          <element name="desArea" type="xsd:string"/>
+          <element name="letCiv" type="xsd:string"/>
+          <element name="numCiv" type="xsd:int"/>
+          <element name="provincia" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiSoggettoBean">
+        <all>
+          <element name="codiceFiscale" type="xsd:string"/>
+          <element name="cognome" type="xsd:string"/>
+          <element name="dataNascita" type="xsd:dateTime"/>
+          <element name="luogoNascita" type="xsd:string"/>
+          <element name="nome" type="xsd:string"/>
+          <element name="residenza" type="tns:it_saga_siscotel_beans_base_DatiIndirizzoBean"/>
+          <element name="sesso" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean">
+        <all>
+          <element name="annoScolastico" type="xsd:string"/>
+          <element name="classe" type="xsd:string"/>
+          <element name="scuola" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="ArrayOfString">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraIscrizioneTrasportoBean">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns:it_saga_siscotel_beans_serviziscolastici_PraIscrizioneTrasportoBean[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_PraRecessoTrasportoBean">
+        <all>
+          <element name="datiPratica" type="tns:it_saga_siscotel_beans_base_DatiPraticaBean"/>
+          <element name="datiScuola" type="tns:it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean"/>
+          <element name="percorso" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraRecessoTrasportoBean">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns:it_saga_siscotel_beans_serviziscolastici_PraRecessoTrasportoBean[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </types>
+
+  <message name="cercaPraRecessoTrasportoScolasticoInput">
+    <part name="param0" type="xsd:string"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:decimal"/>
+    <part name="param3" type="xsd:int"/>
+    <part name="param4" type="xsd:dateTime"/>
+    <part name="param5" type="xsd:dateTime"/>
+  </message>
+  <message name="inserisciPraIscrizioneTrasportoScolasticoInput">
+    <part name="param0" type="xsd1:it_saga_siscotel_beans_serviziscolastici_PraIscrizioneTrasportoBean"/>
+  </message>
+  <message name="cercaPraIscrizioneTrasportoScolasticoOutput">
+    <part name="output" type="xsd1:ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraIscrizioneTrasportoBean"/>
+  </message>
+  <message name="inserisciPraRecessoTrasportoScolasticoOutput">
+    <part name="output" type="xsd:decimal"/>
+  </message>
+  <message name="cercaPraIscrizioneTrasportoScolasticoInput">
+    <part name="param0" type="xsd:string"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:decimal"/>
+    <part name="param3" type="xsd:int"/>
+    <part name="param4" type="xsd:dateTime"/>
+    <part name="param5" type="xsd:dateTime"/>
+  </message>
+  <message name="cercaPraRecessoTrasportoScolasticoOutput">
+    <part name="output" type="xsd1:ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraRecessoTrasportoBean"/>
+  </message>
+  <message name="inserisciPraRecessoTrasportoScolasticoInput">
+    <part name="param0" type="xsd1:it_saga_siscotel_beans_serviziscolastici_PraRecessoTrasportoBean"/>
+  </message>
+  <message name="inserisciPraIscrizioneTrasportoScolasticoOutput">
+    <part name="output" type="xsd:decimal"/>
+  </message>
+
+  <portType name="TrasportoScolasticoWsPortType">
+    <operation name="cercaPraIscrizioneTrasportoScolastico">
+      <input message="tns:cercaPraIscrizioneTrasportoScolasticoInput"/>
+      <output message="tns:cercaPraIscrizioneTrasportoScolasticoOutput"/>
+    </operation>
+    <operation name="cercaPraRecessoTrasportoScolastico">
+      <input message="tns:cercaPraRecessoTrasportoScolasticoInput"/>
+      <output message="tns:cercaPraRecessoTrasportoScolasticoOutput"/>
+    </operation>
+    <operation name="inserisciPraRecessoTrasportoScolastico">
+      <input message="tns:inserisciPraRecessoTrasportoScolasticoInput"/>
+      <output message="tns:inserisciPraRecessoTrasportoScolasticoOutput"/>
+    </operation>
+    <operation name="inserisciPraIscrizioneTrasportoScolastico">
+      <input message="tns:inserisciPraIscrizioneTrasportoScolasticoInput"/>
+      <output message="tns:inserisciPraIscrizioneTrasportoScolasticoOutput"/>
+    </operation>
+  </portType>
+
+  <binding name="TrasportoScolasticoWsBinding" type="tns:TrasportoScolasticoWsPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+    <operation name="cercaPraIscrizioneTrasportoScolastico">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs/cercaPraIscrizioneTrasportoScolastico"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </output>
+    </operation>
+    <operation name="cercaPraRecessoTrasportoScolastico">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs/cercaPraRecessoTrasportoScolastico"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </output>
+    </operation>
+    <operation name="inserisciPraRecessoTrasportoScolastico">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs/inserisciPraRecessoTrasportoScolastico"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </output>
+    </operation>
+    <operation name="inserisciPraIscrizioneTrasportoScolastico">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs/inserisciPraIscrizioneTrasportoScolastico"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.TrasportoScolasticoWs"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="TrasportoScolasticoWs">
+    <port name="TrasportoScolasticoWsPort" binding="tns:TrasportoScolasticoWsBinding">
+      <soap:address location="http://localhost:8080/esicra/servlet/soaprouter"/>
+    </port>
+  </service>
+
+
+</definitions>

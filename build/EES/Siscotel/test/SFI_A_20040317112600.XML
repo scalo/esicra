@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSoggettoFis xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSoggettoFis.xsd" versione="1.0">
+	<SoggettoFis progressivo ="0">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>1</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovanni</Nome>
+		<AltriNomi>Giovanni Tributo</AltriNomi>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<PartitaIva>00777490152</PartitaIva>		
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo="1">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovannino Anagrafo Primo</Nome>
+		<AltriNomi/>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-04-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note/>
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo="2">
+		<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Bacca</Cognome>
+		<Nome>Anna</Nome>
+		<AltriNomi/>
+		<Sesso>2</Sesso>
+		<DataNascita>1970-07-26</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note/>
+		<ComuneNascita>
+			<CodComune>10025</CodComune>
+			<DesComune>Genova</DesComune>
+			<Cap>16100</Cap>
+			<DesProvincia>GE</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo="3">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>MATTHAEUS</Cognome>
+		<Nome>LOTHAR</Nome>
+		<AltriNomi/>
+		<Sesso>1</Sesso>
+		<DataNascita>1961-03-21</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note>Centrocampista Vecchio</Note>
+		<LocalitaNascita>
+			<DesLocalita>Erlangen </DesLocalita>
+			<Cap></Cap>
+			<CodStato>216</CodStato>
+			<DesStato>GERMANIA</DesStato>
+		</LocalitaNascita>
+	</SoggettoFis>
+	<!-- CONTROLLARE PERCHE DA ERRORE -->
+	<SoggettoFis progressivo = "4">
+		<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>MANZONI</Cognome>
+		<Nome>MATTEO</Nome>
+		<AltriNomi></AltriNomi>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-08</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note></Note>
+		<ComuneNascita>
+			<CodComune>16024</CodComune>
+			<DesComune>BERGAMO</DesComune>
+			<Cap>24100</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<!-- -->
+	<SoggettoFis progressivo = "5">
+		<CodSoggetto>VRDCRN52C70H558I</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>VERDI</Cognome>
+		<Nome>CATERINA</Nome>
+		<AltriNomi>VERONICA PAOLA</AltriNomi>
+		<Sesso>2</Sesso>
+		<DataNascita>1980-03-30</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note></Note>
+		<ComuneNascita>
+			<CodComune>80069</CodComune>
+			<DesComune>ROSARNO</DesComune>
+			<Cap>89025</Cap>
+			<DesProvincia>RC</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo = "6">
+		<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>ZANOLINI</Cognome>
+		<Nome>FEDERICA</Nome>
+		<AltriNomi></AltriNomi>
+		<Sesso>2</Sesso>
+		<DataNascita>1960-06-17</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note></Note>
+		<LocalitaNascita>
+			<DesLocalita>BROUGHTY FERRY (GB)</DesLocalita>
+			<Cap>00000</Cap>
+			<CodStato>219</CodStato>
+			<DesStato>GRAN BRETAGNA</DesStato>
+		</LocalitaNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo="7">
+		<CodSoggetto>PNLMRC98H8763HJZ</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Marco</Nome>
+		<AltriNomi/>
+		<Sesso>1</Sesso>
+		<DataNascita>1998-05-02</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<Note/>
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo ="8">
+		<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+		<Provenienza>1</Provenienza>
+		<Cognome>ROSSI</Cognome>
+		<Nome>ANGELA</Nome>
+		<Sesso>2</Sesso>
+		<DataNascita>1974-01-28</DataNascita>
+		<ComuneNascita>
+			<CodComune>17029</CodComune>
+			<DesComune>BRESCIA</DesComune>
+			<Cap></Cap>
+			<DesProvincia>BS</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>	
+	<SoggettoFis progressivo ="9">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>1</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovanni</Nome>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<PartitaIva>00777490152</PartitaIva>		
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo ="10">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Giovannino</Nome>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<PartitaIva>00777490152</PartitaIva>		
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+	<SoggettoFis progressivo ="11">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovanni</Nome>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<PartitaIva>00777490152</PartitaIva>		
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+		<SoggettoFis progressivo ="12">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>0</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovanni</Nome>
+		<AltriNomi>Tributogeno</AltriNomi>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+		<SoggettoFis progressivo ="13">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<Provenienza>10</Provenienza>
+		<Cognome>Pinoli</Cognome>
+		<Nome>Gianni Giovanni</Nome>
+		<AltriNomi>Giovannino </AltriNomi>
+		<Sesso>1</Sesso>
+		<DataNascita>1960-05-20</DataNascita>
+		<PrecisioneDtNascita>0</PrecisioneDtNascita>
+		<PartitaIva>4443332211</PartitaIva>		
+		<ComuneNascita>
+			<CodComune>999999</CodComune>
+			<DesComune>MILANO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>MI</DesProvincia>
+		</ComuneNascita>
+	</SoggettoFis>
+</ListaSoggettoFis>
+

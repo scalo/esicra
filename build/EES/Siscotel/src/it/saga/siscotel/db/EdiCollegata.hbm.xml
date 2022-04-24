@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.EdiCollegata" table="edi_collegata" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="ediPratica" class="it.saga.siscotel.db.EdiPratica">
+            <column name="fkid_pr_collegata" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="ediPratica_1" class="it.saga.siscotel.db.EdiPratica">
+            <column name="fkid_pratica" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

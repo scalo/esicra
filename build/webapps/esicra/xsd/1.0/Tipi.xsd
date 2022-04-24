@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by luigi (.) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="Data">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{4}-\d{2}-\d{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Tempo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{2}:\d{2}:\d{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

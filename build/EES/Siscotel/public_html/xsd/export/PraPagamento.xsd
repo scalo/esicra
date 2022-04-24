@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="PraSoggetto.xsd"/>
+	<xs:include schemaLocation="PraIndirizzo.xsd"/>
+	<xs:complexType name="PraPagamentoType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="CodBolletta" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdServizio" type="xs:integer"/>
+			<xs:element name="DesServizio" type="xs:string" minOccurs="0"/>
+			<xs:element name="ListaPagamento">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Pagamento">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="DataPagamento" type="xs:date"/>
+									<xs:element name="ImportoPagato" type="xs:decimal"/>
+									<xs:element name="ImportoDaPagare" type="xs:decimal" minOccurs="0"/>
+									<xs:element name="NumRata" type="xs:int" minOccurs="0"/>
+									<xs:element name="DistintaPag" type="xs:string" minOccurs="0"/>
+									<xs:element name="DataDistintaPag" type="xs:date" minOccurs="0"/>
+									<xs:element name="AutorizzazionePag" type="xs:string" minOccurs="0"/>
+									<xs:element name="CodTipoPagamento" type="xs:string" minOccurs="0"/>
+									<xs:element name="DesTipoPagamento" type="xs:string" minOccurs="0"/>
+									<xs:element name="CausalePagamento" type="xs:string" minOccurs="0"/>
+								</xs:sequence>
+								<xs:attribute name="progressivo" type="xs:int" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Note" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraPagamento">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="pra:PraPagamentoType">
+					<xs:attribute name="versione" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

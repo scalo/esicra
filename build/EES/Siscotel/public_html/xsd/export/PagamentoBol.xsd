@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PagamentoType">
+		<xs:sequence>
+			<xs:element name="DataPagamento" type="xs:date"/>
+			<xs:element name="ImportoPagato" type="xs:decimal"/>
+			<xs:element name="NumRata" type="xs:int" minOccurs="0"/>
+			<xs:element name="DistintaPagamento" type="xs:string" minOccurs="0"/>
+			<xs:element name="Autorizzazione" type="xs:string" minOccurs="0"/>
+			<xs:element name="NumeroOrdine" type="xs:string" minOccurs="0"/>
+			<xs:element name="CausalePagamento" type="xs:string" minOccurs="0"/>
+			<xs:element name="ListaDatiPag" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DatiPag" type="esicra_pra:DatiPag"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DatiPag">
+		<xs:sequence>
+			<xs:element name="CodVoce" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesVoce">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Valore" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PagamentoBol" type="esicra_pra:PagamentoType"/>
+</xs:schema>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="SdiServizio" type="esicra_import:SdiServizioType"/>
+	<xs:complexType name="SdiServizioType">
+		<xs:sequence>
+			<xs:element name="CodFruitore">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodSoggetto" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodServizio">
+				<xs:annotation>
+					<xs:documentation>In uso presso l'ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesServizio">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodRichiestaBo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identificativo per l'ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdServizio" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>Identificativo Egov</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DataRichiesta" type="xs:date" minOccurs="0"/>
+			<xs:element name="IdPratica" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Se proviene da Egov</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodTariffa" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>In uso presso l'ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesTariffa" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Importo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodEsenzione" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>In uso presso l'ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesEsenzione" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodStato" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>In uso presso l'ente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DesStato" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataInizio" type="xs:date" minOccurs="0"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

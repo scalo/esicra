@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Alboiter" table="alboiter" schema="esicra">
+        <id name="pkalboiter" type="big_decimal">
+            <column name="pkalboiter" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <many-to-one name="albo" class="it.saga.siscotel.db.Albo">
+            <column name="fkalbo" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="datainiziovalidita" type="timestamp">
+            <column name="datainiziovalidita" length="8" not-null="true" />
+        </property>
+        <property name="datafinevalidita" type="timestamp">
+            <column name="datafinevalidita" length="8" not-null="true" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

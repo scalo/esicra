@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering SYSTEM "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+<!--
+	<type-mapping>
+		<sql-type jdbc-type="VARCHAR" length='20' hibernate-type="SomeUserType" /> 
+		<sql-type jdbc-type="VARCHAR" length='1' hibernate-type="yes_no" />
+		<sql-type jdbc-type="NUMERIC"  precision='1' hibernate-type="boolean" />
+        <sql-type jdbc-type="NUMERIC"  hibernate-type="long" />
+	</type-mapping>
+-->
+<!--
+	<table-filter match-name="BIN$.*" exclude="true" /> 
+  <table-filter match-name="DoNotWantIt" exclude="true" />
+	<table-filter match-schema=".*" match-name=".*" exclude="true" />
+-->
+	<table-filter match-schema="ESICRA" match-name=".*" exclude="false" /> 
+</hibernate-reverse-engineering>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerConsolato" table="ter_consolato" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codConsolato" type="string">
+            <column name="cod_consolato" length="20" />
+        </property>
+        <property name="desConsolato" type="string">
+            <column name="des_consolato" length="80" />
+        </property>
+        <property name="codIstat" type="integer">
+            <column name="cod_istat" />
+        </property>
+        <property name="tipo" type="integer">
+            <column name="tipo" />
+        </property>
+        <set name="anaStcivs" inverse="true">
+            <key>
+                <column name="fkid_consolato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+        <set name="anaIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_consolato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="terLocalitas" inverse="true">
+            <key>
+                <column name="fkid_consolato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerLocalita" />
+        </set>
+    </class>
+</hibernate-mapping>

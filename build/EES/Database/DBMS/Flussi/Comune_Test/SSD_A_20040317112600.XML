@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSdiServizioDett xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSdiServizioDett.xsd" versione="1.0">
+	<SdiServizioDett progressivo="1">
+		<CodServizio>DSM0001</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio progressivo="1">
+				<CodVoce>voce 1</CodVoce>
+				<DesVoce>prova 1</DesVoce>
+			</Dettaglio>
+			<Dettaglio progressivo="2">
+				<CodVoce>voce 2</CodVoce>
+				<DesVoce>prova 2</DesVoce>
+			</Dettaglio>
+			<Dettaglio progressivo="3">
+				<CodVoce>voce 3</CodVoce>
+				<DesVoce>prova 3</DesVoce>
+			</Dettaglio>
+			<Dettaglio progressivo="4">
+				<CodVoce>voce 4</CodVoce>
+				<DesVoce>prova 3</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="2">
+		<CodServizio>ASS0001</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett ass1</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett ass2</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett ass3</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett ass4</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="3">
+		<CodServizio>COD_002</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_002_1</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_002_2</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_002_3</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_002_4</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="4">
+		<CodServizio>COD_003</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_003_1</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_003_2</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_003_3</DesVoce>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett COD_003_4</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="5">
+		<CodServizio>IC1</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Ore di laboratorio</DesVoce>
+				<Valore>100</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Fascia Eta'</DesVoce>
+				<Valore>Senior</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Livello</DesVoce>
+				<Valore>Alto</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="6">
+		<CodServizio>IC2</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Ore di laboratorio</DesVoce>
+				<Valore>50</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Fascia Eta'</DesVoce>
+				<Valore>Senior</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Livello</DesVoce>
+				<Valore>Altissimo</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="7">
+		<CodServizio>PUB01</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Insegna</DesVoce>
+				<Valore>Luminosa</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>misure</DesVoce>
+				<Valore>100X50</Valore>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="8">
+		<CodServizio>PUB02</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Insegna</DesVoce>
+				<Valore>Luminosa</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>misure</DesVoce>
+				<Valore>100X50</Valore>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>	
+	<SdiServizioDett progressivo="9">
+		<CodServizio>SPE01</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Tipo Spettacolo</DesVoce>
+				<Valore>Circo Viaggiante</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Livello</DesVoce>
+				<Valore>Altissimo</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+	<SdiServizioDett progressivo="10">
+		<CodServizio>SPE02</CodServizio>
+		<ListaDettaglio>
+			<Dettaglio>
+				<DesVoce>Tipo Spettacolo</DesVoce>
+				<Valore>Teatro Viaggiante</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>Livello</DesVoce>
+				<Valore>Altissimo</Valore>
+			</Dettaglio>
+			<Dettaglio>
+				<DesVoce>prova dett</DesVoce>
+			</Dettaglio>
+		</ListaDettaglio>
+	</SdiServizioDett>
+</ListaSdiServizioDett>

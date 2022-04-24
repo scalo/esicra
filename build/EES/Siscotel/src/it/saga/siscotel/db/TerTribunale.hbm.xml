@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerTribunale" table="ter_tribunale" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codTribunale" type="string">
+            <column name="cod_tribunale" length="20" />
+        </property>
+        <property name="desTribunale" type="string">
+            <column name="des_tribunale" length="80" />
+        </property>
+        <set name="anaAttos" inverse="true">
+            <key>
+                <column name="fkid_tribunale" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAtto" />
+        </set>
+    </class>
+</hibernate-mapping>

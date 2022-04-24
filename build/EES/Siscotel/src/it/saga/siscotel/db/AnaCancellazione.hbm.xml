@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaCancellazione" table="ana_cancellazione" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terStato" class="it.saga.siscotel.db.TerStato">
+            <column name="fkid_stato" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terLocalita" class="it.saga.siscotel.db.TerLocalita">
+            <column name="fkid_localita" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codCancellazione" type="string">
+            <column name="cod_cancellazione" length="20" />
+        </property>
+        <property name="desCancellazione" type="string">
+            <column name="des_cancellazione" length="80" />
+        </property>
+        <property name="dtCan" type="date">
+            <column name="dt_can" length="4" />
+        </property>
+        <property name="desMotivo" type="string">
+            <column name="des_motivo" length="80" />
+        </property>
+        <property name="dtDec" type="date">
+            <column name="dt_dec" length="4" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="numPratica" type="integer">
+            <column name="num_pratica" />
+        </property>
+        <property name="dtDefPratica" type="date">
+            <column name="dt_def_pratica" length="4" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="desLocalita" type="string">
+            <column name="des_localita" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

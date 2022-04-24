@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.SerIstruttoria" table="ser_istruttoria" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="desServizio" type="string">
+            <column name="des_servizio" length="80" />
+        </property>
+        <property name="codIter" type="string">
+            <column name="cod_iter" length="20" />
+        </property>
+        <property name="desIterBreve" type="string">
+            <column name="des_iter_breve" length="40" />
+        </property>
+        <property name="desIterLunga" type="string">
+            <column name="des_iter_lunga" length="400" />
+        </property>
+        <property name="numProgr" type="integer">
+            <column name="num_progr" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PraEdilizia class="it.saga.egov.srvfrontoffice.beans.pratiche.PraEdiliziaBean" attr="root" xmlns="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra">
+   <Pratica class="it.saga.egov.srvfrontoffice.beans.pratiche.PraticaBean" attr="Pratica">
+      <IdPratica class="java.math.BigDecimal" attr="idPratica">9400100290</IdPratica>
+      <DataPratica class="java.util.Date" attr="dataPratica">2005-05-10</DataPratica>
+      <Oggetto class="java.lang.String" attr="oggetto">Pinoli Gianni Giovanni</Oggetto>
+      <TipoNotifica class="java.lang.String" attr="tipoNotifica">2</TipoNotifica>
+      <CodTipoConsegna class="java.lang.Integer" attr="codTipoConsegna">3</CodTipoConsegna>
+      <DesTipoConsegna class="java.lang.String" attr="desTipoConsegna">CONSEGNA TRAMITE MESSO</DesTipoConsegna>
+      <CodModalitaAllegato class="java.lang.Integer" attr="codModalitaAllegato">2</CodModalitaAllegato>
+      <DesModalitaAllegato class="java.lang.String" attr="desModalitaAllegato">MANUALE CONTESTUALMENTE AL RITIRO</DesModalitaAllegato>
+      <Canale class="java.lang.Integer" attr="canale">1</Canale>
+      <IdServizio class="java.math.BigDecimal" attr="idServizio">100133</IdServizio>
+      <Recapito class="it.saga.egov.srvfrontoffice.beans.base.RecapitoBean" attr="recapito">
+         <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" attr="indirizzo">
+            <SpecieArea class="java.lang.String" attr="specieArea"> </SpecieArea>
+            <DesArea class="java.lang.String" attr="desArea">Via Ugo Foscolo</DesArea>
+            <NumCiv class="java.lang.Integer" attr="numCiv">12</NumCiv>
+            <LetCiv class="java.lang.String" attr="letCiv"></LetCiv>
+            <Scala class="java.lang.String" attr="scala">Sc1</Scala>
+            <Interno class="java.lang.String" attr="interno">Int1</Interno>
+            <Cap class="java.lang.String" attr="cap">99999</Cap>
+            <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune">
+               <CodIstatComune class="java.lang.Integer" attr="codIstatComune">8240</CodIstatComune>
+               <DesComune class="java.lang.String" attr="desComune"></DesComune>
+               <DesProvincia class="java.lang.String" attr="desProvincia">BG</DesProvincia>
+            </Comune>
+            <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="localita"/>
+         </Indirizzo>
+         <Presso class="java.lang.String" attr="presso">Pinoli Gianni Giovanni</Presso>
+         <Telefono class="java.lang.String" attr="telefono">030399999</Telefono>
+         <Email class="java.lang.String" attr="email">gianni.pinoli@saga.it</Email>
+      </Recapito>
+      <IdEnteDestinatario class="java.math.BigDecimal" attr="idEnteDestinatario">8240</IdEnteDestinatario>
+   </Pratica>
+   <Soggetto class="it.saga.egov.srvfrontoffice.beans.base.SoggettoBean" attr="SoggettoRichiedente">
+      <CodiceFiscale class="java.lang.String" attr="CodiceFiscale">PNLGNN77H8763HJZ</CodiceFiscale>
+      <Cognome class="java.lang.String" attr="Cognome">Pinoli</Cognome>
+      <Nome class="java.lang.String" attr="Nome">Gianni Giovanni</Nome>
+      <Sesso class="java.lang.String" attr="Sesso">M</Sesso>
+      <DataNascita class="java.util.Date" attr="DataNascita">1960-05-20</DataNascita>
+      <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="ComuneNascita">
+         <CodIstatComune class="java.lang.Integer" attr="codIstatComune">999999</CodIstatComune>
+         <DesComune class="java.lang.String" attr="desComune">MILANO</DesComune>
+         <DesProvincia class="java.lang.String" attr="desProvincia">MI</DesProvincia>
+      </Comune>
+      <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="LocalitaNascita">
+         <DesContea class="java.lang.String" attr="desContea"></DesContea>
+      </Localita>
+      <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" attr="Residenza">
+         <DesArea class="java.lang.String" attr="desArea">Via Ugo Foscolo</DesArea>
+         <NumCiv class="java.lang.Integer" attr="numCiv">12</NumCiv>
+         <LetCiv class="java.lang.String" attr="letCiv">B</LetCiv>
+         <Scala class="java.lang.String" attr="scala">Sc1</Scala>
+         <Interno class="java.lang.String" attr="interno">Int1</Interno>
+         <Cap class="java.lang.String" attr="cap">99999</Cap>
+         <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune">
+            <CodIstatComune class="java.lang.Integer" attr="codIstatComune">999999</CodIstatComune>
+            <DesComune class="java.lang.String" attr="desComune">COMUNEAMICO</DesComune>
+            <DesProvincia class="java.lang.String" attr="desProvincia">BG</DesProvincia>
+         </Comune>
+         <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="localita"/>
+      </Indirizzo>
+      <IdEnte class="java.math.BigDecimal" attr="IdEnte">8240</IdEnte>
+   </Soggetto>
+   <ProfessionistaFisico class="it.saga.egov.srvfrontoffice.beans.base.ProfessionistaFisicoBean" attr="DirettoreLavori">
+      <Soggetto class="it.saga.egov.srvfrontoffice.beans.base.SoggettoBean" attr="SoggettoFisico">
+         <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="ComuneNascita"/>
+         <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="LocalitaNascita"/>
+         <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" attr="Residenza">
+            <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune"/>
+            <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="localita"/>
+         </Indirizzo>
+      </Soggetto>
+      <IscrizioneAlbo class="it.saga.egov.srvfrontoffice.beans.base.IscrizioneAlboBean" attr="IscrizioneAlbo"/>
+   </ProfessionistaFisico>
+   <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" array="1" attr="ListaUbicazioneIntervento">
+      <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean">
+         <SpecieArea class="java.lang.String" attr="specieArea"> </SpecieArea>
+         <DesArea class="java.lang.String" attr="desArea">gffdgd</DesArea>
+         <NumCiv class="java.lang.Integer" attr="numCiv">43324</NumCiv>
+         <LetCiv class="java.lang.String" attr="letCiv"></LetCiv>
+         <Scala class="java.lang.String" attr="scala">432432</Scala>
+         <Interno class="java.lang.String" attr="interno">432432</Interno>
+         <Cap class="java.lang.String" attr="cap">32432</Cap>
+         <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune">
+            <DesComune class="java.lang.String" attr="desComune">ALESSANDRIA DELLA ROCCA</DesComune>
+            <DesProvincia class="java.lang.String" attr="desProvincia">AG</DesProvincia>
+         </Comune>
+         <Localita class="it.saga.egov.srvfrontoffice.beans.base.LocalitaBean" attr="localita">
+            <DesStato class="java.lang.String" attr="desStato"></DesStato>
+            <DesLocalita class="java.lang.String" attr="desLocalita"></DesLocalita>
+            <DesContea class="java.lang.String" attr="desContea"></DesContea>
+         </Localita>
+      </Indirizzo>
+   </Indirizzo>
+   <InfoCatasto class="it.saga.egov.srvfrontoffice.beans.edilizia.InfoCatastoBean" array="1" attr="ListaRiferimentiCatastali">
+      <InfoCatasto class="it.saga.egov.srvfrontoffice.beans.edilizia.InfoCatastoBean">
+         <CodTipologiaCatasto class="java.lang.String" attr="CodTipologiaCatasto">2</CodTipologiaCatasto>
+         <DesTipologiaCatasto class="java.lang.String" attr="DesTipologiaCatasto">Area Fabbricabile</DesTipologiaCatasto>
+         <Sezione class="java.lang.String" attr="Sezione">4324324324</Sezione>
+         <Foglio class="java.lang.String" attr="Foglio">3243243243</Foglio>
+         <Mappale class="java.lang.String" attr="Mappale">3243242342</Mappale>
+         <Subalterno class="java.lang.String" attr="Subalterno">3243243243</Subalterno>
+         <ZonaPrg class="java.lang.String" attr="ZonaPrg">3432432432</ZonaPrg>
+      </InfoCatasto>
+   </InfoCatasto>
+   <Stato class="java.lang.Integer" attr="Stato">1</Stato>
+   <DesStato class="java.lang.String" attr="DesStato">APERTA</DesStato>
+   <IdTipoOpera class="java.math.BigDecimal" attr="IdTipoOpera">1</IdTipoOpera>
+   <DesTipoOpera class="java.lang.String" attr="DesTipoOpera">Manutenzione Ordinaria</DesTipoOpera>
+   <NumConcessione class="java.lang.String" attr="NumConcessione">32432432</NumConcessione>
+   <DataFineLavori class="java.util.Date" attr="DataFineLavori">2005-05-10</DataFineLavori>
+</PraEdilizia>

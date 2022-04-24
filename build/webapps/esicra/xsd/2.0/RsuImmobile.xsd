@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Aot.xsd"/>
+	<xs:include schemaLocation="AotIndirizzo.xsd"/>
+	<xs:include schemaLocation="AotIdentificativo.xsd"/>
+	<xs:complexType name="RsuImmobileType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataDenuncia" type="xs:date" default="2004-01-01"/>
+			<xs:element name="NumDenuncia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesTipoDenuncia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataRicevuta" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="NumRicevuta" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodImmobile" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FlagStato" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>0 = Attivo                          1 = Chiuso</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Aot" type="esicra_import:AotType"/>
+			<xs:element name="AotIndirizzo" type="esicra_import:AotIndirizzoDatiType"/>
+			<xs:element name="AotIdentificativo" type="esicra_import:AotIdentificativoDatiType"/>
+			<xs:element name="DescrizioneTariffa">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Superficie" type="xs:float"/>
+			<xs:element name="DescrizioneTariffa1" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccertamentoNum" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccertamentoData" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="Note">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataInizio" type="xs:date"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="RsuImmobile" type="esicra_import:RsuImmobileType"/>
+</xs:schema>

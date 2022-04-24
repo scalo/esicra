@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="IscrizioneCCIAType">
+		<xs:sequence>
+			<xs:element name="NumeroIscrizioneCCIA" type="xs:string" minOccurs="0"/>
+			<xs:element name="SedeCCIA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataIscrizione" type="xs:date"/>
+			<xs:element name="CodiceISTATAttivita" type="xs:string" minOccurs="0"/>
+			<xs:element name="ClasseTrasporto" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="IscrizioneCCIA" type="pra:IscrizioneCCIAType"/>
+</xs:schema>

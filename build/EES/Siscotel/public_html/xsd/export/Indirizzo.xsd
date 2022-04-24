@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Comune.xsd"/>
+	<xs:include schemaLocation="Localita.xsd"/>
+	<xs:complexType name="IndirizzoType">
+		<xs:sequence>
+			<xs:element name="SpecieArea" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesArea">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumCiv" type="xs:int"/>
+			<xs:element name="LetCiv" type="xs:string" minOccurs="0"/>
+			<xs:element name="Scala" type="xs:string" minOccurs="0"/>
+			<xs:element name="Interno" type="xs:string" minOccurs="0"/>
+			<xs:element name="Cap">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Comune" type="esicra_pra:ComuneType" minOccurs="0"/>
+			<xs:element name="Localita" type="esicra_pra:LocalitaType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Indirizzo" type="pra:IndirizzoType"/>
+</xs:schema>

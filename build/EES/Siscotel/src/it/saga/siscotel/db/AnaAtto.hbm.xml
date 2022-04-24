@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaAtto" table="ana_atto" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_com_reg" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terTribunale" class="it.saga.siscotel.db.TerTribunale">
+            <column name="fkid_tribunale" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune_1" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_com_tras" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terCentroNascita" class="it.saga.siscotel.db.TerCentroNascita">
+            <column name="fkid_centro_nascita" precision="22" scale="0" />
+        </many-to-one>
+        <property name="tipoAtto" type="integer">
+            <column name="tipo_atto" />
+        </property>
+        <property name="dtRiferimento" type="date">
+            <column name="dt_riferimento" length="4" />
+        </property>
+        <property name="desComReg" type="string">
+            <column name="des_com_reg" length="80" />
+        </property>
+        <property name="desProvReg" type="string">
+            <column name="des_prov_reg" length="80" />
+        </property>
+        <property name="desCentroNascita" type="string">
+            <column name="des_centro_nascita" length="80" />
+        </property>
+        <property name="annoIscrizione" type="integer">
+            <column name="anno_iscrizione" />
+        </property>
+        <property name="numIscrizione" type="integer">
+            <column name="num_iscrizione" />
+        </property>
+        <property name="parteIscrizione" type="string">
+            <column name="parte_iscrizione" length="2" />
+        </property>
+        <property name="serieIscrizione" type="string">
+            <column name="serie_iscrizione" length="6" />
+        </property>
+        <property name="volIscrizione" type="string">
+            <column name="vol_iscrizione" length="4" />
+        </property>
+        <property name="uffIscrizione" type="string">
+            <column name="uff_iscrizione" length="4" />
+        </property>
+        <property name="desComTras" type="string">
+            <column name="des_com_tras" length="80" />
+        </property>
+        <property name="desProvTras" type="string">
+            <column name="des_prov_tras" length="80" />
+        </property>
+        <property name="annoTrascrizione" type="integer">
+            <column name="anno_trascrizione" />
+        </property>
+        <property name="numTrascrizione" type="integer">
+            <column name="num_trascrizione" />
+        </property>
+        <property name="parteTrascrizione" type="string">
+            <column name="parte_trascrizione" length="2" />
+        </property>
+        <property name="serieTrascrizione" type="string">
+            <column name="serie_trascrizione" length="6" />
+        </property>
+        <property name="volTrascrizione" type="string">
+            <column name="vol_trascrizione" length="4" />
+        </property>
+        <property name="uffTrascrizione" type="string">
+            <column name="uff_trascrizione" length="4" />
+        </property>
+        <property name="NSenDivorzio" type="integer">
+            <column name="n_sen_divorzio" />
+        </property>
+        <property name="desTribunale" type="string">
+            <column name="des_tribunale" length="80" />
+        </property>
+        <property name="dtSenDivorzio" type="date">
+            <column name="dt_sen_divorzio" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="anaAttoAnnotas" inverse="true">
+            <key>
+                <column name="fkid_atto" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAttoAnnota" />
+        </set>
+    </class>
+</hibernate-mapping>

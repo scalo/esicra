@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerCentroNascita" table="ter_centro_nascita" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codCentro" type="string">
+            <column name="cod_centro" length="20" />
+        </property>
+        <property name="desCentro" type="string">
+            <column name="des_centro" length="80" />
+        </property>
+        <property name="viaDen" type="string">
+            <column name="via_den" length="80" />
+        </property>
+        <property name="civNum" type="integer">
+            <column name="civ_num" />
+        </property>
+        <property name="civLet" type="string">
+            <column name="civ_let" length="5" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="anaAttos" inverse="true">
+            <key>
+                <column name="fkid_centro_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAtto" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pensione.xsd"/>
+	<xs:element name="DenMorte" type="esicra_pra:DenMorteType"/>
+	<xs:complexType name="DenMorteType">
+		<xs:sequence>
+			<xs:element name="SoggettoMorto" type="esicra_pra:SoggettoType"/>
+			<xs:element name="CittadinanzaMorto"/>
+			<xs:element name="CodFiscaleMadre" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CognomeMadre" type="xs:string"/>
+			<xs:element name="NomeMadre" type="xs:string"/>
+			<xs:element name="CodFiscalePadre" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CognomePadre">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NomePadre" type="xs:string"/>
+			<xs:element name="StatoCivile" type="xs:string"/>
+			<xs:element name="CodiceFiscaleConiuge" type="xs:string" minOccurs="0"/>
+			<xs:element name="CognomeConiuge" type="xs:string" minOccurs="0"/>
+			<xs:element name="NomeConiuge" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataMorte" type="xs:date"/>
+			<xs:element name="Giorno" type="xs:string"/>
+			<xs:element name="Mese" type="xs:string"/>
+			<xs:element name="Anno" type="xs:string"/>
+			<xs:element name="Ore" type="xs:string"/>
+			<xs:element name="Minuti" type="xs:string"/>
+			<xs:choice>
+				<xs:element name="ComuneMorte" type="esicra_pra:ComuneType"/>
+				<xs:element name="LocalitaMorte" type="esicra_pra:LocalitaType"/>
+			</xs:choice>
+			<xs:element name="DesOspedale" type="xs:string" minOccurs="0"/>
+			<xs:element name="ListaPensione">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Pensione" type="esicra_pra:PensioneType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

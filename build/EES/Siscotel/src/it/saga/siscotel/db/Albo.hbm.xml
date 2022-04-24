@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Albo" table="albo" schema="esicra">
+        <id name="pkalbo" type="big_decimal">
+            <column name="pkalbo" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="desAlbo" type="string">
+            <column name="des_albo" length="80" />
+        </property>
+        <property name="flgChiuso" type="integer">
+            <column name="flg_chiuso" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="idEnte" type="big_decimal">
+            <column name="id_ente" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="alboiters" inverse="true" cascade="all">
+            <key>
+                <column name="fkalbo" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Alboiter" />
+        </set>
+        <set name="alboForCatStatos" inverse="true" cascade="all">
+            <key>
+                <column name="fkalbo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AlboForCatStato" />
+        </set>
+        <set name="richiesteaccreditamentos" inverse="true" cascade="all">
+            <key>
+                <column name="fkalbo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Richiesteaccreditamento" />
+        </set>
+        <set name="categories" inverse="true" cascade="all">
+            <key>
+                <column name="fkalbo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Categorie" />
+        </set>
+
+    </class>
+</hibernate-mapping>

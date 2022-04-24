@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="E:\POLIS\Analisi\eSICRA\XML\xsl_stile\out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="PermessoSoggiorno.xsd"/>
+	<xs:complexType name="SchedaSoggettoType">
+		<xs:sequence>
+			<xs:element name="Soggetto" type="pra:SoggettoType"/>
+			<xs:element name="PermessoSoggiorno" type="pra:PermessoSoggiornoType" minOccurs="0"/>
+			<xs:element name="StatoCivile" type="xs:string" minOccurs="0"/>
+			<xs:element name="Cittadinanza" type="xs:string" minOccurs="0"/>
+			<xs:element name="Certificabile" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SchedaSoggetto" type="pra:SchedaSoggettoType"/>
+</xs:schema>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Aot.xsd"/>
+	<xs:include schemaLocation="AotIdentificativo.xsd"/>
+	<xs:include schemaLocation="AotIndirizzo.xsd"/>
+	<xs:complexType name="EdiPraticaType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdServizio" type="xs:integer"/>
+			<xs:element name="CodPratica">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesPratica" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Tipo">
+				<xs:annotation>
+					<xs:documentation>1 = PERM DI COSTRUIRE  2 = DIA                             3 = AGIBILITA'                  4 = CONCESSIONE           5 = AUTORIZZAZIONE      6 = LICENZA</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesTipo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumPratica" type="xs:string"/>
+			<xs:element name="DataPratica" type="xs:date" default="2004-01-01"/>
+			<xs:element name="CodStato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataInizioLavori" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="DataFineLavori" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="IdPraticaFo" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Se nata sul FrontOffice</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NumProtocollo" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataProtocollo" type="xs:date" minOccurs="0"/>
+			<xs:element name="NumRegistro" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumProvvedimento" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataProvvedimento" type="xs:date" minOccurs="0"/>
+			<xs:element name="Volume" type="xs:string" minOccurs="0"/>
+			<xs:element name="Superficie" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataDecadimento" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="MotivoDecadimento" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataAgibilita" type="xs:date" default="2004-01-01" minOccurs="0"/>
+			<xs:element name="NumAgibilita" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ListaSoggettoPratica" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="SoggettoPratica">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="CodSoggetto" type="xs:string">
+										<xs:annotation>
+											<xs:documentation>Cod Fiscale/ PIVA</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="CodTipo" minOccurs="0">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="DesTipo">
+										<xs:annotation>
+											<xs:documentation>COMMITTENTE;                PROGETTISTA;                DIRETTORE LAVORI,        IMPRESA ESECUTRICE</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="80"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="CodTipoRuolo" minOccurs="0">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="DesTipoRuolo" minOccurs="0">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="80"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="Note" minOccurs="0">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="1000"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaAot" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Aot" type="esicra_import:AotType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaAotIdentificativo" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="AotIdentificativo">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="AotIdentificativoDati" type="esicra_import:AotIdentificativoDatiType"/>
+									<xs:element name="DesPianoRegolatore" minOccurs="0">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="100"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaAotIndirizzoDati">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="AotIndirizzoDati" type="esicra_import:AotIndirizzoDatiType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EdiPratica" type="esicra_import:EdiPraticaType"/>
+</xs:schema>

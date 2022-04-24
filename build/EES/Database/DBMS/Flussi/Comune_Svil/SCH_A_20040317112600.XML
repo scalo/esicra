@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSchedaIndividuo xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSchedaIndividuo.xsd" versione="1.0">
+<Scheda progressivo = "1">
+<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+<CodScheda>0</CodScheda>
+<TipoAna>1</TipoAna>
+<MotIscrizione>NASCITA</MotIscrizione>
+<PadreCognome>GIANPAOLO</PadreCognome>
+<PadreNome></PadreNome>
+<MadreCognome>NOBILINI</MadreCognome>
+<MadreNome>ANGELA</MadreNome>
+<FlagCertificato>1</FlagCertificato>
+<FlagCittadinanza>1</FlagCittadinanza>
+<DataInizio>2001-09-21</DataInizio>
+</Scheda>
+<Scheda progressivo = "2">
+<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+<CodScheda>0</CodScheda>
+<TipoAna>1</TipoAna>
+<MotIscrizione>IMMIGRAZ. ALTRO COMUNE</MotIscrizione>
+<PadreCognome>NATALE</PadreCognome>
+<PadreNome></PadreNome>
+<MadreCognome>SORREGAROLI</MadreCognome>
+<MadreNome>GIULIANA</MadreNome>
+<FlagCertificato>1</FlagCertificato>
+<FlagCittadinanza>1</FlagCittadinanza>
+<DataInizio>2001-09-21</DataInizio>
+</Scheda>
+<Scheda progressivo = "3">
+<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+<CodScheda>0</CodScheda>
+<TipoAna>1</TipoAna>
+<MotIscrizione>NASCITA</MotIscrizione>
+<PadreCognome>GIANPAOLO</PadreCognome>
+<PadreNome>PIETRO</PadreNome>
+<MadreCognome>NOBILINI</MadreCognome>
+<MadreNome>ANGELA</MadreNome>
+<FlagCertificato>1</FlagCertificato>
+<FlagCittadinanza>1</FlagCittadinanza>
+<DataInizio>2001-09-21</DataInizio>
+</Scheda>
+</ListaSchedaIndividuo>

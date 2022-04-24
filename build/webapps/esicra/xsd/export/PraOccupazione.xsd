@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pagamento.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="SoggettoGiuridico.xsd"/>
+	<xs:include schemaLocation="Occupazione.xsd"/>
+	<xs:element name="PraOccupazione" type="esicra_pra:PraOccupazioneType"/>
+	<xs:complexType name="PraOccupazioneType">
+		<xs:sequence>
+			<xs:element name="Pratica" type="esicra_pra:PraticaType"/>
+			<xs:element name="Soggetto" type="esicra_pra:SoggettoType"/>
+			<xs:element name="Occupazione" type="esicra_pra:OccupazioneType"/>
+			<xs:element name="DesStato"/>
+			<xs:element name="Stato" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0"/>
+			<xs:element name="DataStato" minOccurs="0"/>
+			<xs:element name="Richiesta"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

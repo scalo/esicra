@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAotIndirizzo xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAotIndirizzo.xsd" versione="1.0">
+	<AotIndirizzo progressivo="1">
+		<CodAot>codaot_1</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Roma</DesArea>
+			<CivicoNum>15</CivicoNum>
+			<CivicoLet>A</CivicoLet>
+			<Colore>Bianco</Colore>
+			<Corte>Corte 1</Corte>
+			<Scala>Scala 2</Scala>
+			<Interno>Int 25</Interno>
+			<Piano>Piano 2</Piano>
+			<Edificio>Edi A</Edificio>
+		</AotIndirizzoDati>
+		<AotIndirizzoDati>
+			<DesArea>Via Roma</DesArea>
+			<CivicoNum>14</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="2">
+		<CodAot>codaot_2</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>CORSO MAZZINI</DesArea>
+			<CivicoNum>11</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="3">
+		<CodAot>codaot_3</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Dante</DesArea>
+			<CivicoNum>14</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	<AotIndirizzo progressivo="4">
+		<CodAot>codaot_4</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Ugo Foscolo</DesArea>
+			<CivicoNum>12</CivicoNum>
+			<CivicoLet>B</CivicoLet>
+			<Colore>Bianco</Colore>
+			<Corte>Co1</Corte>
+			<Scala>Sc1</Scala>
+			<Interno>Int1</Interno>
+			<Piano>P1</Piano>
+			<Edificio>E1</Edificio>
+		</AotIndirizzoDati>
+		</AotIndirizzo>
+		<AotIndirizzo progressivo="5">
+		<CodAot>codaot_5</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Jackson</DesArea>
+			<CivicoNum>6</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+		<AotIndirizzo progressivo="6">
+		<CodAot>codaot_6</CodAot>
+		<AotIndirizzoDati>
+			<DesArea>Via Gibson</DesArea>
+			<CivicoNum>335</CivicoNum>
+		</AotIndirizzoDati>
+	</AotIndirizzo>
+	
+</ListaAotIndirizzo>

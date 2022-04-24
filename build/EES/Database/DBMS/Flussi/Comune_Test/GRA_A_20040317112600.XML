@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<ListaScuGraduatoria xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaScuGraduatoria.xsd" versione="1.0">
+	<ScuGraduatoria progressivo="1">
+		<CodGraduatoria>cod_001</CodGraduatoria>
+		<DesGraduatoria>graduatoria 001</DesGraduatoria>
+		<DtGraduatoria>2001-01-02</DtGraduatoria>
+		<CodCentro>cod_001</CodCentro>
+		<DesCentro>Asilo Comunale 01</DesCentro>
+		<CodCorso>01</CodCorso>
+		<DesCorso>Prima</DesCorso>
+		<CodFascia>01</CodFascia>
+		<DesFascia>Fascia 01</DesFascia>
+		<CodStato>cod_001</CodStato>
+		<DesStato>Aperta</DesStato>
+	</ScuGraduatoria>
+	<ScuGraduatoria progressivo="2">
+		<CodGraduatoria>cod_002</CodGraduatoria>
+		<DesGraduatoria>graduatoria 002</DesGraduatoria>
+		<DtGraduatoria>2001-01-02</DtGraduatoria>
+		<CodCentro>cod_002</CodCentro>
+		<DesCentro>Asilo Comunale 01</DesCentro>
+		<CodCorso>02</CodCorso>
+		<DesCorso>Seconda</DesCorso>
+		<CodFascia>02</CodFascia>
+		<DesFascia>Fascia 02</DesFascia>
+		<CodStato>cod_002</CodStato>
+		<DesStato>Chiusa</DesStato>
+	</ScuGraduatoria>
+	<ScuGraduatoria progressivo="3">
+		<CodGraduatoria>cod_003</CodGraduatoria>
+		<DesGraduatoria>graduatoria 003</DesGraduatoria>
+		<DtGraduatoria>2001-01-02</DtGraduatoria>
+		<CodCentro>cod_001</CodCentro>
+		<DesCentro>Asilo Comunale 01</DesCentro>
+		<CodCorso>03</CodCorso>
+		<DesCorso>Terza</DesCorso>
+		<CodFascia>03</CodFascia>
+		<DesFascia>Fascia 03</DesFascia>
+		<CodStato>cod_001</CodStato>
+		<DesStato>Aperta</DesStato>
+	</ScuGraduatoria>
+</ListaScuGraduatoria>

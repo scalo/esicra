@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaFam" table="ana_fam" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codFamiglia" type="string">
+            <column name="cod_famiglia" length="20" />
+        </property>
+        <property name="tipoAna" type="integer">
+            <column name="tipo_ana" />
+        </property>
+        <property name="tipoScheda" type="integer">
+            <column name="tipo_scheda" />
+        </property>
+        <property name="numScheda" type="integer">
+            <column name="num_scheda" />
+        </property>
+        <property name="intestatario" type="string">
+            <column name="intestatario" length="80" />
+        </property>
+        <property name="specieConv" type="string">
+            <column name="specie_conv" length="80" />
+        </property>
+        <property name="desConv" type="string">
+            <column name="des_conv" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="anaFamComponentes" inverse="true">
+            <key>
+                <column name="fkid_fam" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaFamComponente" />
+        </set>
+    </class>
+</hibernate-mapping>

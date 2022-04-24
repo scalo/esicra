@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VIndirizzoCorrente" table="v_indirizzo_corrente" schema="esicra" mutable="false" >      
+            <id name="pkid" type="big_decimal" >
+                <column name="pkid" precision="22" scale="0" />
+                <generator class="assigned" />
+            </id>
+            <property name="fkidSoggetto" type="big_decimal">
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </property>
+            <property name="tipo" type="string">
+                <column name="tipo" length="3" />
+            </property>
+            <property name="fkidArea" type="big_decimal">
+                <column name="fkid_area" precision="22" scale="0" />
+            </property>
+            <property name="desArea" type="string">
+                <column name="des_area" length="80" />
+            </property>
+            <property name="numCiv" type="integer">
+                <column name="num_civ" />
+            </property>
+            <property name="letCiv" type="string">
+                <column name="let_civ" length="5" />
+            </property>
+            <property name="colore" type="string">
+                <column name="colore" length="10" />
+            </property>
+            <property name="corte" type="string">
+                <column name="corte" length="9" />
+            </property>
+            <property name="scala" type="string">
+                <column name="scala" length="9" />
+            </property>
+            <property name="interno" type="string">
+                <column name="interno" length="9" />
+            </property>
+            <property name="piano" type="string">
+                <column name="piano" length="9" />
+            </property>
+            <property name="edificio" type="string">
+                <column name="edificio" length="9" />
+            </property>
+            <property name="presso" type="string">
+                <column name="presso" length="50" />
+            </property>
+            <property name="telefono" type="string">
+                <column name="telefono" length="30" />
+            </property>
+            <property name="fax" type="string">
+                <column name="fax" length="30" />
+            </property>
+            <property name="email" type="string">
+                <column name="email" length="50" />
+            </property>
+            <property name="fkidStato" type="big_decimal">
+                <column name="fkid_stato" precision="22" scale="0" />
+            </property>
+            <property name="desStato" type="string">
+                <column name="des_stato" length="80" />
+            </property>
+            <property name="contea" type="string">
+                <column name="contea" length="50" />
+            </property>
+            <property name="fkidLocalita" type="big_decimal">
+                <column name="fkid_localita" precision="22" scale="0" />
+            </property>
+            <property name="desLocalita" type="string">
+                <column name="des_localita" length="80" />
+            </property>
+            <property name="cap" type="string">
+                <column name="cap" length="10" />
+            </property>
+            <property name="fkidComune" type="big_decimal">
+                <column name="fkid_comune" precision="22" scale="0" />
+            </property>
+            <property name="desComune" type="string">
+                <column name="des_comune" length="80" />
+            </property>
+            <property name="desProvincia" type="string">
+                <column name="des_provincia" length="80" />
+            </property>
+            <property name="fkidConsolato" type="big_decimal">
+                <column name="fkid_consolato" precision="22" scale="0" />
+            </property>
+            <property name="desConsolato" type="string">
+                <column name="des_consolato" length="80" />
+            </property>
+            <property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </property>
+            <property name="dtIni" type="date">
+                <column name="dt_ini" length="4" />
+            </property>
+            <property name="dtFin" type="date">
+                <column name="dt_fin" length="4" />
+            </property>
+            <property name="dtMod" type="timestamp">
+                <column name="dt_mod" length="8" />
+            </property>
+            <property name="codIndirizzo" type="string">
+                <column name="cod_indirizzo" length="20" />
+            </property>
+    </class>
+</hibernate-mapping>

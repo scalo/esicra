@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAtti xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAtti.xsd" versione="1.0">
+<Atto progressivo = "1">
+<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+<TipoAtto>1</TipoAtto>
+<Trascrizione>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<Anno>2003</Anno>
+<Numero>17</Numero>
+<Parte>2</Parte>
+<Serie>B</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Trascrizione>
+</Atto>
+<Atto progressivo = "2">
+<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+<TipoAtto>1</TipoAtto>
+<Trascrizione>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<Anno>2003</Anno>
+<Numero>19</Numero>
+<Parte>2</Parte>
+<Serie>B</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Trascrizione>
+</Atto>
+<Atto progressivo = "3">
+<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+<TipoAtto>1</TipoAtto>
+<Registrazione>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<Anno>1979</Anno>
+<Numero>597</Numero>
+<Parte>1</Parte>
+<Serie>A</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Registrazione>
+<Trascrizione>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<Anno>2003</Anno>
+<Numero>18</Numero>
+<Parte>2</Parte>
+<Serie>B</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Trascrizione>
+</Atto>
+</ListaAtti>

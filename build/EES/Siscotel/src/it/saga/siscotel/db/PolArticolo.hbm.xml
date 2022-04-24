@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PolArticolo" table="pol_articolo" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="articolo" type="character">
+            <column name="articolo" length="3" />
+        </property>
+        <property name="comma" type="character">
+            <column name="comma" length="2" />
+        </property>
+        <property name="lettera" type="character">
+            <column name="lettera" length="1" />
+        </property>
+        <property name="importomin" type="big_decimal">
+            <column name="importomin" precision="15" />
+        </property>
+        <property name="importomax" type="big_decimal">
+            <column name="importomax" precision="15" />
+        </property>
+        <property name="desArticolo" type="string">
+            <column name="des_articolo" length="80" />
+        </property>
+        <property name="sanzioniAccessorie" type="string">
+            <column name="sanzioni_accessorie" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="polInfraziones" inverse="true">
+            <key>
+                <column name="fkid_articolo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+    </class>
+</hibernate-mapping>

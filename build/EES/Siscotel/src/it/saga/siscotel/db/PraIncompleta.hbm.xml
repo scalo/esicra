@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PraIncompleta" table="pra_incompleta" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dtPratica" type="date">
+            <column name="dt_pratica" length="4" />
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16" />
+        </property>
+        <property name="oggetto" type="string">
+            <column name="oggetto" length="200" />
+        </property>
+        <property name="classe" type="string">
+            <column name="classe" length="100" />
+        </property>
+        <property name="docXml" type="string">
+            <column name="doc_xml" not-null="true" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

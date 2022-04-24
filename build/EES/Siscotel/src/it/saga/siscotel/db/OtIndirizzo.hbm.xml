@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.OtIndirizzo" table="ot_indirizzo" schema="esicra">
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+          <column name="PKID" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+        </generator>
+        </id>
+        <many-to-one name="otIndice" class="it.saga.siscotel.db.OtIndice">
+            <column name="fkid_ot" precision="22" scale="0" />
+        </many-to-one>
+        <property name="fkidArea" type="big_decimal">
+            <column name="fkid_area" precision="22" scale="0" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="colore" type="string">
+            <column name="colore" length="10" />
+        </property>
+        <property name="corte" type="string">
+            <column name="corte" length="9" />
+        </property>
+        <property name="scala" type="string">
+            <column name="scala" length="9" />
+        </property>
+        <property name="interno" type="string">
+            <column name="interno" length="9" />
+        </property>
+        <property name="piano" type="string">
+            <column name="piano" length="9" />
+        </property>
+        <property name="edificio" type="string">
+            <column name="edificio" length="9" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<isd:service
+   id="it.saga.siscotel.esicra.anagrafeestesa.webservice.test.HelloWorldWs"
+   xmlns:isd="http://xml.apache.org/xml-soap/deployment">
+   <isd:provider
+      type="java"
+      methods="sayHello"
+      scope="Request">
+      <isd:java class="it.saga.siscotel.esicra.anagrafeestesa.webservice.test.HelloWorldWs" static="false"/>
+   </isd:provider>
+   <isd:faultListener>org.apache.soap.server.DOMFaultListener</isd:faultListener>
+   <isd:mappings defaultRegistryClass="it.saga.egov.esicra.soap.WrapperSoapMappingRegistry" >  
+   </isd:mappings>
+</isd:service>
+

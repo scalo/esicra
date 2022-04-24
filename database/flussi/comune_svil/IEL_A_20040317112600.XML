@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaIndirizzo xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaIndirizzo.xsd" versione="1.0">
+<Indirizzo progressivo = "1">
+<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+<Tipo>ELE</Tipo>
+<DesArea>VIA MARTIRI SONCINESI</DesArea>
+<NumCiv>15</NumCiv>
+<LetCiv></LetCiv>
+<Corte></Corte>
+<Scala></Scala>
+<Interno></Interno>
+<Piano></Piano>
+<Edificio></Edificio>
+<Presso></Presso>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<DataInizio>1984-07-01</DataInizio>
+</Indirizzo>
+<Indirizzo progressivo = "2">
+<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+<Tipo>ELE</Tipo>
+<DesArea>VIA REGINA DELLA SCALA</DesArea>
+<NumCiv>119</NumCiv>
+<LetCiv></LetCiv>
+<Corte></Corte>
+<Scala></Scala>
+<Interno></Interno>
+<Piano></Piano>
+<Edificio></Edificio>
+<Presso></Presso>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<DataInizio>1959-11-25</DataInizio>
+</Indirizzo>
+<Indirizzo progressivo = "3">
+<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+<Tipo>ELE</Tipo>
+<DesArea>VIA G.MATTEOTTI</DesArea>
+<NumCiv>41</NumCiv>
+<LetCiv></LetCiv>
+<Corte></Corte>
+<Scala></Scala>
+<Interno></Interno>
+<Piano></Piano>
+<Edificio></Edificio>
+<Presso></Presso>
+<Comune>
+			<CodComune>999999</CodComune>
+			<DesComune>COMUNEAMICO</DesComune>
+			<Cap>99999</Cap>
+			<DesProvincia>BG</DesProvincia>
+</Comune>
+<DataInizio>1908-01-29</DataInizio>
+</Indirizzo>
+<Indirizzo progressivo = "4">
+<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+<Tipo>ELE</Tipo>
+<DesArea>VIA ALLE SCUOLE</DesArea>
+<NumCiv>0</NumCiv>
+<LetCiv></LetCiv>
+<Corte></Corte>
+<Scala></Scala>
+<Interno></Interno>
+<Piano></Piano>
+<Edificio></Edificio>
+<Presso></Presso>
+<Localita>
+	<DesLocalita>Erlangen </DesLocalita>
+	<Cap></Cap>
+	<CodStato>216</CodStato>
+	<DesStato>GERMANIA</DesStato>
+</Localita>
+<DataInizio>1941-02-13</DataInizio>
+</Indirizzo>
+
+</ListaIndirizzo>

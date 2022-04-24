@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<PraPermessoCircolazione class="it.saga.egov.srvfrontoffice.beans.pratiche.PraPermessoCircolazioneBean" attr="root" xmlns="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra">
+   <Pratica class="it.saga.egov.srvfrontoffice.beans.pratiche.PraticaBean" attr="pratica">
+      <IdPratica class="java.math.BigDecimal" attr="idPratica">730100290</IdPratica>
+      <DataPratica class="java.util.Date" attr="dataPratica">2005-05-05</DataPratica>
+      <Oggetto class="java.lang.String" attr="oggetto">Oggetto della pratica</Oggetto>
+      <TipoNotifica class="java.lang.String" attr="tipoNotifica">Tipo notifica</TipoNotifica>
+      <CodTipoConsegna class="java.lang.Integer" attr="codTipoConsegna">1</CodTipoConsegna>
+      <DesTipoConsegna class="java.lang.String" attr="desTipoConsegna">TipoConsegna</DesTipoConsegna>
+      <CodModalitaAllegato class="java.lang.Integer" attr="codModalitaAllegato">2</CodModalitaAllegato>
+      <DesModalitaAllegato class="java.lang.String" attr="desModalitaAllegato">Modalita Allegato</DesModalitaAllegato>
+      <Canale class="java.lang.Integer" attr="canale">1</Canale>
+      <IdServizio class="java.math.BigDecimal" attr="idServizio">100112</IdServizio>
+      <Recapito class="it.saga.egov.srvfrontoffice.beans.base.RecapitoBean" attr="recapito">
+         <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" attr="indirizzo">
+            <SpecieArea class="java.lang.String" attr="specieArea">VIA</SpecieArea>
+            <DesArea class="java.lang.String" attr="desArea">UgoFoscolo</DesArea>
+            <NumCiv class="java.lang.Integer" attr="numCiv">25</NumCiv>
+            <LetCiv class="java.lang.String" attr="letCiv">A</LetCiv>
+            <Scala class="java.lang.String" attr="scala">SCALA</Scala>
+            <Interno class="java.lang.String" attr="interno">INTERNO</Interno>
+            <Cap class="java.lang.String" attr="cap">24100</Cap>
+            <DataInizio class="java.util.Date" attr="dataInizio">2003-01-11</DataInizio>
+            <DataFine class="java.util.Date" attr="dataFine">2003-12-11</DataFine>
+            <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune">
+               <CodIstatComune class="java.lang.Integer" attr="codIstatComune">16024</CodIstatComune>
+               <DesComune class="java.lang.String" attr="desComune">Bergamo</DesComune>
+               <DesProvincia class="java.lang.String" attr="desProvincia">BG</DesProvincia>
+            </Comune>
+         </Indirizzo>
+         <Presso class="java.lang.String" attr="presso">Suo Zio</Presso>
+         <Telefono class="java.lang.String" attr="telefono">037225987</Telefono>
+         <Email class="java.lang.String" attr="email">prova@www.virgilio.it</Email>
+      </Recapito>
+      <Allegato class="it.saga.egov.srvfrontoffice.beans.pratiche.AllegatoBean" array="2" attr="listaAllegato">
+         <Allegato class="it.saga.egov.srvfrontoffice.beans.pratiche.AllegatoBean">
+            <IdPratica class="java.math.BigDecimal" attr="IdPratica">111001</IdPratica>
+            <IdAllegato class="java.lang.String" attr="IdAllegato">ABS10/23</IdAllegato>
+            <Ref class="java.lang.String" attr="Ref">per_SCLR34E47BX_200301023.doc</Ref>
+            <CodAllegato class="java.lang.String" attr="CodAllegato">SSSDDD</CodAllegato>
+            <DesAllegato class="java.lang.String" attr="DesAllegato">Carta Identita</DesAllegato>
+         </Allegato>
+         <Allegato class="it.saga.egov.srvfrontoffice.beans.pratiche.AllegatoBean">
+            <IdPratica class="java.math.BigDecimal" attr="IdPratica">1212</IdPratica>
+            <IdAllegato class="java.lang.String" attr="IdAllegato">CFB18733</IdAllegato>
+            <Ref class="java.lang.String" attr="Ref">certificato.pdf</Ref>
+         </Allegato>
+      </Allegato>
+      <CodPraticaBo class="java.lang.String" attr="codPraticaBo">TEST BEAN</CodPraticaBo>
+      <IdEnteDestinatario class="java.math.BigDecimal" attr="idEnteDestinatario">8240</IdEnteDestinatario>
+      <Pagamento class="it.saga.egov.srvfrontoffice.beans.pratiche.PagamentoBean" array="1" attr="listaPagamento">
+         <Pagamento class="it.saga.egov.srvfrontoffice.beans.pratiche.PagamentoBean">
+            <IdPratica class="java.math.BigDecimal" attr="idPratica">1001</IdPratica>
+            <CodTipoPagamento class="java.lang.String" attr="codTipoPagamento">1</CodTipoPagamento>
+            <CodEnteTipoPagamento class="java.lang.String" attr="codEnteTipoPagamento">1</CodEnteTipoPagamento>
+            <CausalePagamento class="java.lang.String" attr="causalePagamento">pagamento permesso di circolazione</CausalePagamento>
+            <DesTipoPagamento class="java.lang.String" attr="desTipoPagamento">Contrassegno</DesTipoPagamento>
+            <DataPagamento class="java.util.Date" attr="dataPagamento">1999-12-12</DataPagamento>
+            <DataRegistrazione class="java.util.Date" attr="dataRegistrazione">1999-12-12</DataRegistrazione>
+            <ImportoPagato class="java.math.BigDecimal" attr="importoPagato">1000</ImportoPagato>
+            <ImportoDaPagare class="java.math.BigDecimal" attr="importoDaPagare">1000</ImportoDaPagare>
+            <ImportoTotale class="java.math.BigDecimal" attr="importoTotale">1000</ImportoTotale>
+            <IdCanale class="java.lang.Integer" attr="idCanale">3</IdCanale>
+            <DesCanale class="java.lang.String" attr="desCanale">web</DesCanale>
+            <Distinta class="java.lang.String" attr="distinta">aa</Distinta>
+            <DataDistinta class="java.util.Date" attr="dataDistinta">1999-12-12</DataDistinta>
+            <Autorizzazione class="java.lang.String" attr="autorizzazione">Autorizzazazione</Autorizzazione>
+            <NumRata class="java.lang.Integer" attr="numRata">1</NumRata>
+            <NumOrdine class="java.lang.String" attr="numOrdine">123456</NumOrdine>
+         </Pagamento>
+      </Pagamento>
+   </Pratica>
+   <Soggetto class="it.saga.egov.srvfrontoffice.beans.base.SoggettoBean" attr="soggetto">
+      <CodiceFiscale class="java.lang.String" attr="CodiceFiscale">PNLGNN77H8763HJZ</CodiceFiscale>
+      <Cognome class="java.lang.String" attr="Cognome">Pinoli</Cognome>
+      <Nome class="java.lang.String" attr="Nome">Gianni</Nome>
+      <Sesso class="java.lang.String" attr="Sesso">M</Sesso>
+      <DataNascita class="java.util.Date" attr="DataNascita">1960-04-20</DataNascita>
+      <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="ComuneNascita">
+         <CodIstatComune class="java.lang.Integer" attr="codIstatComune">16024</CodIstatComune>
+         <DesComune class="java.lang.String" attr="desComune">Bergamo</DesComune>
+         <DesProvincia class="java.lang.String" attr="desProvincia">BG</DesProvincia>
+      </Comune>
+      <Indirizzo class="it.saga.egov.srvfrontoffice.beans.base.IndirizzoBean" attr="Residenza">
+         <SpecieArea class="java.lang.String" attr="specieArea">VIA</SpecieArea>
+         <DesArea class="java.lang.String" attr="desArea">UgoFoscolo</DesArea>
+         <NumCiv class="java.lang.Integer" attr="numCiv">25</NumCiv>
+         <LetCiv class="java.lang.String" attr="letCiv">A</LetCiv>
+         <Scala class="java.lang.String" attr="scala">SCALA</Scala>
+         <Interno class="java.lang.String" attr="interno">INTERNO</Interno>
+         <Cap class="java.lang.String" attr="cap">24100</Cap>
+         <DataInizio class="java.util.Date" attr="dataInizio">2003-01-11</DataInizio>
+         <DataFine class="java.util.Date" attr="dataFine">2003-12-11</DataFine>
+         <Comune class="it.saga.egov.srvfrontoffice.beans.base.ComuneBean" attr="comune">
+            <CodIstatComune class="java.lang.Integer" attr="codIstatComune">16024</CodIstatComune>
+            <DesComune class="java.lang.String" attr="desComune">Bergamo</DesComune>
+            <DesProvincia class="java.lang.String" attr="desProvincia">BG</DesProvincia>
+         </Comune>
+      </Indirizzo>
+      <IdEnte class="java.math.BigDecimal" attr="IdEnte">7734</IdEnte>
+   </Soggetto>
+   <PolPermesso class="it.saga.egov.srvfrontoffice.beans.poliziamunicipale.PolPermessoBean" attr="permesso">
+      <CodTipo class="java.lang.String" attr="CodTipo">1</CodTipo>
+      <DesTipo class="java.lang.String" attr="DesTipo">Permesso di Sosta</DesTipo>
+      <DataRichiesta class="java.util.Date" attr="DataRichiesta">2003-07-10</DataRichiesta>
+      <Motivazione class="java.lang.String" attr="Motivazione">Permesso per residente in via Arcangelo Corelli 6</Motivazione>
+      <DesStato class="java.lang.String" attr="DesStato">Accettata</DesStato>
+      <Note class="java.lang.String" attr="Note">nota</Note>
+      <DataInizioValidita class="java.util.Date" attr="DataInizioValidita">2003-08-01</DataInizioValidita>
+      <DataFineValidita class="java.util.Date" attr="DataFineValidita">2003-10-01</DataFineValidita>
+      <OraInizio class="java.lang.String" attr="OraInizio">00:00:00</OraInizio>
+      <OraFine class="java.lang.String" attr="OraFine">24:00:00</OraFine>
+   </PolPermesso>
+   <PolVeicolo class="it.saga.egov.srvfrontoffice.beans.poliziamunicipale.PolVeicoloBean" array="2" attr="veicoli">
+      <PolVeicolo class="it.saga.egov.srvfrontoffice.beans.poliziamunicipale.PolVeicoloBean">
+         <CodTipoVeicolo class="java.lang.String" attr="codTipoVeicolo">CODICE VEICOLO</CodTipoVeicolo>
+         <DesTipoVeicolo class="java.lang.String" attr="desTipoVeicolo">AUTOMEZZO</DesTipoVeicolo>
+         <Marca class="java.lang.String" attr="marca">FIAT</Marca>
+         <Modello class="java.lang.String" attr="modello">PUNTO</Modello>
+         <Targa class="java.lang.String" attr="targa">BS76346G</Targa>
+      </PolVeicolo>
+      <PolVeicolo class="it.saga.egov.srvfrontoffice.beans.poliziamunicipale.PolVeicoloBean">
+         <CodTipoVeicolo class="java.lang.String" attr="codTipoVeicolo">CODICE VEICOLO</CodTipoVeicolo>
+         <DesTipoVeicolo class="java.lang.String" attr="desTipoVeicolo">AUTOMEZZO</DesTipoVeicolo>
+         <Marca class="java.lang.String" attr="marca">FIAT</Marca>
+         <Modello class="java.lang.String" attr="modello">PUNTO</Modello>
+         <Targa class="java.lang.String" attr="targa">BS76346G</Targa>
+      </PolVeicolo>
+   </PolVeicolo>
+   <Stato class="java.lang.Integer" attr="stato">-1</Stato>
+   <Note class="java.lang.String" attr="note">pratica test</Note>
+   <DataStato class="java.util.Date" attr="dataStato">1990-10-12</DataStato>
+   <DesStato class="java.lang.String" attr="desStato">descrizione di uno stato</DesStato>
+   <Percorso class="java.lang.String" attr="percorso">Via Milano,Via Roma</Percorso>
+</PraPermessoCircolazione>

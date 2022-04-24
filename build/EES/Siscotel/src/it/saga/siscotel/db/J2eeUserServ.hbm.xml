@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.J2eeUserServ" table="j2ee_user_serv" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.J2eeUserServId">
+            <key-property name="fkidServizio" type="big_decimal">
+                <column name="fkid_servizio" precision="22" scale="0" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="user_name" length="30" />
+            </key-property>
+            <key-property name="codAccesso" type="string">
+                <column name="cod_accesso" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

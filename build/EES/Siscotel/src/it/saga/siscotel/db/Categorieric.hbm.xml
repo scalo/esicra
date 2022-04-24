@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Categorieric" table="categorieric" schema="esicra">
+        <id name="pkcategorieric" type="big_decimal">
+            <column name="pkcategorieric" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <many-to-one name="categorie" class="it.saga.siscotel.db.Categorie">
+            <column name="fkcategorie" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="richiesteaccreditamento" class="it.saga.siscotel.db.Richiesteaccreditamento">
+            <column name="fkrichiesta" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

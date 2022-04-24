@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBolletta xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBolletta.xsd" versione="1.0">
+<Bolletta progressivo ="1">
+	<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+	<DesIntestatario>GIANNI PINOLI</DesIntestatario>
+	<CodiceFiscale>PNLGNN77H8763HJZ</CodiceFiscale>
+	<Recapito>VIA G.COSTA 17 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB1</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="2">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA BORGO MATTINA 46 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB2</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>2</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>330,63</TotEsenteIva>
+	<TotBolletta>330,63</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="3">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA MILANO 38 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB3</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>3</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>412,30</TotEsenteIva>
+	<TotBolletta>412,30</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="4">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB4</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>4</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>389,68</TotEsenteIva>
+	<TotBolletta>389,68</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="5">
+	<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+	<DesIntestatario>GIANNI</DesIntestatario>
+	<CodiceFiscale>PNLGNN77H8763HJZ</CodiceFiscale>
+	<Recapito>VIA FIORANO 19 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB5</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>5</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>544,31</TotEsenteIva>
+	<TotBolletta>544,31</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="6">
+	<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+	<DesIntestatario>GIANNI</DesIntestatario>
+	<CodiceFiscale>PNLGNN77H8763HJZ</CodiceFiscale>
+	<Recapito>VIA P.TINELLI 11 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB6</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>6</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>335,15</TotEsenteIva>
+	<TotBolletta>335,15</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="7">
+	<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+	<DesIntestatario>GIANNI PINOLI</DesIntestatario>
+	<CodiceFiscale>PNLGNN77H8763HJZ</CodiceFiscale>
+	<Recapito>VIA G.COSTA 19 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR1</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="8">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA BORGO MATTINA 46 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR2</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>2</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>330,63</TotEsenteIva>
+	<TotBolletta>330,63</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="9">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA MILANO 38 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR3</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>3</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>412,30</TotEsenteIva>
+	<TotBolletta>412,30</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="10">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR4</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>4</NumBolletta>
+	<DataBolletta>2003-12-10</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>389,68</TotEsenteIva>
+	<TotBolletta>389,68</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="11">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHEWS LOTAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE GRAZIE 75 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB8</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>8</NumBolletta>
+	<DataBolletta>2003-12-15</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="12">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHEWS LOTAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE GRAZIE 76 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB9</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>9</NumBolletta>
+	<DataBolletta>2003-12-16</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="13">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHEWS LOTAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE GRAZIE 77 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB10</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>10</NumBolletta>
+	<DataBolletta>2003-12-17</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="14">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB11</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>8</NumBolletta>
+	<DataBolletta>2003-12-15</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="15">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB12</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>9</NumBolletta>
+	<DataBolletta>2003-12-16</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="16">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB13</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100103</IdServizio>
+	<NumBolletta>10</NumBolletta>
+	<DataBolletta>2003-12-17</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<SpeseSpedizione>1,05</SpeseSpedizione>
+	<TotEsenteIva>340,75</TotEsenteIva>
+	<TotBolletta>340,75</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="17">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHEWS LOTAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE GRAZIE 77 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR5</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="18">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHEWS LOTAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE GRAZIE 77 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR6</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="19">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR7</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="20">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUVR8</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>59,96</TotEsenteIva>
+	<TotBolletta>59,96</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="21">
+	<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+	<DesIntestatario>BACCA ANNA</DesIntestatario>
+	<CodiceFiscale>BCCNNA70M41A794K</CodiceFiscale>
+	<Recapito>VIA DE'MARCHESCHI 1 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>RSUB7</CodBolletta>
+	<Anno>2003</Anno>
+	<CodServizio>RSU</CodServizio>
+	<IdServizio>100276</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2003-12-12</DataBolletta>
+	<Oggetto>Ordinario 2004</Oggetto>
+	<TotEsenteIva>234,61</TotEsenteIva>
+	<TotBolletta>234,61</TotBolletta>
+</Bolletta>
+
+</PagListaBolletta>

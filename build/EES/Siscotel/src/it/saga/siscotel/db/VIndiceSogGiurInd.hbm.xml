@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VIndiceSogGiurInd"
+           table="v_indice_sog_giur_ind" schema="esicra" mutable="false">
+        <id name="pkid" type="big_decimal">
+            <generator class="assigned"/>
+        </id>
+        <property name="codiceSoggetto" type="string">
+            <column name="codice_soggetto" length="20"/>
+        </property>
+        <property name="natura" type="integer">
+            <column name="natura"/>
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16"/>
+        </property>
+        <property name="partitaIva" type="string">
+            <column name="partita_iva" length="11"/>
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome" length="36"/>
+        </property>
+        <property name="nome" type="string">
+            <column name="nome" length="36"/>
+        </property>
+        <property name="denominazione" type="string">
+            <column name="denominazione" length="100"/>
+        </property>
+        <property name="sesso" type="integer">
+            <column name="sesso"/>
+        </property>
+        <property name="dataNascita" type="date">
+            <column name="data_nascita" length="4"/>
+        </property>
+        <property name="comuneNascita" type="string">
+            <column name="comune_nascita" length="80"/>
+        </property>
+        <property name="provinciaNascita" type="string">
+            <column name="provincia_nascita" length="80"/>
+        </property>
+        <property name="statoNascita" type="string">
+            <column name="stato_nascita" length="80"/>
+        </property>
+        <property name="localitaNascita" type="string">
+            <column name="localita_nascita" length="80"/>
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0"/>
+        </property>
+        <property name="codProvenienza" type="string">
+            <column name="cod_provenienza" length="20"/>
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="3"/>
+        </property>
+        <property name="comuneIndirizzo" type="string">
+            <column name="comune_indirizzo" length="80"/>
+        </property>
+        <property name="areaIndirizzo" type="string">
+            <column name="area_indirizzo" length="80"/>
+        </property>
+        <property name="numeroCivicoIndirizzo" type="integer">
+            <column name="numero_civico_indirizzo"/>
+        </property>
+        <property name="letteraCivicoIndirizzo" type="string">
+            <column name="lettera_civico_indirizzo" length="5"/>
+        </property>
+        <property name="colore" type="string">
+            <column name="colore" length="10"/>
+        </property>
+        <property name="corte" type="string">
+            <column name="corte" length="9"/>
+        </property>
+        <property name="scala" type="string">
+            <column name="scala" length="9"/>
+        </property>
+        <property name="interno" type="string">
+            <column name="interno" length="9"/>
+        </property>
+        <property name="piano" type="string">
+            <column name="piano" length="9"/>
+        </property>
+        <property name="edificio" type="string">
+            <column name="edificio" length="9"/>
+        </property>
+        <property name="presso" type="string">
+            <column name="presso" length="50"/>
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="30"/>
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="30"/>
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50"/>
+        </property>
+        <property name="desComuneIndirizzo" type="string">
+            <column name="des_comune_indirizzo" length="80"/>
+        </property>
+        <property name="desProvinciaIndirizzo" type="string">
+            <column name="des_provincia_indirizzo" length="80"/>
+        </property>
+        <property name="capIndirizzo" type="string">
+            <column name="cap_indirizzo" length="10"/>
+        </property>
+        <property name="desStatoIndirizzo" type="string">
+            <column name="des_stato_indirizzo" length="80"/>
+        </property>
+        <property name="desLocIndirizzo" type="string">
+            <column name="des_loc_indirizzo" length="80"/>
+        </property>
+        <property name="conteaIndirizzo" type="string">
+            <column name="contea_indirizzo" length="50"/>
+        </property>
+        <property name="desConsolatoIndirizzo" type="string">
+            <column name="des_consolato_indirizzo" length="80"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="AnaCertificato.xsd"/>
+	<xs:element name="PraAnaCertificato" type="esicra_pra:PraAnaCertificatoType">
+		<xs:annotation>
+			<xs:documentation>Pratica Richiesta Certificato</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="PraAnaCertificatoType">
+		<xs:sequence>
+			<xs:element name="SoggettoRichiedente" type="esicra_pra:SoggettoType" minOccurs="0"/>
+			<xs:element name="SoggettoCertificato" type="esicra_pra:SoggettoType"/>
+			<xs:element name="Pratica" type="esicra_pra:PraticaType"/>
+			<xs:element name="AnaCertificato" type="esicra_pra:AnaCertificatoType">
+				<xs:annotation>
+					<xs:documentation>Elementi  di dettaglio del Certificato Richiesto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Stato" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+			<xs:element name="Note" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

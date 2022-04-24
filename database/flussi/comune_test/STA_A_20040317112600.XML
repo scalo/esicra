@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaPraStato xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaPraStato.xsd" versione="String">
+	<PraStato progressivo="1">
+		<IdPratica>10100290</IdPratica>
+		<CodPraticaBo>Test Bean</CodPraticaBo>
+		<NumProtocolloBo>159/87</NumProtocolloBo>
+		<IdServizio>100125</IdServizio>
+		<DesServizio>Servizio Prova</DesServizio>
+		<IdResponsabile>10</IdResponsabile>
+		<DesResponsabile>Ludovico Arello</DesResponsabile>
+		<IdStato>30</IdStato>
+		<DesStato>In Eleaborazione</DesStato>
+		<DataStato>2004-08-13</DataStato>
+		<ImportoDaPagare>3.14</ImportoDaPagare>
+		<NumRata>2</NumRata>
+		<Note>notazione prova</Note>
+	</PraStato>
+	<PraStato progressivo="1">
+		<IdPratica>340100290</IdPratica>
+		<CodPraticaBo>Test Bean</CodPraticaBo>
+		<NumProtocolloBo>159/87</NumProtocolloBo>
+		<IdServizio>100125</IdServizio>
+		<DesServizio>Servizio Prova</DesServizio>
+		<IdResponsabile>10</IdResponsabile>
+		<DesResponsabile>Ludovico Arello</DesResponsabile>
+		<IdStato>30</IdStato>
+		<DesStato>In Eleaborazione</DesStato>
+		<DataStato>2004-08-13</DataStato>
+		<ImportoDaPagare>3.14</ImportoDaPagare>
+		<NumRata>2</NumRata>
+		<Note>notazione prova</Note>
+	</PraStato>
+
+</ListaPraStato>

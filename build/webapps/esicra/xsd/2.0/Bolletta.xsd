@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by mc (sss) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="BollettaType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:annotation>
+					<xs:documentation>Codice Fiscale/PartitaIva </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesIntestatario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodiceFiscale" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Usato alla emissione</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Indirizzo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indirizzo Utenza</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Recapito">
+				<xs:annotation>
+					<xs:documentation>Recapito Bolletta</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodBolletta">
+				<xs:annotation>
+					<xs:documentation>Codice univoco bolletta/accertamento        tra servizi</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Anno" type="xs:int"/>
+			<xs:element name="CodServizio">
+				<xs:annotation>
+					<xs:documentation>RSU, ICI, TOS....</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdServizio">
+				<xs:annotation>
+					<xs:documentation>Identificativo egov</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumBolletta">
+				<xs:annotation>
+					<xs:documentation>oppure NumAccertamento</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataBolletta" type="xs:date" default="2500-01-01"/>
+			<xs:element name="Oggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SpeseSpedizione" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotEsenteIva" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotImponibileIva" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotIva" type="xs:string" minOccurs="0"/>
+			<xs:element name="ArrotondamentoPrec" type="xs:string" minOccurs="0"/>
+			<xs:element name="ArrotondamentoAtt" type="xs:string" minOccurs="0"/>
+			<xs:element name="ImportoBollettaPrec" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotBolletta" type="xs:string"/>
+			<xs:element name="TotPagato" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotAccertato" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Se FlAccertamento=1</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotSanzioni" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Se FlAccertamento=1</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FlNonPagare" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Assente = Pag Possibile       0 = PagamentoPossibile       1 = Da non pagare</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MotNonPagare" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Motivo di non pagare</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FlAccertamento" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Assente = Bolletta             0 = Bolletta                       1 = Accertamento              2 = Importo Presunto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Bolletta" type="esicra_import:BollettaType"/>
+</xs:schema>

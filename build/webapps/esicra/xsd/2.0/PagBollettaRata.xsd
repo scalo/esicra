@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PagBollettaRata" type="esicra_import:PagBollettaRataType"/>
+	<xs:complexType name="PagBollettaRataType">
+		<xs:sequence>
+			<xs:element name="CodBolletta">
+				<xs:annotation>
+					<xs:documentation>Univoco tra servizi</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodServizio" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>ICI, TOS, RSU</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumRata" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>0=Unica                        100=ICI Ridotta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DtScadenzaRata" type="xs:date" default="2004-12-31"/>
+			<xs:element name="ImportoRata" type="xs:string"/>
+			<xs:element name="ImportoPagato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DtPagamento" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Data Ultimo pagamento effettuato</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DtRegPagamento" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Data registrazione ultimo pagamento effettuato</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DesDistinta" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dati Transazione Banca</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DtDistinta" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dati Transazione Banca</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IdServizio" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Codifica eGov</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IdPratica" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Se dal Portale</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesCanale" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Web, Posta, Chiosco</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesPagamento" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

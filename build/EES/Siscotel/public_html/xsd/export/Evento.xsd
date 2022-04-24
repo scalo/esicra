@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="qualified">
+<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:complexType name="Evento">
+		<xs:sequence>
+			<xs:element name="UbicazioneEvento" type="pra:IndirizzoType"/>
+			<xs:element name="DenominazioneEvento" type="xs:string"/>
+			<xs:element name="DataInizialeEvento" type="xs:date"/>
+			<xs:element name="DataFinaleEvento" type="xs:date"/>
+			<xs:element name="OraInizialeEvento" type="xs:string"/>
+			<xs:element name="OraFinaleEvento" type="xs:string"/>
+			<xs:element name="TipoEvento" type="xs:string"/>
+			<xs:element name="NoteEvento" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

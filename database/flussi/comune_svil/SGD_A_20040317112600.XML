@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSoggGiurInd xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaSoggGiurInd.xsd" versione="1.0">
+	<SoggGiurInd progressivo ="1">
+		<SoggettoGiur>	
+			<CodSoggetto>01137069875</CodSoggetto>
+			<Provenienza>10</Provenienza>
+			<Denominazione>GELATERIA PRIMAVERA</Denominazione>
+			<PartitaIva>01137069875</PartitaIva>
+			<CodRappresentante>VRDCRN52C70H558I</CodRappresentante>
+			<DesTitoloRapp>Proprietaria</DesTitoloRapp>
+		</SoggettoGiur>
+		<Indirizzo>
+			<CodArea>0</CodArea>
+			<DesArea>PIAZZA DEI CADUTI</DesArea>
+			<NumCiv>1</NumCiv>
+			<Comune>
+				<CodComune>999999</CodComune>
+				<DesComune>COMUNEAMICO</DesComune>
+				<Cap>99999</Cap>
+				<DesProvincia>BG</DesProvincia>
+			</Comune>
+		</Indirizzo>
+	</SoggGiurInd>
+	<SoggGiurInd progressivo ="2">
+		<SoggettoGiur>	
+			<CodSoggetto>01137069888</CodSoggetto>
+			<Provenienza>20</Provenienza>
+			<Denominazione>LA CASA DEL FIORE DI ROBERTO ROSSI &#38; C. SNC</Denominazione>
+			<DesRappresentante>ROBERTO ROSSI</DesRappresentante>
+			<DesTitoloRapp>Proprietaria</DesTitoloRapp>
+			<CognomeRapp>Rossi</CognomeRapp>
+			<NomeRapp>Roberto</NomeRapp>
+			<DtNascitaRapp>1958-04-20</DtNascitaRapp>
+		   	<LocalitaNascitaRapp>Desenzano (BS)</LocalitaNascitaRapp>
+		   	<RecapitoRapp>Piazza Vittoria 24, Brescia</RecapitoRapp>
+		</SoggettoGiur>	
+		<Indirizzo>
+			<CodArea>0</CodArea>
+			<DesArea>VIA LUNGA</DesArea>
+			<NumCiv>11</NumCiv>
+			<Localita>
+				<DesLocalita>SVIZZERA</DesLocalita>
+				<Cap></Cap>
+				<CodStato>0</CodStato>
+				<DesStato>SVIZZERA</DesStato>
+			</Localita>
+		</Indirizzo>
+	</SoggGiurInd>	
+	</ListaSoggGiurInd>
+

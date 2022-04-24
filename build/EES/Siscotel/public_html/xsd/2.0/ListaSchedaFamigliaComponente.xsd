@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="SchedaFamigliaComponente.xsd"/>
+	<xs:element name="ListaSchedaFamigliaComponente">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="SchedaFamigliaComponente">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="esicra_import:SchedaFamigliaComponenteType">
+								<xs:attribute name="progressivo" type="xs:int" use="required"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="versione">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

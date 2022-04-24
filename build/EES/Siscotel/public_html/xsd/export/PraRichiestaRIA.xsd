@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="SchedaSoggetto.xsd"/>
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="DatiEspatrio.xsd"/>
+	<xs:include schemaLocation="ComponenteFamiglia.xsd"/>
+	<xs:complexType name="PraRichiestaRIAType">
+		<xs:sequence>
+			<xs:element name="Richiedente" type="pra:SchedaSoggettoType"/>
+			<xs:element name="TipoAggregazioneFamiliare" type="xs:string"/>
+			<xs:element name="CodFiscaleIntestatarioFamiglia" type="xs:string"/>
+			<xs:element name="CognomeIntestatarioFamiglia" type="xs:string"/>
+			<xs:element name="NomeIntestatarioFamiglia" type="xs:string"/>
+			<xs:element name="ListaNucleoFamiliare" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="ComponenteFamiglia" type="pra:ComponenteFamigliaType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DatiEspatrio" type="pra:DatiEspatrioType"/>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="CodStato" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string"/>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+			<xs:element name="Note" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraRichiestaRIA" type="pra:PraRichiestaRIAType"/>
+</xs:schema>

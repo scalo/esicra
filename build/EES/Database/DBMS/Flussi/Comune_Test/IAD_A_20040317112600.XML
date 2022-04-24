@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBollettaDett xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBollettaDett.xsd" versione="1.0">
+<PagBollettaDett progressivo ="1">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1998</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>8882,54</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>21,98</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>26,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>48,85</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="8523">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1998</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>4392,47</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>10,87</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>13,29</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>24,16</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="8524">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1998</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>3/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A03 - ABITAZIONI DI TIPO ECONOMICO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>14316,19</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>35,43</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>43,31</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>78,74</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="8525">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1998</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>4/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A03 - ABITAZIONI DI TIPO ECONOMICO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>21474,28</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>53,15</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>64,96</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>118,11</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="8526">
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Importo Totale Versamenti</DesVoce>
+			<Valore>269,59</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>36,41</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Spese di Notifica</DesVoce>
+			<Valore>3,10</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>39,25</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11472">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>8882,54</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>19,98</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>24,43</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>44,41</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11473">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA 46</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00032 Part. 00084 Sub. 6</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>2</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>7401,86</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>16,65</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>20,36</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>37,01</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11474">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>4392,47</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>9,88</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>12,08</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>21,96</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11475">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>3/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A03 - ABITAZIONI DI TIPO ECONOMICO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>14316,19</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>32,21</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>39,37</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>71,58</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11476">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO MATTINA</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>4/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A03 - ABITAZIONI DI TIPO ECONOMICO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>21474,28</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>48,32</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>59,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>107,37</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11477">
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Differenza d&#39;Imposta da Corrispondere</DesVoce>
+			<Valore>282,33</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>84,70</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>367,03</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11478">
+	<CodBolletta>ICIA2004100000000030000000008</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BROLO 49</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A07 - ABITAZIONI IN VILLINI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Classe</DesVoce>
+			<Valore>03</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>61006,47</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>50,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Detrazione Abitazione Principale</DesVoce>
+			<Valore>69,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>37,36</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>45,66</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>83,02</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11479">
+	<CodBolletta>ICIA2004100000000030000000008</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BROLO 49</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C06 - STALLE, SCUDERIE, RIMESSE, AUTORIMESSE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Classe</DesVoce>
+			<Valore>05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>5368,57</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>50,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>6,04</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>7,38</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>13,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11480">
+	<CodBolletta>ICIA2004100000000030000000008</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Differenza d&#39;Imposta da Corrispondere</DesVoce>
+			<Valore>96,44</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>28,93</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>125,37</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11481">
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO SERA 7</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00031 Part. 00271 Sub. 506</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C02 - MAGAZZINI E LOCALI DI DEPOSITO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>1480,17</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>3,33</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>4,07</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>7,40</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11482">
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO SERA 7</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00031 Part. 00271 Sub. 508</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C02 - MAGAZZINI E LOCALI DI DEPOSITO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>1127,94</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>2,54</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>3,10</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>5,64</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11483">
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA BORGO SERA 7</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>2004</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>3/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00031 Part. 00271 Sub. 510</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C02 - MAGAZZINI E LOCALI DI DEPOSITO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>2749,10</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>6,19</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>7,56</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>13,75</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="11484">
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Totale Differenza d&#39;Imposta da Corrispondere</DesVoce>
+			<Valore>26,79</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>8,04</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>34,83</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9224">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>SONCINO CNA LE TEZZE</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Terreno agricolo</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Partita Catastale Terreni</DesVoce>
+			<Valore>4414</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>10361,16</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>25,64</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>31,34</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>56,99</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9225">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>SONCINO CAMPO 25 PERITCHE</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Terreno agricolo</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Partita Catastale Terreni</DesVoce>
+			<Valore>4421</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>11716,86</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>29,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>35,44</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>64,44</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9226">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA S.ANDREA 2</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>3/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>47720,62</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>118,11</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>144,35</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>262,46</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9227">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA S.ANDREA 2</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>4/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>39044,14</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>96,63</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>118,11</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>214,74</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9228">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA S.ANDREA 2</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>5/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>47720,62</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>118,11</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>144,35</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>262,46</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9229">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA S.ANDREA 32</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>6/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>43382,38</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>107,37</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>131,23</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>238,60</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9230">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA S.ANDREA 2</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>7/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>47720,62</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>118,11</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>144,35</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>262,46</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9231">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>BASTIONI BARADELLO 38</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>8/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A04 - ABITAZIONI DI TIPO POPOLARE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>11713,24</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita PRESUNTA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>28,99</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>35,43</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>64,42</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9232">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>PIAZZA TURCAZZANO 4</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>9/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00032 Part. 00547 Sub. 5</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A02 - ABITAZIONI DI TIPO CIVILE</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>71743,61</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>100,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Detrazione Abitazione Principale</DesVoce>
+			<Valore>129,11</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>119,46</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>146,01</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>265,48</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9233">
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Importo Totale Versamenti</DesVoce>
+			<Valore>1235,88</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Differenza d&#39;Imposta da Corrispondere</DesVoce>
+			<Valore>456,03</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>303,68</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Totale Interessi</DesVoce>
+			<Valore>62,13</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Spese di Notifica</DesVoce>
+			<Valore>3,10</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>824,78</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9234">
+	<CodBolletta>ICIA2004100000000080000000019</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA XXV APRILE</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>1/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00031 Part. 00504 Sub. 1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>A07 - ABITAZIONI IN VILLINI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>01</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>24402,59</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>50,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>30,20</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>36,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>67,11</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9235">
+	<CodBolletta>ICIA2004100000000080000000019</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<Ubicazione>VIA XXV APRILE</Ubicazione>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Anno</DesVoce>
+			<Valore>1999</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Numero d&#39;ordine</DesVoce>
+			<Valore>2/1</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Caratteristica</DesVoce>
+			<Valore>Fabbricato con valore determinato da rendita catastale</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Dati Identificativi</DesVoce>
+			<Valore>Fog. 00031 Part. 00504 Sub. 2</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="5">
+			<DesVoce>Categoria</DesVoce>
+			<Valore>C03 - LABORATORI PER ARTI E MESTIERI</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="6">
+			<DesVoce>Classe</DesVoce>
+			<Valore>01</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="7">
+			<DesVoce>Valore Immobile</DesVoce>
+			<Valore>4772,06</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="8">
+			<DesVoce>Indicatore Rendita Effettiva/Presunta</DesVoce>
+			<Valore>Rendita EFFETTIVA</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="9">
+			<DesVoce>Indicatore Immobile Storico</DesVoce>
+			<Valore>NO</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="10">
+			<DesVoce>Percentuale Possesso</DesVoce>
+			<Valore>50,00</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="11">
+			<DesVoce>Mesi Possesso</DesVoce>
+			<Valore>12</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="12">
+			<DesVoce>Aliquota</DesVoce>
+			<Valore>5,50</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="13">
+			<DesVoce>Imposta Dovuta ACCONTO</DesVoce>
+			<Valore>5,91</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="14">
+			<DesVoce>Imposta Dovuta SALDO</DesVoce>
+			<Valore>7,22</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="15">
+			<DesVoce>Totale Imposta Dovuta</DesVoce>
+			<Valore>13,12</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+<PagBollettaDett progressivo ="9236">
+	<CodBolletta>ICIA2004100000000080000000019</CodBolletta>
+	<DtIniServizio></DtIniServizio>
+	<DtFinServizio></DtFinServizio>
+	<ListaDettaglio>
+		<Dettaglio progressivo ="1">
+			<DesVoce>Importo Totale Versamenti</DesVoce>
+			<Valore>80,05</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="2">
+			<DesVoce>Totale Sanzioni</DesVoce>
+			<Valore>13,17</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="3">
+			<DesVoce>Spese di Notifica</DesVoce>
+			<Valore>3,10</Valore>
+		</Dettaglio>
+		<Dettaglio progressivo ="4">
+			<DesVoce>Importo Totale da Versare</DesVoce>
+			<Valore>16,01</Valore>
+		</Dettaglio>
+	</ListaDettaglio>
+</PagBollettaDett>
+</PagListaBollettaDett>

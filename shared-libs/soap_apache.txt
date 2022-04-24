@@ -1,0 +1,7 @@
+apache soap 2.3.1
+
+necessita di
+
+xerces.jar
+activation.jar
+mail.jar

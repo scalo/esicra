@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pagamento.xsd"/>
+	<xs:include schemaLocation="Recapito.xsd"/>
+	<xs:include schemaLocation="SoggettoGiuridico.xsd"/>
+	<xs:include schemaLocation="DatiImpresa.xsd"/>
+	<xs:include schemaLocation="DatiRichiestaCPI.xsd"/>
+	<xs:element name="PraRichiestaCPI" type="pra:PraRichiestaCPIType"/>
+	<xs:complexType name="PraRichiestaCPIType">
+		<xs:sequence>
+			<xs:element name="SoggettoRichiedente" type="pra:SoggettoType"/>
+			<xs:element name="TitolaritaDichiarante" type="xs:string"/>
+			<xs:element name="CodRichiesta" type="xs:string"/>
+			<xs:element name="DesRichiesta" type="xs:string"/>
+			<xs:element name="DatiImpresa" type="pra:DatiImpresaType"/>
+			<xs:element name="DatiRichiestaCPI" type="pra:DatiRichiestaCPIType"/>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="CodStato" minOccurs="0"/>
+			<xs:element name="DesStato"/>
+			<xs:element name="DataStato" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

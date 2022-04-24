@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Statofornitore" table="statofornitore" schema="esicra">
+        <id name="pkstatofornitore" type="big_decimal">
+            <column name="pkstatofornitore" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="codStato" type="string">
+            <column name="cod_stato" length="10" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="40" />
+        </property>
+        <property name="idEnte" type="big_decimal">
+            <column name="id_ente" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="alboForCatStatos" inverse="true">
+            <key>
+                <column name="fkstato" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AlboForCatStato" />
+        </set>
+    </class>
+</hibernate-mapping>

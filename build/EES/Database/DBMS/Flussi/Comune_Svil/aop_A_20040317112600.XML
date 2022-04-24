@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<ListaAotProvenienza xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAotProvenienza.xsd" versione="1.0">
+	<AotProvenienza progressivo="1">
+		<CodProvenienza>10</CodProvenienza>
+		<CodAot>codaot_1</CodAot>
+		<CodAot>codaot_2</CodAot>
+		<CodAot>codaot_3</CodAot>
+		<CodAot>codaot_4</CodAot>
+	</AotProvenienza>
+	<AotProvenienza progressivo="2">
+		<CodProvenienza>1</CodProvenienza>
+		<CodAot>codaot_1</CodAot>
+		<CodAot>codaot_2</CodAot>
+		<CodAot>codaot_3</CodAot>
+		<CodAot>codaot_4</CodAot>
+	</AotProvenienza>
+	<AotProvenienza progressivo="3">
+		<CodProvenienza>20</CodProvenienza>
+		<CodAot>codaot_1</CodAot>
+		<CodAot>codaot_2</CodAot>
+		<CodAot>codaot_3</CodAot>
+		<CodAot>codaot_4</CodAot>
+	</AotProvenienza>
+</ListaAotProvenienza>

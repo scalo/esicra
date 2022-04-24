@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.CatAot" table="cat_aot" schema="esicra">
+        <id name="pkid" type="big_decimal" unsaved-value="null"  >
+          <column name="PKID" sql-type="numeric(22,0)" not-null="true"/>
+          <generator class="it.saga.siscotel.db.hibernate.PkidGenerator">
+        </generator>
+        </id>
+        <property name="tipo" type="string">
+            <column name="tipo" length="10" />
+        </property>
+        <property name="codEcografico" type="string">
+            <column name="cod_ecografico" length="70" />
+        </property>
+        <property name="codCatasto" type="string">
+            <column name="cod_catasto" length="50" />
+        </property>
+        <property name="codComune" type="string">
+            <column name="cod_comune" length="20" />
+        </property>
+        <property name="aotAggregazione" type="big_decimal">
+            <column name="aot_aggregazione" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="codIstat" type="string">
+            <column name="cod_istat" length="10" />
+        </property>
+        <property name="abitato" type="string">
+            <column name="abitato" length="10" />
+        </property>
+        <property name="rione" type="string">
+            <column name="rione" length="10" />
+        </property>
+        <property name="isolato" type="string">
+            <column name="isolato" length="10" />
+        </property>
+        <property name="edificio" type="string">
+            <column name="edificio" length="10" />
+        </property>
+        <property name="uiu" type="string">
+            <column name="uiu" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="catIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatIndirizzo" />
+        </set>
+        <set name="catDatis" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatDati" />
+        </set>
+        <set name="catIdentificativos" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatIdentificativo" />
+        </set>
+        <set name="catAotPrgs" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatAotPrg" />
+        </set>
+        <set name="catProprietarios" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatProprietario" />
+        </set>
+        <set name="catRenditas" inverse="true">
+            <key>
+                <column name="fkid_aot" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.CatRendita" />
+        </set>
+    </class>
+</hibernate-mapping>

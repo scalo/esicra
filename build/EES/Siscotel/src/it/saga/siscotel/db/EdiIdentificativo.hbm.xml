@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.EdiIdentificativo" table="edi_identificativo" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="ediPratica" class="it.saga.siscotel.db.EdiPratica">
+            <column name="fkid_pratica" precision="22" scale="0" />
+        </many-to-one>
+        <property name="tipo" type="string">
+            <column name="tipo" length="10" />
+        </property>
+        <property name="codEcografico" type="string">
+            <column name="cod_ecografico" length="70" />
+        </property>
+        <property name="idComune" type="string">
+            <column name="id_comune" length="10" />
+        </property>
+        <property name="sezione" type="string">
+            <column name="sezione" length="10" />
+        </property>
+        <property name="foglio" type="string">
+            <column name="foglio" length="10" />
+        </property>
+        <property name="mappale" type="string">
+            <column name="mappale" length="11" />
+        </property>
+        <property name="sub" type="string">
+            <column name="sub" length="10" />
+        </property>
+        <property name="annoProt" type="integer">
+            <column name="anno_prot" />
+        </property>
+        <property name="numProt" type="string">
+            <column name="num_prot" length="11" />
+        </property>
+        <property name="desPrg" type="string">
+            <column name="des_prg" length="100" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="ediPrgIdents" inverse="true">
+            <key>
+                <column name="fkid_ident" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.EdiPrgIdent" />
+        </set>
+    </class>
+</hibernate-mapping>

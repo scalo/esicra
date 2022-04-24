@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:complexType name="SoggettoType">
+		<xs:sequence>
+			<xs:element name="CodiceFiscale">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Cognome">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Nome">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataNascita" type="xs:date"/>
+			<xs:element name="LuogoNascita">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="LocalitaNascita" type="pra:LocalitaType"/>
+						<xs:element name="ComuneNascita" type="pra:ComuneType"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Residenza" type="pra:IndirizzoType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Soggetto" type="pra:SoggettoType"/>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:complexType name="TipoPubblicita">
+		<xs:sequence>
+			<xs:element name="Tipo" type="xs:string"/>
+			<xs:element name="Messaggio" type="xs:string"/>
+			<xs:element name="Larghezza" type="xs:string"/>
+			<xs:element name="Altezza" type="xs:string"/>
+			<xs:element name="Area" type="xs:string"/>
+			<xs:element name="Forma" type="xs:string"/>
+			<xs:element name="Ubicazione" type="pra:IndirizzoType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

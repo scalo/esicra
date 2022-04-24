@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PolVeicolo" table="pol_veicolo" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="polTipoVeicolo" class="it.saga.siscotel.db.PolTipoVeicolo">
+            <column name="fkid_tipo_veicolo" precision="22" scale="0" />
+        </many-to-one>
+        <property name="desTipoVeicolo" type="string">
+            <column name="des_tipo_veicolo" length="80" />
+        </property>
+        <property name="marca" type="string">
+            <column name="marca" length="80" />
+        </property>
+        <property name="modello" type="string">
+            <column name="modello" length="80" />
+        </property>
+        <property name="targa" type="string">
+            <column name="targa" length="10" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="polVeiSoggs" inverse="true">
+            <key>
+                <column name="fkid_veicolo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolVeiSogg" />
+        </set>
+        <set name="polInfraziones" inverse="true">
+            <key>
+                <column name="fkid_veicolo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+        <set name="polVeiPerms" inverse="true">
+            <key>
+                <column name="fkid_veicolo" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolVeiPerm" />
+        </set>
+    </class>
+</hibernate-mapping>

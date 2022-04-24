@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<definitions xmlns:tns="http://www.siscotel.it/HelloWorldWs.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.siscotel.it/HelloWorldWs.wsdl" targetNamespace="http://www.siscotel.it/HelloWorldWs.wsdl" name="it.saga.siscotel.esicra.anagrafeestesa.webservice.test.HelloWorldWs">
+	<message name="sayHelloRequest">
+		<part name="nome" type="xsd:string"/>
+	</message>
+	<message name="sayHelloResponse">
+		<part name="return" type="xsd:string"/>
+	</message>
+	<portType name="HelloWorldPortType">
+		<operation name="sayHello">
+			<input message="tns:sayHelloRequest"/>
+			<output message="tns:sayHelloResponse"/>
+		</operation>
+	</portType>
+	<binding name="HelloWorldBinding" type="tns:HelloWorldPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="sayHello">
+			<soap:operation/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.test.HelloWorldWs"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.test.HelloWorldWs"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="HelloWorldWs">
+		<documentation> Say Hello World to U</documentation>
+		<port name="HelloWorldPort" binding="tns:HelloWorldBinding">
+			<soap:address location="http://localhost:880/siscotel/servlet/rpcrouter"/>
+		</port>
+	</service>
+</definitions>

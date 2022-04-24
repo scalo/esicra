@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerEnte" table="ter_ente" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codEnteBo" type="string">
+            <column name="cod_ente_bo" length="20" />
+        </property>
+        <property name="desEnte" type="string">
+            <column name="des_ente" length="80" />
+        </property>
+        <property name="viaDeno" type="string">
+            <column name="via_deno" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="cap" type="string">
+            <column name="cap" length="10" />
+        </property>
+        <property name="EMail" type="string">
+            <column name="e_mail" length="50" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="terAccessos" inverse="true">
+            <key>
+                <column name="fkid_scuola" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerAccesso" />
+        </set>
+        <set name="terAccessos_1" inverse="true">
+            <key>
+                <column name="fkid_cc" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerAccesso" />
+        </set>
+        <set name="terAccessos_2" inverse="true">
+            <key>
+                <column name="fkid_asl" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerAccesso" />
+        </set>
+    </class>
+</hibernate-mapping>

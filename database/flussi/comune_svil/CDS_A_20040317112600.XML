@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaConDisdetta xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaConDisdetta.xsd" versione="1.0">
+	<TriConDisdetta progressivo="1">
+		<CodConcessione>CON20</CodConcessione>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<IdServizio>100131</IdServizio>
+		<Cognome>Bacca</Cognome>
+		<Nome>Anna</Nome>
+		<DtDenuncia>203-07-01</DtDenuncia>
+		<IdPratica>199</IdPratica>
+		<IdServizio>100131</IdServizio>
+		<DtIniConc>1991-01-01</DtIniConc>			
+		<DtFinConc>2003-02-01</DtFinConc>					
+	</TriConDisdetta>	
+	<TriConDisdetta progressivo="2">
+		<CodConcessione>CON10</CodConcessione>
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<IdServizio>100131</IdServizio>
+		<Cognome>Bacca</Cognome>
+		<Nome>Anna</Nome>
+		<DtDenuncia>203-07-01</DtDenuncia>
+		<IdPratica>199</IdPratica>
+		<IdServizio>100131</IdServizio>
+		<DtIniConc>1991-01-01</DtIniConc>			
+		<DtFinConc>2003-02-01</DtFinConc>					
+	</TriConDisdetta>
+</ListaConDisdetta>

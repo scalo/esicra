@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraAllegatoType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="CodPraticaBo" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdServizio" type="xs:integer"/>
+			<xs:element name="DesServizio" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdStato" type="xs:integer"/>
+			<xs:element name="DesStato" type="xs:string"/>
+			<xs:element name="DataStato" type="xs:date"/>
+			<xs:element name="IdResponsabile" type="xs:integer" minOccurs="0"/>
+			<xs:element name="DesResponsabile">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraAllegato" type="pra:PraAllegatoType"/>
+</xs:schema>

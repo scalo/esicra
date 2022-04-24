@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VScuCorsoClasseSog" table="v_scu_corso_classe_sog" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.VScuCorsoClasseSogId">
+            <key-property name="fkidClasse" type="big_decimal">
+                <column name="fkid_classe" precision="22" scale="0" />
+            </key-property>
+            <key-property name="annoScolastico" type="string">
+                <column name="anno_scolastico" length="10" />
+            </key-property>
+            <key-property name="codClasse" type="string">
+                <column name="cod_classe" length="20" />
+            </key-property>
+            <key-property name="desClasse" type="string">
+                <column name="des_classe" length="80" />
+            </key-property>
+            <key-property name="sezione" type="string">
+                <column name="sezione" length="10" />
+            </key-property>
+            <key-property name="tempo" type="string">
+                <column name="tempo" length="20" />
+            </key-property>
+            <key-property name="fkidArea" type="big_decimal">
+                <column name="fkid_area" precision="22" scale="0" />
+            </key-property>
+            <key-property name="desArea" type="string">
+                <column name="des_area" length="80" />
+            </key-property>
+            <key-property name="numCiv" type="integer">
+                <column name="num_civ" />
+            </key-property>
+            <key-property name="letCiv" type="string">
+                <column name="let_civ" length="5" />
+            </key-property>
+            <key-property name="fkidComune" type="big_decimal">
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key-property>
+            <key-property name="desComune" type="string">
+                <column name="des_comune" length="80" />
+            </key-property>
+            <key-property name="desProvincia" type="string">
+                <column name="des_provincia" length="80" />
+            </key-property>
+            <key-property name="noteClasse" type="string">
+                <column name="note_classe" length="1000" />
+            </key-property>
+            <key-property name="dtiniClasse" type="date">
+                <column name="dtini_classe" length="4" />
+            </key-property>
+            <key-property name="dtfinClasse" type="date">
+                <column name="dtfin_classe" length="4" />
+            </key-property>
+            <key-property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </key-property>
+            <key-property name="dtmodClasse" type="timestamp">
+                <column name="dtmod_classe" length="8" />
+            </key-property>
+            <key-property name="pkidCorso" type="big_decimal">
+                <column name="pkid_corso" precision="22" scale="0" />
+            </key-property>
+            <key-property name="fkidIstituto" type="big_decimal">
+                <column name="fkid_istituto" precision="22" scale="0" />
+            </key-property>
+            <key-property name="codCorso" type="string">
+                <column name="cod_corso" length="20" />
+            </key-property>
+            <key-property name="desCorso" type="string">
+                <column name="des_corso" length="80" />
+            </key-property>
+            <key-property name="numPosti" type="integer">
+                <column name="num_posti" />
+            </key-property>
+            <key-property name="noteCorso" type="string">
+                <column name="note_corso" length="1000" />
+            </key-property>
+            <key-property name="dtiniCorso" type="date">
+                <column name="dtini_corso" length="4" />
+            </key-property>
+            <key-property name="dtfinCorso" type="date">
+                <column name="dtfin_corso" length="4" />
+            </key-property>
+            <key-property name="dtmodCorso" type="timestamp">
+                <column name="dtmod_corso" length="8" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

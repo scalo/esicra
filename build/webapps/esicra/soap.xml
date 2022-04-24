@@ -1,0 +1,6 @@
+<!-- ATTENZIONE soap.xml deve trovarsi nella root del contesto in altro posto non funziona -->
+<soapServer>
+  <configManager value="org.apache.soap.server.XMLConfigManager" >
+    <option name="filename" value="WEB-INF/services.xml" />
+  </configManager>
+</soapServer>

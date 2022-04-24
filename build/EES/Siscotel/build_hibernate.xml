@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<project default="init" xmlns="antlib:org.apache.tools.ant">
+   <property name="ora.home" value="C:\oracle"/>
+   <property name="prj.home" value=".."/>
+   
+   <property name="hibernate_lib" value="${ora.home}/EsicraExt/hibernate"/>
+   
+   <path id="lib.class.path">
+      <fileset dir="${hibernate_lib}">
+         <include name="**/*.jar"/>
+      </fileset>
+      <pathelement location="${ora.home}/EsicraLibs/lib/devpgjdbc2.jar"/>
+   </path>
+   
+   <taskdef name="hibernatetool"
+            classname="org.hibernate.tool.ant.HibernateToolTask"
+            classpathref="lib.class.path"
+   />
+   
+   <target name="init">
+      <tstamp/>
+   </target>
+   
+   <target name="make">
+      <mkdir dir="generated"  />
+   </target>
+   
+   <target name="reverse-db">
+      <hibernatetool destdir="generated">
+         <classpath>
+            <path location="[classpath of needed classes, such as domain classes and usertypes - dependent on the chosen generators]"/>
+         </classpath>
+         <jdbcconfiguration configurationfile="hibernate_reverse.cfg.xml" packagename="it.saga.siscotel.db" />
+         
+         <!-- database settings are read from hibernate.cfg.xml and/or via propertyfile if provided -->
+         <hbm2java ejb3="false"/>
+         <!-- generate default .java files with EJB3 annotations -->
+         <hbm2java templatespath="src/testsupport/templates"/>
+         <!-- code generation with custom templates (yes, can run each task more than once! -->
+         
+         <cfg2hbm/>
+         
+         <!--
+         <hbm2doc/>
+         -->
+         
+         </hibernatetool>
+   </target>
+   
+</project>

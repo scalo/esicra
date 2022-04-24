@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaPermessoSoggiorno xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaPermessoSoggiorno.xsd" versione="1.0">
+<PermessoSoggiorno progressivo = "1">
+<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+<Comune>
+<CodComune>19036</CodComune>
+<DesComune>CREMONA</DesComune>
+<Cap>26100</Cap>
+<DesProvincia>CR</DesProvincia>
+</Comune>
+<Tipo>0</Tipo>
+<Numero>F516939</Numero>
+<DataRilascio>2002-06-05</DataRilascio>
+<DataRinnovo>2003-03-07</DataRinnovo>
+<DataScadenza>2004-05-24</DataScadenza>
+<Motivo></Motivo>
+<DataInizio>2003-09-23</DataInizio>
+<DataFine>2003-09-23</DataFine>
+</PermessoSoggiorno>
+</ListaPermessoSoggiorno>

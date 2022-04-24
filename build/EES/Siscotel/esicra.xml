@@ -1,0 +1,6 @@
+<!-- ESICRA 1.1.1
+-->
+<Context className="org.apache.catalina.core.StandardContext" override="false" crossContext="false" reloadable="false" mapperClass="org.apache.catalina.core.StandardContextMapper" useNaming="true" debug="0" swallowOutput="false" privileged="false" wrapperClass="org.apache.catalina.core.StandardWrapper" docBase="esicra" cookies="true" path="/esicra" cachingAllowed="false" charsetMapperClass="org.apache.catalina.util.CharsetMapper">
+	<ResourceLink name="jdbc/PatDS" type="javax.sql.DataSource" global="jdbc/PatDS"/>
+  <ResourceLink name="jdbc/NodoDS" type="javax.sql.DataSource" global="jdbc/NodoDS"/>
+</Context>

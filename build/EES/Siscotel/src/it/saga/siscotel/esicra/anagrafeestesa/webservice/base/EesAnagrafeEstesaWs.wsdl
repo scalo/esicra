@@ -1,0 +1,452 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<definitions
+   name="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs"
+   targetNamespace="http://it/saga/siscotel/esicra/anagrafeestesa/webservice/base/EesAnagrafeEstesaWs.wsdl"
+   xmlns="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+   xmlns:tns="http://it/saga/siscotel/esicra/anagrafeestesa/webservice/base/EesAnagrafeEstesaWs.wsdl"
+   xmlns:ns1="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd">
+   <types>
+      <schema
+         targetNamespace="http://it.saga.siscotel.esicra.anagrafeestesa.webservice.base/IEesAnagrafeEstesaWs.xsd"
+         xmlns="http://www.w3.org/2001/XMLSchema"
+         xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_SoggettoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="codiceFiscale" type="string"/>
+               <element name="cognome" type="string"/>
+               <element name="nome" type="string"/>
+               <element name="sesso" type="string"/>
+               <element name="dataNascita" type="dateTime"/>
+               <element name="comuneNascita" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_ComuneBean"/>
+               <element name="localitaNascita" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_LocalitaBean"/>
+               <element name="residenza" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean"/>
+               <element name="idEnte" type="decimal"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_ComuneBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="codIstatComune" type="int"/>
+               <element name="desComune" type="string"/>
+               <element name="desProvincia" type="string"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_LocalitaBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="codIstatStato" type="int"/>
+               <element name="desStato" type="string"/>
+               <element name="desLocalita" type="string"/>
+               <element name="desContea" type="string"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="comune" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_ComuneBean"/>
+               <element name="localita" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_LocalitaBean"/>
+               <element name="specieArea" type="string"/>
+               <element name="desArea" type="string"/>
+               <element name="numCiv" type="int"/>
+               <element name="letCiv" type="string"/>
+               <element name="scala" type="string"/>
+               <element name="interno" type="string"/>
+               <element name="cap" type="string"/>
+               <element name="dataInizio" type="dateTime"/>
+               <element name="dataFine" type="dateTime"/>
+            </all>
+         </complexType>
+         <complexType name="ArrayOfSoggettoBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_SoggettoGiuridicoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="ragioneSociale" type="string"/>
+               <element name="partitaIva" type="string"/>
+               <element name="idEnte" type="decimal"/>
+               <element name="indirizzoSede" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean"/>
+               <element name="rappresentanteLegale" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SchedaSoggettoBean"/>
+               <element name="iscrizioneCCIA" type="ns1:it_saga_siscotel_srvfrontoffice_beans_commercio_IscrizioneCCIABean"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_SchedaSoggettoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="soggetto" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoBean"/>
+               <element name="statoCivile" type="string"/>
+               <element name="cittadinanza" type="string"/>
+               <element name="certificabile" type="boolean"/>
+               <element name="permessoSoggiorno" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_PermessoSoggiornoBean"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_base_PermessoSoggiornoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.base" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="comuneQuestura" type="string"/>
+               <element name="provinciaQuestura" type="string"/>
+               <element name="tipo" type="string"/>
+               <element name="numeroPermesso" type="string"/>
+               <element name="dataRilascio" type="dateTime"/>
+               <element name="dataRinnovo" type="dateTime"/>
+               <element name="dataScadenza" type="dateTime"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_commercio_IscrizioneCCIABean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.commercio" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="numeroIscrizioneCCIA" type="string"/>
+               <element name="sedeCCIA" type="string"/>
+               <element name="dataIscrizione" type="dateTime"/>
+            </all>
+         </complexType>
+         <complexType name="ArrayOfSoggettoGiuridicoBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoGiuridicoBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="codiceEcografico" type="string"/>
+               <element name="codiceIstatComune" type="string"/>
+               <element name="listaIndirizzo" type="ns1:ArrayOfit_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean"/>
+               <element name="listaIdentificativiCatastali" type="ns1:ArrayOfit_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_IdentificativiCatastaliBean"/>
+            </all>
+         </complexType>
+         <complexType name="ArrayOfit_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_base_IndirizzoBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="ArrayOfit_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_IdentificativiCatastaliBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_IdentificativiCatastaliBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_IdentificativiCatastaliBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="tipo" type="string"/>
+               <element name="desTipo" type="string"/>
+               <element name="idComune" type="string"/>
+               <element name="sezione" type="string"/>
+               <element name="foglio" type="string"/>
+               <element name="mappale" type="string"/>
+               <element name="subalterno" type="string"/>
+               <element name="annoProtocollo" type="string"/>
+               <element name="numeroProtocollo" type="string"/>
+            </all>
+         </complexType>
+         <complexType name="ArrayOfOggettoBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_SoggettoProvenienzaBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="fkidSoggetto" type="decimal"/>
+               <element name="codFiscale" type="string"/>
+               <element name="idEnte" type="decimal"/>
+               <element name="listaProvenienza" type="ns1:ArrayOfit_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean"/>
+            </all>
+         </complexType>
+         <complexType name="ArrayOfit_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <complexContent>
+               <restriction base="SOAP-ENC:Array">
+                  <attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean[]"/>
+               </restriction>
+            </complexContent>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="codProvenienza" type="string"/>
+               <element name="desProvenienza" type="string"/>
+            </all>
+         </complexType>
+         <complexType name="it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoProvenienzaBean" jdev:packageName="it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa" xmlns:jdev="http://xmlns.oracle.com/jdeveloper/webservices">
+            <all>
+               <element name="pkidOggetto" type="decimal"/>
+               <element name="codiceEcografico" type="string"/>
+               <element name="idEnte" type="decimal"/>
+               <element name="listaProvenienza" type="ns1:ArrayOfit_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_ProvenienzaBean"/>
+            </all>
+         </complexType>
+      </schema>
+   </types>
+   <message name="cercaSoggettoFisicoIndiceCF0Request">
+      <part name="codiceFiscale" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceCF0Response">
+      <part name="return" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoBean"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceId1Request">
+      <part name="cognome" type="xsd:string"/>
+      <part name="nome" type="xsd:string"/>
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceId1Response">
+      <part name="return" type="ns1:ArrayOfSoggettoBean"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceNome2Request">
+      <part name="nome" type="xsd:string"/>
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceNome2Response">
+      <part name="return" type="ns1:ArrayOfSoggettoBean"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceInd3Request">
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoFisicoIndiceInd3Response">
+      <part name="return" type="ns1:ArrayOfSoggettoBean"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndicePI4Request">
+      <part name="partitaIva" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndicePI4Response">
+      <part name="return" type="ns1:it_saga_siscotel_srvfrontoffice_beans_base_SoggettoGiuridicoBean"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndiceId5Request">
+      <part name="denominazione" type="xsd:string"/>
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndiceId5Response">
+      <part name="return" type="ns1:ArrayOfSoggettoGiuridicoBean"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndiceEnte6Request">
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoGiuridicoIndiceEnte6Response">
+      <part name="return" type="ns1:ArrayOfSoggettoGiuridicoBean"/>
+   </message>
+   <message name="cercaOggettoIndiceCE7Request">
+      <part name="codiceEcografico" type="xsd:string"/>
+   </message>
+   <message name="cercaOggettoIndiceCE7Response">
+      <part name="return" type="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoBean"/>
+   </message>
+   <message name="cercaOggettoIndiceIC8Request">
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="sezione" type="xsd:string"/>
+      <part name="foglio" type="xsd:string"/>
+      <part name="mappale" type="xsd:string"/>
+      <part name="sub" type="xsd:string"/>
+      <part name="anno" type="xsd:int"/>
+      <part name="protocollo" type="xsd:string"/>
+      <part name="tipoCatasto" type="xsd:string"/>
+   </message>
+   <message name="cercaOggettoIndiceIC8Response">
+      <part name="return" type="ns1:ArrayOfOggettoBean"/>
+   </message>
+   <message name="cercaOggettoIndiceInd9Request">
+      <part name="idEnte" type="xsd:decimal"/>
+      <part name="desArea" type="xsd:string"/>
+      <part name="numCiv" type="xsd:int"/>
+      <part name="letCiv" type="xsd:string"/>
+   </message>
+   <message name="cercaOggettoIndiceInd9Response">
+      <part name="return" type="ns1:ArrayOfOggettoBean"/>
+   </message>
+   <message name="cercaSoggettoProvenienza10Request">
+      <part name="codiceFiscale" type="xsd:string"/>
+      <part name="codProvenienza" type="xsd:string"/>
+   </message>
+   <message name="cercaSoggettoProvenienza10Response">
+      <part name="return" type="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_SoggettoProvenienzaBean"/>
+   </message>
+   <message name="cercaOggettoProvenienza11Request">
+      <part name="codiceEcografico" type="xsd:string"/>
+      <part name="codProvenienza" type="xsd:string"/>
+   </message>
+   <message name="cercaOggettoProvenienza11Response">
+      <part name="return" type="ns1:it_saga_siscotel_srvfrontoffice_beans_anagrafeestesa_OggettoProvenienzaBean"/>
+   </message>
+   <portType name="EesAnagrafeEstesaWsPortType">
+      <operation name="cercaSoggettoFisicoIndiceCF">
+         <input name="cercaSoggettoFisicoIndiceCF0Request" message="tns:cercaSoggettoFisicoIndiceCF0Request"/>
+         <output name="cercaSoggettoFisicoIndiceCF0Response" message="tns:cercaSoggettoFisicoIndiceCF0Response"/>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceId">
+         <input name="cercaSoggettoFisicoIndiceId1Request" message="tns:cercaSoggettoFisicoIndiceId1Request"/>
+         <output name="cercaSoggettoFisicoIndiceId1Response" message="tns:cercaSoggettoFisicoIndiceId1Response"/>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceNome">
+         <input name="cercaSoggettoFisicoIndiceNome2Request" message="tns:cercaSoggettoFisicoIndiceNome2Request"/>
+         <output name="cercaSoggettoFisicoIndiceNome2Response" message="tns:cercaSoggettoFisicoIndiceNome2Response"/>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceInd">
+         <input name="cercaSoggettoFisicoIndiceInd3Request" message="tns:cercaSoggettoFisicoIndiceInd3Request"/>
+         <output name="cercaSoggettoFisicoIndiceInd3Response" message="tns:cercaSoggettoFisicoIndiceInd3Response"/>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndicePI">
+         <input name="cercaSoggettoGiuridicoIndicePI4Request" message="tns:cercaSoggettoGiuridicoIndicePI4Request"/>
+         <output name="cercaSoggettoGiuridicoIndicePI4Response" message="tns:cercaSoggettoGiuridicoIndicePI4Response"/>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndiceId">
+         <input name="cercaSoggettoGiuridicoIndiceId5Request" message="tns:cercaSoggettoGiuridicoIndiceId5Request"/>
+         <output name="cercaSoggettoGiuridicoIndiceId5Response" message="tns:cercaSoggettoGiuridicoIndiceId5Response"/>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndiceEnte">
+         <input name="cercaSoggettoGiuridicoIndiceEnte6Request" message="tns:cercaSoggettoGiuridicoIndiceEnte6Request"/>
+         <output name="cercaSoggettoGiuridicoIndiceEnte6Response" message="tns:cercaSoggettoGiuridicoIndiceEnte6Response"/>
+      </operation>
+      <operation name="cercaOggettoIndiceCE">
+         <input name="cercaOggettoIndiceCE7Request" message="tns:cercaOggettoIndiceCE7Request"/>
+         <output name="cercaOggettoIndiceCE7Response" message="tns:cercaOggettoIndiceCE7Response"/>
+      </operation>
+      <operation name="cercaOggettoIndiceIC">
+         <input name="cercaOggettoIndiceIC8Request" message="tns:cercaOggettoIndiceIC8Request"/>
+         <output name="cercaOggettoIndiceIC8Response" message="tns:cercaOggettoIndiceIC8Response"/>
+      </operation>
+      <operation name="cercaOggettoIndiceInd">
+         <input name="cercaOggettoIndiceInd9Request" message="tns:cercaOggettoIndiceInd9Request"/>
+         <output name="cercaOggettoIndiceInd9Response" message="tns:cercaOggettoIndiceInd9Response"/>
+      </operation>
+      <operation name="cercaSoggettoProvenienza">
+         <input name="cercaSoggettoProvenienza10Request" message="tns:cercaSoggettoProvenienza10Request"/>
+         <output name="cercaSoggettoProvenienza10Response" message="tns:cercaSoggettoProvenienza10Response"/>
+      </operation>
+      <operation name="cercaOggettoProvenienza">
+         <input name="cercaOggettoProvenienza11Request" message="tns:cercaOggettoProvenienza11Request"/>
+         <output name="cercaOggettoProvenienza11Response" message="tns:cercaOggettoProvenienza11Response"/>
+      </operation>
+   </portType>
+   <binding name="EesAnagrafeEstesaWsBinding" type="tns:EesAnagrafeEstesaWsPortType">
+      <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+      <operation name="cercaSoggettoFisicoIndiceCF">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoFisicoIndiceCF0Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoFisicoIndiceCF0Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceId">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoFisicoIndiceId1Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoFisicoIndiceId1Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceNome">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoFisicoIndiceNome2Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoFisicoIndiceNome2Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoFisicoIndiceInd">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoFisicoIndiceInd3Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoFisicoIndiceInd3Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndicePI">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoGiuridicoIndicePI4Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoGiuridicoIndicePI4Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndiceId">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoGiuridicoIndiceId5Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoGiuridicoIndiceId5Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoGiuridicoIndiceEnte">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoGiuridicoIndiceEnte6Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoGiuridicoIndiceEnte6Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaOggettoIndiceCE">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaOggettoIndiceCE7Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaOggettoIndiceCE7Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaOggettoIndiceIC">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaOggettoIndiceIC8Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaOggettoIndiceIC8Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaOggettoIndiceInd">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaOggettoIndiceInd9Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaOggettoIndiceInd9Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaSoggettoProvenienza">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaSoggettoProvenienza10Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaSoggettoProvenienza10Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+      <operation name="cercaOggettoProvenienza">
+         <soap:operation soapAction="" style="rpc"/>
+         <input name="cercaOggettoProvenienza11Request">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </input>
+         <output name="cercaOggettoProvenienza11Response">
+            <soap:body use="encoded" namespace="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+         </output>
+      </operation>
+   </binding>
+   <service name="it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs">
+      <port name="EesAnagrafeEstesaWsPort" binding="tns:EesAnagrafeEstesaWsBinding">
+         <soap:address location="http://127.0.0.1:8080/esicra/servlet/soaprouter"/>
+      </port>
+   </service>
+</definitions>

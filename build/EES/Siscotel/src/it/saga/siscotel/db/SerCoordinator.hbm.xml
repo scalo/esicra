@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+    <class name="it.saga.siscotel.db.SerCoordinator" table="ser_coordinator" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="nomeTabella" type="string">
+            <column name="nome_tabella" length="80" />
+        </property>
+        <property name="ordine" type="integer">
+            <column name="ordine" />
+        </property>
+        <property name="flBidir" type="integer">
+            <column name="fl_bidir" />
+        </property>
+        <property name="flAllinea" type="integer">
+            <column name="fl_allinea" />
+        </property>
+        <property name="flCancellabile" type="integer">
+            <column name="fl_cancellabile" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

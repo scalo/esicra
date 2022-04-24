@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.ComEsercizio" table="com_esercizio" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="comDenuncia" class="it.saga.siscotel.db.ComDenuncia">
+            <column name="fkid_denuncia" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codFiscaleTitolare" type="string">
+            <column name="cod_fiscale_titolare" length="16" />
+        </property>
+        <property name="nomeTitolare" type="string">
+            <column name="nome_titolare" length="100" />
+        </property>
+        <property name="cognomeTitolare" type="string">
+            <column name="cognome_titolare" length="100" />
+        </property>
+        <property name="flgAccorpato" type="integer">
+            <column name="flg_accorpato" />
+        </property>
+        <property name="flgCentrocom" type="integer">
+            <column name="flg_centrocom" />
+        </property>
+        <property name="flgStagionale" type="integer">
+            <column name="flg_stagionale" />
+        </property>
+        <property name="dtIniStagione" type="date">
+            <column name="dt_ini_stagione" length="4" />
+        </property>
+        <property name="dtFinStagione" type="date">
+            <column name="dt_fin_stagione" length="4" />
+        </property>
+        <property name="numAutorizzazione" type="string">
+            <column name="num_autorizzazione" length="20" />
+        </property>
+        <property name="dtAutorizzazione" type="date">
+            <column name="dt_autorizzazione" length="4" />
+        </property>
+        <property name="superficie" type="string">
+            <column name="superficie" length="10" />
+        </property>
+        <property name="volume" type="string">
+            <column name="volume" length="10" />
+        </property>
+        <property name="desCentrocom" type="string">
+            <column name="des_centrocom" length="200" />
+        </property>
+        <property name="numProvCentrocom" type="string">
+            <column name="num_prov_centrocom" length="20" />
+        </property>
+        <property name="dtProvCentrocom" type="date">
+            <column name="dt_prov_centrocom" length="4" />
+        </property>
+        <property name="desCertCentrocom" type="string">
+            <column name="des_cert_centrocom" length="100" />
+        </property>
+        <property name="fkidArea" type="big_decimal">
+            <column name="fkid_area" precision="22" scale="0" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="cap" type="string">
+            <column name="cap" length="20" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="comMerceologicos" inverse="true">
+            <key>
+                <column name="fkid_esercizio" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComMerceologico" />
+        </set>
+    </class>
+</hibernate-mapping>

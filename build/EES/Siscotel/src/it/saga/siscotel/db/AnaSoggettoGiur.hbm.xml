@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaSoggettoGiur" table="ana_soggetto_giur" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="numCcia" type="string">
+            <column name="num_ccia" length="20" />
+        </property>
+        <property name="sedeCcia" type="string">
+            <column name="sede_ccia" length="200" />
+        </property>
+        <property name="dtCcia" type="date">
+            <column name="dt_ccia" length="4" />
+        </property>
+        <property name="codSettore" type="string">
+            <column name="cod_settore" length="20" />
+        </property>
+        <property name="desSettore" type="string">
+            <column name="des_settore" length="80" />
+        </property>
+        <property name="codCommercio" type="string">
+            <column name="cod_commercio" length="20" />
+        </property>
+        <property name="desCommercio" type="string">
+            <column name="des_commercio" length="80" />
+        </property>
+        <property name="numIscAlbo" type="string">
+            <column name="num_isc_albo" length="20" />
+        </property>
+        <property name="codAlbo" type="string">
+            <column name="cod_albo" length="20" />
+        </property>
+        <property name="desAlbo" type="string">
+            <column name="des_albo" length="80" />
+        </property>
+        <property name="provinciaAlbo" type="string">
+            <column name="provincia_albo" length="100" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaSchedaFamigliaComponente versione="1.0" xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+../import/xsd/2.0/ListaSchedaFamigliaComponente.xsd">
+	<SchedaFamigliaComponente progressivo="1">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodFamiglia>FAM1</CodFamiglia>
+		<CodRelazione>1</CodRelazione>
+		<DesRelazione>INTESTATARIO</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1992-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="2">
+		<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+		<CodFamiglia>FAM1</CodFamiglia>
+		<CodRelazione>2</CodRelazione>
+		<DesRelazione>MOGLIE</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1992-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="3">
+		<CodSoggetto>PNLMRC98H8763HJZ</CodSoggetto>
+		<CodFamiglia>FAM1</CodFamiglia>
+		<CodRelazione>3</CodRelazione>
+		<DesRelazione>FIGLIO</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1998-06-05</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="4">
+		<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+		<CodFamiglia>AIRE1</CodFamiglia>
+		<CodRelazione>1</CodRelazione>
+		<DesRelazione>INTESTATARIO</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="5">
+		<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+		<CodFamiglia>CONV1</CodFamiglia>
+		<CodRelazione>1</CodRelazione>
+		<DesRelazione>INTESTATARIA CONVIVENZA</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="6">
+		<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+		<CodFamiglia>CONV1</CodFamiglia>
+		<CodRelazione>13</CodRelazione>
+		<DesRelazione>CONVIVENTE</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	<SchedaFamigliaComponente progressivo="6">
+		<CodSoggetto>VRDCRN52C70H558I</CodSoggetto>
+		<CodFamiglia>CONV1</CodFamiglia>
+		<CodRelazione>13</CodRelazione>
+		<DesRelazione>CONVIVENTE</DesRelazione>
+		<DesMotivoIngresso/>
+		<DataInizio>1995-01-01</DataInizio>
+	</SchedaFamigliaComponente>
+	
+	
+
+	
+</ListaSchedaFamigliaComponente>

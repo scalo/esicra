@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PagamentoBol.xsd"/>
+	<xs:element name="PraPagamentoSer" type="esicra_pra:PraPagamentoSerType">
+		<xs:annotation>
+			<xs:documentation>Pagamento Servizio</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="PraPagamentoSerType">
+		<xs:sequence>
+			<xs:element name="Pratica">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="IdPratica" type="xs:long"/>
+						<xs:element name="DataPratica" type="xs:date"/>
+						<xs:element name="Oggetto" type="xs:string" minOccurs="0"/>
+						<xs:element name="IdServizio" type="xs:int"/>
+						<xs:element name="IdEnteDestinatario" type="xs:long"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ListaPagamentoSer">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="PagamentoSer" type="esicra_pra:PagamentoType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Note" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

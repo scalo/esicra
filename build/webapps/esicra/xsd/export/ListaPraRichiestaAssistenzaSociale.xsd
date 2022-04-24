@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra"
+elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PraRichiestaAssistenzaSociale.xsd"/>
+	<xs:element name="ListaPraRichiestaAssistenzaSociale">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="PraRichiestaAssistenzaSociale">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="esicra_pra:PraRichiestaAssistenzaSocialeType">
+								<xs:attribute name="progressivo" type="xs:integer" use="required"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="versione">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="E:\POLIS\Analisi\eSICRA\XML\xsl_stile\out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PraStatoType">
+		<xs:sequence>
+			<xs:element name="IdPratica" type="xs:long"/>
+			<xs:element name="CodPraticaBo" type="xs:string" minOccurs="0"/>
+			<xs:element name="NumProtocolloBo" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdServizio" type="xs:integer"/>
+			<xs:element name="DesServizio" type="xs:string" minOccurs="0"/>
+			<xs:element name="IdResponsabile" type="xs:integer" minOccurs="0"/>
+			<xs:element name="DesResponsabile" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IdStato" type="xs:integer" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string"/>
+			<xs:element name="DataStato" type="xs:date"/>
+			<xs:element name="ImportoDaPagare" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="15"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumRata" type="xs:integer" minOccurs="0"/>
+			<xs:element name="Note" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraStato" type="esicra_import:PraStatoType"/>
+</xs:schema>

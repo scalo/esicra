@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PraStato" table="pra_stato" schema="esicra">
+        <id name="stato" type="integer">
+            <column name="stato" />
+            <generator class="assigned" />
+        </id>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

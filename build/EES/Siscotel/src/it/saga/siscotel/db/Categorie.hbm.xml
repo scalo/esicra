@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.Categorie" table="categorie" schema="esicra">
+        <id name="pkcategoria" type="big_decimal">
+            <column name="pkcategoria" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="descategoria" type="string">
+            <column name="descategoria" length="200" />
+        </property>
+        <property name="flgEco" type="integer">
+            <column name="flg_eco" not-null="true" />
+        </property>
+        <property name="idEnte" type="big_decimal">
+            <column name="id_ente" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="fornitures" inverse="true" cascade="all">
+            <key>
+                <column name="fkcategoria" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Forniture" />
+        </set>
+        <set name="alboForCatStatos" inverse="true" cascade="all">
+            <key>
+                <column name="fkcategorie" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AlboForCatStato" />
+        </set>
+        <set name="categorierics" inverse="true" cascade="all">
+            <key>
+                <column name="fkcategorie" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.Categorieric" />
+        </set>
+        <many-to-one name="albo" class="it.saga.siscotel.db.Albo">
+            <column name="fkalbo" precision="22" scale="0" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

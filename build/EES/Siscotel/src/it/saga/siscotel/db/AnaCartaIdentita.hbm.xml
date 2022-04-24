@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.AnaCartaIdentita" table="ana_carta_identita" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="dtEmissione" type="date">
+            <column name="dt_emissione" length="4" />
+        </property>
+        <property name="numcarta" type="string">
+            <column name="numcarta" length="20" />
+        </property>
+        <property name="flgResidente" type="integer">
+            <column name="flg_residente" />
+        </property>
+        <property name="flgEspatrio" type="integer">
+            <column name="flg_espatrio" />
+        </property>
+        <property name="flgElettronica" type="integer">
+            <column name="flg_elettronica" />
+        </property>
+        <property name="tipo" type="integer">
+            <column name="tipo" />
+        </property>
+        <property name="stato" type="integer">
+            <column name="stato" />
+        </property>
+        <property name="progDenuncia" type="integer">
+            <column name="prog_denuncia" />
+        </property>
+        <property name="dtDenuncia" type="date">
+            <column name="dt_denuncia" length="4" />
+        </property>
+        <property name="dtScadenza" type="date">
+            <column name="dt_scadenza" length="4" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="desStatocivile" type="string">
+            <column name="des_statocivile" length="80" />
+        </property>
+        <property name="professione" type="string">
+            <column name="professione" length="80" />
+        </property>
+        <property name="statura" type="string">
+            <column name="statura" length="20" />
+        </property>
+        <property name="capelli" type="string">
+            <column name="capelli" length="80" />
+        </property>
+        <property name="occhi" type="string">
+            <column name="occhi" length="80" />
+        </property>
+        <property name="segniparticolari1" type="string">
+            <column name="segniparticolari1" length="80" />
+        </property>
+        <property name="segniparticolari2" type="string">
+            <column name="segniparticolari2" length="80" />
+        </property>
+        <property name="segniparticolari3" type="string">
+            <column name="segniparticolari3" length="80" />
+        </property>
+        <property name="dtRinnovo" type="date">
+            <column name="dt_rinnovo" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

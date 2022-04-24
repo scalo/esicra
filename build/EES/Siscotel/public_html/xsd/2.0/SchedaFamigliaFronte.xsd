@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by paolo (sgpfte) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified">
+	<xs:element name="SchedaFamigliaFronte" type="esicra_import:SchedaFamigliaFronteType"/>
+	<xs:complexType name="SchedaFamigliaFronteType">
+		<xs:sequence>
+			<xs:element name="CodFamiglia">
+				<xs:annotation>
+					<xs:documentation>Codice Scheda per l'ente</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoAna" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1 = A.P.R.; 2 = A.I.R.E.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoScheda" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1 = Scheda Famiglia;           2 = Scheda Convivenza</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NumScheda" type="xs:int"/>
+			<xs:element name="CodIntestatario">
+				<xs:annotation>
+					<xs:documentation>CodSoggetto del flusso SOG</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CognomeIntestatario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NomeIntestatario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SpecieConvivenza" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DesConvivenza" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataInizio" type="xs:date"/>
+			<xs:element name="DataFine" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

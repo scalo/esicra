@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:include schemaLocation="DatiImpresa.xsd"/>
+	<xs:include schemaLocation="VeicoloRLA.xsd"/>
+	<xs:element name="DatiRichiestaRLA" type="pra:DatiRichiestaRLAType"/>
+	<xs:complexType name="DatiRichiestaRLAType">
+		<xs:sequence>
+			<xs:element name="CodRichiesta" type="xs:string"/>
+			<xs:element name="DesRichiesta" type="xs:string" minOccurs="0"/>
+			<xs:element name="CodTipoRichiesta" type="xs:string"/>
+			<xs:element name="TipoRichiesta" type="xs:string"/>
+			<xs:element name="NumeroLicenza" type="xs:string"/>
+			<xs:element name="TipoSostituzione" type="xs:string"/>
+			<xs:element name="CodTipoSostituzione" type="xs:string"/>
+			<xs:element name="CausaSostituzione" type="xs:string"/>
+			<xs:element name="CodCausaSostituzione" type="xs:string"/>
+			<xs:element name="ListaVeicoloRLA">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="VeicoloRLA" type="pra:VeicoloRLAType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DatiImpresa" type="pra:DatiImpresaType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

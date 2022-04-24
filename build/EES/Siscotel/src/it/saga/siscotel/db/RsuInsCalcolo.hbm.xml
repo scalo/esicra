@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.RsuInsCalcolo" table="rsu_ins_calcolo" schema="esicra">
+        <id name="pkid" type="integer">
+            <column name="pkid" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="rsuInsediamento" class="it.saga.siscotel.db.RsuInsediamento">
+            <column name="fkid_insediamento" />
+        </many-to-one>
+        <many-to-one name="pagBolletta" class="it.saga.siscotel.db.PagBolletta">
+            <column name="fkid_bolletta" precision="22" scale="0" />
+        </many-to-one>
+        <property name="anno" type="integer">
+            <column name="anno" />
+        </property>
+        <property name="desRuolo" type="string">
+            <column name="des_ruolo" length="80" />
+        </property>
+        <property name="imponibile" type="big_decimal">
+            <column name="imponibile" precision="15" />
+        </property>
+        <property name="imposta" type="big_decimal">
+            <column name="imposta" precision="15" />
+        </property>
+        <property name="riduzione" type="big_decimal">
+            <column name="riduzione" precision="15" />
+        </property>
+        <property name="importoPf" type="big_decimal">
+            <column name="importo_pf" precision="15" />
+        </property>
+        <property name="importoPv" type="big_decimal">
+            <column name="importo_pv" precision="15" />
+        </property>
+        <property name="tariffaPf" type="big_decimal">
+            <column name="tariffa_pf" precision="15" />
+        </property>
+        <property name="tariffaPv" type="big_decimal">
+            <column name="tariffa_pv" precision="15" />
+        </property>
+        <property name="codTributo" type="string">
+            <column name="cod_tributo" length="4" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

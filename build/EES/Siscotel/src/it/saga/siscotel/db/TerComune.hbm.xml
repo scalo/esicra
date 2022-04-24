@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerComune" table="ter_comune" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terProvincia" class="it.saga.siscotel.db.TerProvincia">
+            <column name="fkid_provincia" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="codComune" type="string">
+            <column name="cod_comune" length="20" />
+        </property>
+        <property name="codIstat" type="integer">
+            <column name="cod_istat" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desComune2" type="string">
+            <column name="des_comune2" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="capComune" type="string">
+            <column name="cap_comune" length="10" />
+        </property>
+        <property name="codBelfiore" type="string">
+            <column name="cod_belfiore" length="4" />
+        </property>
+        <property name="codTribunale" type="integer">
+            <column name="cod_tribunale" />
+        </property>
+        <property name="codLeva" type="integer">
+            <column name="cod_leva" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="flSto" type="integer">
+            <column name="fl_sto" />
+        </property>
+        <set name="anaCartaIdentitas" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCartaIdentita" />
+        </set>
+        <set name="scuIstitutos" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuIstituto" />
+        </set>
+        <set name="anaAttos" inverse="true">
+            <key>
+                <column name="fkid_com_tras" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAtto" />
+        </set>
+        <set name="anaPermessoSoggiornos" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaPermessoSoggiorno" />
+        </set>
+        <set name="anaSoggettos" inverse="true">
+            <key>
+                <column name="fkid_comune_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggetto" />
+        </set>
+        <set name="triConcessiones" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TriConcessione" />
+        </set>
+        <set name="terCentroNascitas" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerCentroNascita" />
+        </set>
+        <set name="anaIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="anaStcivs" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+        <set name="polInfraziones" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PolInfrazione" />
+        </set>
+        <set name="sdiCentros" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SdiCentro" />
+        </set>
+        <set name="comEsercizios" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ComEsercizio" />
+        </set>
+        <set name="terEntes" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerEnte" />
+        </set>
+        <set name="anaStudios" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStudio" />
+        </set>
+        <set name="scuClasses" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.ScuClasse" />
+        </set>
+        <set name="anaCancellaziones" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCancellazione" />
+        </set>
+        <set name="anaAttos_1" inverse="true">
+            <key>
+                <column name="fkid_com_reg" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaAtto" />
+        </set>
+        <set name="anaSoggettoEles" inverse="true">
+            <key>
+                <column name="fkid_comune_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggettoEle" />
+        </set>
+        <set name="anaIscriziones" inverse="true">
+            <key>
+                <column name="fkid_comune" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIscrizione" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PolInfrazione" table="pol_infrazione" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="polVeicolo" class="it.saga.siscotel.db.PolVeicolo">
+            <column name="fkid_veicolo" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_proprietario" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="polArticolo" class="it.saga.siscotel.db.PolArticolo">
+            <column name="fkid_articolo" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="anaSoggetto_1" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_conducente" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terArea" class="it.saga.siscotel.db.TerArea">
+            <column name="fkid_area" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terComune" class="it.saga.siscotel.db.TerComune">
+            <column name="fkid_comune" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codInfrazione" type="string">
+            <column name="cod_infrazione" length="20" />
+        </property>
+        <property name="dtRilevamento" type="date">
+            <column name="dt_rilevamento" length="4" />
+        </property>
+        <property name="codVerbale" type="string">
+            <column name="cod_verbale" length="20" />
+        </property>
+        <property name="codRegistro" type="string">
+            <column name="cod_registro" length="20" />
+        </property>
+        <property name="stato" type="integer">
+            <column name="stato" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

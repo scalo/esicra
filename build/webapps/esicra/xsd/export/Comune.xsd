@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="ComuneType">
+		<xs:sequence>
+			<xs:element name="CodIstatComune" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesComune" type="xs:string"/>
+			<xs:element name="DesProvincia" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Comune" type="pra:ComuneType"/>
+</xs:schema>

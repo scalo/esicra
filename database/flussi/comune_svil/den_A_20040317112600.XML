@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaComDenuncia xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaComDenuncia.xsd" versione="1.0">
+	<ComDenuncia progressivo="1">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodDenuncia>COD5663</CodDenuncia>
+		<DesDenuncia>Apertura Esercizio</DesDenuncia>
+		<DtDenuncia>2004-10-20</DtDenuncia>
+		<CodStruttura>001</CodStruttura>
+		<DesStruttura>IPER CREMONA</DesStruttura>
+		<CodCausa>cod_causa_1</CodCausa>
+		<DesCausa>des_causa_1</DesCausa>
+		<DesAttivita>Scarpe e Scarpe</DesAttivita>
+		<NumProtocollo>233441</NumProtocollo>
+		<IdServizio>100125</IdServizio>
+		<IdPratica>5644</IdPratica>
+		<CodTipoDenuncia>cod_tipo_den1</CodTipoDenuncia>
+		<DesTipoDenuncia>des_tipo_den_1</DesTipoDenuncia>
+		<FlgTrasferimento>0</FlgTrasferimento>
+		<FlgRiduzione>0</FlgRiduzione>
+		<FlgAltreAttivita>0</FlgAltreAttivita>
+		<SupAmpliamento>100</SupAmpliamento>
+		<SupRiduzione>10</SupRiduzione>
+		<SupComplessiva>110</SupComplessiva>
+		<CodStato>1</CodStato>
+		<DesStato>Aperta</DesStato>
+		<Note>Note prova</Note>
+		<NoteEnte>Note Prova ente</NoteEnte>
+		<ListaComSoggetto>
+			<ComSoggetto progressivo="1">
+				<CodSoggetto>BCCNNA70M41A794K</CodSoggetto>
+				<DesSoggetto>Bacca Anna</DesSoggetto>
+				<CodTipoSoggetto>cod_tipo_s_1</CodTipoSoggetto>
+				<DesTipoSoggetto>des_tipo_sogg_1</DesTipoSoggetto>
+				<CodTipoRuolo>cod_tipo_r_1</CodTipoRuolo>
+				<DesTipoRuolo>des_tipo_ruolo_1</DesTipoRuolo>
+				<Note>Note Soggetto</Note>
+			</ComSoggetto>
+			<ComSoggetto progressivo="2">
+				<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+				<DesSoggetto>des soggetto </DesSoggetto>
+				<DesTipoSoggetto>des_tipo_sogg_2</DesTipoSoggetto>
+				<CodTipoRuolo>cod_tipo_r_2</CodTipoRuolo>
+				<DesTipoRuolo>des_tipo_ruolo_2</DesTipoRuolo>
+				<Note>Note Soggetto 2</Note>
+			</ComSoggetto>
+		</ListaComSoggetto>
+	</ComDenuncia>
+	<ComDenuncia progressivo="2">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodDenuncia>COD5664</CodDenuncia>
+		<DesDenuncia>Ampliamento Esercizio</DesDenuncia>
+		<DtDenuncia>2004-10-20</DtDenuncia>
+		<DesStruttura>IPER CREMONA</DesStruttura>
+		<DesCausa>Apertura</DesCausa>
+		<DtCessazione>2005-10-20</DtCessazione>
+		<DesAttivita>Scarpe e Scarpe</DesAttivita>
+		<NumProtocollo>233441</NumProtocollo>
+		<IdServizio>100122</IdServizio>
+		<IdPratica>5644</IdPratica>
+		<DesTipoDenuncia>des_tipo_den_2</DesTipoDenuncia>
+		<DtIniSospensione>2004-11-20</DtIniSospensione>
+		<DtFinSospensione>2004-12-20</DtFinSospensione>
+	</ComDenuncia>
+</ListaComDenuncia>

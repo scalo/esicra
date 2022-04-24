@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+    <class name="it.saga.siscotel.db.SerEsicraInfo" table="ser_esicra_info" schema="esicra">
+        
+            <id name="nomedb" type="string">
+              <column name="nomedb" length="80" />
+              <generator class="assigned" />
+            </id>
+                
+            <property name="versione" type="string">
+                <column name="versione" length="20" />
+            </property>
+            <property name="dtCreazione" type="date">
+                <column name="dt_creazione" length="4" />
+            </property>
+            <property name="dbEngine" type="string">
+                <column name="db_engine" length="20" />
+            </property>
+            <property name="servletEngine" type="string">
+                <column name="servlet_engine" length="20" />
+            </property>
+            <property name="host" type="string">
+                <column name="host" length="30" />
+            </property>
+            <property name="porta" type="integer">
+                <column name="porta" />
+            </property>
+            <property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </property>
+            <property name="desEnte" type="string">
+                <column name="des_ente" length="80" />
+            </property>
+            <property name="codIstat" type="big_decimal">
+                <column name="cod_istat" precision="22" scale="0" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

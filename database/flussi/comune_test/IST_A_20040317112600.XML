@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaScuIstituto xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaScuIstituto.xsd" versione="1.0">
+	<ScuIstituto progressivo="1">
+		<CodIstituto>COD_001</CodIstituto>
+		<DesIstituto>Scuola Media Statale A.Volta</DesIstituto>
+		<CodTipo>TIPO_001</CodTipo>
+		<DesTipo>Scuola Media Inferiore</DesTipo>
+		<CodArea/>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>1</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+	<ScuIstituto progressivo="2">
+		<CodIstituto>COD_002</CodIstituto>
+		<DesIstituto>Asilo Nido Arcobaleno</DesIstituto>
+		<CodTipo>TIPO_002</CodTipo>
+		<DesTipo>Asilo Nido</DesTipo>
+		<DesArea>P.zza Risorgimento</DesArea>
+		<NumCiv>24</NumCiv>
+		<LetCiv>a</LetCiv>
+		<CodComune/>
+		<DesComune>Desenzano sul Garda</DesComune>
+		<DesProvincia>BS</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+	<ScuIstituto progressivo="3">
+		<CodIstituto>1</CodIstituto>
+		<DesIstituto>Scuola Materna Pinocchio</DesIstituto>
+		<CodTipo>TIPO_003</CodTipo>
+		<DesTipo>Scuola Materna</DesTipo>
+		<DesArea>Via Mazzini</DesArea>
+		<NumCiv>35</NumCiv>
+		<LetCiv>b</LetCiv>
+		<CodComune>19036</CodComune>
+		<DesComune>Cremona</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+	<ScuIstituto progressivo="4">
+		<CodIstituto>2</CodIstituto>
+		<DesIstituto>Istituto per Disabili</DesIstituto>
+		<CodTipo>TIPO_004</CodTipo>
+		<DesTipo>ANFAS</DesTipo>
+		<DesArea>Via Cavour</DesArea>
+		<NumCiv>24</NumCiv>
+		<DesComune>Oscale</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+	<ScuIstituto progressivo="5">
+		<CodIstituto>3</CodIstituto>
+		<DesIstituto>Scuola Elementare A. Manzoni</DesIstituto>
+		<CodTipo>TIPO_005</CodTipo>
+		<DesTipo>Scuola Elementare</DesTipo>
+		<DesArea>Via Cavour</DesArea>
+		<NumCiv>24</NumCiv>
+		<DesComune>Oscale</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+	<ScuIstituto progressivo="6">
+		<CodIstituto>4</CodIstituto>
+		<DesIstituto>>Ragioneria</DesIstituto>
+		<CodTipo>TIPO_006</CodTipo>
+		<DesTipo>Centro Estivo</DesTipo>
+		<DesArea>Viale Po </DesArea>
+		<NumCiv>5</NumCiv>
+		<DesComune>Oscale</DesComune>
+		<DesProvincia>CR</DesProvincia>
+		<Note>Note</Note>
+		<Telefono>12234</Telefono>
+	</ScuIstituto>
+</ListaScuIstituto>

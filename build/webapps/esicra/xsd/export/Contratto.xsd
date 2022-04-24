@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="ContrattoType">
+		<xs:sequence>
+			<xs:element name="TipoContratto" type="xs:string"/>
+			<xs:element name="CodContratto" type="xs:string"/>
+			<xs:element name="DataInizioContratto" type="xs:date"/>
+			<xs:element name="DataFineContratto" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

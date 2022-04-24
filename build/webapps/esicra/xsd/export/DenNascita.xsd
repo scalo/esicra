@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:element name="DenNascita" type="esicra_pra:DenNascitaType"/>
+	<xs:complexType name="DenNascitaType">
+		<xs:sequence>
+			<xs:element name="CognomeNato" type="xs:string"/>
+			<xs:element name="NomeNato" type="xs:string"/>
+			<xs:element name="SessoNato" type="xs:int"/>
+			<xs:element name="Giorno" type="xs:string"/>
+			<xs:element name="Mese" type="xs:string"/>
+			<xs:element name="Anno" type="xs:string"/>
+			<xs:element name="Ore" type="xs:string"/>
+			<xs:element name="Minuti" type="xs:string"/>
+			<xs:element name="Ospedale" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nome Ospedale                 o Casa di Cura</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="ComuneNas" type="esicra_pra:ComuneType"/>
+				<xs:element name="LocalitaNas" type="esicra_pra:LocalitaType"/>
+			</xs:choice>
+			<xs:element name="SoggettoMadre" type="esicra_pra:SoggettoType" minOccurs="0"/>
+			<xs:element name="SoggettoPadre" type="esicra_pra:SoggettoType" minOccurs="0"/>
+			<xs:element name="CittadinanzaMadre" type="xs:string" minOccurs="0"/>
+			<xs:element name="CittadinanzaPadre" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

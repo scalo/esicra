@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="DatiUnitaImmobiliare">
+		<xs:sequence>
+			<xs:element name="NumAppartamenti" type="xs:integer"/>
+			<xs:element name="SupTotaleAbitazioni" type="xs:string"/>
+			<xs:element name="NumAbitantiAddetti" type="xs:integer" minOccurs="0"/>
+			<xs:element name="NumServiziIgienici" type="xs:integer" minOccurs="0"/>
+			<xs:element name="NumCucine" type="xs:integer" minOccurs="0"/>
+			<xs:element name="NumLavanderie" type="xs:integer" minOccurs="0"/>
+			<xs:element name="TotSupCoperta" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotSupScoperta" type="xs:string" minOccurs="0"/>
+			<xs:element name="TotSupScopertaImpermeabilizzata" type="xs:string" minOccurs="0"/>
+			<xs:element name="SupUffici" type="xs:string" minOccurs="0"/>
+			<xs:element name="SupAttivitaProduttive" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

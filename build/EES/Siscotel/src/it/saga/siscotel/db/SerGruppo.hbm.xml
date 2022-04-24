@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.SerGruppo" table="ser_gruppo" schema="esicra">
+        <id name="nome" type="string">
+            <column name="nome" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="desGruppo" type="string">
+            <column name="des_gruppo" length="200" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="serGruppoUtentes" inverse="true">
+            <key>
+                <column name="gruppo" length="30" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SerGruppoUtente" />
+        </set>
+        <set name="serGruppoServizios" inverse="true">
+            <key>
+                <column name="gruppo" length="30" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.SerGruppoServizio" />
+        </set>
+    </class>
+</hibernate-mapping>

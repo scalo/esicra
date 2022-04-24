@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.SerGruppoServizio" table="ser_gruppo_servizio" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.SerGruppoServizioId">
+            <key-many-to-one name="serGruppo" class="it.saga.siscotel.db.SerGruppo">
+                <column name="gruppo" length="30" />
+            </key-many-to-one>
+            <key-property name="idServizio" type="big_decimal">
+                <column name="id_servizio" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

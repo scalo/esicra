@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VAnaSoggettoCorrente" table="v_ana_soggetto_corrente" schema="esicra" mutable="false">
+        <id name="pkid" type="big_decimal" >
+                <column name="pkid" precision="22" scale="0" />
+                <generator class="assigned" />
+        </id>
+            <property name="provenienza" type="integer">
+                <column name="provenienza" />
+            </property>
+            <property name="codSoggetto" type="string">
+                <column name="cod_soggetto" length="0" />
+            </property>
+            <property name="codiceFiscale" type="string">
+                <column name="codice_fiscale" length="0" />
+            </property>
+            <property name="flgCfCalcolato" type="integer">
+                <column name="flg_cf_calcolato" />
+            </property>
+            <property name="natura" type="integer">
+                <column name="natura" />
+            </property>
+            <property name="tipoNatura" type="integer">
+                <column name="tipo_natura" />
+            </property>
+            <property name="partitaIva" type="string">
+                <column name="partita_iva" length="0" />
+            </property>
+            <property name="cognome" type="string">
+                <column name="cognome" length="0" />
+            </property>
+            <property name="nome" type="string">
+                <column name="nome" length="0" />
+            </property>
+            <property name="altriNomi" type="string">
+                <column name="altri_nomi" length="0" />
+            </property>
+            <property name="denominazione" type="string">
+                <column name="denominazione" length="0" />
+            </property>
+            <property name="dtNascita" type="date">
+                <column name="dt_nascita" length="4" />
+            </property>
+            <property name="precisioneDtNascita" type="integer">
+                <column name="precisione_dt_nascita" />
+            </property>
+            <property name="sesso" type="integer">
+                <column name="sesso" />
+            </property>
+            <property name="note" type="string">
+                <column name="note" length="0" />
+            </property>
+            <property name="fkidComuneNascita" type="big_decimal">
+                <column name="fkid_comune_nascita" precision="65535" scale="65531" />
+            </property>
+            <property name="desComuneNascita" type="string">
+                <column name="des_comune_nascita" length="0" />
+            </property>
+            <property name="desProvinciaNascita" type="string">
+                <column name="des_provincia_nascita" length="0" />
+            </property>
+            <property name="fkidStatoNascita" type="big_decimal">
+                <column name="fkid_stato_nascita" precision="65535" scale="65531" />
+            </property>
+            <property name="desStatoNascita" type="string">
+                <column name="des_stato_nascita" length="0" />
+            </property>
+            <property name="fkidLocalitaNascita" type="big_decimal">
+                <column name="fkid_localita_nascita" precision="65535" scale="65531" />
+            </property>
+            <property name="desLocalitaNascita" type="string">
+                <column name="des_localita_nascita" length="0" />
+            </property>
+            <property name="flgStato" type="integer">
+                <column name="flg_stato" />
+            </property>
+            <property name="fkidRappresentante" type="integer">
+                <column name="fkid_rappresentante" />
+            </property>
+            <property name="idEnte" type="big_decimal">
+                <column name="id_ente" precision="65535" scale="65531" />
+            </property>
+            <property name="dtIni" type="date">
+                <column name="dt_ini" length="4" />
+            </property>
+            <property name="dtFin" type="date">
+                <column name="dt_fin" length="4" />
+            </property>
+            <property name="dtMod" type="timestamp">
+                <column name="dt_mod" length="8" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

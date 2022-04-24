@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaPensione xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaPensione.xsd" versione="1.0">
+<Pensione progressivo = "1">
+<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+<DesPensione>INPS</DesPensione>
+<DesEnte>ente prova</DesEnte>
+<DataEmissione></DataEmissione>
+<NumeroPensione>2222222222</NumeroPensione>
+<DataInizio>1984-08-25</DataInizio>
+</Pensione>
+<Pensione progressivo = "2">
+<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+<DesPensione>INPS</DesPensione>
+<DesEnte></DesEnte>
+<DataEmissione></DataEmissione>
+<NumeroPensione>1111111111</NumeroPensione>
+<DataInizio>1984-08-25</DataInizio>
+</Pensione>
+<Pensione progressivo = "3">
+<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+<DesPensione>DPT</DesPensione>
+<DesEnte></DesEnte>
+<DataEmissione></DataEmissione>
+<NumeroPensione>13468826</NumeroPensione>
+<DataInizio>2001-09-21</DataInizio>
+</Pensione>
+<Pensione progressivo = "4">
+<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+<DesPensione>P.I.</DesPensione>
+<DesEnte></DesEnte>
+<DataEmissione></DataEmissione>
+<NumeroPensione>142296929</NumeroPensione>
+<DataInizio>2001-09-21</DataInizio>
+</Pensione>
+</ListaPensione>

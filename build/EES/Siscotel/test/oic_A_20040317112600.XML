@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAotIdentificativo xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAotIdentificativo.xsd" versione="1.0">
+	<AotIdentificativo progressivo="1">
+		<CodAot>codaot_1</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>F</TipoCatasto>
+			<Partita>Partita1</Partita>
+			<Tipo>Graffato</Tipo>
+			<Sezione>sez 1</Sezione>
+			<Foglio>fgl 4</Foglio>
+			<Mappale>mapp1</Mappale>
+			<Sub>1</Sub>
+			<Protocollo>prot 125</Protocollo>
+			<Anno>2006</Anno>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+	<AotIdentificativo progressivo="2">
+		<CodAot>codaot_2</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>F</TipoCatasto>
+			<Foglio>4</Foglio>
+			<Mappale>12</Mappale>
+			<Sub>1</Sub>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+	<AotIdentificativo progressivo="3">
+		<CodAot>codaot_3</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>F</TipoCatasto>
+			<Protocollo>12515/12</Protocollo>
+			<Anno>2004</Anno>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+	<AotIdentificativo progressivo="4">
+		<CodAot>codaot_4</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>F</TipoCatasto>
+			<Foglio>1</Foglio>
+			<Mappale>35</Mappale>
+			<Sub>3</Sub>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+	<AotIdentificativo progressivo="5">
+		<CodAot>codaot_5</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>T</TipoCatasto>
+			<Partita>Partita1</Partita>
+			<Sezione>sez 1</Sezione>
+			<Foglio>fgl 4</Foglio>
+			<Mappale>mapp1</Mappale>
+			<Sub>2</Sub>
+			<Protocollo>prot 125</Protocollo>
+			<Anno>2006</Anno>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+	<AotIdentificativo progressivo="6">
+		<CodAot>codaot_6</CodAot>
+		<AotIdentificativoDati>
+			<TipoCatasto>T</TipoCatasto>
+			<Foglio>1</Foglio>
+			<Mappale>35</Mappale>
+			<Sub>4</Sub>
+		</AotIdentificativoDati>
+	</AotIdentificativo>
+</ListaAotIdentificativo>

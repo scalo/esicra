@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions name="ProfilazioneWs"
+        targetNamespace="http://it.saga.siscotel.webservices.profilazioni/ProfilazioneWs.wsdl"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tns="http://it.saga.siscotel.webservices.profilazioni/ProfilazioneWs.wsdl"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:xsd1="http://it.saga.siscotel.webservices.profilazioni/ProfilazioneWs.xsd" >
+
+  <types>
+    <schema targetNamespace="http://it.saga.siscotel.webservices.profilazioni/ProfilazioneWs.xsd" xmlns:tns="http://it.saga.siscotel.webservices.profilazioni/ProfilazioneWs.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <complexType name="ArrayOfString">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </types>
+
+  <message name="cercaListaProfilazioneOutput">
+    <part name="output" type="xsd1:ArrayOfString"/>
+  </message>
+  <message name="inserisciProfilazioneOutput">
+    <part name="output" type="xsd:boolean"/>
+  </message>
+  <message name="inserisciProfilazioneInput">
+    <part name="param0" type="xsd:decimal"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:string"/>
+  </message>
+  <message name="cercaListaProfilazioneInput">
+    <part name="param0" type="xsd:decimal"/>
+    <part name="param1" type="xsd:decimal"/>
+  </message>
+
+  <portType name="ProfilazioneWsPortType">
+    <operation name="cercaListaProfilazione">
+      <input message="tns:cercaListaProfilazioneInput"/>
+      <output message="tns:cercaListaProfilazioneOutput"/>
+    </operation>
+    <operation name="inserisciProfilazione">
+      <input message="tns:inserisciProfilazioneInput"/>
+      <output message="tns:inserisciProfilazioneOutput"/>
+    </operation>
+  </portType>
+
+  <binding name="ProfilazioneWsBinding" type="tns:ProfilazioneWsPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+    <operation name="cercaListaProfilazione">
+      <soap:operation soapAction="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs/cercaListaProfilazione"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs"/>
+      </output>
+    </operation>
+    <operation name="inserisciProfilazione">
+      <soap:operation soapAction="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs/inserisciProfilazione"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it-saga.siscotel.webservices.profilazioni.ProfilazioneWs"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="ProfilazioneWs">
+    <port name="ProfilazioneWsPort" binding="tns:ProfilazioneWsBinding">
+      <soap:address location="http://localhost:8080/esicra/servlet/soaprouter"/>
+    </port>
+  </service>
+
+
+</definitions>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaTriConcessione xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaConcessione.xsd" versione="1.0">
+	<TriConcessione progressivo="1">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodConcessione>CON10</CodConcessione>
+		<DesConcessione>Concessione OCCUPAZIONE SUOLO TEMPORANEA</DesConcessione>
+		<NumConcessione>123</NumConcessione>
+		<DtConcessione>2003-08-13</DtConcessione>
+		<CodTipo>OSAP_TEMPORANEA</CodTipo>
+		<DesTipo>Occupazione Suolo Pubblico Temporanea</DesTipo>
+		<DesCategoria>AMBULANTI BANCHI</DesCategoria>
+		<Quantita>12</Quantita>
+		<DesQuantita>Mq</DesQuantita>
+		<Lunghezza>4</Lunghezza>
+		<Larghezza>3</Larghezza>
+		<DesArea>CORSO GARIBALDI</DesArea>
+		<NumCiv>25</NumCiv>
+		<LetCiv>A</LetCiv>
+		<FlgEsonero>0</FlgEsonero>
+		<DesComune>BERGAMO</DesComune>
+		<DesProvincia>BG</DesProvincia>
+		<Note>Annotazioni</Note>
+		<DenunciaInizio>
+			<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+			<Cognome>PINOLI</Cognome>
+			<Nome>GIANNI</Nome>
+			<DtNascita>1960-04-20</DtNascita>
+			<LocalitaNascita>Soncino (CR)</LocalitaNascita>
+			<DtDenuncia>2003-12-30</DtDenuncia>
+			<CodDenuncia>DENCON1</CodDenuncia>
+			<IdPratica>10000</IdPratica>
+			<IdServizio>100158</IdServizio>
+			<DtIniConc>2003-08-15</DtIniConc>
+			<DtFinConc>2003-10-01</DtFinConc>
+		</DenunciaInizio>
+		<Durata>
+			<DurataDett progressivo="1">
+				<Giorno>Lunedi</Giorno>
+				<OraIni>8.00</OraIni>
+				<OraFin>14.00</OraFin>
+			</DurataDett>
+			<DurataDett progressivo="2">
+				<Giorno>Martedi</Giorno>
+				<OraIni>18.00</OraIni>
+				<OraFin>22.00</OraFin>
+			</DurataDett>
+			<DurataDett progressivo="3">
+				<Giorno>Mercoledi</Giorno>
+				<OraIni>8.00</OraIni>
+				<OraFin>14.00</OraFin>
+			</DurataDett>
+			<DurataDett progressivo="4">
+				<Giorno>Giovedi</Giorno>
+				<OraIni>18.00</OraIni>
+				<OraFin>22.00</OraFin>
+			</DurataDett>
+		</Durata>
+		<Dettaglio>
+			<Dett progressivo ="1">
+				<DesVoce>Tariffa</DesVoce>
+				<Valore>4 - AMBULANTI MERCATO SETTIMANALE</Valore>
+			</Dett>
+			<Dett progressivo ="2">
+				<DesVoce>Tipo di Occupazione</DesVoce>
+				<Valore>Occupazione Temporanea (Pagamento Annuo)</Valore>
+			</Dett>
+			<Dett progressivo ="3">
+				<DesVoce>Quantita&#39; Dichiarata</DesVoce>
+				<Valore>28,00</Valore>
+			</Dett>
+		</Dettaglio>
+	</TriConcessione>
+	<TriConcessione progressivo="2">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodConcessione>CON20</CodConcessione>
+		<DesConcessione>Concessione OCCUPAZIONE SUOLO PERMANENTE</DesConcessione>
+		<NumConcessione>1</NumConcessione>
+		<DtConcessione>1990-08-13</DtConcessione>
+		<CodTipo>OSAP_PERMANENTE</CodTipo>
+		<DesTipo>Occupazione Suolo Pubblico Permanente</DesTipo>
+		<DesCategoria>Passo Carraio</DesCategoria>
+		<Quantita>2,5</Quantita>
+		<DesQuantita>M</DesQuantita>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>25</NumCiv>
+		<LetCiv>A</LetCiv>
+		<FlgEsonero>0</FlgEsonero>
+		<DesComune>BERGAMO</DesComune>
+		<DesProvincia>BG</DesProvincia>
+		<Note>Passo carraio di prova</Note>
+		<DenunciaInizio>
+			<CodSoggetto>RSSGPP60D05A794H</CodSoggetto>
+			<Cognome>GIUSEPPE</Cognome>
+			<Nome>ROSSI</Nome>
+			<DtNascita>1960-01-01</DtNascita>
+			<Recapito>Corso Buenos Aires, 25 - Milano</Recapito>
+			<DtDenuncia>1998-07-01</DtDenuncia>
+			<IdPratica>1</IdPratica>
+			<IdServizio>100158</IdServizio>
+			<DtIniConc>1991-01-01</DtIniConc>			
+		</DenunciaInizio>
+	</TriConcessione>
+	<TriConcessione progressivo="3">
+		<CodSoggetto>PNLGNN77H8763HJZ</CodSoggetto>
+		<CodConcessione>CON30</CodConcessione>
+		<DesConcessione>OCCUPAZIONE</DesConcessione>
+		<NumConcessione>1</NumConcessione>
+		<DtConcessione>1990-08-13</DtConcessione>
+		<CodTipo>OSAP_PERMANENTE</CodTipo>
+		<DesTipo>Occupazione Suolo Pubblico Permanente</DesTipo>
+		<DesCategoria>Passo Carraio</DesCategoria>
+		<Quantita>3</Quantita>
+		<DesQuantita>M</DesQuantita>
+		<DesArea>Via Milano</DesArea>
+		<NumCiv>25</NumCiv>
+		<LetCiv>C</LetCiv>
+		<FlgEsonero>0</FlgEsonero>
+		<DesComune>BERGAMO</DesComune>
+		<DesProvincia>BG</DesProvincia>
+		<Note>Passo carraio di prova</Note>
+		<DenunciaInizio>
+			<CodSoggetto>RSSGPP60D05A794H</CodSoggetto>
+			<Cognome>GIUSEPPE</Cognome>
+			<Nome>ROSSI</Nome>
+			<DtNascita>1960-01-01</DtNascita>
+			<Recapito>Corso Buenos Aires, 25 - Milano</Recapito>
+			<DtDenuncia>1998-07-01</DtDenuncia>
+			<IdPratica>1</IdPratica>
+			<IdServizio>100158</IdServizio>
+			<DtIniConc>1991-01-01</DtIniConc>			
+		</DenunciaInizio>
+	</TriConcessione>	
+</ListaTriConcessione>

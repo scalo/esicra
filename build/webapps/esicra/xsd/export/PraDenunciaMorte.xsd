@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified">
+	<xs:include schemaLocation="PraSoggetto.xsd"/>
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="PraIndirizzo.xsd"/>
+	<xs:include schemaLocation="PraAllegato.xsd"/>
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:complexType name="DatiDichiarazioneMorteType">
+		<xs:sequence>
+			<xs:element name="Defunto" type="pra:SoggettoType"/>
+			<xs:element name="LuogoMorte" type="pra:IndirizzoType"/>
+			<xs:element name="DescrizioneLuogoMorte"/>
+			<xs:element name="DataMorte" type="xs:string"/>
+			<xs:element name="OraMorte"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PraDenunciaMorte" type="pra:PraDenunciaMorteType"/>
+	<xs:complexType name="PraDenunciaMorteType">
+		<xs:sequence>
+			<xs:element name="Dichiarante" type="pra:SoggettoType"/>
+			<xs:element name="TitolaritaDichiarante">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="TitolaritaDichiarante"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ListaDatiDichiarazione">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DatiDichiarazioneMorte" type="pra:DatiDichiarazioneMorteType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DisponibilitaSelezionata" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataAppuntamento">
+				<xs:simpleType>
+					<xs:restriction base="xs:date">
+						<xs:enumeration value="2005-05-05"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OraAppuntamento">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="12:00"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="DesStato">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Aperta"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Note"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataStato">
+				<xs:simpleType>
+					<xs:restriction base="xs:date">
+						<xs:enumeration value="2005-05-05"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

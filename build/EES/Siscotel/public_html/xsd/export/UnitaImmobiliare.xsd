@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by my dev (dev) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Indirizzo.xsd"/>
+	<xs:include schemaLocation="InfoCatasto.xsd"/>
+	<xs:complexType name="UnitaImmobiliare">
+		<xs:sequence>
+			<xs:element name="InfoCatasto" type="esicra_pra:InfoCatastoType"/>
+			<xs:element name="Ubicazione" type="esicra_pra:IndirizzoType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

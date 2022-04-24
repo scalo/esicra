@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerProvincia" table="ter_provincia" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terRegione" class="it.saga.siscotel.db.TerRegione">
+            <column name="fkid_regione" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="codProvincia" type="string">
+            <column name="cod_provincia" length="20" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="sigla" type="string">
+            <column name="sigla" length="2" />
+        </property>
+        <property name="codIstatProvincia" type="integer">
+            <column name="cod_istat_provincia" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <set name="terComunes" inverse="true">
+            <key>
+                <column name="fkid_provincia" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.TerComune" />
+        </set>
+    </class>
+</hibernate-mapping>

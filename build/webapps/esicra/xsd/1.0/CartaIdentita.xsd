@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura.xsl"?>
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Comune.xsd"/>
+	<xs:complexType name="CartaIdentitaType">
+		<xs:sequence>
+			<xs:element name="CodSoggetto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataEmissione" type="xs:date" minOccurs="0"/>
+			<xs:element name="NumCarta">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FlagResidente" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>1 = Soggetto Residente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FlagEspatrio" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>1 = Valida Espatrio</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Tipo" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>1 = Duplicato; 2= Normale; 3 = Povertà,                     4 = Lavoratore Estero;         5 = Sostituzione gratuita; </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Stato" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>1= Valida; 2= Smarrita,    3= Deteriorata; 4 = Rubata ; 5= Rinnovo;                      6= Scaduta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgDenuncia" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Eventuale progressivo di denuncia furto/smarrimento</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DataDenuncia" type="xs:date" minOccurs="0"/>
+			<xs:element name="DataScadenza" type="xs:date"/>
+			<xs:element name="Comune" type="esicra_import:ComuneType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Comune che ha          emesso la carta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Professione" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="StatoCivile" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Statura" type="xs:string" minOccurs="0"/>
+			<xs:element name="Capelli" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Occhi" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SegniParticolari1" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SegniParticolari2" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SegniParticolari3" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FlagElettronica" type="xs:int" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PraRecapito" table="pra_recapito" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="praPraticaTesta" class="it.saga.siscotel.db.PraPraticaTesta">
+            <column name="fkid_testa" precision="22" scale="0" />
+        </many-to-one>
+        <property name="specieArea" type="string">
+            <column name="specie_area" length="20" />
+        </property>
+        <property name="desArea" type="string">
+            <column name="des_area" length="80" />
+        </property>
+        <property name="numCiv" type="integer">
+            <column name="num_civ" />
+        </property>
+        <property name="letCiv" type="string">
+            <column name="let_civ" length="5" />
+        </property>
+        <property name="scala" type="string">
+            <column name="scala" length="9" />
+        </property>
+        <property name="interno" type="string">
+            <column name="interno" length="9" />
+        </property>
+        <property name="cap" type="string">
+            <column name="cap" length="10" />
+        </property>
+        <property name="presso" type="string">
+            <column name="presso" length="50" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="30" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="30" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="codIstatComune" type="integer">
+            <column name="cod_istat_comune" />
+        </property>
+        <property name="desComune" type="string">
+            <column name="des_comune" length="80" />
+        </property>
+        <property name="desProvincia" type="string">
+            <column name="des_provincia" length="80" />
+        </property>
+        <property name="codIstatStato" type="integer">
+            <column name="cod_istat_stato" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="desLocalita" type="string">
+            <column name="des_localita" length="80" />
+        </property>
+        <property name="desContea" type="string">
+            <column name="des_contea" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0" />
+        </property>
+        <property name="dtIni" type="date">
+            <column name="dt_ini" length="4" />
+        </property>
+        <property name="dtFin" type="date">
+            <column name="dt_fin" length="4" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

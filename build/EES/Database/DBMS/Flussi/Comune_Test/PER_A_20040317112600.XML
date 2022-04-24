@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaPermesso xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+../import/xsd/2.0/ListaPermesso.xsd" versione="1.0">
+	<Permesso progressivo="1">
+		<CodPermesso>PERM1</CodPermesso>
+		<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+		<IdServizio>100113</IdServizio>
+		<CodTipo>01</CodTipo>
+		<DesTipo>Permesso di transito</DesTipo>
+		<CodZona>Z1</CodZona>
+		<DesZona>Zona B</DesZona>
+		<ListaVeicolo>
+			<Veicolo>
+				<Targa>BSE66179</Targa>
+			</Veicolo>
+			<Veicolo>
+				<Targa>BSE66180</Targa>
+			</Veicolo>
+		</ListaVeicolo>
+		<Motivazione>richiesta da residente</Motivazione>
+		<Stato>S</Stato>
+		<Note>String</Note>
+		<IdPratica>0</IdPratica>
+		<DataRichiesta>1967-08-13</DataRichiesta>
+		<OraInizioValidita>08:00</OraInizioValidita>
+		<OraFineValidita>12:00</OraFineValidita>
+		<DataInizioValidita>1967-08-13</DataInizioValidita>
+		<DataFineValidita>1967-08-13</DataFineValidita>
+	</Permesso>
+	<Permesso progressivo="2">
+		<CodPermesso>PERM2</CodPermesso>
+		<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+		<IdServizio>100113</IdServizio>
+		<CodTipo>02</CodTipo>
+		<DesTipo>Permesso di scarico</DesTipo>
+		<CodZona>Z2</CodZona>
+		<DesZona>Zona A</DesZona>
+		<ListaVeicolo>
+			<Veicolo>
+				<Targa>AL740GB</Targa>
+			</Veicolo>
+		</ListaVeicolo>
+		<Motivazione>plausibile</Motivazione>
+		<Stato>S</Stato>
+		<Note>nessuna</Note>
+		<IdPratica>0</IdPratica>
+		<DataRichiesta>2003-12-20</DataRichiesta>
+		<OraInizioValidita>15:00</OraInizioValidita>
+		<OraFineValidita>24:00</OraFineValidita>
+		<DataInizioValidita>2004-01-20</DataInizioValidita>
+		<DataFineValidita>2004-02-20</DataFineValidita>
+	</Permesso>
+</ListaPermesso>

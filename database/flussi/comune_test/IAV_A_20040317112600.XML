@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PagListaBolletta xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import PagListaBolletta.xsd" versione="1.0">
+<Bolletta progressivo ="1">
+	<CodSoggetto>01137069875</CodSoggetto>
+	<DesIntestatario>GELATERIA PRIMAVERA</DesIntestatario>
+	<CodiceFiscale>01137069875</CodiceFiscale>
+	<Recapito>VIA BORGO MATTINA 46 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA1998100000021730000000002</CodBolletta>
+	<Anno>1998</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>2</NumBolletta>
+	<DataBolletta>2002-11-29</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>39,25</TotBolletta>
+	<TotPagato>39,25</TotPagato>
+	<FlNonPagare>1</FlNonPagare>
+	<MotNonPagare>GIA&#39; PAGATA</MotNonPagare>
+</Bolletta>
+<Bolletta progressivo ="2">
+	<CodSoggetto>01137069875</CodSoggetto>
+	<DesIntestatario>GELATERIA PRIMAVERA</DesIntestatario>
+	<CodiceFiscale>01137069875</CodiceFiscale>
+	<Recapito>VIA BORGO MATTINA 46 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA2004100000000020000000002</CodBolletta>
+	<Anno>2004</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>2</NumBolletta>
+	<DataBolletta>2004-01-12</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>367,03</TotBolletta>
+	<TotPagato>367,03</TotPagato>
+	<FlNonPagare>1</FlNonPagare>
+	<MotNonPagare>GIA&#39; PAGATA</MotNonPagare>
+</Bolletta>
+<Bolletta progressivo ="3">
+	<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+	<DesIntestatario>ROSSI</DesIntestatario>
+	<CodiceFiscale>RSSMRA70C20A794O</CodiceFiscale>
+	<Recapito>VIA BROLO 47 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA2004100000000030000000008</CodBolletta>
+	<Anno>2004</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>3</NumBolletta>
+	<DataBolletta>2004-01-12</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>125,37</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="4">
+	<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+	<DesIntestatario>MATTHAEUS LOTHAR</DesIntestatario>
+	<CodiceFiscale>MTTLHR61C21Z112U</CodiceFiscale>
+	<Recapito>VIA DELLE MOSE 13 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA2004100000000050000000015</CodBolletta>
+	<Anno>2004</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>5</NumBolletta>
+	<DataBolletta>2004-01-12</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>34,83</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="5">
+	<CodSoggetto>MNZMTT60D05A794H</CodSoggetto>
+	<DesIntestatario>MANZONI MATTEO</DesIntestatario>
+	<CodiceFiscale>MNZMTT60D05A794H</CodiceFiscale>
+	<Recapito>PIAZZA TURCAZZANO 4 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA1999100000000010000000016</CodBolletta>
+	<Anno>1999</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>1</NumBolletta>
+	<DataBolletta>2002-11-29</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>824,78</TotBolletta>
+	<TotPagato>824,78</TotPagato>
+	<FlNonPagare>1</FlNonPagare>
+	<MotNonPagare>GIA&#39; PAGATA</MotNonPagare>
+</Bolletta>
+<Bolletta progressivo ="6">
+	<CodSoggetto>RSSMHL01R08A794M</CodSoggetto>
+	<DesIntestatario>VERDI CATERINA</DesIntestatario>
+	<CodiceFiscale>RSSMHL01R08A794M</CodiceFiscale>
+	<Recapito>PIAZZA TURCAZZANO 4 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA2004100000000060000000016</CodBolletta>
+	<Anno>2004</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>6</NumBolletta>
+	<DataBolletta>2004-01-12</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>1971,59</TotBolletta>
+</Bolletta>
+<Bolletta progressivo ="7">
+	<CodSoggetto>01137069888</CodSoggetto>
+	<DesIntestatario>A CASA DEL FIORE DI ROBERTO ROSSI &#38; C. SNC</DesIntestatario>
+	<CodiceFiscale>01155100199</CodiceFiscale>
+	<Recapito>VIA DELL&#39;ARCIMBOLDI, 25 - 26029 SONCINO (CR)</Recapito>
+	<CodBolletta>ICIA2004100000000080000000019</CodBolletta>
+	<Anno>2004</Anno>
+	<CodServizio>ICI</CodServizio>
+	<IdServizio>100181</IdServizio>
+	<NumBolletta>8</NumBolletta>
+	<DataBolletta>2004-01-12</DataBolletta>
+	<Oggetto>Avviso di Liquidazione</Oggetto>
+	<TotBolletta>657,28</TotBolletta>
+</Bolletta>
+</PagListaBolletta>

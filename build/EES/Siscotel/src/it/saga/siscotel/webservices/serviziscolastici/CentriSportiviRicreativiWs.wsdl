@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="CentriSportiviRicreativiWs"
+        targetNamespace="http://it.saga.siscotel.webservices.serviziscolastici/CentriSportiviRicreativiWs.wsdl"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tns="http://it.saga.siscotel.webservices.serviziscolastici/CentriSportiviRicreativiWs.wsdl"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:xsd1="http://it.saga.siscotel.webservices.serviziscolastici/CentriSportiviRicreativiWs.xsd" >
+  <types>
+    <schema targetNamespace="http://it.saga.siscotel.webservices.serviziscolastici/CentriSportiviRicreativiWs.xsd" xmlns:tns="http://it.saga.siscotel.webservices.serviziscolastici/CentriSportiviRicreativiWs.xsd" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_PraIscrizioneCentroBean">
+        <all>
+          <element name="centro" type="xsd:string"/>
+          <element name="corso" type="xsd:string"/>
+          <element name="datiPratica" type="tns:it_saga_siscotel_beans_base_DatiPraticaBean"/>
+          <element name="datiScuola" type="tns:it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean"/>
+          <element name="listaAgevolazioni" type="tns:ArrayOfString"/>
+          <element name="listaEsenzioni" type="tns:ArrayOfString"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiPraticaBean">
+        <all>
+          <element name="pratica" type="tns:it_saga_siscotel_beans_base_PraticaBean"/>
+          <element name="soggettoFruitore" type="tns:it_saga_siscotel_beans_base_DatiSoggettoBean"/>
+          <element name="soggettoRichiedente" type="tns:it_saga_siscotel_beans_base_DatiSoggettoBean"/>
+          <element name="titolaritaRichiedente" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_PraticaBean">
+        <all>
+          <element name="dataPratica" type="xsd:dateTime"/>
+          <element name="idEnteDestinatario" type="xsd:decimal"/>
+          <element name="idPratica" type="xsd:decimal"/>
+          <element name="idServizio" type="xsd:decimal"/>
+          <element name="nomeUtente" type="xsd:string"/>
+          <element name="oggetto" type="xsd:string"/>
+          <element name="recapito" type="tns:it_saga_siscotel_beans_base_RecapitoBean"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_RecapitoBean">
+        <all>
+          <element name="email" type="xsd:string"/>
+          <element name="fax" type="xsd:string"/>
+          <element name="indirizzo" type="tns:it_saga_siscotel_beans_base_DatiIndirizzoBean"/>
+          <element name="presso" type="xsd:string"/>
+          <element name="telefono" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiIndirizzoBean">
+        <all>
+          <element name="cap" type="xsd:string"/>
+          <element name="comune" type="xsd:string"/>
+          <element name="desArea" type="xsd:string"/>
+          <element name="letCiv" type="xsd:string"/>
+          <element name="numCiv" type="xsd:int"/>
+          <element name="provincia" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_base_DatiSoggettoBean">
+        <all>
+          <element name="codiceFiscale" type="xsd:string"/>
+          <element name="cognome" type="xsd:string"/>
+          <element name="dataNascita" type="xsd:dateTime"/>
+          <element name="luogoNascita" type="xsd:string"/>
+          <element name="nome" type="xsd:string"/>
+          <element name="residenza" type="tns:it_saga_siscotel_beans_base_DatiIndirizzoBean"/>
+          <element name="sesso" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean">
+        <all>
+          <element name="annoScolastico" type="xsd:string"/>
+          <element name="classe" type="xsd:string"/>
+          <element name="scuola" type="xsd:string"/>
+        </all>
+      </complexType>
+      <complexType name="ArrayOfString">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraIscrizioneCentroBean">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns:it_saga_siscotel_beans_serviziscolastici_PraIscrizioneCentroBean[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="it_saga_siscotel_beans_serviziscolastici_PraRecessoCentroBean">
+        <all>
+          <element name="centro" type="xsd:string"/>
+          <element name="corso" type="xsd:string"/>
+          <element name="datiPratica" type="tns:it_saga_siscotel_beans_base_DatiPraticaBean"/>
+          <element name="datiScuola" type="tns:it_saga_siscotel_beans_serviziscolastici_DatiScuolaBean"/>
+        </all>
+      </complexType>
+      <complexType name="ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraRecessoCentroBean">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns:it_saga_siscotel_beans_serviziscolastici_PraRecessoCentroBean[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </types>
+
+  <message name="inserisciPraRecessoCentroOutput">
+    <part name="output" type="xsd:decimal"/>
+  </message>
+  <message name="cercaPraRecessoCentroInput">
+    <part name="param0" type="xsd:string"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:decimal"/>
+    <part name="param3" type="xsd:int"/>
+    <part name="param4" type="xsd:dateTime"/>
+    <part name="param5" type="xsd:dateTime"/>
+  </message>
+  <message name="cercaPraRecessoCentroOutput">
+    <part name="output" type="xsd1:ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraRecessoCentroBean"/>
+  </message>
+  <message name="cercaPraIscrizioneCentroOutput">
+    <part name="output" type="xsd1:ArrayOfIt_saga_siscotel_beans_serviziscolastici_PraIscrizioneCentroBean"/>
+  </message>
+  <message name="inserisciPraIscrizioneCentroInput">
+    <part name="param0" type="xsd1:it_saga_siscotel_beans_serviziscolastici_PraIscrizioneCentroBean"/>
+  </message>
+  <message name="inserisciPraRecessoCentroInput">
+    <part name="param0" type="xsd1:it_saga_siscotel_beans_serviziscolastici_PraRecessoCentroBean"/>
+  </message>
+  <message name="cercaPraIscrizioneCentroInput">
+    <part name="param0" type="xsd:string"/>
+    <part name="param1" type="xsd:decimal"/>
+    <part name="param2" type="xsd:decimal"/>
+    <part name="param3" type="xsd:int"/>
+    <part name="param4" type="xsd:dateTime"/>
+    <part name="param5" type="xsd:dateTime"/>
+  </message>
+  <message name="inserisciPraIscrizioneCentroOutput">
+    <part name="output" type="xsd:decimal"/>
+  </message>
+
+  <portType name="CentriSportiviRicreativiWsPortType">
+    <operation name="cercaPraRecessoCentro">
+      <input message="tns:cercaPraRecessoCentroInput"/>
+      <output message="tns:cercaPraRecessoCentroOutput"/>
+    </operation>
+    <operation name="inserisciPraRecessoCentro">
+      <input message="tns:inserisciPraRecessoCentroInput"/>
+      <output message="tns:inserisciPraRecessoCentroOutput"/>
+    </operation>
+    <operation name="inserisciPraIscrizioneCentro">
+      <input message="tns:inserisciPraIscrizioneCentroInput"/>
+      <output message="tns:inserisciPraIscrizioneCentroOutput"/>
+    </operation>
+    <operation name="cercaPraIscrizioneCentro">
+      <input message="tns:cercaPraIscrizioneCentroInput"/>
+      <output message="tns:cercaPraIscrizioneCentroOutput"/>
+    </operation>
+  </portType>
+
+  <binding name="CentriSportiviRicreativiWsBinding" type="tns:CentriSportiviRicreativiWsPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+    <operation name="cercaPraRecessoCentro">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs/cercaPraRecessoCentro"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </output>
+    </operation>
+    <operation name="inserisciPraRecessoCentro">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs/inserisciPraRecessoCentro"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </output>
+    </operation>
+    <operation name="inserisciPraIscrizioneCentro">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs/inserisciPraIscrizioneCentro"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </output>
+    </operation>
+    <operation name="cercaPraIscrizioneCentro">
+      <soap:operation soapAction="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs/cercaPraIscrizioneCentro"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="it.saga.siscotel.webservices.serviziscolastici.CentriSportiviRicreativiWs"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="CentriSportiviRicreativiWs">
+    <port name="CentriSportiviRicreativiWsPort" binding="tns:CentriSportiviRicreativiWsBinding">
+      <soap:address location="http://localhost:8080/esicra/servlet/soaprouter"/>
+    </port>
+  </service>
+
+
+</definitions>

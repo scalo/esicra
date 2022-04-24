@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.PagBolletta" table="pag_bolletta" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="anaSoggetto" class="it.saga.siscotel.db.AnaSoggetto">
+            <column name="fkid_soggetto" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codServizio" type="string">
+            <column name="cod_servizio" length="20" />
+        </property>
+        <property name="idServizio" type="big_decimal">
+            <column name="id_servizio" precision="22" scale="0" />
+        </property>
+        <property name="desIntestatario" type="string">
+            <column name="des_intestatario" length="200" />
+        </property>
+        <property name="codiceFiscale" type="string">
+            <column name="codice_fiscale" length="16" />
+        </property>
+        <property name="indirizzo" type="string">
+            <column name="indirizzo" length="200" />
+        </property>
+        <property name="recapito" type="string">
+            <column name="recapito" length="200" />
+        </property>
+        <property name="codBolletta" type="string">
+            <column name="cod_bolletta" length="100" />
+        </property>
+        <property name="anno" type="integer">
+            <column name="anno" />
+        </property>
+        <property name="numBolletta" type="string">
+            <column name="num_bolletta" length="20" />
+        </property>
+        <property name="numRate" type="integer">
+            <column name="num_rate" />
+        </property>
+        <property name="dtBolletta" type="date">
+            <column name="dt_bolletta" length="4" />
+        </property>
+        <property name="oggetto" type="string">
+            <column name="oggetto" length="80" />
+        </property>
+        <property name="speseSpedizione" type="big_decimal">
+            <column name="spese_spedizione" precision="15" />
+        </property>
+        <property name="totEsenteIva" type="big_decimal">
+            <column name="tot_esente_iva" precision="15" />
+        </property>
+        <property name="totImponibileIva" type="big_decimal">
+            <column name="tot_imponibile_iva" precision="15" />
+        </property>
+        <property name="totIva" type="big_decimal">
+            <column name="tot_iva" precision="15" />
+        </property>
+        <property name="arrPrec" type="big_decimal">
+            <column name="arr_prec" precision="15" />
+        </property>
+        <property name="arrAtt" type="big_decimal">
+            <column name="arr_att" precision="15" />
+        </property>
+        <property name="importoBollettaPrec" type="big_decimal">
+            <column name="importo_bolletta_prec" precision="15" />
+        </property>
+        <property name="totBolletta" type="big_decimal">
+            <column name="tot_bolletta" precision="15" />
+        </property>
+        <property name="totPagato" type="big_decimal">
+            <column name="tot_pagato" precision="15" />
+        </property>
+        <property name="totAccertato" type="big_decimal">
+            <column name="tot_accertato" precision="15" />
+        </property>
+        <property name="totSanzioni" type="big_decimal">
+            <column name="tot_sanzioni" precision="15" />
+        </property>
+        <property name="flgNonPagare" type="integer">
+            <column name="flg_non_pagare" />
+        </property>
+        <property name="motNonPagare" type="string">
+            <column name="mot_non_pagare" length="100" />
+        </property>
+        <property name="flgPagata" type="integer">
+            <column name="flg_pagata" />
+        </property>
+        <property name="flgAccertamento" type="integer">
+            <column name="flg_accertamento" />
+        </property>
+        <property name="flgBonifica" type="integer">
+            <column name="flg_bonifica" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="1000" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+        <set name="pagBollettaRatas" inverse="true">
+            <key>
+                <column name="fkid_bolletta" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PagBollettaRata" />
+        </set>
+        <set name="rsuPagAddizionales" inverse="true">
+            <key>
+                <column name="fkid_bolletta" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuPagAddizionale" />
+        </set>
+        <set name="rsuInsCalcolos" inverse="true">
+            <key>
+                <column name="fkid_bolletta" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.RsuInsCalcolo" />
+        </set>
+        <set name="pagBollettaDetts" inverse="true">
+            <key>
+                <column name="fkid_bolletta" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PagBollettaDett" />
+        </set>
+        <set name="pagBollettaIvas" inverse="true">
+            <key>
+                <column name="fkid_bolletta" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.PagBollettaIva" />
+        </set>
+    </class>
+</hibernate-mapping>

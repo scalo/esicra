@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VPraticaEdiliziaSogg" table="v_pratica_edilizia_sogg" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.VPraticaEdiliziaSoggId">
+            <key-property name="pkid" type="big_decimal">
+                <column name="pkid" precision="22" scale="0" />
+            </key-property>
+            <key-property name="idServizio" type="big_decimal">
+                <column name="id_servizio" precision="22" scale="0" />
+            </key-property>
+            <key-property name="codPratica" type="string">
+                <column name="cod_pratica" length="20" />
+            </key-property>
+            <key-property name="desPratica" type="string">
+                <column name="des_pratica" length="80" />
+            </key-property>
+            <key-property name="numPratica" type="string">
+                <column name="num_pratica" length="20" />
+            </key-property>
+            <key-property name="dtPratica" type="date">
+                <column name="dt_pratica" length="4" />
+            </key-property>
+            <key-property name="numProtocollo" type="string">
+                <column name="num_protocollo" length="20" />
+            </key-property>
+            <key-property name="dtProtocollo" type="date">
+                <column name="dt_protocollo" length="4" />
+            </key-property>
+            <key-property name="dtIniLavori" type="date">
+                <column name="dt_ini_lavori" length="4" />
+            </key-property>
+            <key-property name="dtFinLavori" type="date">
+                <column name="dt_fin_lavori" length="4" />
+            </key-property>
+            <key-property name="numRegistro" type="string">
+                <column name="num_registro" length="20" />
+            </key-property>
+            <key-property name="oggetto" type="string">
+                <column name="oggetto" length="1000" />
+            </key-property>
+            <key-property name="numProvvedimento" type="string">
+                <column name="num_provvedimento" length="20" />
+            </key-property>
+            <key-property name="dtProvvedimento" type="date">
+                <column name="dt_provvedimento" length="4" />
+            </key-property>
+            <key-property name="dtDecadimento" type="date">
+                <column name="dt_decadimento" length="4" />
+            </key-property>
+            <key-property name="desDecadimento" type="string">
+                <column name="des_decadimento" length="80" />
+            </key-property>
+            <key-property name="dtAgibilita" type="date">
+                <column name="dt_agibilita" length="4" />
+            </key-property>
+            <key-property name="numAgibilita" type="string">
+                <column name="num_agibilita" length="20" />
+            </key-property>
+            <key-property name="codStato" type="string">
+                <column name="cod_stato" length="20" />
+            </key-property>
+            <key-property name="desStato" type="string">
+                <column name="des_stato" length="80" />
+            </key-property>
+            <key-property name="volume" type="string">
+                <column name="volume" length="10" />
+            </key-property>
+            <key-property name="superficie" type="string">
+                <column name="superficie" length="10" />
+            </key-property>
+            <key-property name="idPratica" type="big_decimal">
+                <column name="id_pratica" precision="22" scale="0" />
+            </key-property>
+            <key-property name="idEnte" type="integer">
+                <column name="id_ente" precision="7" scale="0" />
+            </key-property>
+            <key-property name="dtMod" type="timestamp">
+                <column name="dt_mod" length="8" />
+            </key-property>
+            <key-property name="desTipoPratica" type="string">
+                <column name="des_tipo_pratica" length="80" />
+            </key-property>
+            <key-property name="codTipoPratica" type="string">
+                <column name="cod_tipo_pratica" length="20" />
+            </key-property>
+            <key-property name="pkidSogg" type="big_decimal">
+                <column name="pkid_sogg" precision="22" scale="0" />
+            </key-property>
+            <key-property name="fkidSoggetto" type="big_decimal">
+                <column name="fkid_soggetto" precision="22" scale="0" />
+            </key-property>
+            <key-property name="codTipoSoggetto" type="string">
+                <column name="cod_tipo_soggetto" length="20" />
+            </key-property>
+            <key-property name="desTipoSoggetto" type="string">
+                <column name="des_tipo_soggetto" length="80" />
+            </key-property>
+            <key-property name="desSoggetto" type="string">
+                <column name="des_soggetto" length="80" />
+            </key-property>
+            <key-property name="codTipoRuolo" type="string">
+                <column name="cod_tipo_ruolo" length="10" />
+            </key-property>
+            <key-property name="desTipoRuolo" type="string">
+                <column name="des_tipo_ruolo" length="80" />
+            </key-property>
+            <key-property name="note" type="string">
+                <column name="note" length="1000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

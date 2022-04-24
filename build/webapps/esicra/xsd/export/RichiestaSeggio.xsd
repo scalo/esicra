@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Soggetto.xsd"/>
+	<xs:include schemaLocation="Pratica.xsd"/>
+	<xs:complexType name="RichiestaSeggioType">
+		<xs:sequence>
+			<xs:element name="SoggettoFruitore" type="pra:SoggettoType"/>
+			<xs:element name="SoggettoRichiedente" type="pra:SoggettoType"/>
+			<xs:element name="Pratica" type="pra:PraticaType"/>
+			<xs:element name="Richiesta" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>PRESIDENTE o SCRUTATORE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Professione" type="xs:string"/>
+			<xs:element name="TitoloStudio" type="xs:string"/>
+			<xs:element name="Stato" type="xs:int" minOccurs="0"/>
+			<xs:element name="DesStato" type="xs:string" minOccurs="0"/>
+			<xs:element name="DataStato" type="xs:date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="RichiestaSeggio" type="pra:RichiestaSeggioType"/>
+</xs:schema>

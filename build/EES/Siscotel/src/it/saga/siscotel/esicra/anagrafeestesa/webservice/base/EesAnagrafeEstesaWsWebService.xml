@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<XMLDataNode xmlns="http://xmlns.oracle.com/jdeveloper/903/deploy/webservices" nselem="XMLDataNode" class="oracle.jdevimpl.webservices.deploy.WebServicesFolder">
+   <JMSModel/>
+   <SPModel/>
+   <archiveProfile>
+      <archiveOptions>
+         <additionalManifests/>
+         <compressed>false</compressed>
+         <hasManifest>true</hasManifest>
+         <mainClass/>
+      </archiveOptions>
+      <cdaSettings>
+         <additionalArchives/>
+         <afterFilters/>
+         <beforeFilters/>
+         <duringFilters/>
+         <selectedArchives>
+            <archives/>
+            <selectionMode>0</selectionMode>
+         </selectedArchives>
+      </cdaSettings>
+      <jarURL path="EesAnagrafeEstesaWs.jar"/>
+      <profileDeps/>
+      <selectedProjectFiles>
+         <autoInclude>false</autoInclude>
+         <deploySourceAs>0</deploySourceAs>
+         <files>
+            <Item path="EesAnagrafeEstesaWs.java"/>
+         </files>
+         <selectionFilters/>
+      </selectedProjectFiles>
+   </archiveProfile>
+   <defaultJarURL path="EesAnagrafeEstesaWs.jar"/>
+   <deployPlatform id="0">3</deployPlatform>
+   <listOfChildren class="java.util.ArrayList">
+      <Item class="oracle.jdevimpl.webservices.ide.DDArtifactNode">
+         <URL path="EesAnagrafeEstesaWsDescriptor.dd"/>
+      </Item>
+      <Item class="oracle.jdevimpl.webservices.ide.WSDLArtifactNode">
+         <URL path="EesAnagrafeEstesaWs.wsdl"/>
+      </Item>
+   </listOfChildren>
+   <model>
+      <DDFileLocation>file:/C:/oracle/oradev/jdev/mywork/Esicra/EES/WebServices/src/it/saga/siscotel/esicra/anagrafeestesa/webservice/base/EesAnagrafeEstesaWsDescriptor.dd</DDFileLocation>
+      <EJBClass/>
+      <EJBType>0</EJBType>
+      <GUID>155b6bd8-0101-1000-8001-0a4d01ad533f</GUID>
+      <IFFileLocation/>
+      <JNDILocation/>
+      <SOAPServletURL>http://127.0.0.1:8080/esicra/servlet/soaprouter</SOAPServletURL>
+      <WSDLFileLocation>file:/C:/oracle/oradev/jdev/mywork/Esicra/EES/WebServices/src/it/saga/siscotel/esicra/anagrafeestesa/webservice/base/EesAnagrafeEstesaWs.wsdl</WSDLFileLocation>
+      <appServer/>
+      <className>EesAnagrafeEstesaWs</className>
+      <deployPlatform idref="0"/>
+      <homeInterface/>
+      <portNo>8888</portNo>
+      <qualifiedClassName>it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs</qualifiedClassName>
+      <scope>0</scope>
+      <selectedInterfaces class="java.util.ArrayList">
+         <Item class="java.lang.String">cercaSoggettoFisicoIndiceCF(java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoBean</Item>
+         <Item class="java.lang.String">cercaSoggettoFisicoIndiceId(java.lang.String, java.lang.String, java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoBean[]</Item>
+         <Item class="java.lang.String">cercaSoggettoFisicoIndiceNome(java.lang.String, java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoBean[]</Item>
+         <Item class="java.lang.String">cercaSoggettoFisicoIndiceInd(java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoBean[]</Item>
+         <Item class="java.lang.String">cercaSoggettoGiuridicoIndicePI(java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoGiuridicoBean</Item>
+         <Item class="java.lang.String">cercaSoggettoGiuridicoIndiceId(java.lang.String, java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoGiuridicoBean[]</Item>
+         <Item class="java.lang.String">cercaSoggettoGiuridicoIndiceEnte(java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.base.SoggettoGiuridicoBean[]</Item>
+         <Item class="java.lang.String">cercaOggettoIndiceCE(java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoBean</Item>
+         <Item class="java.lang.String">cercaOggettoIndiceIC(java.math.BigDecimal, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoBean[]</Item>
+         <Item class="java.lang.String">cercaOggettoIndiceInd(java.math.BigDecimal, java.lang.String, java.lang.Integer, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoBean[]</Item>
+         <Item class="java.lang.String">cercaSoggettoProvenienza(java.lang.String, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.SoggettoProvenienzaBean</Item>
+         <Item class="java.lang.String">cercaOggettoProvenienza(java.lang.String, java.lang.String) : it.saga.siscotel.srvfrontoffice.beans.anagrafeestesa.OggettoProvenienzaBean</Item>
+      </selectedInterfaces>
+      <showSuperclassMethods>false</showSuperclassMethods>
+      <stateless>true</stateless>
+      <staticInvocation>false</staticInvocation>
+      <targetNamespace>http://it/saga/siscotel/esicra/anagrafeestesa/webservice/base/EesAnagrafeEstesaWs.wsdl</targetNamespace>
+      <timeout>60</timeout>
+      <webServiceFileRoot>file:/C:/oracle/oradev/jdev/mywork/Esicra/EES/WebServices/src/it/saga/siscotel/esicra/anagrafeestesa/webservice/base/</webServiceFileRoot>
+      <webServiceType>10</webServiceType>
+      <webServiceURI>it.saga.siscotel.esicra.anagrafeestesa.webservice.base.EesAnagrafeEstesaWs</webServiceURI>
+      <webServiceURL path="EesAnagrafeEstesaWs.java" id="1"/>
+   </model>
+   <webServiceURL idref="1"/>
+</XMLDataNode>

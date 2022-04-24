@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaAtti xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaAtti.xsd" versione="1.0">
+<Atto progressivo = "1">
+<CodSoggetto>RSSNGL74L70B157J</CodSoggetto>
+<TipoAtto>2</TipoAtto>
+<Registrazione>
+<Comune>
+<CodComune>19097</CodComune>
+<DesComune>SONCINO</DesComune>
+<Cap>26029</Cap>
+<DesProvincia>CR</DesProvincia>
+</Comune>
+<Anno>2002</Anno>
+<Numero>24</Numero>
+<Parte>2</Parte>
+<Serie>B</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Registrazione>
+<Trascrizione>
+<Comune>
+<CodComune>19097</CodComune>
+<DesComune>SONCINO</DesComune>
+<Cap>26029</Cap>
+<DesProvincia>CR</DesProvincia>
+</Comune>
+<Anno>2003</Anno>
+<Numero>14</Numero>
+<Parte>2</Parte>
+<Serie>C</Serie>
+<Volume></Volume>
+<Ufficio></Ufficio>
+</Trascrizione>
+
+</Atto>
+</ListaAtti>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.TerLocalita" table="ter_localita" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="terStato" class="it.saga.siscotel.db.TerStato">
+            <column name="fkid_stato" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="terConsolato" class="it.saga.siscotel.db.TerConsolato">
+            <column name="fkid_consolato" precision="22" scale="0" />
+        </many-to-one>
+        <property name="codLocalita" type="string">
+            <column name="cod_localita" length="20" />
+        </property>
+        <property name="desLocalita" type="string">
+            <column name="des_localita" length="80" />
+        </property>
+        <property name="capLocalita" type="string">
+            <column name="cap_localita" length="10" />
+        </property>
+        <property name="desStato" type="string">
+            <column name="des_stato" length="80" />
+        </property>
+        <property name="desConsolato" type="string">
+            <column name="des_consolato" length="80" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <set name="anaStudios" inverse="true">
+            <key>
+                <column name="fkid_localita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStudio" />
+        </set>
+        <set name="anaIscriziones" inverse="true">
+            <key>
+                <column name="fkid_localita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIscrizione" />
+        </set>
+        <set name="anaSoggettos" inverse="true">
+            <key>
+                <column name="fkid_localita_nascita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaSoggetto" />
+        </set>
+        <set name="anaIndirizzos" inverse="true">
+            <key>
+                <column name="fkid_localita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaIndirizzo" />
+        </set>
+        <set name="anaCancellaziones" inverse="true">
+            <key>
+                <column name="fkid_localita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaCancellazione" />
+        </set>
+        <set name="anaStcivs" inverse="true">
+            <key>
+                <column name="fkid_localita" precision="22" scale="0" />
+            </key>
+            <one-to-many class="it.saga.siscotel.db.AnaStciv" />
+        </set>
+    </class>
+</hibernate-mapping>

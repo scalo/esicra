@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaMovimentazioneAna xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaMovimentazioneAna.xsd" versione="2.0">
+<MovimentazioneAna progressivo = "1">
+	<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+	<TipoMovimentazione>1</TipoMovimentazione>
+	<DataDecorrenza>2001-01-28</DataDecorrenza>
+	<Motivo>ESPATRIO / RES. ESTERO</Motivo>
+	<NumPratica>6</NumPratica>
+	<DataDefinizionePratica>2001-02-25</DataDefinizionePratica>
+	<DataEvento>2001-01-28</DataEvento>
+	<CodAire>1</CodAire>
+	<DesAire>Ultimo Comune di Residenza di un Componente della Famiglia</DesAire>
+	<DataInizio>2001-01-28</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "2">
+	<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+	<TipoMovimentazione>2</TipoMovimentazione>
+	<DataDecorrenza>2001-03-17</DataDecorrenza>
+	<Motivo>EMIGR. IN ALTRO COMUNE</Motivo>
+	<ComuneEvento>
+	<CodComune>16053</CodComune>
+		<DesComune>CARAVAGGIO</DesComune>
+		<Cap>24043</Cap>
+		<DesProvincia>BG</DesProvincia>
+	</ComuneEvento>
+	<NumPratica>20</NumPratica>
+	<DataDefinizionePratica></DataDefinizionePratica>
+	<DataEvento>2001-03-17</DataEvento>
+	<DesAire></DesAire>
+	<DataInizio>2001-03-17</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "3">
+	<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+	<TipoMovimentazione>1</TipoMovimentazione>
+	<DataDecorrenza>2002-02-20</DataDecorrenza>
+	<Motivo>IMMIGRAZ. DA ALTRO COMUNE</Motivo>
+	<ComuneEvento>
+		<CodComune>15146</CodComune>
+		<DesComune>MILANO</DesComune>
+		<Cap>20100</Cap>
+		<DesProvincia>MI</DesProvincia>
+	</ComuneEvento>
+	<NumPratica>18</NumPratica>
+	<DataDefinizionePratica>2002-04-16</DataDefinizionePratica>
+	<DataEvento>2002-02-20</DataEvento>
+	<DesAire></DesAire>
+	<DataInizio>2002-02-20</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "4">
+	<CodSoggetto>ZNLFDR49H57Z114T</CodSoggetto>
+	<TipoMovimentazione>1</TipoMovimentazione>
+	<DataDecorrenza>2002-04-04</DataDecorrenza>
+	<Motivo>IMMIGRAZ. DALL'ESTERO</Motivo>
+	<LocalitaEvento>
+		<DesLocalita></DesLocalita>
+		<Cap></Cap>
+		<CodStato>235</CodStato>
+		<DesStato>ROMANIA</DesStato>
+	</LocalitaEvento>
+	<NumPratica>50</NumPratica>
+	<DataDefinizionePratica>2002-04-13</DataDefinizionePratica>
+	<DataEvento>2002-04-04</DataEvento>
+	<DesAire>Desc AIRE</DesAire>
+	<DataInizio>2002-04-04</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "5">
+	<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+	<TipoMovimentazione>1</TipoMovimentazione>
+	<DataDecorrenza>1944-09-08</DataDecorrenza>
+	<Motivo>NASCITA</Motivo>
+	<ComuneEvento>
+		<CodComune>19097</CodComune>
+		<DesComune>SONCINO</DesComune>
+		<Cap>26029</Cap>
+		<DesProvincia>CR</DesProvincia>
+	</ComuneEvento>
+	<NumPratica>0</NumPratica>
+	<DataDefinizionePratica></DataDefinizionePratica>
+	<DataEvento>1944-09-08</DataEvento>
+	<DesAire></DesAire>
+	<DataInizio>1944-09-08</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "6">
+	<CodSoggetto>RSSNDR00R08A794I</CodSoggetto>
+	<TipoMovimentazione>2</TipoMovimentazione>
+	<DataDecorrenza>2002-03-11</DataDecorrenza>
+	<Motivo>EMIGR. ALL'ESTERO</Motivo>
+	<LocalitaEvento>
+		<DesLocalita>EGITTO</DesLocalita>
+		<Cap></Cap>
+		<CodStato>419</CodStato>
+		<DesStato>EGITTO</DesStato>
+	</LocalitaEvento>
+	<NumPratica>10</NumPratica>
+	<DataDefinizionePratica>2002-03-12</DataDefinizionePratica>
+	<DataEvento>2002-03-11</DataEvento>
+	<DesAire></DesAire>
+	<DataInizio>2002-03-11</DataInizio>
+</MovimentazioneAna>
+<MovimentazioneAna progressivo = "7">
+	<CodSoggetto>RSSNDR00R08A794I</CodSoggetto>
+	<TipoMovimentazione>1</TipoMovimentazione>
+	<DataDecorrenza>2002-02-20</DataDecorrenza>
+	<Motivo>IMMIGRAZ. DA ALTRO COMUNE</Motivo>
+	<ComuneEvento>
+		<CodComune>15146</CodComune>
+		<DesComune>MILANO</DesComune>
+		<Cap>20100</Cap>
+		<DesProvincia>MI</DesProvincia>
+	</ComuneEvento>
+	<NumPratica>18</NumPratica>
+	<DataDefinizionePratica>2005-01-01</DataDefinizionePratica>
+	<DataEvento>2005-01-01</DataEvento>
+	<DesAire></DesAire>
+	<DataInizio>2005-01-01</DataInizio>
+</MovimentazioneAna>
+</ListaMovimentazioneAna>

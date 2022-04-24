@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="it.saga.siscotel.db.SerImport" table="ser_import" schema="esicra">
+        <id name="pkid" type="big_decimal">
+            <column name="pkid" precision="22" scale="0" />
+            <generator class="it.saga.siscotel.db.hibernate.PkidGenerator" />
+        </id>
+        <property name="nomeFile" type="string">
+            <column name="nome_file" length="80" />
+        </property>
+        <property name="inElaborazione" type="integer">
+            <column name="in_elaborazione" />
+        </property>
+        <property name="tempo" type="string">
+            <column name="tempo" length="20" />
+        </property>
+        <property name="elaborati" type="integer">
+            <column name="elaborati" />
+        </property>
+        <property name="nonValidi" type="integer">
+            <column name="non_validi" />
+        </property>
+        <property name="ignorati" type="integer">
+            <column name="ignorati" />
+        </property>
+        <property name="rigettati" type="integer">
+            <column name="rigettati" />
+        </property>
+        <property name="idEnte" type="integer">
+            <column name="id_ente" precision="7" scale="0" />
+        </property>
+        <property name="idEnteDestinatario" type="integer">
+            <column name="id_ente_destinatario" precision="7" scale="0" />
+        </property>
+        <property name="dtMod" type="timestamp">
+            <column name="dt_mod" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

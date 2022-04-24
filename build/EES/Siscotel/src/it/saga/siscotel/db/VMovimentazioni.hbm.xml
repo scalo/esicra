@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- 
+        Auto-generated mapping file from
+        the hibernate.org cfg2hbm engine
+-->
+    <class name="it.saga.siscotel.db.VMovimentazioni" table="v_movimentazioni" schema="esicra">
+        <composite-id name="id" class="it.saga.siscotel.db.VMovimentazioniId">
+            <key-property name="fkidSoggetto" type="big_decimal">
+                <column name="fkid_soggetto" precision="65535" scale="65531" />
+            </key-property>
+            <key-property name="motivo" type="string">
+                <column name="motivo" length="0" />
+            </key-property>
+            <key-property name="dtDec" type="date">
+                <column name="dt_dec" length="4" />
+            </key-property>
+            <key-property name="comune" type="string">
+                <column name="comune" length="0" />
+            </key-property>
+            <key-property name="stato" type="string">
+                <column name="stato" length="0" />
+            </key-property>
+            <key-property name="localita" type="string">
+                <column name="localita" length="0" />
+            </key-property>
+            <key-property name="tipo" type="integer">
+                <column name="tipo" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

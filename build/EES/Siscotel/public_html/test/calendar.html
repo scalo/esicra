@@ -1,0 +1,33 @@
+<html style="background-color: buttonface; color: buttontext;">
+
+<head>
+<meta http-equiv="content-type" content="text/xml; charset=utf-8" />
+
+<title>Simple calendar setups [popup calendar]</title>
+
+  <style type="text/css">@import url(../css/calendar-blue.css);</style>
+  
+  <script type="text/javascript" src="../js/calendar.js"></script>
+  <script type="text/javascript" src="../js/calendar-it.js"></script>
+  <script type="text/javascript" src="../js/calendar-setup.js"></script>
+  
+<body>
+
+<form action="#" method="get">
+<input type="text" name="date" id="data" />
+<img align="middle"
+src="../myimg/calendar.gif" id="trigger" style="cursor: pointer; border: 1px solid blue;"  onmouseover="this.style.background='blue';"
+onmouseout="this.style.background=''" />
+</form>
+<script>
+  Calendar.setup({
+      inputField : "data",
+      ifFormat : "%d/%m/%Y",
+      button : "trigger", 
+      step  :    1   
+  });
+</script>
+
+</body>
+
+</html>

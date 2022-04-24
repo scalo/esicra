@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListaStudio xmlns="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.saga.it/egov/esicra/importazione/xml/esicra_import
+ListaStudio.xsd" versione="2.0">
+<Studio progressivo = "1">
+<CodSoggetto>RSSMRA70C20A794O</CodSoggetto>
+<DesStudio>DIPLOMA DI MATURITA'</DesStudio>
+<DesIstituto>Istituto prova</DesIstituto>
+<ComuneIstituto>
+	<CodComune>19097</CodComune>
+	<DesComune>Soncino</DesComune>
+	<Cap>26029</Cap>
+	<DesProvincia>CR</DesProvincia>
+</ComuneIstituto>
+<DataInizio>2003-08-28</DataInizio>
+</Studio>
+<Studio progressivo = "2">
+<CodSoggetto>MTTLHR61C21Z112U</CodSoggetto>
+<DesStudio>LICENZA SCUOLA MEDIA INFERIORE</DesStudio>
+<LocalitaIstituto>
+	<DesLocalita>Erlangen </DesLocalita>
+	<Cap></Cap>
+	<CodStato>216</CodStato>
+	<DesStato>GERMANIA</DesStato>
+</LocalitaIstituto>
+<DataInizio>2003-08-28</DataInizio>
+</Studio>
+<Studio progressivo = "3">
+<CodSoggetto>BNCNNA70D60A794N</CodSoggetto>
+<DesStudio>LICENZA SCUOLA MEDIA INFERIORE</DesStudio>
+<DataInizio>2003-08-28</DataInizio>
+</Studio>
+</ListaStudio>

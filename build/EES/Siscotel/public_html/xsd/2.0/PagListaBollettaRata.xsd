@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by io (1234) -->
+<xs:schema targetNamespace="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:esicra_import="http://www.saga.it/egov/esicra/importazione/xml/esicra_import" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="PagBollettaRata.xsd"/>
+	<xs:element name="PagListaBollettaRata">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="PagBollettaRata">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="esicra_import:PagBollettaRataType">
+								<xs:attribute name="progressivo" type="xs:int" use="required"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="versione" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

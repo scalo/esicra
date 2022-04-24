@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<xs:schema xmlns:esicra_import="http://www.saga.it/egov/esicra/esportazione/xml/esicra_import" xmlns:pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="DatiRichiestaCPI" type="pra:DatiRichiestaCPIType"/>
+	<xs:complexType name="DatiRichiestaCPIType">
+		<xs:sequence>
+			<xs:element name="CodRichiesta" type="xs:string"/>
+			<xs:element name="ListaDatiOpereImpianti">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DatiOpereImpianti">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="CodOpereImpianti" type="xs:string"/>
+									<xs:element name="DesOpereImpianti" type="xs:string"/>
+									<xs:element name="ListaDataOperaImpianti">
+										<xs:complexType>
+											<xs:sequence maxOccurs="unbounded">
+												<xs:element name="DataOperaImpianti" type="xs:date"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="ListaNumeroProtocollo">
+										<xs:complexType>
+											<xs:sequence maxOccurs="unbounded">
+												<xs:element name="NumeroProtocollo" type="xs:string"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DatiAttivitaCPI"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

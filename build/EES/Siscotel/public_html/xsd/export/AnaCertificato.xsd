@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp1 U (http://www.xmlspy.com) by dev (Ru-Board) -->
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by 1234 (1234) -->
+<?xml-stylesheet type="text/xsl" href="out_struttura2.xsl"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:esicra_pra="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" targetNamespace="http://www.saga.it/egov/esicra/esportazione/xml/esicra_pra" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="AnaCertificatoType">
+		<xs:sequence>
+			<xs:element name="IdTipoCertificato" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1=Corrente;         2=Storico;                  3=Non Residente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DesTipoCertificato" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Descrizione Certificato</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Bollo" type="xs:boolean"/>
+			<xs:element name="DirittiSegreteria" type="xs:boolean"/>
+			<xs:element name="RichiedibilePerAltri" type="xs:boolean"/>
+			<xs:element name="CopiaAtto" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="DataCertificatoStorico" type="xs:date" minOccurs="0"/>
+			<xs:element name="Uso">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Motivazione">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
